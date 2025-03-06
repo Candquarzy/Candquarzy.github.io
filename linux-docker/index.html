@@ -1,0 +1,1276 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="糖果罐" href="https://blog.luckyfuture.cc/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="糖果罐" href="https://blog.luckyfuture.cc/atom.xml" />
+<link rel="alternate" type="application/json" title="糖果罐" href="https://blog.luckyfuture.cc/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="linux,docker" />
+
+
+<link rel="canonical" href="https://blog.luckyfuture.cc/linux-docker/">
+
+
+
+  <title>
+Linux docker指令留档 - linux |
+Candy_Can🍥 = 糖果罐</title>
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Linux docker指令留档
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2025-03-06 22:30:25">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2025-03-06T22:30:25+08:00">2025-03-06</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>11k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>10 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Candy_Can🍥</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/master/img/126680038_p0.png">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/linux/" itemprop="item" rel="index" title="分类于 linux"><span itemprop="name">linux</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://blog.luckyfuture.cc/linux-docker/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Candy">
+    <meta itemprop="description" content=", 不向焦虑与抑郁投降 这个世界终会有我们存在的地方">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="糖果罐">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <blockquote>
+<p><strong>不保证内容 100% 准确无误！！！如有错误欢迎留言</strong></p>
+</blockquote>
+<hr>
+<h1 id="linux指令集合"><a class="markdownIt-Anchor" href="#linux指令集合">#</a> Linux 指令集合</h1>
+<hr>
+<h2 id="登录"><a class="markdownIt-Anchor" href="#登录">#</a> 登录</h2>
+<h3 id="登录系统"><a class="markdownIt-Anchor" href="#登录系统">#</a> 登录系统</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh username@IP -p port</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>username</strong> 用户名</li>
+<li><strong>IP</strong> 服务器 IP</li>
+<li><strong>port</strong> 登录端口</li>
+</ul>
+<p><strong>exit / ctrl + D</strong> 可以退出本次登录</p>
+<h3 id="root用户登录"><a class="markdownIt-Anchor" href="#root用户登录">#</a> ROOT 用户登录</h3>
+<p><strong>仅第一次可用：</strong></p>
+<ol>
+<li>登录用户账户</li>
+<li>执行命令 <code>sudo passwd root</code></li>
+<li>会出现 <code>[sudo]password for username:</code></li>
+<li>输入目前登录用户的账户和密码</li>
+<li>当显示 <code>NewPassword:</code>  时输入新的 ROOT 账户的密码</li>
+<li><code>Retype New Password:</code>  再次输入刚刚设定的 ROOT 账户密码进行确认</li>
+</ol>
+<p>即可重置 ROOT 账户的密码</p>
+<p>接着执行命令 <code>su - root</code>  即可切换为 ROOT 账号</p>
+<hr>
+<h2 id="文本编辑器vi"><a class="markdownIt-Anchor" href="#文本编辑器vi">#</a> 文本编辑器 vi</h2>
+<h3 id="vi文件"><a class="markdownIt-Anchor" href="#vi文件">#</a> vi 文件</h3>
+<ul>
+<li>如果命令指定的文件不存在，则创建文件</li>
+<li>如果命令指定的文件存在，则打开该文件</li>
+</ul>
+<h3 id="命令模式"><a class="markdownIt-Anchor" href="#命令模式">#</a> 命令模式</h3>
+<ul>
+<li><strong>h</strong> 光标左移一个字符</li>
+<li><strong>j</strong> 光标下移一个字符</li>
+<li><strong>k</strong> 光标上移一个字符</li>
+<li><strong>l</strong> 光标右移一个字符</li>
+<li><strong>x</strong> 删除光标所在字符</li>
+<li><strong>dd</strong> 删除光标所在行</li>
+<li><strong>ndd</strong> n 为数字，表示删除当前光标及下面的 n 行</li>
+<li><strong>dG</strong> 删除当前行以下的所有内容</li>
+<li><strong>d$</strong> 删除当前光标到当前光标所在行的结尾</li>
+<li><strong>d0</strong> 删除当前光标到当前光标所在行的开头</li>
+<li><strong>dw</strong> 删除光标处到词尾的内容</li>
+<li><strong>gg</strong> 把光标移到文件开始的位置</li>
+<li><strong>G</strong> 将光标移到文件末尾</li>
+<li><strong>ctrl + F</strong> 上一页</li>
+<li><strong>ctrl + B</strong> 下一页</li>
+<li><strong>0</strong> 把光标移动到所在行的行首</li>
+<li><strong>$</strong> 把光标移动到所在行的行尾</li>
+<li><strong>pageup</strong> 向上翻页</li>
+<li><strong>pagedown</strong> 向下翻页</li>
+<li><strong>yy</strong> 复制光标所在行</li>
+<li><strong>p</strong> 粘贴</li>
+<li><strong>v</strong> 移动光标进入选择模式</li>
+<li><strong>y</strong> 复制选中的内容</li>
+<li><strong>nyy</strong> n 为数字，表示复制当前光标及下面的 n 行</li>
+<li><strong>u</strong> 撤销刚才的操作</li>
+<li><strong>ctrl + R</strong> 恢复更改</li>
+<li><strong>.</strong> 重复刚才所做的操作</li>
+</ul>
+<h3 id="插入模式"><a class="markdownIt-Anchor" href="#插入模式">#</a> 插入模式</h3>
+<p>按下键盘上的<strong> i</strong> 进入插入模式，在左下角会显示 <code>-- INSERT --</code>  字样</p>
+<p>按下键盘上的<strong> a</strong> 也可以进入插入模式，不过是在光标后面插入内容</p>
+<ul>
+<li><strong>0</strong> 在光标上一行之后插入一行</li>
+<li><strong>o</strong> 在光标所在行之后插入一行</li>
+<li><strong>l</strong> 在行的开头进入插入模式</li>
+<li><strong>A</strong> 在行的结尾进入插入模式</li>
+<li><strong>esc</strong> 退出插入模式，进入命令模式</li>
+</ul>
+<h3 id="底行模式"><a class="markdownIt-Anchor" href="#底行模式">#</a> 底行模式</h3>
+<ul>
+<li><strong>:wq</strong> 保存文件并退出</li>
+<li><strong>:w</strong> 保存文件但是不退出 vi</li>
+<li><strong>:q!</strong> 不保存文件强制退出编辑器</li>
+<li><strong>:set paste</strong> 设置粘贴模式 (用于从外部复制内容进来不会导致内容错乱)</li>
+<li><strong>:set nu</strong> 显示行号</li>
+<li><strong>:set nonu</strong> 关闭行号显示</li>
+</ul>
+<h3 id="vi编辑器其他"><a class="markdownIt-Anchor" href="#vi编辑器其他">#</a> vi 编辑器其他</h3>
+<ul>
+<li><strong>/[string]</strong> string 代表需要查询的内容 比如 <code>/abc</code>  即查询 abc</li>
+<li><strong>n</strong> 查找下一个</li>
+<li><strong>N</strong> 查找上一个</li>
+</ul>
+<h3 id="替换内容"><a class="markdownIt-Anchor" href="#替换内容">#</a> 替换内容</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:[range]/[string]/[replace]/[mode]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>range</strong> 查找要替换内容的范围</li>
+<li><strong>string</strong> 要被替换的内容</li>
+<li><strong>replace</strong> 替换后的内容</li>
+<li><strong>mode</strong> 替换模式</li>
+</ul>
+<hr>
+<h2 id="文件系统"><a class="markdownIt-Anchor" href="#文件系统">#</a> 文件系统</h2>
+<p><strong>Linux 的文件路径是区分大小写的</strong></p>
+<p><strong>pwd</strong> 查询当前工作目录</p>
+<h3 id="cd命令-更改工作目录"><a class="markdownIt-Anchor" href="#cd命令-更改工作目录">#</a> cd 命令 - 更改工作目录</h3>
+<ul>
+<li><strong>cd / 路径 /</strong> 改变工作目录</li>
+<li><strong>cd…</strong> 回到上一级目录</li>
+</ul>
+<h3 id="绝对路径与相对路径"><a class="markdownIt-Anchor" href="#绝对路径与相对路径">#</a> 绝对路径与相对路径</h3>
+<ul>
+<li><strong>绝对路径</strong> 开始于根目录，沿着目录层级，一直到达想要的目录或文件</li>
+<li><strong>相对路径</strong> 相对的当前目录 其中 <strong>.</strong> 指的是当前目录 <strong>…</strong> 指的是上一层目录，即当前目录的父目录</li>
+</ul>
+<blockquote>
+<p><strong>./test.txt</strong> 在当前目录下寻找 test.txt</p>
+<p><strong>./ 路径 / 路径 / 文件</strong> 也可以打开路径 / 路径 / 文件</p>
+<p><strong>…/ 文件</strong> 打开上一层目录中的某文件</p>
+<p><strong>…/…/…/ 文件</strong> 打开上 3 层目录中的文件</p>
+</blockquote>
+<h3 id="ls命令-查看文件文件夹"><a class="markdownIt-Anchor" href="#ls命令-查看文件文件夹">#</a> ls 命令 - 查看文件 / 文件夹</h3>
+<p>查看目录下的文件 / 文件夹</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls [-a / -l / -h] [dir]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-a</strong> all，列出所有文件</li>
+<li><strong>-l</strong> 以列表形式展示内容，并显示更多信息 可以简写为 <strong>ll</strong></li>
+<li><strong>-lh</strong> 显示文件，文件夹大小</li>
+<li><strong>-la</strong> 查看隐藏的文件详情</li>
+<li><strong>dir</strong> 目录</li>
+</ul>
+<p>通过 ls 来确定当前的工作目录并不恰当，我们可以使用 <code>pwd</code>  来查看当前所在的工作目录</p>
+<h3 id="cp命令-复制"><a class="markdownIt-Anchor" href="#cp命令-复制">#</a> cp 命令 - 复制</h3>
+<p>复制命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp [-r] [source] [destination]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-r</strong> 拷贝目录 同时会将该目录下的所有文件和文件夹都拷贝过去</li>
+<li><strong>source</strong> 源文件 / 目录</li>
+<li><strong>destination</strong> 目的文件 / 目录</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /data/config.yaml ./config/</span><br></pre></td></tr></table></figure>
+<p>cp 命令也可以使用通配符</p>
+<h3 id="mv命令-移动重命名"><a class="markdownIt-Anchor" href="#mv命令-移动重命名">#</a> mv 命令 - 移动 / 重命名</h3>
+<p>移动 / 重命名命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv [source] [destination]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>source</strong> 要被移动的源文件 / 目录</li>
+<li><strong>destination</strong> 目标目录 / 文件新名称 / 目录的新名称 (要求该目录不存在)/ 要移动进去的目录 (要求该目录存在)</li>
+</ul>
+<h3 id="grep命令-查找"><a class="markdownIt-Anchor" href="#grep命令-查找">#</a> grep 命令 - 查找</h3>
+<p>在文件中查找字符串</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep [keywords] [file] [-n] [-C] [-B] [-A] [line]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>keywords</strong> 要查找的关键字</li>
+<li><strong>file</strong> 被查找的文件</li>
+<li><strong>-n</strong> 会将行号和每一行的内容都输出</li>
+<li><strong>-n -C</strong> 将查找到所在关键字的这一行的上下<strong> line</strong> 行信息都输出出来</li>
+<li><strong>-n -B</strong> 将查找到所在关键字的这一行的上面<strong> line</strong> 行信息都输出出来</li>
+<li><strong>-n -A</strong> 将查找到所在关键字的这一行的后面<strong> line</strong> 行信息都输出出来</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep candy Candy_note -n -C 3</span><br></pre></td></tr></table></figure>
+<h3 id="wc命令-关键字数量统计"><a class="markdownIt-Anchor" href="#wc命令-关键字数量统计">#</a> wc 命令 - 关键字数量统计</h3>
+<p>统计在一个文件中出现的关键字数量</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wc [-c -m -l -w] [file]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-c</strong> 统计字节数量</li>
+<li><strong>-m</strong> 统计字符数量</li>
+<li><strong>-l</strong> 统计行数</li>
+<li><strong>-w</strong> 统计单词数量</li>
+</ul>
+<h3 id="ln命令-创建快捷方式"><a class="markdownIt-Anchor" href="#ln命令-创建快捷方式">#</a> ln 命令 - 创建 “快捷方式”</h3>
+<p>创建一个类似于 Windows 中的快捷方式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s [source] [destination]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>source</strong> 被链接的文件 / 文件夹路径</li>
+<li><strong>destination</strong> 目的地路径</li>
+</ul>
+<h3 id="scp命令-远程拷贝文件"><a class="markdownIt-Anchor" href="#scp命令-远程拷贝文件">#</a> scp 命令 - 远程拷贝文件</h3>
+<p>从远程设备中拷贝文件过来</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp [localfile][filename] [username]@[address]:[destinationPath]</span><br></pre></td></tr></table></figure>
+<p>我们使用 B 主机进行拷贝，就必须要有 B 主机的用户账号。加入 B 主机的账号是 candy1……</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp /home/candy0/note.txt candy1@luckyfuture.cc:/home/candy1/</span><br></pre></td></tr></table></figure>
+<h3 id="which命令-查找命令"><a class="markdownIt-Anchor" href="#which命令-查找命令">#</a> which 命令 - 查找命令</h3>
+<p>可以查到被查找的命令在哪个路径下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">which [command]</span><br></pre></td></tr></table></figure>
+<p>假如我要查看 ls 命令在哪个路径下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">which ls</span><br></pre></td></tr></table></figure>
+<h3 id="find命令-查找文件"><a class="markdownIt-Anchor" href="#find命令-查找文件">#</a> find 命令 - 查找文件</h3>
+<p>查找文件在哪个路径下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find [startPath] -name [&quot;filename&quot;]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>startPath</strong> 起始查找路径</li>
+<li><strong>filename</strong> 文件名</li>
+</ul>
+<p>即从路径开始以文件名查找文件</p>
+<blockquote>
+<p>也可以使用通配符来查找文件</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find [stratPath] -size [+/-] [n] [kMG]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>stratPath</strong> 起始查找路径</li>
+<li><strong>+/-</strong> + 代表大于 - 代表小于</li>
+<li><strong>n</strong> 代表大小中数字部分</li>
+<li><strong>kMG</strong> k: 代表 kb，需小写 k；M: 代表 MB；G: 代表 GB</li>
+</ul>
+<hr>
+<h2 id="用户"><a class="markdownIt-Anchor" href="#用户">#</a> 用户</h2>
+<p><strong>ROOT 账号拥有系统的最高权限</strong></p>
+<p>每一个用户账号都对应一个用户 ID，其被存储在文件 <code>/etc/passwd</code>  中</p>
+<h3 id="添加用户"><a class="markdownIt-Anchor" href="#添加用户">#</a> 添加用户</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adduser username</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>username</strong> 新用户的用户名</li>
+</ul>
+<p>如果不添加组参数系统会默认创建一个组</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adduser --ingroup root username</span><br></pre></td></tr></table></figure>
+<p>直接创建一个属于 root 用户组的用户</p>
+<h3 id="更新用户密码"><a class="markdownIt-Anchor" href="#更新用户密码">#</a> 更新用户密码</h3>
+<p>如果是非 ROOT 账户，则只能更改自己的密码。ROOT 账户可以更改所有人的密码</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd username</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>username</strong> 要被更改密码的账户名 **(仅限 ROOT 账户使用)**</li>
+</ul>
+<h3 id="删除用户"><a class="markdownIt-Anchor" href="#删除用户">#</a> 删除用户</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deluser username</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>username</strong> 要被删除的账户名</li>
+</ul>
+<p>删除该用户 **(仅限 ROOT 账户使用)**</p>
+<h3 id="切换用户"><a class="markdownIt-Anchor" href="#切换用户">#</a> 切换用户</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su [-] username</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-</strong> 使用该用户的用户环境</li>
+<li><strong>username</strong> 要被切换的用户名</li>
+</ul>
+<p>如果是 root 账号切换不需要密码，普通用户则需要密码</p>
+<p>若一直套娃切换，系统会保留层级关系；在使用 <code>ctrl+D</code>  时会退出当前账号返回上一个账号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getent passwd</span><br></pre></td></tr></table></figure>
+<p>查看当前系统中有哪些用户</p>
+<hr>
+<h2 id="用户组"><a class="markdownIt-Anchor" href="#用户组">#</a> 用户组</h2>
+<h3 id="查看所有用户组"><a class="markdownIt-Anchor" href="#查看所有用户组">#</a> 查看所有用户组</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groups</span><br></pre></td></tr></table></figure>
+<p>查看当前账号用户组</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groups [username]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>username</strong> 用户名</li>
+</ul>
+<p>查看其他用户所属于的用户组</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep &#x27;[keyword]&#x27; /etc/group</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>keyword</strong> 组名称关键字</li>
+</ul>
+<p>查看用户组里的用户，比如查看以 sudo 开头的组的用户：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep &#x27;^sudo&#x27; /etc/group</span><br></pre></td></tr></table></figure>
+<p>其中，这里的<strong> keyword</strong> 可以使用正则表达式</p>
+<h3 id="新增删除用户组"><a class="markdownIt-Anchor" href="#新增删除用户组">#</a> 新增 / 删除用户组</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">addgroup [NewGroupName]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>NewGroupName</strong> 新增组的名称</li>
+</ul>
+<p>新增一个用户组</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delgroup [groupname]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>groupname</strong> 要被删除的组名称</li>
+</ul>
+<p>删除该用户组</p>
+<h3 id="改变用户所在组"><a class="markdownIt-Anchor" href="#改变用户所在组">#</a> 改变用户所在组</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -g [groupname] [username]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>groupname</strong> 组名称</li>
+<li><strong>username</strong> 用户名</li>
+</ul>
+<p>将用户添加的指定的组中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -G [groupname1] [groupname2]… [username]</span><br></pre></td></tr></table></figure>
+<p>将用户设定到这些组当中</p>
+<hr>
+<h2 id="文件权限"><a class="markdownIt-Anchor" href="#文件权限">#</a> 文件权限</h2>
+<p>在 Linux 系统中，权限通常可以按照用户权限分为 3 种类型，以及对文件的 3 种权限方式</p>
+<h3 id="用户权限"><a class="markdownIt-Anchor" href="#用户权限">#</a> 用户权限</h3>
+<ul>
+<li><strong>owner</strong> 即文件的所有者，也是该文件的创建者</li>
+<li><strong>grouper</strong> 文件所有者，即文件所在的用户组及里面的用户</li>
+<li><strong>other</strong> 其他用户，即非 owner 和非 grouper</li>
+</ul>
+<h3 id="文件权限-2"><a class="markdownIt-Anchor" href="#文件权限-2">#</a> 文件权限</h3>
+<ul>
+<li><strong>读</strong> 使用英文字母 r 表示，可以查看目录 / 文件内的内容</li>
+<li><strong>写</strong> 使用英文字母 w 表示，可以修改文件 / 目录内的内容</li>
+<li><strong>执行</strong> 使用英文字母 x 表示，可以执行文件 / 使用 <code>cd</code>  命令进入目录</li>
+</ul>
+<h3 id="drwxrw-rw-"><a class="markdownIt-Anchor" href="#drwxrw-rw-">#</a> drwxrw-rw-</h3>
+<p>权限细节总共分为 10 个位置</p>
+<ol>
+<li>
+<ul>
+<li><strong>- / d / l</strong> 第一位，**-** 表示文件；<strong>d</strong> 表示文件夹；<strong>l</strong> 表示软链接</li>
+</ul>
+</li>
+<li><strong>第 2-4 位</strong> 这三位为文件所属用户权限</li>
+<li><strong>第 5-7 位</strong> 这三位位文件所属用户组中的用户权限</li>
+<li><strong>第 8-10 位</strong> 其他用户权限</li>
+</ol>
+<p>假设一个权限是 **drwxrw-r–** 则表示</p>
+<ul>
+<li><strong>d</strong> 这是文件夹</li>
+<li><strong>rwx</strong> 所属用户权限，在该例子中该文件所有者可以对该文件进行读、写、执行</li>
+<li><strong>rw-</strong> 所属用户组权限，在该例子中该文件所有者所在的用户组中的用户可以对该文件进行读、写操作</li>
+<li><strong>r–</strong> 表示其他用户的权限，在该例子中其他用户对该文件仅可读</li>
+</ul>
+<h3 id="数字所对应的权限"><a class="markdownIt-Anchor" href="#数字所对应的权限">#</a> 数字所对应的权限</h3>
+<ul>
+<li><strong>0</strong> 无任何权限，即 **—**</li>
+<li><strong>1</strong> 仅有 x 权限，即 **–x**</li>
+<li><strong>2</strong> 仅有 w 权限，即 **-w-**</li>
+<li><strong>3</strong> w 和 x 权限，即 **-wx**</li>
+<li><strong>4</strong> 仅有 r 权限，即<strong> r–</strong></li>
+<li><strong>5</strong> r 和 x 权限，即<strong> r-x</strong></li>
+<li><strong>6</strong> r 和 w 权限，即<strong> rw-</strong></li>
+<li><strong>7</strong> 全部权限，即<strong> rwx</strong></li>
+</ul>
+<p>例如， <code>751</code>  即为<strong> rwx (7) r-x (5) --x (1)</strong></p>
+<h3 id="修改文件访问权限"><a class="markdownIt-Anchor" href="#修改文件访问权限">#</a> 修改文件访问权限</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod [-R] [who] [op] [permission] [file/dir]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-R</strong> 指对文件夹内的全部内容应用相同操作</li>
+<li><strong>who</strong> 表示用户类型 (见下表)</li>
+<li><strong>op</strong> 表示动作（+ 表示加上 permission 指定权力，- 表示取消 permission 指定的权力</li>
+<li><strong>permission</strong> 存取权限（r: 可读，w: 可写，x: 执行）</li>
+</ul>
+<p>用户类型表</p>
+<ul>
+<li>**u:** 文件拥有者</li>
+<li>**g:** 该文件拥有者的同组用户</li>
+<li>**o:** 其他人</li>
+<li>**a:** 所有人</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chmod u+w file1 //该命令添加了拥有者对file1文件的写权限</span><br><span class="line">chmod u-x file1 //该命令去掉了拥有者对file1文件的执行权限</span><br><span class="line">chmod ug+rwx file //该命令添加了拥有者和同组用户对file1文件的读、写、执行权限</span><br><span class="line">chmod a+rwx file //该命令添加了所有人对file1文件的读、写、执行权限</span><br></pre></td></tr></table></figure>
+<p>当然除了这种方式，我们也可以使用数字进行修改权限的修改</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod [who] [op] [Num] [file/dir]</span><br></pre></td></tr></table></figure>
+<p>比如，给当前目录下的文件添加对自己的 777 权限：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chomod 777 file1</span><br></pre></td></tr></table></figure>
+<h3 id="文件归属权"><a class="markdownIt-Anchor" href="#文件归属权">#</a> 文件归属权</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown [-R] [User][:][UserGroups] [file1] [file2] […]</span><br></pre></td></tr></table></figure>
+<p>改变文件所有者及文件所在组的用户</p>
+<ul>
+<li><strong>-R</strong> 对文件夹内全部内容应用相同的规则</li>
+<li><strong>User</strong> 修改所属用户</li>
+<li><strong>:UserGroups</strong> 修改所属用户组，其中带：的是用户组，不带：的是用户</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chown candy file1 //把文件file1的所有者变更为用户candy</span><br><span class="line">chown candy:sudo file1 //把文件file1的所有者变更为用户candy，所属组变为sudo</span><br><span class="line">chown -R candy dir1 //把目录dir及其子目录以及文件的所有者都变更为candy</span><br></pre></td></tr></table></figure>
+<p>也可以使用 chgrp 命令改变文件所有者组：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chgrp [opt] [groups] [file]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>opt</strong> 选项</li>
+<li><strong>groups</strong> 组名称</li>
+<li><strong>file</strong> 文件名称</li>
+</ul>
+<hr>
+<h2 id="sudo"><a class="markdownIt-Anchor" href="#sudo">#</a> sudo</h2>
+<p>sudo 是以 root 账号的权限执行命令一次</p>
+<p>哪些账户可以使用 sudo 权限来运行是在 <code>/etc/sudoers</code>  里进行配置的</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo -u [user] [command]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>user</strong> 以该用户的权限来执行命令</li>
+<li><strong>command</strong> 要执行的命令</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo [command]</span><br></pre></td></tr></table></figure>
+<p>以 ROOT 权限来执行这条命令</p>
+<blockquote>
+<p>可以直接将某个用户加入 sudo 用户组（使用 usermod 命令添加），就可以在任何地方，以任何账号权限，运行任何程序</p>
+</blockquote>
+<hr>
+<h2 id="进程"><a class="markdownIt-Anchor" href="#进程">#</a> 进程</h2>
+<h3 id="ps命令-进程命令"><a class="markdownIt-Anchor" href="#ps命令-进程命令">#</a> ps 命令 - 进程命令</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps</span><br></pre></td></tr></table></figure>
+<p>查看进程信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -f</span><br></pre></td></tr></table></figure>
+<p>查看详细的进程信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -u [user]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>user</strong> 用户名</li>
+</ul>
+<p>显示该用户所创建的进程信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -e</span><br></pre></td></tr></table></figure>
+<p>显示当前所有正在运行的进程信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef</span><br></pre></td></tr></table></figure>
+<p>显示当前所有正在运行的所有系统进程信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep [keyword]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>keyword</strong> 要被查找进程的关键字</li>
+</ul>
+<p>查找该进程</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep [keyword] | grep -v [unkeyword]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>keyword</strong> 要被查找进程的关键字</li>
+<li><strong>unkeyword</strong> 不包含的（排除）关键字</li>
+</ul>
+<p>查找一个进程，但是这个进程不显示包含排除关键字的进程</p>
+<h3 id="nohup-静默运行"><a class="markdownIt-Anchor" href="#nohup-静默运行">#</a> nohup - 静默运行</h3>
+<p>一般来说，有些程序如果关闭终端的话进程有可能会被结束掉，因此可以在命令上加上 nohup</p>
+<p>在程序前台运行的情况下，使用快捷键 <code>ctrl+C</code>  终止进程</p>
+<h3 id="kill命令-杀死进程"><a class="markdownIt-Anchor" href="#kill命令-杀死进程">#</a> kill 命令 - 杀死进程</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 [PID / name]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>PID / Name</strong> 该程序的 PID 或程序名</li>
+<li><strong>-9</strong> 表示强行杀死</li>
+</ul>
+<hr>
+<h2 id="重定向"><a class="markdownIt-Anchor" href="#重定向">#</a> 重定向</h2>
+<p>在 shell 中输入命令时，可以使用 <code>&gt;</code>  符号将输入命令后的执行结果信息输出到指定文件中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps &gt; [out]</span><br></pre></td></tr></table></figure>
+<p>上面的命令会将原本要输出在 stdout（可以理解为终端的输出）输出到文件中</p>
+<p>如果要将 stdout 和 stderr（屏幕显示的报错信息）同时输入到一个文件 err.txt 中可以使用 <code>&amp;&gt;</code>  符号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">command &amp;&gt; err.txt</span><br></pre></td></tr></table></figure>
+<p>单独重定向 stderr 的符号是 <code>2&gt;</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">command &gt; [out] 2&gt; err.txt</span><br></pre></td></tr></table></figure>
+<p>stdin 重定向符号是 <code>&lt;</code> ，可以将原本要显示到终端上的内容输出到文件中</p>
+<h3 id="echo命令"><a class="markdownIt-Anchor" href="#echo命令">#</a> echo 命令</h3>
+<p>在命令行内输出指定的内容</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo [string]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>string</strong> 要输出的指定内容</li>
+</ul>
+<p>带有空格或 \ 等特殊符号的内容，建议使用双引号包含。如果不适用双引号的情况下，空格后面很容易被识别为另一个参数，虽然说影响不是很大就是了（</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo `[commad]`</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>commad</strong> 被 `` 包含的内容会作为命令去执行，然后结果会被 echo 打印在屏幕上</li>
+</ul>
+<h3 id="和"><a class="markdownIt-Anchor" href="#和">#</a> &gt; 和 &gt;&gt;</h3>
+<ul>
+<li><strong>&gt;</strong> 将左侧命令的结果覆盖写入到右侧指定的文件中</li>
+<li><strong>&gt;&gt;</strong> 将左侧命令的结果追加写入到右侧指定的文件中</li>
+</ul>
+<h3 id="tail指令"><a class="markdownIt-Anchor" href="#tail指令">#</a> tail 指令</h3>
+<p>tail 指令可以查看文件尾部的内容，追踪文件的最新更新。也就是从后向前看</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail [-f] [-num] [filedir]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-f</strong> 表示持续跟踪</li>
+<li><strong>-num</strong> 表示从后向前看多少行，默认 10 行</li>
+<li><strong>filedir</strong> 要查看的文件路径</li>
+</ul>
+<p>例如，查看 text.txt 文件后 5 行的内容</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -5 text.txt</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="管道符"><a class="markdownIt-Anchor" href="#管道符">#</a> 管道符 |</h2>
+<p>在 Linux 操作系统中，有时候需要将一个命令输出的内容作为另一个命令的输入内容，可以使用 <code>|</code>  操作符来实现，并且管道符可以嵌套</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">icommand | [othercommand1] | [othercommand2]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>icommand</strong> 要输出的命令</li>
+<li><strong>othercommand</strong> 其他命令</li>
+</ul>
+<hr>
+<h2 id="打包与压缩"><a class="markdownIt-Anchor" href="#打包与压缩">#</a> 打包与压缩</h2>
+<h3 id="tar命令-针对tar压缩包"><a class="markdownIt-Anchor" href="#tar命令-针对tar压缩包">#</a> tar 命令 - 针对 tar 压缩包</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar [-c -v -x -f -z -C] [para0] [para1] […]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-c</strong> 创建压缩文件，用于要压缩一个文件的时候</li>
+<li><strong>-v</strong> 显示压缩和解压缩的进度</li>
+<li><strong>-x</strong> 解压缩而不是压缩</li>
+<li><strong>-f</strong> 要创建的文件，或者说要解压文件，-f 选项<strong>必须在所有选项中处于最后一个</strong></li>
+<li><strong>-z</strong> gzip 模式，不适用 - z 就是普通的 tarball 格式，一般处于第一位</li>
+<li><strong>-C</strong> 自定义解压路径</li>
+</ul>
+<p>比如解压一个 test.tar，并将其解压缩到 <code>/home/candy/</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf test.tar -C /home/candy/</span><br></pre></td></tr></table></figure>
+<p>如果要压缩 <code>/data</code>  路径出来一个名为 data.tar 压缩包……</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -cvf data.tar ./data/*</span><br></pre></td></tr></table></figure>
+<p>也可以仅查看一个压缩包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -tvf data.tar</span><br></pre></td></tr></table></figure>
+<p>也可以将新文件添加进压缩包中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -rvf data.tar my_pic.jpg</span><br></pre></td></tr></table></figure>
+<h3 id="gzip命令-针对gz压缩包"><a class="markdownIt-Anchor" href="#gzip命令-针对gz压缩包">#</a> gzip 命令 - 针对 gz 压缩包</h3>
+<p>gz 压缩包可以将压缩包体压缩至很小</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip -d [file.gz]</span><br></pre></td></tr></table></figure>
+<p>解压缩一个名为 file.gz 的压缩包</p>
+<p>同时 gzip 和 tar 可以联合使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zcvf [pag.tar.gz] [file] [dir]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>pag.tar.gz</strong> 压缩包名</li>
+<li><strong>file</strong> 文件</li>
+<li><strong>dir</strong> 目录</li>
+</ul>
+<p>可以直接将文件压缩成.tar.gz 格式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf [pag.tar.gz]</span><br></pre></td></tr></table></figure>
+<p>解压缩一个为.tar.gz 的压缩包</p>
+<h3 id="zip命令-针对zip压缩包"><a class="markdownIt-Anchor" href="#zip命令-针对zip压缩包">#</a> zip 命令 - 针对 zip 压缩包</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip [-r] [file.zip] [dir]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-r</strong> 压缩目录</li>
+<li><strong>file.zip</strong> 压缩包名</li>
+<li><strong>dir</strong> 路径</li>
+</ul>
+<p>压缩一个 zip 格式的压缩包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip [file.zip]</span><br></pre></td></tr></table></figure>
+<p>解压缩一个 zip 格式的压缩包</p>
+<hr>
+<h2 id="系统相关命令"><a class="markdownIt-Anchor" href="#系统相关命令">#</a> 系统相关命令</h2>
+<h3 id="top命令-查看系统进程信息"><a class="markdownIt-Anchor" href="#top命令-查看系统进程信息">#</a> top 命令 - 查看系统进程信息</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top [-p -d -c -n -b -i -u] [PID]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-p</strong> 只显示某个进程的信息</li>
+<li><strong>-d</strong> 设置刷新时间，默认是 5s</li>
+<li><strong>-c</strong> 显示产生进程的完整命令，默认是进程名</li>
+<li><strong>-n</strong> 指定刷新次数，比如 top-n3，刷新输出 3 次后退出</li>
+<li><strong>-b</strong> 以非交互非全屏运行，以批次的方式执行 top，一般配合 <code>-n</code>  指定输出几次统计信息，将输出重定向到指定文件</li>
+<li><strong>-i</strong> 不显示任何闲置 (idle) 或无用 (zombie) 进程</li>
+<li><strong>-u</strong> 查找特定用户启动的进程</li>
+</ul>
+<p>在 top 的页面上，按 1 切换核心的占用情况，按下大写 P 可以按照 CPU 占用率高低来排序，大写 M 按照内存占用高低来排序。按下 q 即可退出</p>
+<p><strong>top 命令内容较多，这里不多介绍</strong></p>
+<h3 id="网络相关命令"><a class="markdownIt-Anchor" href="#网络相关命令">#</a> 网络相关命令</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip addr</span><br></pre></td></tr></table></figure>
+<p>查看网络接口、IP 地址</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping [ip]</span><br></pre></td></tr></table></figure>
+<p>连通性测试</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostname</span><br></pre></td></tr></table></figure>
+<p>查看主机名</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostnamectl set-hostname [name]</span><br></pre></td></tr></table></figure>
+<p>修改主机名为<strong> name</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat</span><br></pre></td></tr></table></figure>
+<p>查看当前所有占用网络端口的程序</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -anp | grep [port]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>port</strong> 端口号</li>
+</ul>
+<p>查看指定端口的占用情况</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat [-a -t -u -n -l -p -r]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-a</strong> 显示所有选项，默认不显示 LISTEN 相关</li>
+<li><strong>-t</strong> 仅显示 TCP 相关选项</li>
+<li><strong>-u</strong> 仅显示 UDP 相关选项</li>
+<li><strong>-n</strong> 不显示端口协议名，显示端口数字</li>
+<li><strong>-l</strong> 只显示 Listen (监听) 的状态端口</li>
+<li><strong>-p</strong> 显示建立相关链接的进程 PID</li>
+<li><strong>-r</strong> 显示路由信息、路由表</li>
+</ul>
+<p><strong>netstat 命令内容较多，这里不多介绍</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap [ip]</span><br></pre></td></tr></table></figure>
+<p>显示端口占用情况</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sar [-n] DEV [num1] [num2]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-n</strong> 查看网络</li>
+<li><strong>DEV</strong> 查看接口，默认为 DEV 即可</li>
+<li><strong>num1</strong> 数字，表示刷新间隔</li>
+<li><strong>num2</strong> 数字，表示刷新次数</li>
+</ul>
+<p>网络状态监控</p>
+<h3 id="wget-curl命令-网页下载命令"><a class="markdownIt-Anchor" href="#wget-curl命令-网页下载命令">#</a> wget /curl 命令 - 网页 / 下载命令</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget [-b] [URL]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-b</strong> 后台下载，并且将日志写入当前工作目录的 <code>wget-log</code>  文件中</li>
+<li><strong>URL</strong> 文件地址</li>
+</ul>
+<p>即可将一个文件下载到当前工作目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl [-o] [URL]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-o</strong> 用于下载文件，当<strong> URL</strong> 为文件链接时，可以使用 **-o** 来保存文件</li>
+<li><strong>URL</strong> 要发起请求的网络地址</li>
+</ul>
+<p>curl 类似于浏览器，可以查看网页，也可以下载文件</p>
+<h3 id="systemctl-系统服务命令"><a class="markdownIt-Anchor" href="#systemctl-系统服务命令">#</a> systemctl 系统服务命令</h3>
+<p>用于启动，关闭，重启服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status [service]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>service</strong> 服务名</li>
+</ul>
+<p>查看该服务状态</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start [service]</span><br></pre></td></tr></table></figure>
+<p>启动该服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop [service]</span><br></pre></td></tr></table></figure>
+<p>停止该服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart [service]</span><br></pre></td></tr></table></figure>
+<p>重启该服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable [service]</span><br></pre></td></tr></table></figure>
+<p>开启服务开机自启动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl disable [service]</span><br></pre></td></tr></table></figure>
+<p>关闭服务开机自启动</p>
+<h3 id="apt服务yum"><a class="markdownIt-Anchor" href="#apt服务yum">#</a> apt 服务（yum）</h3>
+<p>由于我使用的是 Ubuntu，所以要使用 apt 命令。如果你使用的是类如 Debian 等系统，可以使用 yum</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install [package]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>package</strong> 要安装软件的包名</li>
+</ul>
+<p>安装一个软件包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt list --installed</span><br></pre></td></tr></table></figure>
+<p>显示所有已经安装的程序包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt list [package]</span><br></pre></td></tr></table></figure>
+<p>显示<strong> package</strong> 程序包的安装情况</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt remove [package]</span><br></pre></td></tr></table></figure>
+<p>移除<strong> package</strong> 程序包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt [-y] [install | remove | search] [package]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-y</strong> 自动确认，无需手动确认安装和卸载过程</li>
+<li><strong>install</strong> 安装</li>
+<li><strong>remove</strong> 卸载</li>
+<li><strong>search</strong> 搜索</li>
+<li><strong>package</strong> 包名</li>
+</ul>
+<h3 id="时间和时区"><a class="markdownIt-Anchor" href="#时间和时区">#</a> 时间和时区</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data [-d] [&quot;+String&quot;]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-d</strong> 按照指定的字符串显示日期，一般用于日期计算</li>
+<li><strong>String</strong> 通过特定的字符串标记，来控制显示的日期形式</li>
+</ul>
+<h3 id="磁盘命令"><a class="markdownIt-Anchor" href="#磁盘命令">#</a> 磁盘命令</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df [-h]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-h</strong> 以更人性化的单位显示</li>
+</ul>
+<p>查看硬盘的使用情况</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iostat [-x] [num1] [num2]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-x</strong> 显示更多信息</li>
+<li><strong>num1</strong> 数字，表示刷新间隔</li>
+<li><strong>num2</strong> 数字，表示刷新次数</li>
+</ul>
+<hr>
+<h2 id="screen命令-屏幕"><a class="markdownIt-Anchor" href="#screen命令-屏幕">#</a> Screen 命令 - 屏幕</h2>
+<h3 id="创建屏幕"><a class="markdownIt-Anchor" href="#创建屏幕">#</a> 创建屏幕</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S [screen_name]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>screen_name</strong> 要创建的屏幕名称</li>
+</ul>
+<h3 id="退出屏幕但不删除当前屏幕"><a class="markdownIt-Anchor" href="#退出屏幕但不删除当前屏幕">#</a> 退出屏幕但不删除当前屏幕</h3>
+<ol>
+<li>
+<p><code>ctrl+A ctrl+D</code></p>
+</li>
+<li>
+<figure class="highlight shell"><figcaption data-lang="Bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">screen</span> <span class="token parameter variable">-d</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">!</span>--code￼92--<span class="token operator">></span></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><strong>-r</strong> 恢复屏幕</li>
+<li><strong>-R</strong> 尝试恢复屏幕，若恢复失败则创建一个新的屏幕</li>
+<li><strong>-dr</strong> 顶掉之前的用户并恢复屏幕</li>
+</ul>
+<h3 id="显示所有屏幕"><a class="markdownIt-Anchor" href="#显示所有屏幕">#</a> 显示所有屏幕</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sreen -ls</span><br></pre></td></tr></table></figure>
+<h3 id="检查屏幕并删除不能使用的屏幕"><a class="markdownIt-Anchor" href="#检查屏幕并删除不能使用的屏幕">#</a> 检查屏幕，并删除不能使用的屏幕</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -wipe</span><br></pre></td></tr></table></figure>
+<h3 id="删除屏幕"><a class="markdownIt-Anchor" href="#删除屏幕">#</a> 删除屏幕</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen [-XS] [-X] [screen_name] quit</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-XS</strong> 在屏幕外删除，需要写屏幕名</li>
+<li><strong>-X</strong> 删除当前屏幕，不需要写屏幕名</li>
+</ul>
+<h3 id="环境变量"><a class="markdownIt-Anchor" href="#环境变量">#</a> 环境变量</h3>
+<p>类似于 windows 中的环境变量，Linux 也是使用<strong> PATH</strong> 来定义值</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export [variable] = [count]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>variable</strong> 变量名</li>
+<li><strong>count</strong> 变量值</li>
+</ul>
+<p>这样可以临时设置一个环境变量</p>
+<p>如果要永久生效：</p>
+<ol>
+<li>针对当前用户的环境变量： <code>~/.bashrc</code>  文件中进行修改</li>
+<li>针对所有用户，即系统环境变量： <code>/etc/profile</code>  中的 source 配置文件</li>
+</ol>
+<p>这些修改都是立即生效的</p>
+<hr>
+<h1 id="docker指令集合"><a class="markdownIt-Anchor" href="#docker指令集合">#</a> Docker 指令集合</h1>
+<hr>
+<h2 id="docker服务"><a class="markdownIt-Anchor" href="#docker服务">#</a> docker 服务</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
+<p>启动 docker 服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop docker </span><br></pre></td></tr></table></figure>
+<p>停止 docker 服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart docker</span><br></pre></td></tr></table></figure>
+<p>重启 docker 服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable docker</span><br></pre></td></tr></table></figure>
+<p>设置 docker 服务开机自启</p>
+<hr>
+<h2 id="docker的使用"><a class="markdownIt-Anchor" href="#docker的使用">#</a> docker 的使用</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run [-d] [-v localdata:dockerdir] [--network + network_name] [-p localport:dockerport] [-e KEY = VALUE] [--name repository:tag]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-d</strong> 让容器在后台静默运行</li>
+<li><strong>-v</strong> 映射数据卷；**localdata:** 本地数据卷 : **dockerdir:** 容器内目录；本地目录必须以 <code>/</code>  或者 <code>./</code>  开头，必须为绝对路径，如果以名称开头就会被识别为数据卷而非本地目录</li>
+<li><strong>–network</strong> 网络设置；**network_name:** 网络名 可以直接在运行时将该容器加入指定网络</li>
+<li><strong>-p</strong> 把容器内的内部端口映射到外部机器的端口上；**localport:** 本机端口 : **dockerport:** 容器内部端口</li>
+<li><strong>-e</strong> 设置环境变量；**KEY:** 键 : **VALUE:** 值</li>
+<li><strong>–name</strong> 容器名称；**repository:** 镜像名 : **tag:** 镜像的版本</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop [repository]</span><br></pre></td></tr></table></figure>
+<p>停止镜像中的进程</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start [repository]</span><br></pre></td></tr></table></figure>
+<p>启动镜像中的进程</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps [-a]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-a</strong> 查看所有容器的状态</li>
+</ul>
+<p>查看容器的运行状态，默认仅查看正在运行的容器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs [-f] [repository]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-f</strong> 持续输出日志</li>
+<li><strong>repository</strong> 容器名</li>
+</ul>
+<p>输出容器日志</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec [-it] [repository] [bash]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-it</strong> 可对容器内进行命令交互</li>
+<li><strong>bash</strong> 任意指令</li>
+</ul>
+<p>进入容器内部执行指令</p>
+<hr>
+<h2 id="docker镜像"><a class="markdownIt-Anchor" href="#docker镜像">#</a> docker 镜像</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull [repository]</span><br></pre></td></tr></table></figure>
+<p>仅下载镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+<p>查看下载的镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi [repository:version]</span><br></pre></td></tr></table></figure>
+<p>删除下载的镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t [repository] [dockerfile]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>dockerfile</strong> dockerfile 文件所在的目录</li>
+</ul>
+<p>构建镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker save [-o] [name:version]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-o</strong> 选择保存时命名</li>
+</ul>
+<p>保存构建的镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker load [-i / -q] [repository]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>-i</strong> 读 tar 文件</li>
+<li><strong>-q</strong> 静默加载</li>
+</ul>
+<p>加载别人构建的对象</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker push</span><br></pre></td></tr></table></figure>
+<p>将你的镜像推送上去</p>
+<hr>
+<h2 id="docker数据"><a class="markdownIt-Anchor" href="#docker数据">#</a> docker 数据</h2>
+<p>数据卷的英文叫：Volume</p>
+<p>这是一个虚拟的目录，是容器里内目录与本机目录之间映射的桥梁，类似于 Windows 的虚拟硬盘</p>
+<p>默认对应的本机系统的目录： <code>var/lib/docker/volumes</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker volume creat [volume]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>volume</strong> 数据卷名</li>
+</ul>
+<p>创建数据卷</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker volume ls</span><br></pre></td></tr></table></figure>
+<p>查看所有数据卷</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker volume rm [volume]</span><br></pre></td></tr></table></figure>
+<p>删除指定数据卷</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker volume inspect [volume]</span><br></pre></td></tr></table></figure>
+<p>查看某个数据卷详情</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker volume prune [volume]</span><br></pre></td></tr></table></figure>
+<p>清空数据卷</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect [repository]</span><br></pre></td></tr></table></figure>
+<p>查看容器详情</p>
+<hr>
+<h2 id="docker网络"><a class="markdownIt-Anchor" href="#docker网络">#</a> docker 网络</h2>
+<p>默认情况下，所有的容器都是以 bridge 的方式链接到 docker 的一个虚拟网卡上的</p>
+<p>这个网卡的默认网关是 <code>172.17.0.1/16</code> ，我们也可以自定义</p>
+<p>加入自定义网络的容器可以通过网卡互联，容器名之间可以相互访问</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network creat [network]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>network</strong> 网络名称</li>
+</ul>
+<p>创建一个网络</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network ls</span><br></pre></td></tr></table></figure>
+<p>查看所有网络</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network rm [network]</span><br></pre></td></tr></table></figure>
+<p>删除指定网络</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network prune</span><br></pre></td></tr></table></figure>
+<p>删除未使用网络</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network connect [network] [repository]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>repository</strong> 容器名称</li>
+</ul>
+<p>使指定容器加入指定网络</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network disconnect [network] [repository]</span><br></pre></td></tr></table></figure>
+<p>使指定容器离开某网络</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network inspect</span><br></pre></td></tr></table></figure>
+<p>查看网络的详细信息</p>
+<hr>
+<h2 id="dockercompose"><a class="markdownIt-Anchor" href="#dockercompose">#</a> dockerCompose</h2>
+<p>docker compose 通过一个单独的 <code>docker-compose.yml</code>  模板文件来定义一组相关联的应用容器，可以实现多个相互关联容器的快速部署</p>
+<p><strong>关于 docker compose 的内容，这里不多赘述</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker compose [command] [options]</span><br></pre></td></tr></table></figure>
+<p><strong>options：</strong></p>
+<ul>
+<li><strong>-f</strong> 指定 compose 文件的路径及名称</li>
+<li><strong>-p</strong> 指定 project 名称</li>
+<li><strong>-d</strong> 后台静默运行</li>
+</ul>
+<p><strong>command：</strong></p>
+<ul>
+<li><strong>up</strong> 创建并启动所有容器</li>
+<li><strong>down</strong> 停止并移除所有容器与网络</li>
+<li><strong>ps</strong> 列数所有启动的容器</li>
+<li><strong>logs</strong> 查看指定容器的日志</li>
+<li><strong>stop</strong> 停止容器</li>
+<li><strong>start</strong> 启动容器</li>
+<li><strong>restart</strong> 重启容器</li>
+<li><strong>top</strong> 查看运行的进程</li>
+<li><strong>exec</strong> 在指定的正在运行的容器种执行命令</li>
+</ul>
+
+      <div class="tags">
+          <a href="/tags/linux/" rel="tag"><i class="ic i-tag"></i> linux</a>
+          <a href="/tags/docker/" rel="tag"><i class="ic i-tag"></i> docker</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2025-03-06 23:03:53" itemprop="dateModified" datetime="2025-03-06T23:03:53+08:00">2025-03-06</time>
+  </span>
+  <span id="linux-docker/" class="item leancloud_visitors" data-flag-title="Linux docker指令留档" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Candy <i class="ic i-at"><em>@</em></i>糖果罐
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.luckyfuture.cc/linux-docker/" title="Linux docker指令留档">https://blog.luckyfuture.cc/linux-docker/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/Cstudy/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Candquarzy&#x2F;PicGO_For_Candy&#x2F;master&#x2F;img&#x2F;123274153_p0.jpg" title="C语言学习记录 - 新">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 教程</span>
+  <h3>C语言学习记录 - 新</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux%E6%8C%87%E4%BB%A4%E9%9B%86%E5%90%88"><span class="toc-number">1.</span> <span class="toc-text"> Linux 指令集合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BB%E5%BD%95"><span class="toc-number">1.1.</span> <span class="toc-text"> 登录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 登录系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95"><span class="toc-number">1.1.2.</span> <span class="toc-text"> ROOT 用户登录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vi"><span class="toc-number">1.2.</span> <span class="toc-text"> 文本编辑器 vi</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vi%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.1.</span> <span class="toc-text"> vi 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 命令模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 插入模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E8%A1%8C%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.4.</span> <span class="toc-text"> 底行模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vi%E7%BC%96%E8%BE%91%E5%99%A8%E5%85%B6%E4%BB%96"><span class="toc-number">1.2.5.</span> <span class="toc-text"> vi 编辑器其他</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.6.</span> <span class="toc-text"> 替换内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.3.</span> <span class="toc-text"> 文件系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cd%E5%91%BD%E4%BB%A4-%E6%9B%B4%E6%94%B9%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.3.1.</span> <span class="toc-text"> cd 命令 - 更改工作目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E4%B8%8E%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 绝对路径与相对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ls%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">1.3.3.</span> <span class="toc-text"> ls 命令 - 查看文件 &#x2F; 文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp%E5%91%BD%E4%BB%A4-%E5%A4%8D%E5%88%B6"><span class="toc-number">1.3.4.</span> <span class="toc-text"> cp 命令 - 复制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mv%E5%91%BD%E4%BB%A4-%E7%A7%BB%E5%8A%A8%E9%87%8D%E5%91%BD%E5%90%8D"><span class="toc-number">1.3.5.</span> <span class="toc-text"> mv 命令 - 移动 &#x2F; 重命名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grep%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE"><span class="toc-number">1.3.6.</span> <span class="toc-text"> grep 命令 - 查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wc%E5%91%BD%E4%BB%A4-%E5%85%B3%E9%94%AE%E5%AD%97%E6%95%B0%E9%87%8F%E7%BB%9F%E8%AE%A1"><span class="toc-number">1.3.7.</span> <span class="toc-text"> wc 命令 - 关键字数量统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ln%E5%91%BD%E4%BB%A4-%E5%88%9B%E5%BB%BA%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F"><span class="toc-number">1.3.8.</span> <span class="toc-text"> ln 命令 - 创建 “快捷方式”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scp%E5%91%BD%E4%BB%A4-%E8%BF%9C%E7%A8%8B%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6"><span class="toc-number">1.3.9.</span> <span class="toc-text"> scp 命令 - 远程拷贝文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#which%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4"><span class="toc-number">1.3.10.</span> <span class="toc-text"> which 命令 - 查找命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6"><span class="toc-number">1.3.11.</span> <span class="toc-text"> find 命令 - 查找文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.</span> <span class="toc-text"> 用户</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 添加用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 更新用户密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.3.</span> <span class="toc-text"> 删除用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.4.</span> <span class="toc-text"> 切换用户</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.5.</span> <span class="toc-text"> 用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 查看所有用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.5.2.</span> <span class="toc-text"> 新增 &#x2F; 删除用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%8F%98%E7%94%A8%E6%88%B7%E6%89%80%E5%9C%A8%E7%BB%84"><span class="toc-number">1.5.3.</span> <span class="toc-text"> 改变用户所在组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-number">1.6.</span> <span class="toc-text"> 文件权限</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90"><span class="toc-number">1.6.1.</span> <span class="toc-text"> 用户权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90-2"><span class="toc-number">1.6.2.</span> <span class="toc-text"> 文件权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#drwxrw-rw-"><span class="toc-number">1.6.3.</span> <span class="toc-text"> drwxrw-rw-</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E6%89%80%E5%AF%B9%E5%BA%94%E7%9A%84%E6%9D%83%E9%99%90"><span class="toc-number">1.6.4.</span> <span class="toc-text"> 数字所对应的权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90"><span class="toc-number">1.6.5.</span> <span class="toc-text"> 修改文件访问权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%BD%92%E5%B1%9E%E6%9D%83"><span class="toc-number">1.6.6.</span> <span class="toc-text"> 文件归属权</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo"><span class="toc-number">1.7.</span> <span class="toc-text"> sudo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.8.</span> <span class="toc-text"> 进程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ps%E5%91%BD%E4%BB%A4-%E8%BF%9B%E7%A8%8B%E5%91%BD%E4%BB%A4"><span class="toc-number">1.8.1.</span> <span class="toc-text"> ps 命令 - 进程命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nohup-%E9%9D%99%E9%BB%98%E8%BF%90%E8%A1%8C"><span class="toc-number">1.8.2.</span> <span class="toc-text"> nohup - 静默运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kill%E5%91%BD%E4%BB%A4-%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.8.3.</span> <span class="toc-text"> kill 命令 - 杀死进程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">1.9.</span> <span class="toc-text"> 重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#echo%E5%91%BD%E4%BB%A4"><span class="toc-number">1.9.1.</span> <span class="toc-text"> echo 命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C"><span class="toc-number">1.9.2.</span> <span class="toc-text"> &gt; 和 &gt;&gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tail%E6%8C%87%E4%BB%A4"><span class="toc-number">1.9.3.</span> <span class="toc-text"> tail 指令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E9%81%93%E7%AC%A6"><span class="toc-number">1.10.</span> <span class="toc-text"> 管道符 |</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%8C%85%E4%B8%8E%E5%8E%8B%E7%BC%A9"><span class="toc-number">1.11.</span> <span class="toc-text"> 打包与压缩</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tar%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9tar%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.11.1.</span> <span class="toc-text"> tar 命令 - 针对 tar 压缩包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gzip%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9gz%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.11.2.</span> <span class="toc-text"> gzip 命令 - 针对 gz 压缩包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zip%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9zip%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.11.3.</span> <span class="toc-text"> zip 命令 - 针对 zip 压缩包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.</span> <span class="toc-text"> 系统相关命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#top%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E8%BF%9B%E7%A8%8B%E4%BF%A1%E6%81%AF"><span class="toc-number">1.12.1.</span> <span class="toc-text"> top 命令 - 查看系统进程信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.2.</span> <span class="toc-text"> 网络相关命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wget-curl%E5%91%BD%E4%BB%A4-%E7%BD%91%E9%A1%B5%E4%B8%8B%E8%BD%BD%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.3.</span> <span class="toc-text"> wget &#x2F;curl 命令 - 网页 &#x2F; 下载命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#systemctl-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.4.</span> <span class="toc-text"> systemctl 系统服务命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#apt%E6%9C%8D%E5%8A%A1yum"><span class="toc-number">1.12.5.</span> <span class="toc-text"> apt 服务（yum）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%B6%E5%8C%BA"><span class="toc-number">1.12.6.</span> <span class="toc-text"> 时间和时区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.7.</span> <span class="toc-text"> 磁盘命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#screen%E5%91%BD%E4%BB%A4-%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.</span> <span class="toc-text"> Screen 命令 - 屏幕</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.1.</span> <span class="toc-text"> 创建屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E5%B1%8F%E5%B9%95%E4%BD%86%E4%B8%8D%E5%88%A0%E9%99%A4%E5%BD%93%E5%89%8D%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.2.</span> <span class="toc-text"> 退出屏幕但不删除当前屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.3.</span> <span class="toc-text"> 显示所有屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%B1%8F%E5%B9%95%E5%B9%B6%E5%88%A0%E9%99%A4%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E7%9A%84%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.4.</span> <span class="toc-text"> 检查屏幕，并删除不能使用的屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.5.</span> <span class="toc-text"> 删除屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.13.6.</span> <span class="toc-text"> 环境变量</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docker%E6%8C%87%E4%BB%A4%E9%9B%86%E5%90%88"><span class="toc-number">2.</span> <span class="toc-text"> Docker 指令集合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.1.</span> <span class="toc-text"> docker 服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">2.2.</span> <span class="toc-text"> docker 的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E9%95%9C%E5%83%8F"><span class="toc-number">2.3.</span> <span class="toc-text"> docker 镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E6%95%B0%E6%8D%AE"><span class="toc-number">2.4.</span> <span class="toc-text"> docker 数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E7%BD%91%E7%BB%9C"><span class="toc-number">2.5.</span> <span class="toc-text"> docker 网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dockercompose"><span class="toc-number">2.6.</span> <span class="toc-text"> dockerCompose</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/linux-docker/" rel="bookmark" title="Linux docker指令留档">Linux docker指令留档</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Candy"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Candy</p>
+  <div class="description" itemprop="description">不向焦虑与抑郁投降 这个世界终会有我们存在的地方</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">5</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">6</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">10</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbmRxdWFyenk=" title="https:&#x2F;&#x2F;github.com&#x2F;Candquarzy"><i class="ic i-github"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOkNhbmR5UXVhcnR6X3F3cUBvdXRsb29rLmNvbQ==" title="mailto:CandyQuartz_qwq@outlook.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/test/" title="这只是一个测试页面的说">这只是一个测试页面的说</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/windows/" title="分类于 windows">windows</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/windows/linux/" title="分类于 linux">linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/windows/linux/%E7%BC%96%E7%A8%8B/" title="分类于 编程">编程</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/windows/linux/%E7%BC%96%E7%A8%8B/%E6%95%99%E7%A8%8B/" title="分类于 教程">教程</a>
+</div>
+
+    <span><a href="/Cstudy/" title="C语言学习记录 - 新">C语言学习记录 - 新</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
+</div>
+
+    <span><a href="/died/" title="抑郁 - 自杀 - 死亡？ - 重生？">抑郁 - 自杀 - 死亡？ - 重生？</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/linux/" title="分类于 linux">linux</a>
+</div>
+
+    <span><a href="/linux-docker/" title="Linux docker指令留档">Linux docker指令留档</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/windows/" title="分类于 windows">windows</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/windows/linux/" title="分类于 linux">linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/windows/linux/%E7%BC%96%E7%A8%8B/" title="分类于 编程">编程</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/windows/linux/%E7%BC%96%E7%A8%8B/%E6%95%99%E7%A8%8B/" title="分类于 教程">教程</a>
+</div>
+
+    <span><a href="/Cprogram/" title="C语言学习记录 - 旧">C语言学习记录 - 旧</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Candy @ Candy_Can🍥</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">62k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">57 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'linux-docker/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
