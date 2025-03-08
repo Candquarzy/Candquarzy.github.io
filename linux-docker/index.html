@@ -164,12 +164,10 @@ Candy_Can🍥 = 糖果罐</title>
     <blockquote>
 <p><strong>不保证内容 100% 准确无误！！！如有错误欢迎留言</strong></p>
 </blockquote>
-<hr>
 <h1 id="linux指令集合"><a class="markdownIt-Anchor" href="#linux指令集合">#</a> Linux 指令集合</h1>
-<hr>
-<h2 id="登录"><a class="markdownIt-Anchor" href="#登录">#</a> 登录</h2>
+<br>
 <h3 id="登录系统"><a class="markdownIt-Anchor" href="#登录系统">#</a> 登录系统</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh username@IP -p port</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh username@IP -p port</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>username</strong> 用户名</li>
 <li><strong>IP</strong> 服务器 IP</li>
@@ -188,8 +186,9 @@ Candy_Can🍥 = 糖果罐</title>
 </ol>
 <p>即可重置 ROOT 账户的密码</p>
 <p>接着执行命令 <code>su - root</code>  即可切换为 ROOT 账号</p>
-<hr>
+<br>
 <h2 id="文本编辑器vi"><a class="markdownIt-Anchor" href="#文本编辑器vi">#</a> 文本编辑器 vi</h2>
+<hr>
 <h3 id="vi文件"><a class="markdownIt-Anchor" href="#vi文件">#</a> vi 文件</h3>
 <ul>
 <li>如果命令指定的文件不存在，则创建文件</li>
@@ -258,8 +257,9 @@ Candy_Can🍥 = 糖果罐</title>
 <li><strong>replace</strong> 替换后的内容</li>
 <li><strong>mode</strong> 替换模式</li>
 </ul>
-<hr>
+<br>
 <h2 id="文件系统"><a class="markdownIt-Anchor" href="#文件系统">#</a> 文件系统</h2>
+<hr>
 <p><strong>Linux 的文件路径是区分大小写的</strong></p>
 <p><strong>pwd</strong> 查询当前工作目录</p>
 <h3 id="cd命令-更改工作目录"><a class="markdownIt-Anchor" href="#cd命令-更改工作目录">#</a> cd 命令 - 更改工作目录</h3>
@@ -362,8 +362,9 @@ Candy_Can🍥 = 糖果罐</title>
 <li><strong>n</strong> 代表大小中数字部分</li>
 <li><strong>kMG</strong> k: 代表 kb，需小写 k；M: 代表 MB；G: 代表 GB</li>
 </ul>
-<hr>
+<br>
 <h2 id="用户"><a class="markdownIt-Anchor" href="#用户">#</a> 用户</h2>
+<hr>
 <p><strong>ROOT 账号拥有系统的最高权限</strong></p>
 <p>每一个用户账号都对应一个用户 ID，其被存储在文件 <code>/etc/passwd</code>  中</p>
 <h3 id="添加用户"><a class="markdownIt-Anchor" href="#添加用户">#</a> 添加用户</h3>
@@ -396,8 +397,9 @@ Candy_Can🍥 = 糖果罐</title>
 <p>若一直套娃切换，系统会保留层级关系；在使用 <code>ctrl+D</code>  时会退出当前账号返回上一个账号</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getent passwd</span><br></pre></td></tr></table></figure>
 <p>查看当前系统中有哪些用户</p>
-<hr>
+<br>
 <h2 id="用户组"><a class="markdownIt-Anchor" href="#用户组">#</a> 用户组</h2>
+<hr>
 <h3 id="查看所有用户组"><a class="markdownIt-Anchor" href="#查看所有用户组">#</a> 查看所有用户组</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groups</span><br></pre></td></tr></table></figure>
 <p>查看当前账号用户组</p>
@@ -433,8 +435,9 @@ Candy_Can🍥 = 糖果罐</title>
 <p>将用户添加的指定的组中</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -G [groupname1] [groupname2]… [username]</span><br></pre></td></tr></table></figure>
 <p>将用户设定到这些组当中</p>
-<hr>
+<br>
 <h2 id="文件权限"><a class="markdownIt-Anchor" href="#文件权限">#</a> 文件权限</h2>
+<hr>
 <p>在 Linux 系统中，权限通常可以按照用户权限分为 3 种类型，以及对文件的 3 种权限方式</p>
 <h3 id="用户权限"><a class="markdownIt-Anchor" href="#用户权限">#</a> 用户权限</h3>
 <ul>
@@ -515,8 +518,9 @@ Candy_Can🍥 = 糖果罐</title>
 <li><strong>groups</strong> 组名称</li>
 <li><strong>file</strong> 文件名称</li>
 </ul>
-<hr>
+<br>
 <h2 id="sudo"><a class="markdownIt-Anchor" href="#sudo">#</a> sudo</h2>
+<hr>
 <p>sudo 是以 root 账号的权限执行命令一次</p>
 <p>哪些账户可以使用 sudo 权限来运行是在 <code>/etc/sudoers</code>  里进行配置的</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo -u [user] [command]</span><br></pre></td></tr></table></figure>
@@ -529,8 +533,9 @@ Candy_Can🍥 = 糖果罐</title>
 <blockquote>
 <p>可以直接将某个用户加入 sudo 用户组（使用 usermod 命令添加），就可以在任何地方，以任何账号权限，运行任何程序</p>
 </blockquote>
-<hr>
+<br>
 <h2 id="进程"><a class="markdownIt-Anchor" href="#进程">#</a> 进程</h2>
+<hr>
 <h3 id="ps命令-进程命令"><a class="markdownIt-Anchor" href="#ps命令-进程命令">#</a> ps 命令 - 进程命令</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps</span><br></pre></td></tr></table></figure>
 <p>查看进程信息</p>
@@ -565,8 +570,9 @@ Candy_Can🍥 = 糖果罐</title>
 <li><strong>PID / Name</strong> 该程序的 PID 或程序名</li>
 <li><strong>-9</strong> 表示强行杀死</li>
 </ul>
-<hr>
+<br>
 <h2 id="重定向"><a class="markdownIt-Anchor" href="#重定向">#</a> 重定向</h2>
+<hr>
 <p>在 shell 中输入命令时，可以使用 <code>&gt;</code>  符号将输入命令后的执行结果信息输出到指定文件中</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps &gt; [out]</span><br></pre></td></tr></table></figure>
 <p>上面的命令会将原本要输出在 stdout（可以理解为终端的输出）输出到文件中</p>
@@ -601,16 +607,18 @@ Candy_Can🍥 = 糖果罐</title>
 </ul>
 <p>例如，查看 text.txt 文件后 5 行的内容</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -5 text.txt</span><br></pre></td></tr></table></figure>
-<hr>
+<br>
 <h2 id="管道符"><a class="markdownIt-Anchor" href="#管道符">#</a> 管道符 |</h2>
+<hr>
 <p>在 Linux 操作系统中，有时候需要将一个命令输出的内容作为另一个命令的输入内容，可以使用 <code>|</code>  操作符来实现，并且管道符可以嵌套</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">icommand | [othercommand1] | [othercommand2]</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>icommand</strong> 要输出的命令</li>
 <li><strong>othercommand</strong> 其他命令</li>
 </ul>
-<hr>
+<br>
 <h2 id="打包与压缩"><a class="markdownIt-Anchor" href="#打包与压缩">#</a> 打包与压缩</h2>
+<hr>
 <h3 id="tar命令-针对tar压缩包"><a class="markdownIt-Anchor" href="#tar命令-针对tar压缩包">#</a> tar 命令 - 针对 tar 压缩包</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar [-c -v -x -f -z -C] [para0] [para1] […]</span><br></pre></td></tr></table></figure>
 <ul>
@@ -653,8 +661,9 @@ Candy_Can🍥 = 糖果罐</title>
 <p>压缩一个 zip 格式的压缩包</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip [file.zip]</span><br></pre></td></tr></table></figure>
 <p>解压缩一个 zip 格式的压缩包</p>
-<hr>
+<br>
 <h2 id="系统相关命令"><a class="markdownIt-Anchor" href="#系统相关命令">#</a> 系统相关命令</h2>
+<hr>
 <h3 id="top命令-查看系统进程信息"><a class="markdownIt-Anchor" href="#top命令-查看系统进程信息">#</a> top 命令 - 查看系统进程信息</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top [-p -d -c -n -b -i -u] [PID]</span><br></pre></td></tr></table></figure>
 <ul>
@@ -774,8 +783,9 @@ Candy_Can🍥 = 糖果罐</title>
 <li><strong>num1</strong> 数字，表示刷新间隔</li>
 <li><strong>num2</strong> 数字，表示刷新次数</li>
 </ul>
-<hr>
+<br>
 <h2 id="screen命令-屏幕"><a class="markdownIt-Anchor" href="#screen命令-屏幕">#</a> Screen 命令 - 屏幕</h2>
+<hr>
 <h3 id="创建屏幕"><a class="markdownIt-Anchor" href="#创建屏幕">#</a> 创建屏幕</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S [screen_name]</span><br></pre></td></tr></table></figure>
 <ul>
@@ -818,9 +828,9 @@ Candy_Can🍥 = 糖果罐</title>
 <li>针对所有用户，即系统环境变量： <code>/etc/profile</code>  中的 source 配置文件</li>
 </ol>
 <p>这些修改都是立即生效的</p>
-<hr>
+<br>
+<br>
 <h1 id="docker指令集合"><a class="markdownIt-Anchor" href="#docker指令集合">#</a> Docker 指令集合</h1>
-<hr>
 <h2 id="docker服务"><a class="markdownIt-Anchor" href="#docker服务">#</a> docker 服务</h2>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
 <p>启动 docker 服务</p>
@@ -830,8 +840,9 @@ Candy_Can🍥 = 糖果罐</title>
 <p>重启 docker 服务</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable docker</span><br></pre></td></tr></table></figure>
 <p>设置 docker 服务开机自启</p>
-<hr>
+<br>
 <h2 id="docker的使用"><a class="markdownIt-Anchor" href="#docker的使用">#</a> docker 的使用</h2>
+<hr>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run [-d] [-v localdata:dockerdir] [--network + network_name] [-p localport:dockerport] [-e KEY = VALUE] [--name repository:tag]</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>-d</strong> 让容器在后台静默运行</li>
@@ -862,8 +873,9 @@ Candy_Can🍥 = 糖果罐</title>
 <li><strong>bash</strong> 任意指令</li>
 </ul>
 <p>进入容器内部执行指令</p>
-<hr>
+<br>
 <h2 id="docker镜像"><a class="markdownIt-Anchor" href="#docker镜像">#</a> docker 镜像</h2>
+<hr>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull [repository]</span><br></pre></td></tr></table></figure>
 <p>仅下载镜像</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
@@ -888,8 +900,9 @@ Candy_Can🍥 = 糖果罐</title>
 <p>加载别人构建的对象</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker push</span><br></pre></td></tr></table></figure>
 <p>将你的镜像推送上去</p>
-<hr>
+<br>
 <h2 id="docker数据"><a class="markdownIt-Anchor" href="#docker数据">#</a> docker 数据</h2>
+<hr>
 <p>数据卷的英文叫：Volume</p>
 <p>这是一个虚拟的目录，是容器里内目录与本机目录之间映射的桥梁，类似于 Windows 的虚拟硬盘</p>
 <p>默认对应的本机系统的目录： <code>var/lib/docker/volumes</code></p>
@@ -908,8 +921,9 @@ Candy_Can🍥 = 糖果罐</title>
 <p>清空数据卷</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect [repository]</span><br></pre></td></tr></table></figure>
 <p>查看容器详情</p>
-<hr>
+<br>
 <h2 id="docker网络"><a class="markdownIt-Anchor" href="#docker网络">#</a> docker 网络</h2>
+<hr>
 <p>默认情况下，所有的容器都是以 bridge 的方式链接到 docker 的一个虚拟网卡上的</p>
 <p>这个网卡的默认网关是 <code>172.17.0.1/16</code> ，我们也可以自定义</p>
 <p>加入自定义网络的容器可以通过网卡互联，容器名之间可以相互访问</p>
@@ -933,8 +947,9 @@ Candy_Can🍥 = 糖果罐</title>
 <p>使指定容器离开某网络</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network inspect</span><br></pre></td></tr></table></figure>
 <p>查看网络的详细信息</p>
-<hr>
+<br>
 <h2 id="dockercompose"><a class="markdownIt-Anchor" href="#dockercompose">#</a> dockerCompose</h2>
+<hr>
 <p>docker compose 通过一个单独的 <code>docker-compose.yml</code>  模板文件来定义一组相关联的应用容器，可以实现多个相互关联容器的快速部署</p>
 <p><strong>关于 docker compose 的内容，这里不多赘述</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker compose [command] [options]</span><br></pre></td></tr></table></figure>
@@ -971,7 +986,7 @@ Candy_Can🍥 = 糖果罐</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2025-03-06 23:03:53" itemprop="dateModified" datetime="2025-03-06T23:03:53+08:00">2025-03-06</time>
+    <time title="修改时间：2025-03-08 22:20:23" itemprop="dateModified" datetime="2025-03-08T22:20:23+08:00">2025-03-08</time>
   </span>
   <span id="linux-docker/" class="item leancloud_visitors" data-flag-title="Linux docker指令留档" title="阅读次数">
       <span class="icon">
@@ -1035,7 +1050,7 @@ Candy_Can🍥 = 糖果罐</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux%E6%8C%87%E4%BB%A4%E9%9B%86%E5%90%88"><span class="toc-number">1.</span> <span class="toc-text"> Linux 指令集合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BB%E5%BD%95"><span class="toc-number">1.1.</span> <span class="toc-text"> 登录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 登录系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95"><span class="toc-number">1.1.2.</span> <span class="toc-text"> ROOT 用户登录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vi"><span class="toc-number">1.2.</span> <span class="toc-text"> 文本编辑器 vi</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vi%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.1.</span> <span class="toc-text"> vi 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 命令模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 插入模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E8%A1%8C%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.4.</span> <span class="toc-text"> 底行模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vi%E7%BC%96%E8%BE%91%E5%99%A8%E5%85%B6%E4%BB%96"><span class="toc-number">1.2.5.</span> <span class="toc-text"> vi 编辑器其他</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.6.</span> <span class="toc-text"> 替换内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.3.</span> <span class="toc-text"> 文件系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cd%E5%91%BD%E4%BB%A4-%E6%9B%B4%E6%94%B9%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.3.1.</span> <span class="toc-text"> cd 命令 - 更改工作目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E4%B8%8E%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 绝对路径与相对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ls%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">1.3.3.</span> <span class="toc-text"> ls 命令 - 查看文件 &#x2F; 文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp%E5%91%BD%E4%BB%A4-%E5%A4%8D%E5%88%B6"><span class="toc-number">1.3.4.</span> <span class="toc-text"> cp 命令 - 复制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mv%E5%91%BD%E4%BB%A4-%E7%A7%BB%E5%8A%A8%E9%87%8D%E5%91%BD%E5%90%8D"><span class="toc-number">1.3.5.</span> <span class="toc-text"> mv 命令 - 移动 &#x2F; 重命名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grep%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE"><span class="toc-number">1.3.6.</span> <span class="toc-text"> grep 命令 - 查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wc%E5%91%BD%E4%BB%A4-%E5%85%B3%E9%94%AE%E5%AD%97%E6%95%B0%E9%87%8F%E7%BB%9F%E8%AE%A1"><span class="toc-number">1.3.7.</span> <span class="toc-text"> wc 命令 - 关键字数量统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ln%E5%91%BD%E4%BB%A4-%E5%88%9B%E5%BB%BA%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F"><span class="toc-number">1.3.8.</span> <span class="toc-text"> ln 命令 - 创建 “快捷方式”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scp%E5%91%BD%E4%BB%A4-%E8%BF%9C%E7%A8%8B%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6"><span class="toc-number">1.3.9.</span> <span class="toc-text"> scp 命令 - 远程拷贝文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#which%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4"><span class="toc-number">1.3.10.</span> <span class="toc-text"> which 命令 - 查找命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6"><span class="toc-number">1.3.11.</span> <span class="toc-text"> find 命令 - 查找文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.</span> <span class="toc-text"> 用户</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 添加用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 更新用户密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.3.</span> <span class="toc-text"> 删除用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.4.</span> <span class="toc-text"> 切换用户</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.5.</span> <span class="toc-text"> 用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 查看所有用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.5.2.</span> <span class="toc-text"> 新增 &#x2F; 删除用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%8F%98%E7%94%A8%E6%88%B7%E6%89%80%E5%9C%A8%E7%BB%84"><span class="toc-number">1.5.3.</span> <span class="toc-text"> 改变用户所在组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-number">1.6.</span> <span class="toc-text"> 文件权限</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90"><span class="toc-number">1.6.1.</span> <span class="toc-text"> 用户权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90-2"><span class="toc-number">1.6.2.</span> <span class="toc-text"> 文件权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#drwxrw-rw-"><span class="toc-number">1.6.3.</span> <span class="toc-text"> drwxrw-rw-</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E6%89%80%E5%AF%B9%E5%BA%94%E7%9A%84%E6%9D%83%E9%99%90"><span class="toc-number">1.6.4.</span> <span class="toc-text"> 数字所对应的权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90"><span class="toc-number">1.6.5.</span> <span class="toc-text"> 修改文件访问权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%BD%92%E5%B1%9E%E6%9D%83"><span class="toc-number">1.6.6.</span> <span class="toc-text"> 文件归属权</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo"><span class="toc-number">1.7.</span> <span class="toc-text"> sudo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.8.</span> <span class="toc-text"> 进程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ps%E5%91%BD%E4%BB%A4-%E8%BF%9B%E7%A8%8B%E5%91%BD%E4%BB%A4"><span class="toc-number">1.8.1.</span> <span class="toc-text"> ps 命令 - 进程命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nohup-%E9%9D%99%E9%BB%98%E8%BF%90%E8%A1%8C"><span class="toc-number">1.8.2.</span> <span class="toc-text"> nohup - 静默运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kill%E5%91%BD%E4%BB%A4-%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.8.3.</span> <span class="toc-text"> kill 命令 - 杀死进程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">1.9.</span> <span class="toc-text"> 重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#echo%E5%91%BD%E4%BB%A4"><span class="toc-number">1.9.1.</span> <span class="toc-text"> echo 命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C"><span class="toc-number">1.9.2.</span> <span class="toc-text"> &gt; 和 &gt;&gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tail%E6%8C%87%E4%BB%A4"><span class="toc-number">1.9.3.</span> <span class="toc-text"> tail 指令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E9%81%93%E7%AC%A6"><span class="toc-number">1.10.</span> <span class="toc-text"> 管道符 |</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%8C%85%E4%B8%8E%E5%8E%8B%E7%BC%A9"><span class="toc-number">1.11.</span> <span class="toc-text"> 打包与压缩</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tar%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9tar%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.11.1.</span> <span class="toc-text"> tar 命令 - 针对 tar 压缩包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gzip%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9gz%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.11.2.</span> <span class="toc-text"> gzip 命令 - 针对 gz 压缩包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zip%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9zip%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.11.3.</span> <span class="toc-text"> zip 命令 - 针对 zip 压缩包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.</span> <span class="toc-text"> 系统相关命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#top%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E8%BF%9B%E7%A8%8B%E4%BF%A1%E6%81%AF"><span class="toc-number">1.12.1.</span> <span class="toc-text"> top 命令 - 查看系统进程信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.2.</span> <span class="toc-text"> 网络相关命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wget-curl%E5%91%BD%E4%BB%A4-%E7%BD%91%E9%A1%B5%E4%B8%8B%E8%BD%BD%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.3.</span> <span class="toc-text"> wget &#x2F;curl 命令 - 网页 &#x2F; 下载命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#systemctl-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.4.</span> <span class="toc-text"> systemctl 系统服务命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#apt%E6%9C%8D%E5%8A%A1yum"><span class="toc-number">1.12.5.</span> <span class="toc-text"> apt 服务（yum）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%B6%E5%8C%BA"><span class="toc-number">1.12.6.</span> <span class="toc-text"> 时间和时区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E5%91%BD%E4%BB%A4"><span class="toc-number">1.12.7.</span> <span class="toc-text"> 磁盘命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#screen%E5%91%BD%E4%BB%A4-%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.</span> <span class="toc-text"> Screen 命令 - 屏幕</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.1.</span> <span class="toc-text"> 创建屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E5%B1%8F%E5%B9%95%E4%BD%86%E4%B8%8D%E5%88%A0%E9%99%A4%E5%BD%93%E5%89%8D%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.2.</span> <span class="toc-text"> 退出屏幕但不删除当前屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.3.</span> <span class="toc-text"> 显示所有屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%B1%8F%E5%B9%95%E5%B9%B6%E5%88%A0%E9%99%A4%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E7%9A%84%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.4.</span> <span class="toc-text"> 检查屏幕，并删除不能使用的屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%B1%8F%E5%B9%95"><span class="toc-number">1.13.5.</span> <span class="toc-text"> 删除屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.13.6.</span> <span class="toc-text"> 环境变量</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docker%E6%8C%87%E4%BB%A4%E9%9B%86%E5%90%88"><span class="toc-number">2.</span> <span class="toc-text"> Docker 指令集合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.1.</span> <span class="toc-text"> docker 服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">2.2.</span> <span class="toc-text"> docker 的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E9%95%9C%E5%83%8F"><span class="toc-number">2.3.</span> <span class="toc-text"> docker 镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E6%95%B0%E6%8D%AE"><span class="toc-number">2.4.</span> <span class="toc-text"> docker 数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E7%BD%91%E7%BB%9C"><span class="toc-number">2.5.</span> <span class="toc-text"> docker 网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dockercompose"><span class="toc-number">2.6.</span> <span class="toc-text"> dockerCompose</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux%E6%8C%87%E4%BB%A4%E9%9B%86%E5%90%88"><span class="toc-number">1.</span> <span class="toc-text"> Linux 指令集合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.0.1.</span> <span class="toc-text"> 登录系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95"><span class="toc-number">1.0.2.</span> <span class="toc-text"> ROOT 用户登录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vi"><span class="toc-number">1.1.</span> <span class="toc-text"> 文本编辑器 vi</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vi%E6%96%87%E4%BB%B6"><span class="toc-number">1.1.1.</span> <span class="toc-text"> vi 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 命令模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 插入模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E8%A1%8C%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.1.4.</span> <span class="toc-text"> 底行模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vi%E7%BC%96%E8%BE%91%E5%99%A8%E5%85%B6%E4%BB%96"><span class="toc-number">1.1.5.</span> <span class="toc-text"> vi 编辑器其他</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2%E5%86%85%E5%AE%B9"><span class="toc-number">1.1.6.</span> <span class="toc-text"> 替换内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.</span> <span class="toc-text"> 文件系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cd%E5%91%BD%E4%BB%A4-%E6%9B%B4%E6%94%B9%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.2.1.</span> <span class="toc-text"> cd 命令 - 更改工作目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E4%B8%8E%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 绝对路径与相对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ls%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">1.2.3.</span> <span class="toc-text"> ls 命令 - 查看文件 &#x2F; 文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp%E5%91%BD%E4%BB%A4-%E5%A4%8D%E5%88%B6"><span class="toc-number">1.2.4.</span> <span class="toc-text"> cp 命令 - 复制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mv%E5%91%BD%E4%BB%A4-%E7%A7%BB%E5%8A%A8%E9%87%8D%E5%91%BD%E5%90%8D"><span class="toc-number">1.2.5.</span> <span class="toc-text"> mv 命令 - 移动 &#x2F; 重命名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grep%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE"><span class="toc-number">1.2.6.</span> <span class="toc-text"> grep 命令 - 查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wc%E5%91%BD%E4%BB%A4-%E5%85%B3%E9%94%AE%E5%AD%97%E6%95%B0%E9%87%8F%E7%BB%9F%E8%AE%A1"><span class="toc-number">1.2.7.</span> <span class="toc-text"> wc 命令 - 关键字数量统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ln%E5%91%BD%E4%BB%A4-%E5%88%9B%E5%BB%BA%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.8.</span> <span class="toc-text"> ln 命令 - 创建 “快捷方式”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scp%E5%91%BD%E4%BB%A4-%E8%BF%9C%E7%A8%8B%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.9.</span> <span class="toc-text"> scp 命令 - 远程拷贝文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#which%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.10.</span> <span class="toc-text"> which 命令 - 查找命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find%E5%91%BD%E4%BB%A4-%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.11.</span> <span class="toc-text"> find 命令 - 查找文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7"><span class="toc-number">1.3.</span> <span class="toc-text"> 用户</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 添加用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 更新用户密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 删除用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 切换用户</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.4.</span> <span class="toc-text"> 用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 查看所有用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 新增 &#x2F; 删除用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%8F%98%E7%94%A8%E6%88%B7%E6%89%80%E5%9C%A8%E7%BB%84"><span class="toc-number">1.4.3.</span> <span class="toc-text"> 改变用户所在组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-number">1.5.</span> <span class="toc-text"> 文件权限</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 用户权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90-2"><span class="toc-number">1.5.2.</span> <span class="toc-text"> 文件权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#drwxrw-rw-"><span class="toc-number">1.5.3.</span> <span class="toc-text"> drwxrw-rw-</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E6%89%80%E5%AF%B9%E5%BA%94%E7%9A%84%E6%9D%83%E9%99%90"><span class="toc-number">1.5.4.</span> <span class="toc-text"> 数字所对应的权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90"><span class="toc-number">1.5.5.</span> <span class="toc-text"> 修改文件访问权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%BD%92%E5%B1%9E%E6%9D%83"><span class="toc-number">1.5.6.</span> <span class="toc-text"> 文件归属权</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo"><span class="toc-number">1.6.</span> <span class="toc-text"> sudo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.7.</span> <span class="toc-text"> 进程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ps%E5%91%BD%E4%BB%A4-%E8%BF%9B%E7%A8%8B%E5%91%BD%E4%BB%A4"><span class="toc-number">1.7.1.</span> <span class="toc-text"> ps 命令 - 进程命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nohup-%E9%9D%99%E9%BB%98%E8%BF%90%E8%A1%8C"><span class="toc-number">1.7.2.</span> <span class="toc-text"> nohup - 静默运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kill%E5%91%BD%E4%BB%A4-%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.7.3.</span> <span class="toc-text"> kill 命令 - 杀死进程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">1.8.</span> <span class="toc-text"> 重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#echo%E5%91%BD%E4%BB%A4"><span class="toc-number">1.8.1.</span> <span class="toc-text"> echo 命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C"><span class="toc-number">1.8.2.</span> <span class="toc-text"> &gt; 和 &gt;&gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tail%E6%8C%87%E4%BB%A4"><span class="toc-number">1.8.3.</span> <span class="toc-text"> tail 指令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E9%81%93%E7%AC%A6"><span class="toc-number">1.9.</span> <span class="toc-text"> 管道符 |</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%8C%85%E4%B8%8E%E5%8E%8B%E7%BC%A9"><span class="toc-number">1.10.</span> <span class="toc-text"> 打包与压缩</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tar%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9tar%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.10.1.</span> <span class="toc-text"> tar 命令 - 针对 tar 压缩包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gzip%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9gz%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.10.2.</span> <span class="toc-text"> gzip 命令 - 针对 gz 压缩包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zip%E5%91%BD%E4%BB%A4-%E9%92%88%E5%AF%B9zip%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-number">1.10.3.</span> <span class="toc-text"> zip 命令 - 针对 zip 压缩包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-number">1.11.</span> <span class="toc-text"> 系统相关命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#top%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E8%BF%9B%E7%A8%8B%E4%BF%A1%E6%81%AF"><span class="toc-number">1.11.1.</span> <span class="toc-text"> top 命令 - 查看系统进程信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-number">1.11.2.</span> <span class="toc-text"> 网络相关命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wget-curl%E5%91%BD%E4%BB%A4-%E7%BD%91%E9%A1%B5%E4%B8%8B%E8%BD%BD%E5%91%BD%E4%BB%A4"><span class="toc-number">1.11.3.</span> <span class="toc-text"> wget &#x2F;curl 命令 - 网页 &#x2F; 下载命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#systemctl-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%91%BD%E4%BB%A4"><span class="toc-number">1.11.4.</span> <span class="toc-text"> systemctl 系统服务命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#apt%E6%9C%8D%E5%8A%A1yum"><span class="toc-number">1.11.5.</span> <span class="toc-text"> apt 服务（yum）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%B6%E5%8C%BA"><span class="toc-number">1.11.6.</span> <span class="toc-text"> 时间和时区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E5%91%BD%E4%BB%A4"><span class="toc-number">1.11.7.</span> <span class="toc-text"> 磁盘命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#screen%E5%91%BD%E4%BB%A4-%E5%B1%8F%E5%B9%95"><span class="toc-number">1.12.</span> <span class="toc-text"> Screen 命令 - 屏幕</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%B1%8F%E5%B9%95"><span class="toc-number">1.12.1.</span> <span class="toc-text"> 创建屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E5%B1%8F%E5%B9%95%E4%BD%86%E4%B8%8D%E5%88%A0%E9%99%A4%E5%BD%93%E5%89%8D%E5%B1%8F%E5%B9%95"><span class="toc-number">1.12.2.</span> <span class="toc-text"> 退出屏幕但不删除当前屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E5%B1%8F%E5%B9%95"><span class="toc-number">1.12.3.</span> <span class="toc-text"> 显示所有屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%B1%8F%E5%B9%95%E5%B9%B6%E5%88%A0%E9%99%A4%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E7%9A%84%E5%B1%8F%E5%B9%95"><span class="toc-number">1.12.4.</span> <span class="toc-text"> 检查屏幕，并删除不能使用的屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%B1%8F%E5%B9%95"><span class="toc-number">1.12.5.</span> <span class="toc-text"> 删除屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.12.6.</span> <span class="toc-text"> 环境变量</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docker%E6%8C%87%E4%BB%A4%E9%9B%86%E5%90%88"><span class="toc-number">2.</span> <span class="toc-text"> Docker 指令集合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.1.</span> <span class="toc-text"> docker 服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">2.2.</span> <span class="toc-text"> docker 的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E9%95%9C%E5%83%8F"><span class="toc-number">2.3.</span> <span class="toc-text"> docker 镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E6%95%B0%E6%8D%AE"><span class="toc-number">2.4.</span> <span class="toc-text"> docker 数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E7%BD%91%E7%BB%9C"><span class="toc-number">2.5.</span> <span class="toc-text"> docker 网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dockercompose"><span class="toc-number">2.6.</span> <span class="toc-text"> dockerCompose</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -1143,15 +1158,6 @@ Candy_Can🍥 = 糖果罐</title>
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/test/" title="这只是一个测试页面的说">这只是一个测试页面的说</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/windows/" title="分类于 windows">windows</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/windows/linux/" title="分类于 linux">linux</a>
@@ -1168,20 +1174,20 @@ Candy_Can🍥 = 糖果罐</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
+<a href="/categories/linux/" title="分类于 linux">linux</a>
 </div>
 
-    <span><a href="/died/" title="抑郁 - 自杀 - 死亡？ - 重生？">抑郁 - 自杀 - 死亡？ - 重生？</a></span>
+    <span><a href="/linux-docker/" title="Linux docker指令留档">Linux docker指令留档</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/linux/" title="分类于 linux">linux</a>
+<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
 </div>
 
-    <span><a href="/linux-docker/" title="Linux docker指令留档">Linux docker指令留档</a></span>
+    <span><a href="/died/" title="抑郁 - 自杀 - 死亡？ - 重生？">抑郁 - 自杀 - 死亡？ - 重生？</a></span>
   </li>
 
       
@@ -1198,6 +1204,15 @@ Candy_Can🍥 = 糖果罐</title>
 </div>
 
     <span><a href="/Cprogram/" title="C语言学习记录 - 旧">C语言学习记录 - 旧</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/test/" title="这只是一个测试页面的说">这只是一个测试页面的说</a></span>
   </li>
 
   </ul>
