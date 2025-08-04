@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Docker on 糖果罐🍥 - Candy的博客</title>
+        <link>https://blog.candquarzy.top/tags/docker/</link>
+        <description>Recent content in Docker on 糖果罐🍥 - Candy的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>By Candy</copyright>
+        <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.candquarzy.top/tags/docker/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>docker指令记录</title>
+        <link>https://blog.candquarzy.top/p/docker%E6%8C%87%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
+        <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.candquarzy.top/p/docker%E6%8C%87%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/112614928_p1.png" alt="Featured image of post docker指令记录" /&gt;&lt;h2 id=&#34;docker-服务&#34;&gt;docker 服务
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl start docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;启动 docker 服务&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl stop docker 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;停止 docker 服务&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl restart docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;重启 docker 服务&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;设置 docker 服务开机自启&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;docker-的使用&#34;&gt;docker 的使用
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-d&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-v localdata:dockerdir&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;--network + network_name&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-p localport:dockerport&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-e &lt;span class=&#34;nv&#34;&gt;KEY&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; VALUE&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;--name repository:tag&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-d&lt;/code&gt; 让容器在后台静默运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-v&lt;/code&gt; 映射数据卷；&lt;strong&gt;localdata:&lt;/strong&gt; 本地数据卷 : &lt;strong&gt;dockerdir:&lt;/strong&gt; 容器内目录；本地目录必须以 / 或者 ./ 开头，必须为绝对路径，如果以名称开头就会被识别为数据卷而非本地目录&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;–network&lt;/code&gt; 网络设置；&lt;strong&gt;network_name:&lt;/strong&gt; 网络名 可以直接在运行时将该容器加入指定网络&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-p&lt;/code&gt; 把容器内的内部端口映射到外部机器的端口上；&lt;strong&gt;localport:&lt;/strong&gt; 本机端口 : &lt;strong&gt;dockerport:&lt;/strong&gt; 容器内部端口&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-e&lt;/code&gt; 设置环境变量；&lt;strong&gt;KEY:&lt;/strong&gt; 键 : &lt;strong&gt;VALUE:&lt;/strong&gt; 值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;–name&lt;/code&gt;  容器名称；&lt;strong&gt;repository:&lt;/strong&gt; 镜像名 : &lt;strong&gt;tag:&lt;/strong&gt; 镜像的版本&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker stop &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;停止镜像中的进程&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker start &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;启动镜像中的进程&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker ps &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-a&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-a&lt;/code&gt; 查看所有容器的状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;查看容器的运行状态，默认仅查看正在运行的容器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker logs &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-f&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-f&lt;/code&gt; 持续输出日志&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;repository&lt;/code&gt; 容器名&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;输出容器日志&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-it&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;bash&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-it&lt;/code&gt; 可对容器内进行命令交互&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;bash&lt;/code&gt; 任意指令&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;进入容器内部执行指令&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;docker-镜像&#34;&gt;docker 镜像
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker pull &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;仅下载镜像&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker images
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看下载的镜像&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker rmi &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository:version&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;删除下载的镜像&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker build -t &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;dockerfile&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dockerfile&lt;/code&gt; dockerfile 文件所在的目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;构建镜像&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker save &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-o&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;name:version&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-o&lt;/code&gt; 选择保存时命名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;保存构建的镜像&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker load &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-i / -q&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-i&lt;/code&gt; 读 tar 文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-q&lt;/code&gt; 静默加载&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;加载别人构建的对象&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker push
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;将你的镜像推送上去&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;docker-数据&#34;&gt;docker 数据
+&lt;/h2&gt;&lt;p&gt;数据卷的英文叫：Volume&lt;/p&gt;
+&lt;p&gt;这是一个虚拟的目录，是容器里内目录与本机目录之间映射的桥梁，类似于 Windows 的虚拟硬盘&lt;/p&gt;
+&lt;p&gt;默认对应的本机系统的目录： &lt;code&gt;var/lib/docker/volumes&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker volume creat &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;volume&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;volume&lt;/code&gt; 数据卷名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;创建数据卷&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker volume ls
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看所有数据卷&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker volume rm &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;volume&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;删除指定数据卷&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker volume inspect &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;volume&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看某个数据卷详情&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker volume prune &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;volume&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;清空数据卷&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker inspect &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看容器详情&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;docker-网络&#34;&gt;docker 网络
+&lt;/h2&gt;&lt;p&gt;默认情况下，所有的容器都是以 bridge 的方式链接到 docker 的一个虚拟网卡上的&lt;/p&gt;
+&lt;p&gt;这个网卡的默认网关是 &lt;code&gt;172.17.0.1/16&lt;/code&gt; ，我们也可以自定义&lt;/p&gt;
+&lt;p&gt;加入自定义网络的容器可以通过网卡互联，容器名之间可以相互访问&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker network creat &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;network&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;network&lt;/code&gt; 网络名称
+创建一个网络&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker network ls
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看所有网络&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker network rm &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;network&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;删除指定网络&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker network prune
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;删除未使用网络&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker network connect &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;network&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;repository&lt;/code&gt; 容器名称&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使指定容器加入指定网络&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker network disconnect &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;network&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;使指定容器离开某网络&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker network inspect
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看网络的详细信息&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;docker---compose&#34;&gt;docker - compose
+&lt;/h2&gt;&lt;p&gt;docker compose 通过一个单独的 &lt;code&gt;docker-compose.yml&lt;/code&gt; 模板文件来定义一组相关联的应用容器，可以实现多个相互关联容器的快速部署&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker compose &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;command&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;options&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;options：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-f&lt;/code&gt; 指定 compose 文件的路径及名称&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-p&lt;/code&gt; 指定 project 名称&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-d&lt;/code&gt; 后台静默运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;command：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;up 创建并启动所有容器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;down 停止并移除所有容器与网络&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ps 列数所有启动的容器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;logs 查看指定容器的日志&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;stop 停止容器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;start 启动容器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;restart 重启容器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;top 查看运行的进程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;exec 在指定的正在运行的容器种执行命令&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

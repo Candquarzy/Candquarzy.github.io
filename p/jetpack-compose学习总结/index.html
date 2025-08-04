@@ -1,0 +1,2564 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Google官方推荐的MD3设计语言！不保证内容100%无误">
+<title>Jetpack Compose学习总结</title>
+
+<link rel='canonical' href='https://blog.candquarzy.top/p/jetpack-compose%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/'>
+
+<link rel="stylesheet" href="/scss/style.min.614ec52da7a774511f0a4aa640e7189e67ad503782b9382d4ff6eb64ac586a4a.css"><meta property='og:title' content="Jetpack Compose学习总结">
+<meta property='og:description' content="Google官方推荐的MD3设计语言！不保证内容100%无误">
+<meta property='og:url' content='https://blog.candquarzy.top/p/jetpack-compose%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/'>
+<meta property='og:site_name' content='糖果罐🍥 - Candy的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='kotlin' /><meta property='article:tag' content='Java' /><meta property='article:tag' content='Jetpack' /><meta property='article:published_time' content='2025-06-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-06-17T00:00:00&#43;00:00'/><meta property='og:image' content='https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/129202495_p0.jpg' />
+<meta name="twitter:title" content="Jetpack Compose学习总结">
+<meta name="twitter:description" content="Google官方推荐的MD3设计语言！不保证内容100%无误"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/129202495_p0.jpg' />
+    <link rel="shortcut icon" href="https://www.emojiall.com/en/header-svg/%F0%9F%8D%A5.svg" />
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB3JRV78P9"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YB3JRV78P9');
+        }
+      </script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_c6aef3d413c27a14.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">糖果罐🍥 - Candy的博客</a></h1>
+            <h2 class="site-description">这是什么? Candy? 可以吃吗？</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Candquarzy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:CandyQuartz_qwq@outlook.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/Candquarzy_QwQ'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#准备知识">准备知识</a>
+      <ol>
+        <li><a href="#jetpackcompose-相比传统-xmljava-的优势">JetpackCompose 相比传统 XML+Java 的优势</a></li>
+        <li><a href="#使用-jetpackcompe-构建页面">使用 JetpackCompe 构建页面</a></li>
+        <li><a href="#andoridmanifestxml-文件">AndoridManifest.xml 文件</a></li>
+        <li><a href="#资源引用">资源引用</a></li>
+        <li><a href="#依赖项">依赖项</a></li>
+      </ol>
+    </li>
+    <li><a href="#案例-1-个人页面">案例 1 个人页面</a></li>
+    <li><a href="#布局">布局</a>
+      <ol>
+        <li><a href="#column-垂直布局">Column 垂直布局</a></li>
+        <li><a href="#row-水平布局">Row 水平布局</a></li>
+        <li><a href="#card-卡片布局">Card 卡片布局</a></li>
+        <li><a href="#约束布局">约束布局</a>
+          <ol>
+            <li><a href="#约束布局的解耦合">约束布局的解耦合</a></li>
+            <li><a href="#约束方法">约束方法</a></li>
+          </ol>
+        </li>
+        <li><a href="#scaffold-脚手架-布局">Scaffold &ldquo;脚手架&rdquo; 布局</a></li>
+        <li><a href="#lazycolumn--lazyrow-懒-列--行布局">LazyColumn / LazyRow &ldquo;懒&rdquo; 列 / 行布局</a></li>
+        <li><a href="#box-盒子布局">Box 盒子布局</a></li>
+      </ol>
+    </li>
+    <li><a href="#控件">控件</a>
+      <ol>
+        <li><a href="#text-文本组件">Text 文本组件</a></li>
+        <li><a href="#image-图像组件">Image 图像组件</a></li>
+        <li><a href="#textfield-文本输入框">TextField 文本输入框</a></li>
+        <li><a href="#spacer-空行分隔符">Spacer 空行分隔符</a></li>
+        <li><a href="#icon-图标组件">Icon 图标组件</a></li>
+        <li><a href="#navigationbar-底部导航栏">NavigationBar 底部导航栏</a></li>
+        <li><a href="#navigationbaritem-导航栏图标按钮">NavigationBarItem 导航栏图标按钮</a></li>
+        <li><a href="#iconbutton-按钮图标组件">IconButton 按钮图标组件</a></li>
+        <li><a href="#dialog-对话框组件">Dialog 对话框组件</a></li>
+        <li><a href="#alertdialog-提醒对话框组件">AlertDialog 提醒对话框组件</a></li>
+        <li><a href="#xxxdivider-分割线组件">xxxDivider 分割线组件</a></li>
+        <li><a href="#chip-条状标签">Chip 条状标签</a></li>
+        <li><a href="#dropdownmenu-下拉菜单">DropdownMenu 下拉菜单</a></li>
+        <li><a href="#dropdownmenuitem-下拉菜单选项">DropdownMenuItem 下拉菜单选项</a></li>
+      </ol>
+    </li>
+    <li><a href="#modifier-修饰符">Modifier 修饰符</a></li>
+    <li><a href="#状态">状态</a>
+      <ol>
+        <li><a href="#可变状态">可变状态</a>
+          <ol>
+            <li><a href="#remember">remember</a></li>
+            <li><a href="#mutablestateof">mutableStateOf</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#导航">导航</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/jetpack-compose%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/129202495_p0.jpg" loading="lazy" alt="Featured image of post Jetpack Compose学习总结" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%95%99%E7%A8%8B/" >
+                教程
+            </a>
+        
+            <a href="/categories/%E7%BC%96%E7%A8%8B/" >
+                编程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/jetpack-compose%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">Jetpack Compose学习总结</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Google官方推荐的MD3设计语言！不保证内容100%无误
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-06-17</time>
+            </div>
+        
+
+    
+
+        
+        <div>
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
+            <time class="article-time--reading">
+                5056 字
+            </time>
+        </div>
+        
+
+    
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 11 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="准备知识">准备知识
+</h2><h3 id="jetpackcompose-相比传统-xmljava-的优势">JetpackCompose 相比传统 XML+Java 的优势
+</h3><ul>
+<li>
+<p>不需要多个 XML 和 Activity</p>
+</li>
+<li>
+<p>可组合函数负责更新和构建页面</p>
+</li>
+<li>
+<p>不需要通过 ID 来查找视图，而是通过视图来绑定</p>
+</li>
+<li>
+<p>与 Java+XML 的传统方式相兼容</p>
+</li>
+</ul>
+<h3 id="使用-jetpackcompe-构建页面">使用 JetpackCompe 构建页面
+</h3><p>在 Andorid Studio 中新建项目，选择 Empty Compose Activity 后点击 Next</p>
+<ul>
+<li>
+<p>需要 API 21+</p>
+</li>
+<li>
+<p>只能使用 Kotlin 语言</p>
+</li>
+</ul>
+<h3 id="andoridmanifestxml-文件">AndoridManifest.xml 文件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;manifest</span> <span class="na">xmlns:android=</span><span class="s">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">xmlns:tools=</span><span class="s">&#34;http://schemas.android.com/tools&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;application</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:allowBackup=</span><span class="s">&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:dataExtractionRules=</span><span class="s">&#34;@xml/data_extraction_rules&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:fullBackupContent=</span><span class="s">&#34;@xml/backup_rules&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:icon=</span><span class="s">&#34;@mipmap/my_launcher&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:label=</span><span class="s">&#34;@string/app_name&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:roundIcon=</span><span class="s">&#34;@mipmap/my_launcher_round&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:supportsRtl=</span><span class="s">&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:theme=</span><span class="s">&#34;@style/Theme.Profile&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">tools:targetApi=</span><span class="s">&#34;31&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;activity</span>
+</span></span><span class="line"><span class="cl">            <span class="na">android:name=</span><span class="s">&#34;.MainActivity&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="na">android:exported=</span><span class="s">&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="na">android:label=</span><span class="s">&#34;@string/app_name&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="na">android:theme=</span><span class="s">&#34;@style/Theme.Profile&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.action.MAIN&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.LAUNCHER&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/activity&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/application&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/manifest&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>application 内属性</strong></p>
+<ul>
+<li>
+<p><code>android:icon</code> App 的主图标</p>
+</li>
+<li>
+<p><code>android:label</code> 应用名称</p>
+</li>
+<li>
+<p><code>android:roundIcon</code> 应用背景图标</p>
+</li>
+<li>
+<p><code>android:theme</code> 应用的主题</p>
+</li>
+</ul>
+<p><strong>activity 内属性:</strong></p>
+<ul>
+<li>
+<p><code>android:name</code> 应用启动后的主页面</p>
+</li>
+<li>
+<p><code>android:label</code> 应用名称</p>
+</li>
+<li>
+<p><code>android:theme</code> 应用的主题</p>
+</li>
+</ul>
+<h3 id="资源引用">资源引用
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="err">@</span><span class="p">[</span><span class="n">xxx</span><span class="p">]/[</span><span class="n">xxxx</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><code>[xxx]</code> 为引用资源的路径</p>
+</li>
+<li>
+<p><code>[xxxx]</code> 为引用资源的名称，不包括文件后缀</p>
+</li>
+</ul>
+<p>如在 <code>string.xml</code> 内定义的应用名称:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;resources&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;app_name&#34;</span><span class="nt">&gt;</span>Candy\&#39;s Profile<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/resources&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在其他位置的引用可以使用:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="nd">@string</span><span class="p">/</span><span class="n">app_name</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="依赖项">依赖项
+</h3><p>在 <code>build.gradle(:app)</code> (注：作用域是 app) 下的 <code>dependencies</code> 组为依赖项，可以在这里添加你需要使用的库</p>
+<hr>
+<h2 id="案例-1-个人页面">案例 1 个人页面
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">package</span> <span class="nn">com.candy.ui_test</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">android.R.attr.text</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">android.R.attr.top</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.Image</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.border</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.Arrangement</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.Column</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.Row</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.fillMaxHeight</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.fillMaxSize</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.fillMaxWidth</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.height</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.padding</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.size</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.width</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.rememberScrollState</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.shape.RoundedCornerShape</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.verticalScroll</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.Button</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.Card</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.CardDefaults</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.ElevatedButton</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.Text</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.runtime.Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.Alignment</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.Modifier</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.draw.clip</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.graphics.Color</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.layout.ContentScale</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.res.painterResource</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.text.font.FontWeight</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.tooling.preview.Preview</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.unit.dp</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.unit.sp</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">ProfilePage</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Card</span><span class="p">(</span> <span class="c1">//卡片
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">elevation</span> <span class="p">=</span> <span class="nc">CardDefaults</span><span class="p">.</span><span class="n">cardElevation</span><span class="p">(</span><span class="n">defaultElevation</span> <span class="p">=</span> <span class="m">8.</span><span class="n">dp</span><span class="p">),</span> <span class="c1">// 正确的写法 (适用于 Material 3)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// elevation = 8.dp, // 在 Material 2 中这是可以的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">height</span><span class="p">(</span><span class="m">600.</span><span class="n">dp</span><span class="p">)</span> <span class="c1">//设置卡片高度
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="c1">// .fillMaxSize()
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="p">.</span><span class="n">padding</span><span class="p">(</span><span class="n">top</span> <span class="p">=</span> <span class="m">150.</span><span class="n">dp</span><span class="p">,</span> <span class="n">bottom</span> <span class="p">=</span> <span class="m">50.</span><span class="n">dp</span><span class="p">,</span> <span class="n">start</span> <span class="p">=</span> <span class="m">16.</span><span class="n">dp</span><span class="p">,</span> <span class="n">end</span> <span class="p">=</span> <span class="m">16.</span><span class="n">dp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="n">Column</span><span class="p">(</span> <span class="c1">//一种列表布局
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">fillMaxHeight</span><span class="p">()</span><span class="c1">//先添加该属性，填满整个高度
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="p">.</span><span class="n">verticalScroll</span><span class="p">(</span><span class="n">rememberScrollState</span><span class="p">()),</span> <span class="c1">//列表垂直滚动 参数为记住列表滚动状态
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="n">horizontalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterHorizontally</span><span class="p">,</span> <span class="c1">//列表水平居中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="n">verticalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span> <span class="c1">//列表垂直居中 填满后生效
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="p">)</span>
+</span></span><span class="line"><span class="cl">       <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="n">Image</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">             <span class="n">painter</span> <span class="p">=</span> <span class="n">painterResource</span><span class="p">(</span><span class="n">id</span> <span class="p">=</span> <span class="nc">R</span><span class="p">.</span><span class="n">drawable</span><span class="p">.</span><span class="n">photo</span><span class="p">),</span> <span class="c1">//图片的画家，即为图片路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">contentDescription</span> <span class="p">=</span> <span class="s2">&#34;Candy&#34;</span><span class="p">,</span> <span class="c1">//图片的描述
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">size</span><span class="p">(</span><span class="m">125.</span><span class="n">dp</span><span class="p">)</span> <span class="c1">//图片的尺寸
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="c1">// .clip(CircleShape) //图片的纯圆修饰符
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="p">.</span><span class="n">clip</span><span class="p">(</span><span class="n">RoundedCornerShape</span><span class="p">(</span><span class="m">15</span><span class="p">))</span> <span class="c1">//图片的圆角形状 单位int 50为纯圆
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="p">.</span><span class="n">border</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                   <span class="n">width</span> <span class="p">=</span> <span class="m">1.</span><span class="n">dp</span><span class="p">,</span> <span class="c1">//图片的边框宽度
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                   <span class="n">color</span> <span class="p">=</span> <span class="nc">Color</span><span class="p">.</span><span class="n">White</span><span class="p">,</span> <span class="c1">//图片的边框颜色
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                   <span class="n">shape</span> <span class="p">=</span> <span class="n">RoundedCornerShape</span><span class="p">(</span><span class="m">15</span><span class="p">)</span> <span class="c1">//图片的边框形状
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="p">),</span> <span class="c1">//图片的边框
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">contentScale</span> <span class="p">=</span> <span class="nc">ContentScale</span><span class="p">.</span><span class="n">Crop</span> <span class="c1">//图片的裁剪方式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">             <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;Candy&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontWeight</span> <span class="p">=</span> <span class="nc">FontWeight</span><span class="p">.</span><span class="n">Bold</span><span class="p">,</span> <span class="c1">//字体加粗
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">fontSize</span> <span class="p">=</span> <span class="m">30.</span><span class="n">sp</span><span class="p">,</span> <span class="c1">//字体大小
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">             <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;@Candquarzy</span><span class="se">\uD83C\uDFF3\uFE0F\u200D</span><span class="s2">⚧</span><span class="se">\uFE0F</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontSize</span> <span class="p">=</span> <span class="m">12.</span><span class="n">sp</span><span class="p">,</span> <span class="c1">//设置字体大小
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="n">Row</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">             <span class="n">horizontalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">SpaceEvenly</span><span class="p">,</span> <span class="c1">//列表水平均匀排列
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">fillMaxWidth</span><span class="p">()</span> <span class="c1">//填满整个宽度
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="p">.</span><span class="n">padding</span><span class="p">(</span><span class="m">16.</span><span class="n">dp</span><span class="p">)</span> <span class="c1">//添加外边距
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="n">ProfileData</span><span class="p">(</span><span class="s2">&#34;5.28k&#34;</span><span class="p">,</span> <span class="s2">&#34;粉丝&#34;</span><span class="p">)</span> <span class="c1">//调用函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">ProfileData</span><span class="p">(</span><span class="s2">&#34;114&#34;</span><span class="p">,</span> <span class="s2">&#34;关注&#34;</span><span class="p">)</span> <span class="c1">//调用函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">ProfileData</span><span class="p">(</span><span class="s2">&#34;87&#34;</span><span class="p">,</span> <span class="s2">&#34;动态&#34;</span><span class="p">)</span> <span class="c1">//调用函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="n">Row</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">             <span class="n">horizontalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">SpaceEvenly</span><span class="p">,</span> <span class="c1">//列表水平均匀排列
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">fillMaxWidth</span><span class="p">()</span> <span class="c1">//填满整个宽度
+</span></span></span><span class="line"><span class="cl"><span class="c1">//           .padding(16.dp) //添加外边距
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="n">ElevatedButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                   <span class="cm">/* TODO */</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>
+</span></span><span class="line"><span class="cl">             <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                   <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;关注&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>
+</span></span><span class="line"><span class="cl">             <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">             <span class="n">ElevatedButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                   <span class="cm">/* TODO */</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>
+</span></span><span class="line"><span class="cl">             <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;私信&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">             <span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">ProfileData</span><span class="p">(</span><span class="n">count</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="c1">//函数 用于存储数据列表
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Column</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">       <span class="n">horizontalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterHorizontally</span><span class="p">,</span> <span class="c1">//列表水平居中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="n">text</span> <span class="p">=</span> <span class="n">count</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="n">fontWeight</span> <span class="p">=</span> <span class="nc">FontWeight</span><span class="p">.</span><span class="n">SemiBold</span><span class="p">,</span> <span class="c1">//字体加粗
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="p">)</span>
+</span></span><span class="line"><span class="cl">       <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="n">text</span> <span class="p">=</span> <span class="n">text</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@Preview</span><span class="p">(</span><span class="n">showBackground</span> <span class="p">=</span> <span class="k">true</span><span class="p">)</span> <span class="c1">//预览注解 + 显示背景
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">ProfilePagePreview</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ProfilePage</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="布局">布局
+</h2><h3 id="column-垂直布局">Column 垂直布局
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.Column</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一种纵向的列表布局</p>
+<p><strong>参数</strong></p>
+<ul>
+<li>
+<p><code>verticalArrangement</code> 垂直对齐方式 属性值为 <code>Arrangement.[direction]</code></p>
+</li>
+<li>
+<p><code>horizontalAlignment</code> 水平对齐方式 属性值为 <code>Alignment.[direction]</code></p>
+</li>
+<li>
+<p><code>content</code> 暂不确定</p>
+</li>
+</ul>
+<p><strong>modifier 参数</strong></p>
+<ul>
+<li>
+<p><code>.fillMaxSize/Widht/Height()</code> 列表填满父容器 (宽度 / 高度)</p>
+</li>
+<li>
+<p><code>.padding([int.dp])</code> 外边距</p>
+</li>
+<li>
+<p><code>.margin([int.dp])</code> 内边距</p>
+</li>
+<li>
+<p><code>.requiredHeight(Weight)</code> 强制设置高度 / 宽度 (不受父高度影响强制设
+置)</p>
+</li>
+</ul>
+<h3 id="row-水平布局">Row 水平布局
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.Row</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一种纵向的列表布局</p>
+<p><strong>参数</strong></p>
+<ul>
+<li>
+<p><code>verticalArrangement</code> 垂直对齐方式 属性值为 <code>Arrangement.[direction]</code></p>
+</li>
+<li>
+<p><code>horizontalAlignment</code> 水平对齐方式 属性值为 <code>Alignment.[direction]</code></p>
+</li>
+<li>
+<p><code>content</code> 暂不确定</p>
+</li>
+</ul>
+<p><strong>modifier 参数</strong></p>
+<ul>
+<li>
+<p><code>.fillMaxSize/Widht/Height()</code> 列表填满父容器 (宽度 / 高度)</p>
+</li>
+<li>
+<p><code>.padding([int.dp])</code> 外边距</p>
+</li>
+<li>
+<p><code>.margin([int.dp])</code> 内边距</p>
+</li>
+<li>
+<p><code>.requiredHeight(Weight)</code> 强制设置高度 / 宽度 (不受父高度影响强制设
+置)</p>
+</li>
+</ul>
+<h3 id="card-卡片布局">Card 卡片布局
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.Card</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一种卡片形式的布局</p>
+<p><strong>参数</strong></p>
+<ul>
+<li>
+<p><code>shape</code> 卡片形状</p>
+</li>
+<li>
+<p><code>colors</code> 卡片颜色</p>
+</li>
+<li>
+<p><code>elevation</code> 卡片悬浮高度 (MD3: <code>CardDefaults.cardElevation(defaultElevation = [int].dp)</code> ; MD2: <code>[int].dp</code> ) int 值为阴影模糊程度</p>
+</li>
+<li>
+<p><code>border</code> 卡片边框线</p>
+</li>
+<li>
+<p><code>content</code> 暂不确定</p>
+</li>
+</ul>
+<p><strong>modifier 参数</strong></p>
+<ul>
+<li>
+<p><code>.fillMaxSize/Widht/Height()</code> 列表填满父容器 (宽度 / 高度)</p>
+</li>
+<li>
+<p><code>.padding([int.dp/sp])</code> 外边距 (可以分开设置 top bottom start end)</p>
+</li>
+<li>
+<p><code>.height([int.dp])</code> 卡片高度</p>
+</li>
+<li>
+<p><code>.weight([int.dp])</code> 卡片宽度</p>
+</li>
+<li>
+<p><code>.requiredHeight(Weight)</code> 强制设置高度 / 宽度 (不受父高度影响强制设置)</p>
+</li>
+</ul>
+<h3 id="约束布局">约束布局
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.constraintlayout.compose.ConstraintLayout</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一种使用 ID 来绑定组件的布局，可以更方便的定义组件所在页面中的位置</p>
+<p>而在这种布局下， <code>horizontalAlignment</code> 和 <code>verticalArrangement</code> 不再可用</p>
+<p>要使用约束布局，需要在 <code>build.gradle</code> 中添加依赖项:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="n">implementation</span> <span class="p">(</span><span class="s2">&#34;androidx.constraintlayout:constraintlayout-compose:1.1.1&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>截至写这篇文章的时候，最新的版本为 1.1.1</p>
+<p><a class="link" href="https://developer.android.google.cn/jetpack/androidx/releases/constraintlayout?hl=zh-cn"  target="_blank" rel="noopener"
+    >Constraintlayout | Jetpack | Android Developers</a></p>
+<p>要使用约束布局，需要按以下方式:</p>
+<ol>
+<li>
+<p>使用 <code>createRefs()</code> 或 <code>createRefFor()</code> 为 <code>ConstraintLayout</code> 中的每个可组合项创建引用</p>
+</li>
+<li>
+<p>约束条件使用 <code>Modifier.constrainAs()</code> 修饰符提供的，该修饰符将引用作为参数，然后指定其约束条件</p>
+</li>
+<li>
+<p>约束条件使用 <code>linkTo()</code> 方法指定</p>
+</li>
+<li>
+<p><code>parent</code> 是一个屏幕位置，可用于指定对 <code>ConstraintLayout</code> 可组合项本身的约束条件</p>
+</li>
+</ol>
+<p><strong>modifier 参数</strong></p>
+<p>由 <code>.constrainAs([String id])</code> 控制</p>
+<ul>
+<li>
+<p><code>top.linkTo()</code> 顶部链接到</p>
+</li>
+<li>
+<p><code>buttom.linkTo()</code> 底部链接到</p>
+</li>
+<li>
+<p><code>start.linkTo()</code> 起始处链接到</p>
+</li>
+<li>
+<p><code>end.linkTo()</code> 结尾处链接到</p>
+</li>
+<li>
+<p><code>width</code> 属性值 (如 <code>Dimension.wrapContent*</code>)</p>
+</li>
+</ul>
+<p>该项目中所有参数均为所设定的控件 ID 其中，<code>parent</code> 为父级，可以理解为屏幕</p>
+<p>使用 Dimension.wrapContent 需要导入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.constraintlayout.compose.Dimension</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="约束布局的解耦合">约束布局的解耦合
+</h4><p>优势：有助于实现横屏和竖屏的切换</p>
+<ol>
+<li>
+<p>首先需要导入一个盒子约束容器</p>
+</li>
+<li>
+<p>在其内部定义一个变量，通过判断来判断用户当前为横屏还是竖屏，接着设置约束方法函数</p>
+</li>
+</ol>
+<p>而在该约束容器内部的约束布局内的元素需要给 <code>Modifier</code> 注册<code>.layoutId (“String”)</code>，并在约束方法中引用</p>
+<p>比如导入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.BoxWithConstraints</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>BoxWithConstraints</code> 约束盒子容器</li>
+</ul>
+<p>&lt;待定</p>
+<h4 id="约束方法">约束方法
+</h4><p>创建一个保护的成员函数</p>
+<p>&lt;待定</p>
+<h3 id="scaffold-脚手架-布局">Scaffold &ldquo;脚手架&rdquo; 布局
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.Scaffold</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Scaffold 是一种类似于框架一样的结构。它将界面的不同部分整合在一起，使其具有一致的外观和风格</p>
+<ul>
+<li>
+<p><code>topBar</code> 应用的屏幕顶部应用栏</p>
+</li>
+<li>
+<p><code>bottom</code> 应用的屏幕底部应用栏</p>
+</li>
+<li>
+<p><code>floatingActionButton</code> 悬浮在屏幕右下角的按钮</p>
+</li>
+</ul>
+<p>Scaffold 会自动计算举例宽度，所以在该可组合函数内部要使用 <code>innerPadding-&gt;</code> 来传入边距</p>
+<div style="text-align: center;">
+    <img src="scaffold.png" alt="scaffold" style="width:60%;" />
+</div>
+<p><strong>案例 (来自谷歌官方):</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">ScaffoldExample</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">var</span> <span class="py">presses</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span> <span class="n">mutableIntStateOf</span><span class="p">(</span><span class="m">0</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">Scaffold</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">topBar</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">TopAppBar</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">colors</span> <span class="p">=</span> <span class="n">topAppBarColors</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">containerColor</span> <span class="p">=</span> <span class="nc">MaterialTheme</span><span class="p">.</span><span class="n">colorScheme</span><span class="p">.</span><span class="n">primaryContainer</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">titleContentColor</span> <span class="p">=</span> <span class="nc">MaterialTheme</span><span class="p">.</span><span class="n">colorScheme</span><span class="p">.</span><span class="n">primary</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="n">title</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;Top app bar&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">bottomBar</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">BottomAppBar</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">containerColor</span> <span class="p">=</span> <span class="nc">MaterialTheme</span><span class="p">.</span><span class="n">colorScheme</span><span class="p">.</span><span class="n">primaryContainer</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">contentColor</span> <span class="p">=</span> <span class="nc">MaterialTheme</span><span class="p">.</span><span class="n">colorScheme</span><span class="p">.</span><span class="n">primary</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">modifier</span> <span class="p">=</span> <span class="n">Modifier</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">.</span><span class="n">fillMaxWidth</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">textAlign</span> <span class="p">=</span> <span class="nc">TextAlign</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;Bottom app bar&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">floatingActionButton</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">FloatingActionButton</span><span class="p">(</span><span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span> <span class="n">presses</span><span class="o">++</span> <span class="p">})</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Icon</span><span class="p">(</span><span class="nc">Icons</span><span class="p">.</span><span class="nc">Default</span><span class="p">.</span><span class="n">Add</span><span class="p">,</span> <span class="n">contentDescription</span> <span class="p">=</span> <span class="s2">&#34;Add&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span> <span class="p">{</span> <span class="n">innerPadding</span> <span class="o">-&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Column</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">modifier</span> <span class="p">=</span> <span class="n">Modifier</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">padding</span><span class="p">(</span><span class="n">innerPadding</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">verticalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">spacedBy</span><span class="p">(</span><span class="m">16.</span><span class="n">dp</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">padding</span><span class="p">(</span><span class="m">8.</span><span class="n">dp</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="n">text</span> <span class="p">=</span>
+</span></span><span class="line"><span class="cl">                <span class="s">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">                    This is an example of a scaffold. It uses the Scaffold composable&#39;s parameters to create a screen with a simple top app bar, bottom app bar, and floating action button.
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">                    It also contains some basic inner content, such as this text.
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">                    You have pressed the floating action button </span><span class="si">$presses</span><span class="s"> times.
+</span></span></span><span class="line"><span class="cl"><span class="s">                &#34;&#34;&#34;</span><span class="p">.</span><span class="n">trimIndent</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>官方文档: <a class="link" href="https://developer.android.google.cn/develop/ui/compose/components/scaffold?hl=zh-cn"  target="_blank" rel="noopener"
+    >Scaffold - Jetpack Compose | Android Developers</a></p>
+<h3 id="lazycolumn--lazyrow-懒-列--行布局">LazyColumn / LazyRow &ldquo;懒&rdquo; 列 / 行布局
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.lazy.LazyColumn</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.lazy.LazyRow</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这是一个可以扩展长度的容器，在该容器内的元素必须是动态长度</p>
+<p>需要使用 item lambda 等遍历容器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">val</span> <span class="py">itemsList</span> <span class="p">=</span> <span class="p">(</span><span class="m">0.</span><span class="p">.</span><span class="m">5</span><span class="p">).</span><span class="n">toList</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">val</span> <span class="py">itemsIndexedList</span> <span class="p">=</span> <span class="n">listOf</span><span class="p">(</span><span class="s2">&#34;A&#34;</span><span class="p">,</span> <span class="s2">&#34;B&#34;</span><span class="p">,</span> <span class="s2">&#34;C&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="n">LazyColum</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">items</span><span class="p">(</span><span class="n">itemsList</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;Item is </span><span class="si">${it}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="box-盒子布局">Box 盒子布局
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.Box</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以层叠元素的盒子，类似于 HTML 中的 div 标签</p>
+<hr>
+<h2 id="控件">控件
+</h2><h3 id="text-文本组件">Text 文本组件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.Text</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一种显示文本的文本组件</p>
+<p>参数</p>
+<ul>
+<li>
+<p><code>text</code> 文本内容，类型为 String</p>
+</li>
+<li>
+<p><code>color</code> 文本颜色</p>
+</li>
+<li>
+<p><code>fontSize([int].dp)</code> 文字大小</p>
+</li>
+<li>
+<p><code>fontStyle</code> 文本风格？</p>
+</li>
+<li>
+<p><code>fontWeight</code> 字体粗细，由 <code>FontWeight</code> 类控制</p>
+</li>
+<li>
+<p><code>fontFamily</code> 字体家族，由 <code>FontFamily</code> 类控制</p>
+</li>
+<li>
+<p><code>textAlign</code> 文本对齐方式？</p>
+</li>
+</ul>
+<h3 id="image-图像组件">Image 图像组件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.Image</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一种显示图像的组件</p>
+<ul>
+<li>
+<p><code>painter</code> 画家 (图像路径)</p>
+</li>
+<li>
+<p><code>contentDescription</code> 图像的描述 (针对视障人士)</p>
+</li>
+<li>
+<p><code>contentScale</code> 图片的裁剪方式 (如填充横向 填充纵向等等)</p>
+</li>
+<li>
+<p><code>alignment</code> 对齐方式 (默认居中)</p>
+</li>
+<li>
+<p><code>alpha</code> 不透明度 (单位 Float)</p>
+</li>
+</ul>
+<p><strong>官方文档:</strong> <a class="link" href="https://developer.android.google.cn/develop/ui/compose/graphics/images/loading?hl=zh-cn"  target="_blank" rel="noopener"
+    >加载图片 | Jetpack Compose | Android Developers</a></p>
+<p><strong>modifier 参数</strong></p>
+<ul>
+<li>
+<p><code>.size</code> 图片尺寸 / 大小 (单位 dp)</p>
+</li>
+<li>
+<p><code>.clip</code> 图片形状 [如 CircleShape 为纯圆，可以使用<code>RoundedCornerShape([int].dp)</code> 自定义圆角]</p>
+</li>
+<li>
+<p><code>.border</code> 图片边框</p>
+</li>
+</ul>
+<p><strong>官方文档:</strong> <a class="link" href="https://developer.android.google.cn/develop/ui/compose/graphics/images/customize?hl=zh-cn"  target="_blank" rel="noopener"
+    >自定义图片 | Jetpack Compose | Android Developers</a></p>
+<h3 id="textfield-文本输入框">TextField 文本输入框
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.TextField</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一种用于让用户输入的文本框有多种样式可选</p>
+<ul>
+<li>
+<p><code>TextField</code> 基础的默认的样式，样式为填充</p>
+</li>
+<li>
+<p><code>OutlinedTextField</code> 轮廓样式版本，无填充</p>
+</li>
+<li>
+<p><code>SecureTextField</code> 安全输入，用于输入密码等</p>
+</li>
+<li>
+<p><code>value</code> 输入框内的值</p>
+</li>
+<li>
+<p><code>onValueChange</code> 当输入框内容变更后执行</p>
+</li>
+<li>
+<p><code>label</code> 输入框提示值</p>
+</li>
+</ul>
+<p>以下是一个案例，当用户输入内容更新后将用户输入的内容输出在 UI 中</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">var</span> <span class="py">name</span><span class="n">_state</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="n">mutableStateOf</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="c1">//使用remember和mutableStateOf创建一个可变状态变量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">var</span> <span class="py">name</span><span class="p">:</span> <span class="n">String</span> <span class="k">by</span> <span class="n">rememberSaveable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//使用rememberSaveable可以在页面旋转时保存数据
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="n">mutableStateOf</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="c1">//使用remember和mutableStateOf创建一个可变状态变量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="c1">//只有这样在变化时才会进行页面重组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Column</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">   <span class="n">horizontalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterHorizontally</span><span class="p">,</span> <span class="c1">//水平对齐居中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="n">verticalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span> <span class="c1">//垂直对齐居中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">fillMaxSize</span><span class="p">(),</span> <span class="c1">//填充满屏幕
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;Hello </span><span class="si">$name</span><span class="s2">&#34;</span><span class="p">);</span> <span class="c1">//文本组件 将name的值复制给文本
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="c1">//当name的值改变时，文本会自动更新(刷新界面)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="n">Spacer</span><span class="p">(</span><span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">height</span><span class="p">(</span><span class="m">20.</span><span class="n">dp</span><span class="p">))</span> <span class="c1">//间隔组件，设置高度为20dp
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">   <span class="n">TextField</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">//文本输入框
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">value</span> <span class="p">=</span> <span class="n">name_state</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">//原本文本框是无状态的，
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="c1">// 然后使用remember和mutableStateOf创建了一个
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="c1">// 可变状态变量name_state 并分配给它
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="n">onValueChange</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="c1">//当输入框的值改变时调用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>         <span class="n">name_state</span> <span class="p">=</span> <span class="k">it</span> <span class="c1">//更新状态
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="n">label</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;请输入:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="n">Button</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="n">name</span> <span class="p">=</span> <span class="n">name_state</span> <span class="c1">//点击按钮时将输入框的值赋给name
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">Text</span><span class="p">(</span><span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;显示&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>官方文档: 配置文本字段</strong> <a class="link" href="https://developer.android.google.cn/develop/ui/compose/text/user-input?hl=zh-cn&amp;amp;textfield=state-based#textfield-nav"  target="_blank" rel="noopener"
+    >Jetpack Compose | Android Developers</a></p>
+<h3 id="spacer-空行分隔符">Spacer 空行分隔符
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.foundation.layout.Spacer</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>modifier 参数</strong></p>
+<ul>
+<li>
+<p><code>.size</code> 大小</p>
+</li>
+<li>
+<p><code>.weight</code> 空行的宽度</p>
+</li>
+<li>
+<p><code>.height</code> 空行的高度</p>
+</li>
+</ul>
+<h3 id="icon-图标组件">Icon 图标组件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.Icon</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material.icons.Icons</span> <span class="c1">//导入谷歌的图标类
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><code>imageVector</code> 图标名 谷歌官方提供的图标都在 <code>Icons.</code> 类下</p>
+</li>
+<li>
+<p><code>contentDescription</code> 无障碍提示</p>
+</li>
+<li>
+<p><code>tint</code> 应用于 <code>imageVector</code>, 如果提供了 <code>Color.[name]</code> , 则不应用色调</p>
+</li>
+</ul>
+<h3 id="navigationbar-底部导航栏">NavigationBar 底部导航栏
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.NavigationBar</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><code>containerColor</code> 底部导航栏的背景色</p>
+</li>
+<li>
+<p><code>contentColor</code> 底部导航栏的文字 / 图标的颜色</p>
+</li>
+</ul>
+<h3 id="navigationbaritem-导航栏图标按钮">NavigationBarItem 导航栏图标按钮
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.NavigationBarItem</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><code>selected</code> 是否选中</p>
+</li>
+<li>
+<p><code>onClick</code> 点击事件，常用于导航跳转</p>
+</li>
+<li>
+<p><code>icon</code> 按钮图标</p>
+</li>
+<li>
+<p><code>label</code> 文本内容</p>
+</li>
+</ul>
+<p>这俩常用在一起，用于给 <code>Scaffold</code> 添加 <code>bottomBar</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="n">NavigationBar</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">items</span><span class="p">.</span><span class="n">forEach</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">item</span> <span class="o">-&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">NavigationBarItem</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          	<span class="n">selected</span> <span class="p">=</span> <span class="k">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          	<span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="n">icon</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Icon</span><span class="p">(</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="n">label</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Text</span><span class="p">(</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>通常来说会将图标和文字放在别处</p>
+<ol>
+<li>创建一个包 <code>model</code></li>
+<li>新建一个 kotlin 类</li>
+<li>在类中创建对象，并在导航栏中引用</li>
+</ol></blockquote>
+<h3 id="iconbutton-按钮图标组件">IconButton 按钮图标组件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.IconButton</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><code>onClick</code> 点击事件</p>
+</li>
+<li>
+<p><code>enabled</code> 启用按钮 (默认为 true)</p>
+</li>
+<li>
+<p><code>colors</code> 按钮的颜色</p>
+</li>
+</ul>
+<p>可以在内部设置 <code>Icon</code> 图标和文字</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="n">IconButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//点击事件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Icon</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//图标设置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">         <span class="c1">//显示文本设置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="dialog-对话框组件">Dialog 对话框组件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.window.Dialog</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><code>onDismissrequest</code> 用户关闭对话框（例如点按对话框以外的任意位置）时调用</p>
+</li>
+<li>
+<p><code>properties</code> 一个 <code>DialogProperties</code> 实例，可提供一些额外的自定义范围</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.ui.window.DialogProperties</span> <span class="c1">//使用DialogProperties需要导入
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="alertdialog-提醒对话框组件">AlertDialog 提醒对话框组件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.AlertDialog</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这是一个便捷的 API，用于创建一个简易的对话框，如取消确认等</p>
+<ul>
+<li>
+<p><code>title</code> 对话框标题</p>
+</li>
+<li>
+<p><code>text</code> 对话框内说明文本</p>
+</li>
+<li>
+<p><code>icon</code> 对话框顶部显示的图标</p>
+</li>
+<li>
+<p><code>onDismissrequest</code> 用户关闭对话框（例如点按对话框以外的任意位置）时调用</p>
+</li>
+<li>
+<p><code>dismissButton</code> 用于关闭的可组合函数</p>
+</li>
+<li>
+<p><code>confirmButton</code> 用于确认的可组合函数</p>
+</li>
+</ul>
+<p>以下是谷歌官方案例:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">AlertDialogExample</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">onDismissRequest</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Unit</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">onConfirmation</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Unit</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dialogTitle</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dialogText</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">icon</span><span class="p">:</span> <span class="n">ImageVector</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">AlertDialog</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">icon</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Icon</span><span class="p">(</span><span class="n">icon</span><span class="p">,</span> <span class="n">contentDescription</span> <span class="p">=</span> <span class="s2">&#34;Example Icon&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">title</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Text</span><span class="p">(</span><span class="n">text</span> <span class="p">=</span> <span class="n">dialogTitle</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">text</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Text</span><span class="p">(</span><span class="n">text</span> <span class="p">=</span> <span class="n">dialogText</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">onDismissRequest</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">onDismissRequest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">confirmButton</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">TextButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">onConfirmation</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;Confirm&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dismissButton</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">TextButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">onDismissRequest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;Dismiss&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>官方文档:</strong> <a class="link" href="https://developer.android.com/develop/ui/compose/components/dialog?hl=zh-cn"  target="_blank" rel="noopener"
+    >对话框 | Jetpack Compose | Android Developers</a></p>
+<h3 id="xxxdivider-分割线组件">xxxDivider 分割线组件
+</h3><ul>
+<li>
+<p><code>HorizontalDivider</code> 水平分割线</p>
+</li>
+<li>
+<p><code>VerticalDivider</code> 垂直分割线</p>
+</li>
+</ul>
+<p><strong>组件参数:</strong></p>
+<ul>
+<li>
+<p><code>thickness</code> 使用此参数指定分隔线的粗细</p>
+</li>
+<li>
+<p><code>color</code> 使用此参数指定分隔线的颜色</p>
+</li>
+</ul>
+<p><strong>官方文档:</strong> <a class="link" href="https://developer.android.com/develop/ui/compose/components/divider?hl=zh-cn"  target="_blank" rel="noopener"
+    >分隔线 | Jetpack Compose | Android Developers</a></p>
+<h3 id="chip-条状标签">Chip 条状标签
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.Chip</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.material3.ChipDefaults</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>有多种样式可选</p></blockquote>
+<ul>
+<li>
+<p><code>onClick</code> 设定点击状态</p>
+</li>
+<li>
+<p><code>label</code> 设定显示文字 需要 Composable 函数</p>
+</li>
+<li>
+<p><code>selected</code> 是否选中</p>
+</li>
+<li>
+<p><code>leadingIcon</code> 定义菜单项中前方显示的图标 需要 Compose 函数</p>
+</li>
+<li>
+<p><code>trailingIcon</code> 定义菜单项中后方显示的图标 需要 Compose 函数</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">var</span> <span class="py">select</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span> <span class="n">mutableStateOf</span><span class="p">(</span><span class="k">false</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">FilterChip</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">select</span> <span class="p">=</span> <span class="p">!</span><span class="n">select</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="n">label</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;about&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="n">selected</span> <span class="p">=</span> <span class="n">select</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">leadingIcon</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">select</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Icon</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="cm">/* ICON */</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">null</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>官方文档:</strong> <a class="link" href="https://developer.android.google.cn/develop/ui/compose/components/chip?hl=zh-cn"  target="_blank" rel="noopener"
+    >条状标签 | Jetpack Compose | Android Developers</a></p>
+<h3 id="dropdownmenu-下拉菜单">DropdownMenu 下拉菜单
+</h3><ul>
+<li>
+<p><code>expanded</code> 菜单是否可见</p>
+</li>
+<li>
+<p><code>onDismissRequest</code> 处理菜单关闭</p>
+</li>
+</ul>
+<h3 id="dropdownmenuitem-下拉菜单选项">DropdownMenuItem 下拉菜单选项
+</h3><ul>
+<li>
+<p><code>onClick</code> 点击菜单项后执行</p>
+</li>
+<li>
+<p><code>text</code> 定义菜单项中显示的内容 需要 Compose 函数而不是 String</p>
+</li>
+<li>
+<p><code>leadingIcon</code> 定义菜单项中前方显示的图标 需要 Compose 函数</p>
+</li>
+<li>
+<p><code>trailingIcon</code> 定义菜单项中后方显示的图标 需要 Compose 函数</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">var</span> <span class="py">menuExpanded</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span> <span class="n">mutableStateOf</span><span class="p">(</span><span class="k">false</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">IconButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">menuExpanded</span> <span class="p">=</span> <span class="k">true</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Icon</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="cm">/* ICON */</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">DropdownMenu</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">expanded</span> <span class="p">=</span> <span class="n">menuExpanded</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">onDismissRequest</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">menuExpanded</span> <span class="p">=</span> <span class="k">false</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DropdownMenuItem</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="cm">/* TODO */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">text</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;关于&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leadingIcon</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Icon</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="cm">/* ICON */</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>官方文档:</strong> <a class="link" href="https://developer.android.google.cn/develop/ui/compose/components/menu?hl=zh-cn"  target="_blank" rel="noopener"
+    >菜单 | Jetpack Compose | Android Developers</a></p>
+<hr>
+<h2 id="modifier-修饰符">Modifier 修饰符
+</h2><p><strong>官方文档:</strong></p>
+<p><a class="link" href="https://developer.android.com/develop/ui/compose/modifiers-list?hl=zh-cn"  target="_blank" rel="noopener"
+    >Compose 修饰符列表 | Jetpack Compose | Android Developers</a></p>
+<hr>
+<h2 id="状态">状态
+</h2><p>在 Jetpack 中，我们需要使用 <code>remember</code> 关键字来设置一个可变状态</p>
+<h3 id="可变状态">可变状态
+</h3><h4 id="remember">remember
+</h4><p><code>remember</code> 是一个 Composable 函数，它用于在重组过程中记住一个值。当一个 Composable 重组时， <code>remember</code> 会返回它在上次重组时记住的相同值。如果没有 <code>remember</code> , 每次重组时，局部变量都会被重新初始化而导致状态丢失</p>
+<p>若需使用 <code>remember</code> 需要导入:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.runtime.getValue</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.runtime.setValue</span>
+</span></span><span class="line"><span class="cl"><span class="k">import</span> <span class="nn">androidx.compose.runtime.remember</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="mutablestateof">mutableStateOf
+</h4><p><code>mutableStateOf</code> 是一个函数，用于创建一个 <code>MutableState</code> 实例。其接收一个初始值，并返回一个可观察的对象。当 <code>MutableState</code> 的 <code>value</code> 改变时，所有读取该 <code>value</code> 的 Composable 都会被标记为需要重组</p>
+<p>在函数体中， <code>mutableStateOf</code> 为创建一个可观察的 <code>MutableState&lt;T&gt;</code> 对象。当 <code>MutableState</code> 中的值改变时，Compose 会自动触发依赖该状态的可组合函数的重组</p>
+<p>声明 <code>MutableState</code> 对象的方法有如下 (default 为默认值):</p>
+<ul>
+<li>
+<p><code>val mutableState = remember { mutableStateOf(default) }</code></p>
+</li>
+<li>
+<p><code>var value by remember { mutableStateOf(default) }</code></p>
+</li>
+<li>
+<p><code>val (value, setValue) = remember { mutableStateOf(default) }</code></p>
+</li>
+</ul>
+<p><strong>例如:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">var</span> <span class="py">name</span><span class="n">_state</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mutableStateOf</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="c1">//使用remember和mutableStateOf创建一个可变状态变量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Text</span><span class="p">(</span><span class="s2">&#34;Hello </span><span class="si">$name</span><span class="s2">_state&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 假设我们要设定让用户输入的内容更改到该Text上:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">OutlinedTextField</span><span class="p">(</span> <span class="c1">//文本输入框
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">value</span> <span class="p">=</span> <span class="n">name_state</span><span class="p">,</span><span class="n">s</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//原本文本框是无状态的，
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// 然后我们使用remember和mutableStateOf创建了一个
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// 可变状态变量name_state 并分配给它
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">onValueChange</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">//当输入框的值改变时调用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">name_state</span> <span class="p">=</span> <span class="k">it</span> <span class="c1">//更新状态
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="n">label</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;请输入:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="c1">//标签文本
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>官方文档:</strong> <a class="link" href="https://developer.android.google.cn/develop/ui/compose/state?hl=zh-cn#managing-state"  target="_blank" rel="noopener"
+    >状态和 Jetpack Compose | Android Developers</a></p>
+<hr>
+<h2 id="导航">导航
+</h2><p><a class="link" href="https://developer.android.com/guide/navigation?hl=zh-cn"  target="_blank" rel="noopener"
+    >导航 | App architecture | Android Developers</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/android/">Android</a>
+        
+            <a href="/tags/kotlin/">Kotlin</a>
+        
+            <a href="/tags/java/">Java</a>
+        
+            <a href="/tags/jetpack/">Jetpack</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/123274153_p0.jpg" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/123274153_p0.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C语言学习记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/css%E6%A0%B7%E5%BC%8F%E6%A0%87%E7%AD%BE%E6%80%BB%E7%BB%93/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/124928964_p0.png" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/124928964_p0.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CSS样式标签总结</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/html%E6%A0%87%E7%AD%BE%E5%A4%A7%E6%B1%87%E5%90%88/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/126612103_p0.png" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/126612103_p0.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">HTML标签大汇合！</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/docker%E6%8C%87%E4%BB%A4%E8%AE%B0%E5%BD%95/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/112614928_p1.png" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/112614928_p1.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">docker指令记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/linux%E6%8C%87%E4%BB%A4%E5%AD%A6%E4%B9%A0%E9%9B%86%E5%90%88/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/126680038_p0.png" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/126680038_p0.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Linux指令学习集合</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/comment.candquarzy.top\/.netlify\/functions\/twikoo',
+        el: '#tcomment',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy;
+        
+        2024 -
+        
+        2025 By Candy
+    </section>
+
+    <section class="powerby">
+        
+        不向焦虑与抑郁投降 这个世界终会有我们存在的地方 <br />
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
+                data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+    
+    <section class="running-time">
+        本博客已稳定运行
+        <span id="runningdays" class="running-days"></span>
+    </section>
+
+    
+    <section class="totalcount">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        发表了7篇文章 ·
+        总计45.83k字
+    </section>
+
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script>
+    let s1 = '2025-1-2'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
+<style>
+  @font-face {
+    font-family: '字体名';
+    src: url(https://blog.candquarzy.top/font/FiraCode-SemiBold.ttf) format('truetype');
+  }
+
+  :root {
+    --code-font-family: 'Fira Code';
+  }
+</style>
+
+    </body>
+</html>

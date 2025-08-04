@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="登录系统\r1 ssh username@IP -p port username 用户名 IP 服务器 IP port 登录端口 exit / ctrl + D 可以退出本次登录\nROOT 用户登录\r仅第一次可用：\n登录用户账户 执行命令 sudo passwd root 会出现 [sudo]password for username: 输入目前登录用户的账户和密码 当显示 NewPassword: 时输入新的 ROOT 账户的密码 Retype New Password: 再次输入刚刚设定的 ROOT 账户密码进行确认 即可重置 ROOT 账户的密码\n接着执行命令 su - root 即可切换为 ROOT 账号\n文本编辑器 vi\rvi 文件\r如果命令指定的文件不存在，则创建文件 如果命令指定的文件存在，则打开该文件\n命令模式\rh 光标左移一个字符 j 光标下移一个字符 k 光标上移一个字符 l 光标右移一个字符 x 删除光标所在字符 dd 删除光标所在行 ndd n 为数字，表示删除当前光标及下面的 n 行 dG 删除当前行以下的所有内容 d$ 删除当前光标到当前光标所在行的结尾 d0 删除当前光标到当前光标所在行的开头 dw 删除光标处到词尾的内容 gg 把光标移到文件开始的位置 G 将光标移到文件末尾 ctrl + F 上一页 ctrl + B 下一页 0 把光标移动到所在行的行首 $ 把光标移动到所在行的行尾 pageup 向上翻页 pagedown 向下翻页 yy 复制光标所在行 p 粘贴 v 移动光标进入选择模式 y 复制选中的内容 nyy n 为数字，表示复制当前光标及下面的 n 行 u 撤销刚才的操作 ctrl + R 恢复更改 . 重复刚才所做的操作\n">
+<title>Linux</title>
+
+<link rel='canonical' href='http://localhost:1313/p/linux/'>
+
+<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="Linux">
+<meta property='og:description' content="登录系统\r1 ssh username@IP -p port username 用户名 IP 服务器 IP port 登录端口 exit / ctrl + D 可以退出本次登录\nROOT 用户登录\r仅第一次可用：\n登录用户账户 执行命令 sudo passwd root 会出现 [sudo]password for username: 输入目前登录用户的账户和密码 当显示 NewPassword: 时输入新的 ROOT 账户的密码 Retype New Password: 再次输入刚刚设定的 ROOT 账户密码进行确认 即可重置 ROOT 账户的密码\n接着执行命令 su - root 即可切换为 ROOT 账号\n文本编辑器 vi\rvi 文件\r如果命令指定的文件不存在，则创建文件 如果命令指定的文件存在，则打开该文件\n命令模式\rh 光标左移一个字符 j 光标下移一个字符 k 光标上移一个字符 l 光标右移一个字符 x 删除光标所在字符 dd 删除光标所在行 ndd n 为数字，表示删除当前光标及下面的 n 行 dG 删除当前行以下的所有内容 d$ 删除当前光标到当前光标所在行的结尾 d0 删除当前光标到当前光标所在行的开头 dw 删除光标处到词尾的内容 gg 把光标移到文件开始的位置 G 将光标移到文件末尾 ctrl + F 上一页 ctrl + B 下一页 0 把光标移动到所在行的行首 $ 把光标移动到所在行的行尾 pageup 向上翻页 pagedown 向下翻页 yy 复制光标所在行 p 粘贴 v 移动光标进入选择模式 y 复制选中的内容 nyy n 为数字，表示复制当前光标及下面的 n 行 u 撤销刚才的操作 ctrl + R 恢复更改 . 重复刚才所做的操作\n">
+<meta property='og:url' content='http://localhost:1313/p/linux/'>
+<meta property='og:site_name' content='糖果罐🍥 - Candy的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-07-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-07-31T00:00:00&#43;00:00'/><meta property='og:image' content='https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/126680038_p0.png' />
+<meta name="twitter:title" content="Linux">
+<meta name="twitter:description" content="登录系统\r1 ssh username@IP -p port username 用户名 IP 服务器 IP port 登录端口 exit / ctrl + D 可以退出本次登录\nROOT 用户登录\r仅第一次可用：\n登录用户账户 执行命令 sudo passwd root 会出现 [sudo]password for username: 输入目前登录用户的账户和密码 当显示 NewPassword: 时输入新的 ROOT 账户的密码 Retype New Password: 再次输入刚刚设定的 ROOT 账户密码进行确认 即可重置 ROOT 账户的密码\n接着执行命令 su - root 即可切换为 ROOT 账号\n文本编辑器 vi\rvi 文件\r如果命令指定的文件不存在，则创建文件 如果命令指定的文件存在，则打开该文件\n命令模式\rh 光标左移一个字符 j 光标下移一个字符 k 光标上移一个字符 l 光标右移一个字符 x 删除光标所在字符 dd 删除光标所在行 ndd n 为数字，表示删除当前光标及下面的 n 行 dG 删除当前行以下的所有内容 d$ 删除当前光标到当前光标所在行的结尾 d0 删除当前光标到当前光标所在行的开头 dw 删除光标处到词尾的内容 gg 把光标移到文件开始的位置 G 将光标移到文件末尾 ctrl + F 上一页 ctrl + B 下一页 0 把光标移动到所在行的行首 $ 把光标移动到所在行的行尾 pageup 向上翻页 pagedown 向下翻页 yy 复制光标所在行 p 粘贴 v 移动光标进入选择模式 y 复制选中的内容 nyy n 为数字，表示复制当前光标及下面的 n 行 u 撤销刚才的操作 ctrl + R 恢复更改 . 重复刚才所做的操作\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/126680038_p0.png' />
+    <link rel="shortcut icon" href="https://www.emojiall.com/en/header-svg/%F0%9F%8D%A5.svg" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_c6aef3d413c27a14.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">糖果罐🍥 - Candy的博客</a></h1>
+            <h2 class="site-description">这是什么? Candy? 可以吃吗？</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Candquarzy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:CandyQuartz_qwq@outlook.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/Candquarzy_QwQ'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/linux/">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/126680038_p0.png" loading="lazy" alt="Featured image of post Linux" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/linux/">Linux</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-07-31,</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 8 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="登录系统">登录系统
+</h1><p>1
+ssh username@IP -p port
+username 用户名
+IP 服务器 IP
+port 登录端口
+exit / ctrl + D 可以退出本次登录</p>
+<h1 id="root-用户登录">ROOT 用户登录
+</h1><p>仅第一次可用：</p>
+<p>登录用户账户
+执行命令 sudo passwd root
+会出现 [sudo]password for username:
+输入目前登录用户的账户和密码
+当显示 NewPassword: 时输入新的 ROOT 账户的密码
+Retype New Password: 再次输入刚刚设定的 ROOT 账户密码进行确认
+即可重置 ROOT 账户的密码</p>
+<p>接着执行命令 su - root 即可切换为 ROOT 账号</p>
+<h1 id="文本编辑器-vi">文本编辑器 vi
+</h1><h1 id="vi-文件">vi 文件
+</h1><p>如果命令指定的文件不存在，则创建文件
+如果命令指定的文件存在，则打开该文件</p>
+<h1 id="命令模式">命令模式
+</h1><p>h 光标左移一个字符
+j 光标下移一个字符
+k 光标上移一个字符
+l 光标右移一个字符
+x 删除光标所在字符
+dd 删除光标所在行
+ndd n 为数字，表示删除当前光标及下面的 n 行
+dG 删除当前行以下的所有内容
+d$ 删除当前光标到当前光标所在行的结尾
+d0 删除当前光标到当前光标所在行的开头
+dw 删除光标处到词尾的内容
+gg 把光标移到文件开始的位置
+G 将光标移到文件末尾
+ctrl + F 上一页
+ctrl + B 下一页
+0 把光标移动到所在行的行首
+$ 把光标移动到所在行的行尾
+pageup 向上翻页
+pagedown 向下翻页
+yy 复制光标所在行
+p 粘贴
+v 移动光标进入选择模式
+y 复制选中的内容
+nyy n 为数字，表示复制当前光标及下面的 n 行
+u 撤销刚才的操作
+ctrl + R 恢复更改
+. 重复刚才所做的操作</p>
+<h1 id="插入模式">插入模式
+</h1><p>按下键盘上的 i 进入插入模式，在左下角会显示 &ndash; INSERT &ndash; 字样</p>
+<p>按下键盘上的 a 也可以进入插入模式，不过是在光标后面插入内容</p>
+<p>0 在光标上一行之后插入一行
+o 在光标所在行之后插入一行
+l 在行的开头进入插入模式
+A 在行的结尾进入插入模式
+esc 退出插入模式，进入命令模式</p>
+<h1 id="底行模式">底行模式
+</h1><p>:wq 保存文件并退出
+:w 保存文件但是不退出 vi
+:q! 不保存文件强制退出编辑器
+:set paste 设置粘贴模式 (用于从外部复制内容进来不会导致内容错乱)
+:set nu 显示行号
+:set nonu 关闭行号显示</p>
+<h1 id="vi-编辑器其他">vi 编辑器其他
+</h1><p>/[string] string 代表需要查询的内容 比如 /abc 即查询 abc
+n 查找下一个
+N 查找上一个</p>
+<h1 id="替换内容">替换内容
+</h1><p>1
+:[range]/[string]/[replace]/[mode]
+range 查找要替换内容的范围
+string 要被替换的内容
+replace 替换后的内容
+mode 替换模式</p>
+<h1 id="文件系统">文件系统
+</h1><p>Linux 的文件路径是区分大小写的</p>
+<p>pwd 查询当前工作目录</p>
+<h1 id="cd-命令---更改工作目录">cd 命令 - 更改工作目录
+</h1><p>cd / 路径 / 改变工作目录
+cd… 回到上一级目录</p>
+<h1 id="绝对路径与相对路径">绝对路径与相对路径
+</h1><p>绝对路径 开始于根目录，沿着目录层级，一直到达想要的目录或文件
+相对路径 相对的当前目录 其中 . 指的是当前目录 … 指的是上一层目录，即当前目录的父目录
+./test.txt 在当前目录下寻找 test.txt</p>
+<p>./ 路径 / 路径 / 文件 也可以打开路径 / 路径 / 文件</p>
+<p>…/ 文件 打开上一层目录中的某文件</p>
+<p>…/…/…/ 文件 打开上 3 层目录中的文件</p>
+<h1 id="ls-命令---查看文件--文件夹">ls 命令 - 查看文件 / 文件夹
+</h1><p>查看目录下的文件 / 文件夹</p>
+<p>1
+ls [-a / -l / -h] [dir]
+-a all，列出所有文件
+-l 以列表形式展示内容，并显示更多信息 可以简写为 ll
+-lh 显示文件，文件夹大小
+-la 查看隐藏的文件详情
+dir 目录
+通过 ls 来确定当前的工作目录并不恰当，我们可以使用 pwd 来查看当前所在的工作目录</p>
+<h1 id="cp-命令---复制">cp 命令 - 复制
+</h1><p>复制命令</p>
+<p>1
+cp [-r] [source] [destination]
+-r 拷贝目录 同时会将该目录下的所有文件和文件夹都拷贝过去
+source 源文件 / 目录
+destination 目的文件 / 目录
+1
+cp /data/config.yaml ./config/
+cp 命令也可以使用通配符</p>
+<h1 id="mv-命令---移动--重命名">mv 命令 - 移动 / 重命名
+</h1><p>移动 / 重命名命令</p>
+<p>1
+mv [source] [destination]
+source 要被移动的源文件 / 目录
+destination 目标目录 / 文件新名称 / 目录的新名称 (要求该目录不存在)/ 要移动进去的目录 (要求该目录存在)</p>
+<h1 id="grep-命令---查找">grep 命令 - 查找
+</h1><p>在文件中查找字符串</p>
+<p>1
+grep [keywords] [file] [-n] [-C] [-B] [-A] [line]
+keywords 要查找的关键字
+file 被查找的文件
+-n 会将行号和每一行的内容都输出
+-n -C 将查找到所在关键字的这一行的上下 line 行信息都输出出来
+-n -B 将查找到所在关键字的这一行的上面 line 行信息都输出出来
+-n -A 将查找到所在关键字的这一行的后面 line 行信息都输出出来
+1
+grep candy Candy_note -n -C 3</p>
+<h1 id="wc-命令---关键字数量统计">wc 命令 - 关键字数量统计
+</h1><p>统计在一个文件中出现的关键字数量</p>
+<p>1
+wc [-c -m -l -w] [file]
+-c 统计字节数量
+-m 统计字符数量
+-l 统计行数
+-w 统计单词数量</p>
+<h1 id="ln-命令---创建-快捷方式">ln 命令 - 创建 “快捷方式”
+</h1><p>创建一个类似于 Windows 中的快捷方式</p>
+<p>1
+ln -s [source] [destination]
+source 被链接的文件 / 文件夹路径
+destination 目的地路径</p>
+<h1 id="scp-命令---远程拷贝文件">scp 命令 - 远程拷贝文件
+</h1><p>从远程设备中拷贝文件过来</p>
+<p>1
+scp [localfile][filename] [username]@[address]:[destinationPath]
+我们使用 B 主机进行拷贝，就必须要有 B 主机的用户账号。加入 B 主机的账号是 candy1……</p>
+<p>1
+scp /home/candy0/note.txt <a class="link" href="mailto:candy1@luckyfuture.cc" >candy1@luckyfuture.cc</a>:/home/candy1/</p>
+<h1 id="which-命令---查找命令">which 命令 - 查找命令
+</h1><p>可以查到被查找的命令在哪个路径下</p>
+<p>1
+which [command]
+假如我要查看 ls 命令在哪个路径下：</p>
+<p>1
+which ls</p>
+<h1 id="find-命令---查找文件">find 命令 - 查找文件
+</h1><p>查找文件在哪个路径下</p>
+<p>1
+find [startPath] -name [&ldquo;filename&rdquo;]
+startPath 起始查找路径
+filename 文件名
+即从路径开始以文件名查找文件</p>
+<p>也可以使用通配符来查找文件</p>
+<p>1
+find [stratPath] -size [+/-] [n] [kMG]
+stratPath 起始查找路径
++/- + 代表大于 - 代表小于
+n 代表大小中数字部分
+kMG k: 代表 kb，需小写 k；M: 代表 MB；G: 代表 GB</p>
+<h1 id="用户">用户
+</h1><p>ROOT 账号拥有系统的最高权限</p>
+<p>每一个用户账号都对应一个用户 ID，其被存储在文件 /etc/passwd 中</p>
+<h1 id="添加用户">添加用户
+</h1><p>1
+adduser username
+username 新用户的用户名
+如果不添加组参数系统会默认创建一个组</p>
+<p>1
+adduser &ndash;ingroup root username
+直接创建一个属于 root 用户组的用户</p>
+<h1 id="更新用户密码">更新用户密码
+</h1><p>如果是非 ROOT 账户，则只能更改自己的密码。ROOT 账户可以更改所有人的密码</p>
+<p>1
+passwd username
+username 要被更改密码的账户名 <strong>(仅限 ROOT 账户使用)</strong></p>
+<h1 id="删除用户">删除用户
+</h1><p>1
+deluser username
+username 要被删除的账户名
+删除该用户 <strong>(仅限 ROOT 账户使用)</strong></p>
+<h1 id="切换用户">切换用户
+</h1><p>1
+su [-] username</p>
+<ul>
+<li>使用该用户的用户环境
+username 要被切换的用户名
+如果是 root 账号切换不需要密码，普通用户则需要密码</li>
+</ul>
+<p>若一直套娃切换，系统会保留层级关系；在使用 ctrl+D 时会退出当前账号返回上一个账号</p>
+<p>1
+getent passwd
+查看当前系统中有哪些用户</p>
+<h1 id="用户组">用户组
+</h1><h1 id="查看所有用户组">查看所有用户组
+</h1><p>1
+groups
+查看当前账号用户组</p>
+<p>1
+groups [username]
+username 用户名
+查看其他用户所属于的用户组</p>
+<p>1
+grep &lsquo;[keyword]&rsquo; /etc/group
+keyword 组名称关键字
+查看用户组里的用户，比如查看以 sudo 开头的组的用户：</p>
+<p>1
+grep &lsquo;^sudo&rsquo; /etc/group
+其中，这里的 keyword 可以使用正则表达式</p>
+<h1 id="新增--删除用户组">新增 / 删除用户组
+</h1><p>1
+addgroup [NewGroupName]
+NewGroupName 新增组的名称
+新增一个用户组</p>
+<p>1
+delgroup [groupname]
+groupname 要被删除的组名称
+删除该用户组</p>
+<h1 id="改变用户所在组">改变用户所在组
+</h1><p>1
+usermod -g [groupname] [username]
+groupname 组名称
+username 用户名
+将用户添加的指定的组中</p>
+<p>1
+usermod -G [groupname1] [groupname2]… [username]
+将用户设定到这些组当中</p>
+<h1 id="文件权限">文件权限
+</h1><p>在 Linux 系统中，权限通常可以按照用户权限分为 3 种类型，以及对文件的 3 种权限方式</p>
+<h1 id="用户权限">用户权限
+</h1><p>owner 即文件的所有者，也是该文件的创建者
+grouper 文件所有者，即文件所在的用户组及里面的用户
+other 其他用户，即非 owner 和非 grouper</p>
+<h1 id="文件权限-1">文件权限
+</h1><p>读 使用英文字母 r 表示，可以查看目录 / 文件内的内容
+写 使用英文字母 w 表示，可以修改文件 / 目录内的内容
+执行 使用英文字母 x 表示，可以执行文件 / 使用 cd 命令进入目录</p>
+<h1 id="drwxrw-rw-">drwxrw-rw-
+</h1><p>权限细节总共分为 10 个位置</p>
+<ul>
+<li>/ d / l 第一位，<strong>-</strong> 表示文件；d 表示文件夹；l 表示软链接
+第 2-4 位 这三位为文件所属用户权限
+第 5-7 位 这三位位文件所属用户组中的用户权限
+第 8-10 位 其他用户权限
+假设一个权限是 <strong>drwxrw-r–</strong> 则表示</li>
+</ul>
+<p>d 这是文件夹
+rwx 所属用户权限，在该例子中该文件所有者可以对该文件进行读、写、执行
+rw- 所属用户组权限，在该例子中该文件所有者所在的用户组中的用户可以对该文件进行读、写操作
+r– 表示其他用户的权限，在该例子中其他用户对该文件仅可读</p>
+<h1 id="数字所对应的权限">数字所对应的权限
+</h1><p>0 无任何权限，即 <strong>—</strong>
+1 仅有 x 权限，即 <strong>–x</strong>
+2 仅有 w 权限，即 <strong>-w-</strong>
+3 w 和 x 权限，即 <strong>-wx</strong>
+4 仅有 r 权限，即 r–
+5 r 和 x 权限，即 r-x
+6 r 和 w 权限，即 rw-
+7 全部权限，即 rwx
+例如， 751 即为 rwx (7) r-x (5) &ndash;x (1)</p>
+<h1 id="修改文件访问权限">修改文件访问权限
+</h1><p>1
+chmod [-R] [who] [op] [permission] [file/dir]
+-R 指对文件夹内的全部内容应用相同操作
+who 表示用户类型 (见下表)
+op 表示动作（+ 表示加上 permission 指定权力，- 表示取消 permission 指定的权力
+permission 存取权限（r: 可读，w: 可写，x: 执行）
+用户类型表</p>
+<p><strong>u:</strong> 文件拥有者
+<strong>g:</strong> 该文件拥有者的同组用户
+<strong>o:</strong> 其他人
+<strong>a:</strong> 所有人
+1
+2
+3
+4
+chmod u+w file1 //该命令添加了拥有者对file1文件的写权限
+chmod u-x file1 //该命令去掉了拥有者对file1文件的执行权限
+chmod ug+rwx file //该命令添加了拥有者和同组用户对file1文件的读、写、执行权限
+chmod a+rwx file //该命令添加了所有人对file1文件的读、写、执行权限
+当然除了这种方式，我们也可以使用数字进行修改权限的修改</p>
+<p>1
+chmod [who] [op] [Num] [file/dir]
+比如，给当前目录下的文件添加对自己的 777 权限：</p>
+<p>1
+chomod 777 file1</p>
+<h1 id="文件归属权">文件归属权
+</h1><p>1
+chown [-R] [User][:][UserGroups] [file1] [file2] […]
+改变文件所有者及文件所在组的用户</p>
+<p>-R 对文件夹内全部内容应用相同的规则
+User 修改所属用户
+:UserGroups 修改所属用户组，其中带：的是用户组，不带：的是用户
+1
+2
+3
+chown candy file1 //把文件file1的所有者变更为用户candy
+chown candy:sudo file1 //把文件file1的所有者变更为用户candy，所属组变为sudo
+chown -R candy dir1 //把目录dir及其子目录以及文件的所有者都变更为candy
+也可以使用 chgrp 命令改变文件所有者组：</p>
+<p>1
+chgrp [opt] [groups] [file]
+opt 选项
+groups 组名称
+file 文件名称</p>
+<h1 id="sudo">sudo
+</h1><p>sudo 是以 root 账号的权限执行命令一次</p>
+<p>哪些账户可以使用 sudo 权限来运行是在 /etc/sudoers 里进行配置的</p>
+<p>1
+sudo -u [user] [command]
+user 以该用户的权限来执行命令
+command 要执行的命令
+1
+sudo [command]
+以 ROOT 权限来执行这条命令</p>
+<p>可以直接将某个用户加入 sudo 用户组（使用 usermod 命令添加），就可以在任何地方，以任何账号权限，运行任何程序</p>
+<h1 id="进程">进程
+</h1><h1 id="ps-命令---进程命令">ps 命令 - 进程命令
+</h1><p>1
+ps
+查看进程信息</p>
+<p>1
+ps -f
+查看详细的进程信息</p>
+<p>1
+ps -u [user]
+user 用户名
+显示该用户所创建的进程信息</p>
+<p>1
+ps -e
+显示当前所有正在运行的进程信息</p>
+<p>1
+ps -ef
+显示当前所有正在运行的所有系统进程信息</p>
+<p>1
+ps -ef | grep [keyword]
+keyword 要被查找进程的关键字
+查找该进程</p>
+<p>1
+ps -ef | grep [keyword] | grep -v [unkeyword]
+keyword 要被查找进程的关键字
+unkeyword 不包含的（排除）关键字
+查找一个进程，但是这个进程不显示包含排除关键字的进程</p>
+<h1 id="nohup---静默运行">nohup - 静默运行
+</h1><p>一般来说，有些程序如果关闭终端的话进程有可能会被结束掉，因此可以在命令上加上 nohup</p>
+<p>在程序前台运行的情况下，使用快捷键 ctrl+C 终止进程</p>
+<h1 id="kill-命令---杀死进程">kill 命令 - 杀死进程
+</h1><p>1
+kill -9 [PID / name]
+PID / Name 该程序的 PID 或程序名
+-9 表示强行杀死</p>
+<h1 id="重定向">重定向
+</h1><p>在 shell 中输入命令时，可以使用 &gt; 符号将输入命令后的执行结果信息输出到指定文件中</p>
+<p>1
+ps &gt; [out]
+上面的命令会将原本要输出在 stdout（可以理解为终端的输出）输出到文件中</p>
+<p>如果要将 stdout 和 stderr（屏幕显示的报错信息）同时输入到一个文件 err.txt 中可以使用 &amp;&gt; 符号</p>
+<p>1
+command &amp;&gt; err.txt
+单独重定向 stderr 的符号是 2&gt;</p>
+<p>1
+command &gt; [out] 2&gt; err.txt
+stdin 重定向符号是 &lt; ，可以将原本要显示到终端上的内容输出到文件中</p>
+<h1 id="echo-命令">echo 命令
+</h1><p>在命令行内输出指定的内容</p>
+<p>1
+echo [string]
+string 要输出的指定内容
+带有空格或 \ 等特殊符号的内容，建议使用双引号包含。如果不适用双引号的情况下，空格后面很容易被识别为另一个参数，虽然说影响不是很大就是了（</p>
+<p>1
+echo <code>[commad]</code>
+commad 被 `` 包含的内容会作为命令去执行，然后结果会被 echo 打印在屏幕上</p>
+<h1 id="-和-">&gt; 和 &raquo;
+</h1><blockquote>
+<p>将左侧命令的结果覆盖写入到右侧指定的文件中</p>
+<blockquote>
+<p>将左侧命令的结果追加写入到右侧指定的文件中</p></blockquote></blockquote>
+<h1 id="tail-指令">tail 指令
+</h1><p>tail 指令可以查看文件尾部的内容，追踪文件的最新更新。也就是从后向前看</p>
+<p>1
+tail [-f] [-num] [filedir]
+-f 表示持续跟踪
+-num 表示从后向前看多少行，默认 10 行
+filedir 要查看的文件路径
+例如，查看 text.txt 文件后 5 行的内容</p>
+<p>1
+tail -5 text.txt</p>
+<h1 id="管道符-">管道符 |
+</h1><p>在 Linux 操作系统中，有时候需要将一个命令输出的内容作为另一个命令的输入内容，可以使用 | 操作符来实现，并且管道符可以嵌套</p>
+<p>1
+icommand | [othercommand1] | [othercommand2]
+icommand 要输出的命令
+othercommand 其他命令</p>
+<h1 id="打包与压缩">打包与压缩
+</h1><h1 id="tar-命令---针对-tar-压缩包">tar 命令 - 针对 tar 压缩包
+</h1><p>1
+tar [-c -v -x -f -z -C] [para0] [para1] […]
+-c 创建压缩文件，用于要压缩一个文件的时候
+-v 显示压缩和解压缩的进度
+-x 解压缩而不是压缩
+-f 要创建的文件，或者说要解压文件，-f 选项必须在所有选项中处于最后一个
+-z gzip 模式，不适用 - z 就是普通的 tarball 格式，一般处于第一位
+-C 自定义解压路径
+比如解压一个 test.tar，并将其解压缩到 /home/candy/</p>
+<p>1
+tar -xvf test.tar -C /home/candy/
+如果要压缩 /data 路径出来一个名为 data.tar 压缩包……</p>
+<p>1
+tar -cvf data.tar ./data/*
+也可以仅查看一个压缩包</p>
+<p>1
+tar -tvf data.tar
+也可以将新文件添加进压缩包中</p>
+<p>1
+tar -rvf data.tar my_pic.jpg</p>
+<h1 id="gzip-命令---针对-gz-压缩包">gzip 命令 - 针对 gz 压缩包
+</h1><p>gz 压缩包可以将压缩包体压缩至很小</p>
+<p>1
+gzip -d [file.gz]
+解压缩一个名为 file.gz 的压缩包</p>
+<p>同时 gzip 和 tar 可以联合使用</p>
+<p>1
+tar -zcvf [pag.tar.gz] [file] [dir]
+pag.tar.gz 压缩包名
+file 文件
+dir 目录
+可以直接将文件压缩成.tar.gz 格式</p>
+<p>1
+tar -zxvf [pag.tar.gz]
+解压缩一个为.tar.gz 的压缩包</p>
+<h1 id="zip-命令---针对-zip-压缩包">zip 命令 - 针对 zip 压缩包
+</h1><p>1
+zip [-r] [file.zip] [dir]
+-r 压缩目录
+file.zip 压缩包名
+dir 路径
+压缩一个 zip 格式的压缩包</p>
+<p>1
+unzip [file.zip]
+解压缩一个 zip 格式的压缩包</p>
+<h1 id="系统相关命令">系统相关命令
+</h1><h1 id="top-命令---查看系统进程信息">top 命令 - 查看系统进程信息
+</h1><p>1
+top [-p -d -c -n -b -i -u] [PID]
+-p 只显示某个进程的信息
+-d 设置刷新时间，默认是 5s
+-c 显示产生进程的完整命令，默认是进程名
+-n 指定刷新次数，比如 top-n3，刷新输出 3 次后退出
+-b 以非交互非全屏运行，以批次的方式执行 top，一般配合 -n 指定输出几次统计信息，将输出重定向到指定文件
+-i 不显示任何闲置 (idle) 或无用 (zombie) 进程
+-u 查找特定用户启动的进程
+在 top 的页面上，按 1 切换核心的占用情况，按下大写 P 可以按照 CPU 占用率高低来排序，大写 M 按照内存占用高低来排序。按下 q 即可退出</p>
+<p>top 命令内容较多，这里不多介绍</p>
+<h1 id="网络相关命令">网络相关命令
+</h1><p>1
+ip addr
+查看网络接口、IP 地址</p>
+<p>1
+ping [ip]
+连通性测试</p>
+<p>1
+hostname
+查看主机名</p>
+<p>1
+hostnamectl set-hostname [name]
+修改主机名为 name</p>
+<p>1
+netstat
+查看当前所有占用网络端口的程序</p>
+<p>1
+netstat -anp | grep [port]
+port 端口号
+查看指定端口的占用情况</p>
+<p>1
+netstat [-a -t -u -n -l -p -r]
+-a 显示所有选项，默认不显示 LISTEN 相关
+-t 仅显示 TCP 相关选项
+-u 仅显示 UDP 相关选项
+-n 不显示端口协议名，显示端口数字
+-l 只显示 Listen (监听) 的状态端口
+-p 显示建立相关链接的进程 PID
+-r 显示路由信息、路由表
+netstat 命令内容较多，这里不多介绍</p>
+<p>1
+nmap [ip]
+显示端口占用情况</p>
+<p>1
+sar [-n] DEV [num1] [num2]
+-n 查看网络
+DEV 查看接口，默认为 DEV 即可
+num1 数字，表示刷新间隔
+num2 数字，表示刷新次数
+网络状态监控</p>
+<h1 id="wget-curl-命令---网页--下载命令">wget /curl 命令 - 网页 / 下载命令
+</h1><p>1
+wget [-b] [URL]
+-b 后台下载，并且将日志写入当前工作目录的 wget-log 文件中
+URL 文件地址
+即可将一个文件下载到当前工作目录</p>
+<p>1
+curl [-o] [URL]
+-o 用于下载文件，当 URL 为文件链接时，可以使用 <strong>-o</strong> 来保存文件
+URL 要发起请求的网络地址
+curl 类似于浏览器，可以查看网页，也可以下载文件</p>
+<h1 id="systemctl-系统服务命令">systemctl 系统服务命令
+</h1><p>用于启动，关闭，重启服务</p>
+<p>1
+systemctl status [service]
+service 服务名
+查看该服务状态</p>
+<p>1
+systemctl start [service]
+启动该服务</p>
+<p>1
+systemctl stop [service]
+停止该服务</p>
+<p>1
+systemctl restart [service]
+重启该服务</p>
+<p>1
+systemctl enable [service]
+开启服务开机自启动</p>
+<p>1
+systemctl disable [service]
+关闭服务开机自启动</p>
+<h1 id="apt-服务yum">apt 服务（yum）
+</h1><p>由于我使用的是 Ubuntu，所以要使用 apt 命令。如果你使用的是类如 Debian 等系统，可以使用 yum</p>
+<p>1
+apt install [package]
+package 要安装软件的包名
+安装一个软件包</p>
+<p>1
+apt list &ndash;installed
+显示所有已经安装的程序包</p>
+<p>1
+apt list [package]
+显示 package 程序包的安装情况</p>
+<p>1
+apt remove [package]
+移除 package 程序包</p>
+<p>1
+apt [-y] [install | remove | search] [package]
+-y 自动确认，无需手动确认安装和卸载过程
+install 安装
+remove 卸载
+search 搜索
+package 包名</p>
+<h1 id="时间和时区">时间和时区
+</h1><p>1
+data [-d] [&quot;+String&quot;]
+-d 按照指定的字符串显示日期，一般用于日期计算
+String 通过特定的字符串标记，来控制显示的日期形式</p>
+<h1 id="磁盘命令">磁盘命令
+</h1><p>1
+df [-h]
+-h 以更人性化的单位显示
+查看硬盘的使用情况</p>
+<p>1
+iostat [-x] [num1] [num2]
+-x 显示更多信息
+num1 数字，表示刷新间隔
+num2 数字，表示刷新次数</p>
+<h1 id="screen-命令---屏幕">Screen 命令 - 屏幕
+</h1><h1 id="创建屏幕">创建屏幕
+</h1><p>1
+screen -S [screen_name]
+screen_name 要创建的屏幕名称</p>
+<h1 id="退出屏幕但不删除当前屏幕">退出屏幕但不删除当前屏幕
+</h1><p>ctrl+A ctrl+D</p>
+<p>screen -d</p>
+<!--code￼92-->
+<p>-r 恢复屏幕
+-R 尝试恢复屏幕，若恢复失败则创建一个新的屏幕
+-dr 顶掉之前的用户并恢复屏幕</p>
+<h1 id="显示所有屏幕">显示所有屏幕
+</h1><p>1
+sreen -ls</p>
+<h1 id="检查屏幕并删除不能使用的屏幕">检查屏幕，并删除不能使用的屏幕
+</h1><p>1
+screen -wipe</p>
+<h1 id="删除屏幕">删除屏幕
+</h1><p>1
+screen [-XS] [-X] [screen_name] quit
+-XS 在屏幕外删除，需要写屏幕名
+-X 删除当前屏幕，不需要写屏幕名</p>
+<h1 id="环境变量">环境变量
+</h1><p>类似于 windows 中的环境变量，Linux 也是使用 PATH 来定义值</p>
+<p>1
+export [variable] = [count]
+variable 变量名
+count 变量值
+这样可以临时设置一个环境变量</p>
+<p>如果要永久生效：</p>
+<p>针对当前用户的环境变量： ~/.bashrc 文件中进行修改
+针对所有用户，即系统环境变量： /etc/profile 中的 source 配置文件
+这些修改都是立即生效的</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 By Candy
+    </section>
+    
+    <section class="powerby">
+        
+            不向焦虑与抑郁投降 这个世界终会有我们存在的地方 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.9ee8db4f92c02be0c17c8800cdd16e8bacc7fb5aa14497af478c00ccae22d210.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
