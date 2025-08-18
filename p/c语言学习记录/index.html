@@ -308,7 +308,7 @@
         <li><a href="#基本输入函数-scanf">基本输入函数 scanf()</a></li>
       </ol>
     </li>
-    <li><a href="#判断语句">判断语句</a>
+    <li><a href="#判断--选择语句">判断 / 选择语句</a>
       <ol>
         <li><a href="#布尔值真与假">布尔值、真与假</a></li>
         <li><a href="#if">if</a></li>
@@ -345,12 +345,14 @@
         <li><a href="#操作符优先级">操作符优先级</a></li>
       </ol>
     </li>
+    <li><a href="#关键字">关键字</a></li>
     <li><a href="#函数">函数</a>
       <ol>
         <li><a href="#定义函数">定义函数</a></li>
         <li><a href="#调用函数">调用函数</a></li>
         <li><a href="#函数参数">函数参数</a>
           <ol>
+            <li><a href="#实参与形参">实参与形参</a></li>
             <li><a href="#传值调用">传值调用</a></li>
             <li><a href="#传址调用">传址调用</a></li>
             <li><a href="#数组传参">数组传参</a></li>
@@ -539,6 +541,8 @@
         <li><a href="#计算-1--2--3----10-的和">计算 1! + 2! + 3! + … + 10! 的和</a></li>
         <li><a href="#使用递归求阶乘">使用递归求阶乘</a></li>
         <li><a href="#使用递归将字符串逆序">使用递归将字符串逆序</a></li>
+        <li><a href="#使用递归实现strlen">使用递归实现Strlen()</a></li>
+        <li><a href="#使用递归实现n的k次方">使用递归实现n的k次方</a></li>
         <li><a href="#将一个数分解质因数">将一个数分解质因数</a></li>
         <li><a href="#求最大公约数和最小公倍数">求最大公约数和最小公倍数</a></li>
       </ol>
@@ -618,7 +622,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                18135 字
+                19511 字
             </time>
         </div>
         
@@ -636,7 +640,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 37 分钟
+                    阅读时长: 39 分钟
                 </time>
             </div>
         
@@ -664,7 +668,11 @@
 }
 </style>
 <h2 id="基础语法">基础语法
-</h2><h3 id="输出-hello-world">输出 hello world!
+</h2><blockquote>
+<p>C语言是一门通用计算机编程语言，广泛应用于底层开发。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。</p></blockquote>
+<blockquote>
+<p>二进制语言(101011110) -&gt; 汇编语言(mov eax 10) -&gt; 高级语言(如B语言, C语言等等)</p></blockquote>
+<h3 id="输出-hello-world">输出 hello world!
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -699,9 +707,9 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以被改变的量，必须先声明后才可以使用</p>
-<p>在函数内申明的变量叫局部变量，局部变量的作用域是局部变量所在的局部范围</p>
-<p>在函数体外声明的变量叫全局变量</p>
-<p>若有全局变量和局部变量一样的情况，局部变量的优先级更高</p>
+<p>在函数内申明的变量叫局部变量，局部变量的作用域是局部变量所在的局部范围。出范围就会销毁</p>
+<p>在函数体外声明的变量叫全局变量，全局变量的作用域是程序的生命周期</p>
+<p>若有全局变量和局部变量一样的情况，<strong>局部变量的优先级更高</strong></p>
 <h4 id="变量的声明">变量的声明
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -756,14 +764,16 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
-<li><strong>char 字符数据类型 1 字节</strong> -128 -1 27/0 - 255</li>
-<li><strong>short 短整型 2 字节</strong> -32768 - 32767</li>
-<li><strong>int 整型 4 字节</strong> -32768 - 32767/-2147483648 - 2147483647</li>
-<li><strong>long 长整型 4 字节</strong> -2147483648 - 2147483647</li>
+<li><strong>char 字符数据类型 1 字节</strong> 范围: (有符号: -128 ~ 127/ 无符号 0 ~ 255)</li>
+<li><strong>short 短整型 2 字节</strong> 范围: (-32768 ~ 32767)</li>
+<li><strong>int 整型 4 字节</strong> 范围: (-2147483648 ~ 2147483647)</li>
+<li><strong>long 长整型 4 字节</strong> 范围: (-2147483648 ~ 2147483647)</li>
 <li><strong>long long 更长的整型 8 字节</strong></li>
-<li><strong>float 单精度浮点数 4 字节</strong> 1.2E-38 - 3.4E+38</li>
-<li><strong>double 双精度浮点数 8 字节</strong> 2.3E-308 - 1.7E+308</li>
+<li><strong>float 单精度浮点数 4 字节</strong> 范围: (1.2E-38 ~ 3.4E+38)</li>
+<li><strong>double 双精度浮点数 8 字节</strong> 范围: (2.3E-308 ~ 1.7E+308)</li>
 </ul>
+<blockquote>
+<p><code>char</code> 类型也可以通过ACSII码表等价于 <code>int</code> 来使用</p></blockquote>
 <h3 id="常量">常量
 </h3><p>不能被改变的量被称为常量，分为如下 4 种</p>
 <ul>
@@ -830,7 +840,9 @@
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">str</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;hello world&#34;</span><span class="p">;</span> 
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>\0 转义字符代表了该字符串的结束，所有定义的字符串最后面都有 &ldquo;\0&rdquo;，只是被隐藏了</p>
+</div><p><code>\0</code> 转义字符代表了该字符串的结束(包括<code>strlen()</code>库函数的返回值)，所有定义的字符串最后面都有 <code>\0</code>，只是被隐藏了</p>
+<blockquote>
+<p>若一个字符数组内没有加入<code>\0</code>，则<code>strlen()</code>的返回值为随机值</p></blockquote>
 <h3 id="基本输出函数-printf">基本输出函数 printf()
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -899,9 +911,9 @@
 </div><p>格式： <code>scanf(&quot;占位符&quot;, 变量的地址);</code></p>
 <p>其中占位符同 printf () 函数</p>
 <hr>
-<h2 id="判断语句">判断语句
+<h2 id="判断--选择语句">判断 / 选择语句
 </h2><h3 id="布尔值真与假">布尔值、真与假
-</h3><p>在 C 语言中，true，非数字 0 代表条件为真；flase 及数字 0 代表条件为假</p>
+</h3><p>在 C 语言中，非数字 0 代表条件为真(<code>true</code>)；数字 0 或空(<code>NULL</code>)代表条件为假(<code>false</code>)</p>
 <h3 id="if">if
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -988,7 +1000,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>悬空 else：else 会与最近的 if 相匹配</p>
+</div><p><strong>悬空 else：else 会与最近的 if 相匹配</strong></p>
 <h3 id="else-if">else if
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1056,7 +1068,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="switch">switch
+</div><blockquote>
+<p>在代码书写上建议添加大括号，即使执行的代码只有一句。</p></blockquote>
+<h3 id="switch">switch
 </h3><p>switch 语句是一种有限制的控制流语句，它用于根据表达式的值执行不同的代码块</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1131,6 +1145,8 @@
 <p>break 不是必须的，只要符合你的运行逻辑就可以了</p>
 </li>
 </ul>
+<blockquote>
+<p><code>switch()</code> 内的判断变量必须是整型，不能是浮点数</p></blockquote>
 <hr>
 <h2 id="循环语句">循环语句
 </h2><h3 id="while-循环">while 循环
@@ -1240,8 +1256,8 @@
 <p>循环内部不要重复写循环变量，容易使 for 循环失去控制</p>
 <p>在循环体内改变循环变量的值不可取</p>
 <p>通常使用左闭右开区间的写法</p>
-<p>判断部分，初始化部分可以省略，这样如果在循环体内没有写退出的判断语句的话，回导致死循环</p>
-<p>一个 for 循环可以同时初始化 2 个变量</p>
+<p>初始化，判断部分，调整部分均可以省略，这样如果在循环体内没有写退出的判断语句的话，回导致死循环</p>
+<p>且一个 for 循环可以同时初始化 2 个变量</p>
 <h3 id="dowhile-循环">do…while 循环
 </h3><p>do…while 循环与 while 循环最大的区别是 do…while 循环会先执行依次循环体内的代码，然后再进行判断</p>
 <div class="highlight"><div class="chroma">
@@ -1639,9 +1655,17 @@
 <p><strong>&gt;&gt;</strong> 右移运算符，①算术右移：右边丢弃，左边补原符号位；②逻辑右移：右边丢弃，左边补 0</p>
 </li>
 </ul>
-<p>这些操作符操作的数字必须是整数</p>
+<p>位操作符所运算的数字必须是整数</p>
+<blockquote>
+<p>所有位操作符所操作的对象都为二进制位</p>
+<ul>
+<li><strong>原码</strong> 直接写出来的二进制数</li>
+<li><strong>反码</strong> 原码的所有位按位取反</li>
+<li><strong>补码</strong> 反码 + 1</li>
+<li><strong>移码</strong> 补码的基础上将符号位按位取反(仅能表示整数)</li>
+</ul></blockquote>
 <h3 id="单目操作符">单目操作符
-</h3><p>只有一个操作符的情况下叫做单目操作符</p>
+</h3><p>只有一个操作数的情况下叫做单目操作符</p>
 <ul>
 <li>
 <p><strong>+</strong> 正号</p>
@@ -1650,7 +1674,7 @@
 <p><strong>-</strong> 负号</p>
 </li>
 <li>
-<p><strong>sizeof</strong> 计算和统计操作符的类型长度，结果为 unsigned int 类型</p>
+<p><strong>sizeof</strong> 计算和统计操作符的类型变量等所占用空间的大小，结果为 unsigned int 类型 (不是函数! 是操作数符!)</p>
 </li>
 <li>
 <p><strong>~</strong> 对一个数的二进制位进行按位取反，原来的 1 变成 0，原来的 0 变成 1。包括符号位</p>
@@ -1805,6 +1829,41 @@
   </tbody>
 </table></div>
 <hr>
+<h2 id="关键字">关键字
+</h2><p>函数 / 变量名不能是关键字</p>
+<p>以下为部分常见关键字:</p>
+<ul>
+<li>
+<p><strong>auto</strong> 每个局部变量都是由 <code>auto</code> 修饰的 比如 <code>auto int a = 10</code> 只不过默认省略</p>
+</li>
+<li>
+<p><strong>const</strong> 常变量 将一个变量修饰为常变量(严格来说不算常量)</p>
+</li>
+<li>
+<p><strong>extern</strong> 用于声明外部符号(如变量、函数等)</p>
+</li>
+<li>
+<p><strong>register</strong> 寄存器关键字 用于建议编译器将此变量存储在寄存器中</p>
+</li>
+<li>
+<p><strong>signed</strong> 有符号的</p>
+</li>
+<li>
+<p><strong>unsigned</strong> 无符号的</p>
+</li>
+<li>
+<p><strong>static</strong> 静态的 改变生命周期(本质上是改变了变量的存储类型) 只能在自己所在的源文件中使用</p>
+</li>
+<li>
+<p><strong>typedef</strong> 类型重命名 可以将一个类型重命名另一个关键字 如 <code>typedef unsigned int u_int</code></p>
+</li>
+<li>
+<p><strong>volatile</strong> ?</p>
+</li>
+</ul>
+<blockquote>
+<p>请注意 <code>define</code> 和 <code>include</code> 不是关键字，而是预处理指令</p></blockquote>
+<hr>
 <h2 id="函数">函数
 </h2><p>函数分为库函数和自定义函数两种，库函数为 C 编译器编译的函数如：</p>
 <ul>
@@ -1892,6 +1951,11 @@
 <p>函数体 函数主体内的一系列要执行任务的语句</p>
 </li>
 </ul>
+<blockquote>
+<p>若一个函数不写返回类型的话，默认返回int<br>
+函数的参数不宜过多<br>
+函数的设计应该追求高内聚低耦合<br>
+设计函数时，应做到谁申请的资源由谁释放</p></blockquote>
 <h3 id="调用函数">调用函数
 </h3><p>调用函数使用函数调用操作符<code>()</code></p>
 <div class="highlight"><div class="chroma">
@@ -1914,7 +1978,16 @@
 </li>
 </ul>
 <h3 id="函数参数">函数参数
-</h3><h4 id="传值调用">传值调用
+</h3><h4 id="实参与形参">实参与形参
+</h4><ul>
+<li>
+<p><strong>实际参数</strong> 又称<strong>实参</strong> 真实传给函数的参数。实参可以是：常量、变量、表达式、函数等。无论实参是何种类型的量，在进行函数调用时，它们都必须有确定的值，以便把这些值传送给形参</p>
+</li>
+<li>
+<p><strong>形式参数</strong> 又称<strong>形参</strong> 形式参数是指函数名后括号中的变量，因为形式参数只有在函数被调用的过程中才实例化（分配内存单元），所以叫形式参数。形式参数当函数调用完成之后就自动销毁了。因此形式参数只在函数中有效。</p>
+</li>
+</ul>
+<h4 id="传值调用">传值调用
 </h4><ul>
 <li>
 <p><strong>实参</strong> 即为实际的参数，有值。通常用于将值传递给形参</p>
@@ -2040,10 +2113,14 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>详细解释见 <strong>“数组”</strong> 一章</p>
+</div><blockquote>
+<p>务必在函数体外计算数组元素个数，在函数内部是无法得知数组元素个数的</p></blockquote>
+<p>详细解释见 <strong>“数组”</strong> 一章</p>
 <h3 id="函数声明">函数声明
 </h3><p>由于编译器是一行一行顺序编译代码，如果你的函数体在函数调用之后，那么编译器是找不到要执行的代码的，因此会报错</p>
 <p>我们可以在调用这个函数前先对函数进行声明</p>
+<blockquote>
+<p>函数需要满足先声明后使用</p></blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2228,7 +2305,7 @@
 <p><strong>arr_name</strong> 数组的名称</p>
 </li>
 <li>
-<p><strong>const_n</strong> 数组的大小，为常量表达式。若为空编译器会根据后面存储内容的个数来确定数组的大小</p>
+<p><strong>const_n(可为空)</strong> 数组的大小，为常量表达式。若为空编译器会根据后面存储内容的个数来确定数组的大小</p>
 </li>
 </ul>
 <div class="highlight"><div class="chroma">
@@ -4256,6 +4333,8 @@
       </tr>
   </tbody>
 </table></div>
+<blockquote>
+<p><code>#define</code> 所定义的宏会在预编译的时候被替换掉</p></blockquote>
 <h4 id="命名约定">命名约定
 </h4><p>把宏的名称全部大写，函数名的首字母大写</p>
 <h4 id="undef-取消定义">#undef 取消定义
@@ -4303,8 +4382,85 @@
 <hr>
 <h2 id="常用-c-算法">常用 C 算法
 </h2><h3 id="二分查找">二分查找
-</h3><p>待定</p>
-<h3 id="冒泡排序">冒泡排序
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">89</span><span class="p">,</span><span class="mi">98</span><span class="p">,</span><span class="mi">107</span><span class="p">,</span><span class="mi">428</span><span class="p">,</span><span class="mi">890</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;请输入要查找的数字 &gt;&gt;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">sum</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">while</span> <span class="p">(</span><span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kt">int</span> <span class="n">middle</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">middle</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">sum</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="n">left</span> <span class="o">=</span> <span class="n">middle</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">middle</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">sum</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="n">right</span> <span class="o">=</span> <span class="n">middle</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="k">else</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d数字在数组中的下标是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">sum</span><span class="p">,</span> <span class="n">middle</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">			<span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="n">left</span> <span class="o">&gt;</span> <span class="n">right</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d在数据中不存在</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">sum</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="冒泡排序">冒泡排序
 </h3><p>两两相邻的元素进行比较，如果符合条件进行交换</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -4393,7 +4549,8 @@
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">if</span><span class="p">((</span><span class="o">!</span><span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span><span class="p">))</span> <span class="o">||</span> <span class="o">!</span><span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">400</span><span class="p">))</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div><br>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -4801,6 +4958,97 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><br>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">Reverse</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">char</span> <span class="n">tmp</span> <span class="o">=</span> <span class="o">*</span><span class="n">str</span><span class="p">;</span> <span class="c1">//取出第一个字符
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="nf">strlen</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">*</span><span class="n">str</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="n">len</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">//和最后一个字符交换
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="n">len</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span> <span class="c1">//刚刚替换的最后一个字符变为\0
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nf">strlen</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">//判断未交换字符串长度
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">Reverse</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">//传入下一个需要交换的字符
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">*</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="n">len</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">;</span> <span class="c1">//将最后一个字符换成取出的第一个字符 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="使用递归实现strlen">使用递归实现Strlen()
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">My_Strlen</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="nf">My_Strlen</span><span class="p">(</span><span class="n">str</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="使用递归实现n的k次方">使用递归实现n的k次方
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">double</span> <span class="nf">Pow</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">k</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="nf">Pow</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span><span class="nf">Pow</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="o">-</span><span class="n">k</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
 </div><h3 id="将一个数分解质因数">将一个数分解质因数
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -5175,7 +5423,7 @@
         
         
         发表了7篇文章 ·
-        总计45.84k字
+        总计47.21k字
     </section>
 
 
