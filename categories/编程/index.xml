@@ -1729,14 +1729,14 @@
         <guid>https://blog.candquarzy.top/p/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
         <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/123274153_p0.jpg" alt="Featured image of post C语言学习记录" /&gt;&lt;style&gt;
 .spoiler {
-  background-color: black;
-  color: black;
-  padding: 2px 4px;
-  border-radius: 3px;
-  cursor: pointer;
+  background-color:black;
+  color:black;
+  padding:2px 4px;
+  border-radius:3px;
+  cursor:pointer;
 }
 .spoiler:hover {
-  color: white;
+  color:white;
 }
 &lt;/style&gt;
 &lt;h2 id=&#34;基础语法&#34;&gt;基础语法
@@ -1765,8 +1765,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;头文件：C 语言中包含函数声明和宏定义的文件，可被多个源文件中引用共享&lt;/p&gt;
-&lt;p&gt;main 函数：C 语言中最主要的函数，程序的入口，代码从这里依次往下执行&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;头文件:C 语言中包含函数声明和宏定义的文件，可被多个源文件中引用共享&lt;/p&gt;
+&lt;p&gt;main 函数:C 语言中最主要的函数，程序的入口，代码从这里依次往下执行&lt;/p&gt;
 &lt;h3 id=&#34;变量&#34;&gt;变量
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1836,13 +1836,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;char 字符数据类型 1 字节&lt;/strong&gt; 范围: (有符号: -128 ~ 127/ 无符号 0 ~ 255)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;short 短整型 2 字节&lt;/strong&gt; 范围: (-32768 ~ 32767)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;int 整型 4 字节&lt;/strong&gt; 范围: (-2147483648 ~ 2147483647)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;long 长整型 4 字节&lt;/strong&gt; 范围: (-2147483648 ~ 2147483647)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;char 字符数据类型 1 字节&lt;/strong&gt; 范围:(有符号:-128 ~ 127/ 无符号 0 ~ 255)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;short 短整型 2 字节&lt;/strong&gt; 范围:(-32768 ~ 32767)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;int 整型 4 字节&lt;/strong&gt; 范围:(-2147483648 ~ 2147483647)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;long 长整型 4 字节&lt;/strong&gt; 范围:(-2147483648 ~ 2147483647)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;long long 更长的整型 8 字节&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;float 单精度浮点数 4 字节&lt;/strong&gt; 范围: (1.2E-38 ~ 3.4E+38)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;double 双精度浮点数 8 字节&lt;/strong&gt; 范围: (2.3E-308 ~ 1.7E+308)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;float 单精度浮点数 4 字节&lt;/strong&gt; 范围:(1.2E-38 ~ 3.4E+38)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;double 双精度浮点数 8 字节&lt;/strong&gt; 范围:(2.3E-308 ~ 1.7E+308)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;char&lt;/code&gt; 类型也可以通过ACSII码表等价于 &lt;code&gt;int&lt;/code&gt; 来使用&lt;/p&gt;&lt;/blockquote&gt;
@@ -1929,10 +1929,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ch&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;sc&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;double&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;3.14&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%c=%d,圆周率是%lf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//输出：a=2,圆周率是3.14
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%c=%d,圆周率是%lf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//输出:a=2,圆周率是3.14
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;格式： &lt;code&gt;printf(&amp;quot;占位符与内容&amp;quot;, 替换);&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;格式: &lt;code&gt;printf(&amp;quot;占位符与内容&amp;quot;, 替换);&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;其中占位符会替换后面的变量，常用的占位符有&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1954,7 +1954,7 @@
 &lt;p&gt;&lt;strong&gt;%lf&lt;/strong&gt; 读入一个浮点数&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;%p&lt;/strong&gt; 按十六进制读入一个指针（内存地址）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;%p&lt;/strong&gt; 按十六进制读入一个指针 (内存地址)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;%u&lt;/strong&gt; 读入一个无符号整型&lt;/p&gt;
@@ -1980,7 +1980,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//将用户输入的值赋值给变量a
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;格式： &lt;code&gt;scanf(&amp;quot;占位符&amp;quot;, 变量的地址);&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;格式: &lt;code&gt;scanf(&amp;quot;占位符&amp;quot;, 变量的地址);&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;其中占位符同 printf () 函数&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;判断--选择语句&#34;&gt;判断 / 选择语句
@@ -2006,7 +2006,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;if，即如果，如果 if 后面的 () 内的表达式为真则执行 if 后面的代码&lt;/p&gt;
-&lt;p&gt;其格式为：&lt;/p&gt;
+&lt;p&gt;其格式为:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2049,7 +2049,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;else，与 if 搭配使用。即当 if 中的表达式不满足条件时执行的代码&lt;/p&gt;
-&lt;p&gt;其格式为：&lt;/p&gt;
+&lt;p&gt;其格式为:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2072,7 +2072,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;悬空 else：else 会与最近的 if 相匹配&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;悬空 else:else 会与最近的 if 相匹配&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;else-if&#34;&gt;else if
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2109,7 +2109,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;else if，如果不满足 if 中表达式的条件则尝试匹配 else if 后括号内表达式的内容。在一段判断语句中可有多个 else if&lt;/p&gt;
-&lt;p&gt;其格式为：&lt;/p&gt;
+&lt;p&gt;其格式为:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2175,19 +2175,19 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;switch&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//switch根据ch的值进行判断
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;sc&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//若ch的值为字符a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;sc&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//若ch的值为字符a
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;c1&#34;&gt;//条件成立执行的代码
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;input a&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//结束判断
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;sc&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//若ch的值为字符b
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;sc&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//若ch的值为字符b
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;c1&#34;&gt;//条件成立执行的代码
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;input b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//结束判断
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;sc&#34;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//若ch的值为字符c
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;sc&#34;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//若ch的值为字符c
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;c1&#34;&gt;//条件成立执行的代码
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;input c&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//结束判断
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;k&#34;&gt;default&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//若以上条件都不满足
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;k&#34;&gt;default&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//若以上条件都不满足
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;c1&#34;&gt;//若以上条件都不满足执行的代码
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;input other&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//结束判断
@@ -2196,16 +2196,16 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;case：&lt;/strong&gt; 选项标签，若 case 标签后的值符合则执行下面的代码&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;case:&lt;/strong&gt; 选项标签，若 case 标签后的值符合则执行下面的代码&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;break（可选）：&lt;/strong&gt; 退出判断，若在单个 case 中没有写 break，将自动往后执行后面的 case 内的语句而不会退出判断&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;break (可选):&lt;/strong&gt; 退出判断，若在单个 case 中没有写 break，将自动往后执行后面的 case 内的语句而不会退出判断&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;default（可选）：&lt;/strong&gt; 若以上所有 case 条件都不满足执行，相当于默认执行语句&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;default (可选):&lt;/strong&gt; 若以上所有 case 条件都不满足执行，相当于默认执行语句&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;注意：&lt;/p&gt;
+&lt;p&gt;注意:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;case 标签后的值必须是一个常量，不能被改变&lt;/p&gt;
@@ -2245,7 +2245,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;其格式为：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;其格式为:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2280,10 +2280,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;break（可选）：&lt;/strong&gt; 结束循环，无论后面还是否有代码，条件是否还满足&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;break (可选):&lt;/strong&gt; 结束循环，无论后面还是否有代码，条件是否还满足&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;continue（可选）：&lt;/strong&gt; 跳过后面的代码，重新开始循环&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;continue (可选):&lt;/strong&gt; 跳过后面的代码，重新开始循环&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;for-循环&#34;&gt;for 循环
@@ -2302,7 +2302,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;其格式为：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;其格式为:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2319,10 +2319,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;break（可选）：&lt;/strong&gt; 结束循环，无论后面还是否有代码，条件是否还满足&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;break (可选):&lt;/strong&gt; 结束循环，无论后面还是否有代码，条件是否还满足&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;continue（可选）：&lt;/strong&gt; 跳过后面的代码，重新开始循环&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;continue (可选):&lt;/strong&gt; 跳过后面的代码，重新开始循环&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;循环内部不要重复写循环变量，容易使 for 循环失去控制&lt;/p&gt;
@@ -2352,7 +2352,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;其格式为：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;其格式为:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2367,10 +2367,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;break（可选）：&lt;/strong&gt; 结束循环，无论后面还是否有代码，条件是否还满足&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;break (可选):&lt;/strong&gt; 结束循环，无论后面还是否有代码，条件是否还满足&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;continue（可选）：&lt;/strong&gt; 跳过后面的代码，重新开始循环&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;continue (可选):&lt;/strong&gt; 跳过后面的代码，重新开始循环&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;goto-语句&#34;&gt;goto 语句
@@ -2440,16 +2440,10 @@
 &lt;p&gt;&lt;strong&gt;*&lt;/strong&gt; 乘法操作符 对操作符左右左边进行乘法运算&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;/&lt;/strong&gt; 除法操作符 将操作符左边的数除以右边（仅返回整数）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/&lt;/strong&gt; 除法操作符 将操作符左边的数除以右边 (仅返回整数)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;%&lt;/strong&gt; 取余运算符 将操作符左边的数除以右边并返回余数&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;++&lt;/strong&gt; 自增运算符 将整数值增加 1&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;–-&lt;/strong&gt; 自减运算符 将整数值减少 1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;%&lt;/strong&gt; 取余运算符 将操作符左边的数除以右边并返回余数 (两端的操作数必须都为整数)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2496,33 +2490,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;自增--自减中前置与后置的区别&#34;&gt;自增 / 自减中前置与后置的区别
-&lt;/h4&gt;&lt;p&gt;前置 ++：先自增后使用&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//11
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;后置 ++：先使用再自增&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//10
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;如何让--运算符输出小数&#34;&gt;如何让 / 运算符输出小数
 &lt;/h4&gt;&lt;p&gt;一般情况下，/ 运算符得到的商不会是小数，即使是两个 float 类型的数相除也是整数，因此&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2540,7 +2507,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;要让被除数是小数&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;要让除数 / 被除数是小数&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;关系运算符&#34;&gt;关系运算符
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -2605,7 +2572,7 @@
 &lt;p&gt;&lt;strong&gt;||&lt;/strong&gt; 逻辑或运算符，如果左右两个表达式有一个为真，则表达式为真&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;!&lt;/strong&gt; 取反（逻辑非）运算符，逆转后面表达式的逻辑状态&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!&lt;/strong&gt; 取反 (逻辑非)运算符，逆转后面表达式的逻辑状态&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2652,8 +2619,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//b为flase
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;复合操作符&#34;&gt;复合操作符
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;对于 &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; 操作符来说，如果第一个表达式为假，后面的表达式不会进行计算&lt;/p&gt;
+&lt;p&gt;对于&lt;code&gt;||&lt;/code&gt;操作符来说，如果第一个表达式为真，后面的表达式都不会进行计算&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;赋值操作符&#34;&gt;赋值操作符
 &lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;=&lt;/strong&gt; 赋值操作符，将操作符右边的数赋值给左边&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;+=&lt;/strong&gt; 加等运算符，将操作符右边的数累加给左边&lt;/p&gt;
 &lt;/li&gt;
@@ -2668,6 +2641,12 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;%=&lt;/strong&gt; 模等运算符，将操作符左边的数除以右边得到余数后赋值给左边&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;++&lt;/strong&gt; 自增运算符 将整数值增加 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;–-&lt;/strong&gt; 自减运算符 将整数值减少 1&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2692,7 +2671,62 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//10
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
+&lt;/div&gt;&lt;h4 id=&#34;自增--自减中前置与后置的区别&#34;&gt;自增 / 自减中前置与后置的区别
+&lt;/h4&gt;&lt;p&gt;前置 ++:先自增后使用&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//11
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;后置 ++:先使用再自增&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//10
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;请不要过分追求 &lt;code&gt;++&lt;/code&gt; 和 &lt;code&gt;--&lt;/code&gt; 等运算符的结果 因为没有意义且不同编译器结果可能不同&lt;/p&gt;&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;上面这段代码在MSVC编辑器运行的结果为12，而在Linux系统gcc编译器运行的结果为10&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&amp;laquo;=&lt;/strong&gt; 左移并赋值运算符&lt;/p&gt;
 &lt;/li&gt;
@@ -2712,19 +2746,19 @@
 &lt;h3 id=&#34;位运算符&#34;&gt;位运算符
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;amp;&lt;/strong&gt; 按位与运算符：按二进制位，如果相同为 1，不同为 0&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;amp;&lt;/strong&gt; 按位与运算符:按二进制位，如果相同为 1，不同为 0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;|&lt;/strong&gt; 按位或运算符：按二进制位，如果有 1 则为 1，如果没有 1 则为 0&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;|&lt;/strong&gt; 按位或运算符:按二进制位，如果有 1 则为 1，如果没有 1 则为 0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;^&lt;/strong&gt; 按位异或运算符：按对应的二进制位进行异或，相同位 0，相异为 1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;^&lt;/strong&gt; 按位异或运算符:按对应的二进制位进行异或，相同位 0，相异为 1&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&amp;lt;&amp;lt;&lt;/strong&gt; 左移运算符，将左边丢弃，右边补 0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;gt;&amp;gt;&lt;/strong&gt; 右移运算符，①算术右移：右边丢弃，左边补原符号位；②逻辑右移：右边丢弃，左边补 0&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;gt;&amp;gt;&lt;/strong&gt; 右移运算符，①算术右移:右边丢弃，左边补原符号位；②逻辑右移:右边丢弃，左边补 0&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;位操作符所运算的数字必须是整数&lt;/p&gt;
@@ -2746,7 +2780,7 @@
 &lt;p&gt;&lt;strong&gt;-&lt;/strong&gt; 负号&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;sizeof&lt;/strong&gt; 计算和统计操作符的类型变量等所占用空间的大小，结果为 unsigned int 类型 (不是函数! 是操作数符!)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;sizeof&lt;/strong&gt; 计算和统计操作符的类型变量等所占用内存空间的大小，结果为 unsigned int 类型 (不是函数! 是操作数符!)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;~&lt;/strong&gt; 对一个数的二进制位进行按位取反，原来的 1 变成 0，原来的 0 变成 1。包括符号位&lt;/p&gt;
@@ -2756,6 +2790,9 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;*&lt;/strong&gt; 解引用操作符 / 指针变量类型 / 间接访问操作符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;(类型)&lt;/strong&gt; 强制类型转换操作符&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2772,10 +2809,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;pirntf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pa&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//10
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;其他操作符&#34;&gt;其他操作符
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;sizof&lt;/strong&gt; 括号中存入的表达式是不参与运算的，并且会返回第一个读取到的变量值&lt;/p&gt;
+&lt;p&gt;因为 sizeof 是在编译阶段进行处理的，而表达式是在运行阶段才执行的&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;其他操作符&#34;&gt;其他操作符
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;exp1?exp2:exp3&lt;/strong&gt; 三目操作符：exp1 是否满足？满足执行 exp2，不满足执行 exp3&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;exp1?exp2:exp3&lt;/strong&gt; 三目操作符:exp1 是否满足？满足执行 exp2，不满足执行 exp3&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;,&lt;/strong&gt; 逗号表达式，重做向右依次执行，结果位最后一个表达式的结果&lt;/p&gt;
@@ -2787,10 +2827,10 @@
 &lt;p&gt;&lt;strong&gt;()&lt;/strong&gt; 函数调用操作符&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;.&lt;/strong&gt; 结构体成员访问操作符（变量）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;.&lt;/strong&gt; 结构体成员访问操作符 (变量)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;-&amp;gt;&lt;/strong&gt; 结构体成员访问操作符（指针）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-&amp;gt;&lt;/strong&gt; 结构体成员访问操作符 (指针)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2813,7 +2853,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;操作符优先级&#34;&gt;操作符优先级
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt; 操作符的操作数有两个，一个是数组名，一个是下标准&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;操作符优先级&#34;&gt;操作符优先级
 &lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -2937,7 +2979,7 @@
 &lt;p&gt;请注意 &lt;code&gt;define&lt;/code&gt; 和 &lt;code&gt;include&lt;/code&gt; 不是关键字，而是预处理指令&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;函数&#34;&gt;函数
-&lt;/h2&gt;&lt;p&gt;函数分为库函数和自定义函数两种，库函数为 C 编译器编译的函数如：&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;函数分为库函数和自定义函数两种，库函数为 C 编译器编译的函数如:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;IO函数&lt;/strong&gt; printf() scnaf() getchar() putchar()&lt;/p&gt;
@@ -2961,10 +3003,10 @@
 &lt;p&gt;&lt;strong&gt;其他…&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;学习库函数两个网站：&lt;a class=&#34;link&#34; href=&#34;cplusplus.com&#34; &gt;cplusplus(英文)&lt;/a&gt;，&lt;a class=&#34;link&#34; href=&#34;zh.cppreference.com&#34; &gt;cppreference (中文)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;学习库函数两个网站:&lt;a class=&#34;link&#34; href=&#34;cplusplus.com&#34; &gt;cplusplus(英文)&lt;/a&gt;，&lt;a class=&#34;link&#34; href=&#34;zh.cppreference.com&#34; &gt;cppreference (中文)&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;定义函数&#34;&gt;定义函数
 &lt;/h3&gt;&lt;p&gt;自定义函数即自己定义的函数，是一组一起执行一个任务的语句块。而每个 C 程序都必须要有一根函数，即主函数 main ()&lt;/p&gt;
-&lt;p&gt;一个函数内不可定义另一个函数，但函数内部可以相互调用，也可以自己调用自己（函数递归）&lt;/p&gt;
+&lt;p&gt;一个函数内不可定义另一个函数，但函数内部可以相互调用，也可以自己调用自己 (函数递归)&lt;/p&gt;
 &lt;p&gt;函数的自定义格式如下&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2994,7 +3036,7 @@
 &lt;p&gt;&lt;strong&gt;statement&lt;/strong&gt; 函数体&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;例：一个加法函数&lt;/p&gt;
+&lt;p&gt;例:一个加法函数&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3053,10 +3095,10 @@
 &lt;/h3&gt;&lt;h4 id=&#34;实参与形参&#34;&gt;实参与形参
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;实际参数&lt;/strong&gt; 又称&lt;strong&gt;实参&lt;/strong&gt; 真实传给函数的参数。实参可以是：常量、变量、表达式、函数等。无论实参是何种类型的量，在进行函数调用时，它们都必须有确定的值，以便把这些值传送给形参&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实际参数&lt;/strong&gt; 又称&lt;strong&gt;实参&lt;/strong&gt; 真实传给函数的参数。实参可以是:常量、变量、表达式、函数等。无论实参是何种类型的量，在进行函数调用时，它们都必须有确定的值，以便把这些值传送给形参&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;形式参数&lt;/strong&gt; 又称&lt;strong&gt;形参&lt;/strong&gt; 形式参数是指函数名后括号中的变量，因为形式参数只有在函数被调用的过程中才实例化（分配内存单元），所以叫形式参数。形式参数当函数调用完成之后就自动销毁了。因此形式参数只在函数中有效。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;形式参数&lt;/strong&gt; 又称&lt;strong&gt;形参&lt;/strong&gt; 形式参数是指函数名后括号中的变量，因为形式参数只有在函数被调用的过程中才实例化 (分配内存单元)，所以叫形式参数。形式参数当函数调用完成之后就自动销毁了。因此形式参数只在函数中有效。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;传值调用&#34;&gt;传值调用
@@ -3105,7 +3147,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在这个案例中，函数的形参和实参分别占有不同的内存，对形参的修改不会影响实参，也就是说，形参只是形参的一份临时拷贝。实参中的值并未发生改变&lt;/p&gt;
 &lt;h4 id=&#34;传址调用&#34;&gt;传址调用
-&lt;/h4&gt;&lt;p&gt;那如果我想要改变形参中的值呢？这个时候就要将形参的内存地址传递给函数形参（详见 “指针”），这种方式可以使函数和函数外边的变量建立起真正的练习，也就是说可以通过指针操作函数外部的变量&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;那如果我想要改变形参中的值呢？这个时候就要将形参的内存地址传递给函数形参 (详见 “指针”)，这种方式可以使函数和函数外边的变量建立起真正的练习，也就是说可以通过指针操作函数外部的变量&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -3167,7 +3209,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;fun&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[],&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sz&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;fun&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[],&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sz&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sz&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -3186,7 +3228,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;务必在函数体外计算数组元素个数，在函数内部是无法得知数组元素个数的&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;务必在函数体外计算数组元素个数，在函数内部是无法得知数组元素个数的&lt;/p&gt;
+&lt;p&gt;数组传参可以使用 &lt;code&gt;int*&lt;/code&gt; 和 &lt;code&gt;int arr[]&lt;/code&gt; 来接收。本质都是指针&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;详细解释见 &lt;strong&gt;“数组”&lt;/strong&gt; 一章&lt;/p&gt;
 &lt;h3 id=&#34;函数声明&#34;&gt;函数声明
 &lt;/h3&gt;&lt;p&gt;由于编译器是一行一行顺序编译代码，如果你的函数体在函数调用之后，那么编译器是找不到要执行的代码的，因此会报错&lt;/p&gt;
@@ -3256,7 +3299,7 @@
 &lt;/div&gt;&lt;p&gt;要将这些文件放在可以调用到的路径下&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;递归&#34;&gt;递归
-&lt;/h2&gt;&lt;p&gt;一个过程或函数在其定义或说明中直接或间接调用自己的方式就叫做递归。可以简单理解为自己调用自己 &lt;span class=&#34;spoiler&#34;&gt;（我搞懂了，但我依然不会写）&lt;/span&gt;&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;一个过程或函数在其定义或说明中直接或间接调用自己的方式就叫做递归。可以简单理解为自己调用自己 &lt;span class=&#34;spoiler&#34;&gt; (我搞懂了，但我依然不会写)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;递归只需要少量的代码即可完成之前所需要的多次重复计算&lt;/p&gt;
 &lt;p&gt;在函数调用自己的时候，后面的代码不会执行。只有等函数执行完之后才会继续执行下面的代码&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3304,46 +3347,42 @@
 &lt;p&gt;将 a 传入 Print 函数的形参 n，n 的值现在为 12345&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;调用函数，第一次判断 n/10&amp;gt;0，条件为真，进入 将 n/10，即 1234 传给 Print 函数的形参 n&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用函数，第一次判断 n/10&amp;gt;0，条件为真，进入 将 n/10，即 1234 传给 Print 函数的形参 n&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用函数，第二次判断 n/10&amp;gt;0，条件为真，进入 将 n/10，即 123 传给 Print 函数的形参 n&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用函数，第三次判断 n/10&amp;gt;0，条件为真，进入 将 n/10，即 12 传给 Print 函数的形参 n&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用函数，第四次判断 n/10&amp;gt;0，条件为真，进入 将 n/10，即 1 传给 Print 函数的形参 n&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用函数，第五次判断 n/10&amp;gt;0，条件为假，继续执行下面的代码&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;调用函数，第二次判断 n/10&amp;gt;0，条件为真，进入 将 n/10，即 123 传给 Print 函数的形参 n&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;调用函数，第三次判断 n/10&amp;gt;0，条件为真，进入 将 n/10，即 12 传给 Print 函数的形参 n&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;调用函数，第四次判断 n/10&amp;gt;0，条件为真，进入 将 n/10，即 1 传给 Print 函数的形参 n&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;调用函数，第五次判断 n/10&amp;gt;0，条件为假，继续执行下面的代码&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;此时 n%10 为 1，printf 语句即输出 1  &lt;br&gt;
-到此，Print 函数一共被调用了 5 次，但是目前只有第五次完完全全执行完了函数体，所以，现在开始返回执行&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;此时 n%10 为 1，printf 语句即输出 1&lt;/p&gt;
+&lt;p&gt;到此，Print 函数一共被调用了 5 次，但是目前只有第五次完完全全执行完了函数体，所以，现在开始返回执行&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;返回，执行第 4 次调用函数后的 printf 语句，输出 2&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;返回，执行第 3 次调用函数后的 printf 语句，输出 3&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;8&#34;&gt;
-&lt;li&gt;返回，执行第 2 次调用函数后的 printf 语句，输出 4&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;返回，执行第 1 次调用函数后的 printf 语句，输出 5&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;10&#34;&gt;
-&lt;li&gt;此时，函数运行结束&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;返回，执行第 4 次调用函数后的 printf 语句，输出 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;返回，执行第 3 次调用函数后的 printf 语句，输出 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;返回，执行第 2 次调用函数后的 printf 语句，输出 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;返回，执行第 1 次调用函数后的 printf 语句，输出 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;此时，函数运行结束&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;&lt;/blockquote&gt;
 &lt;p&gt;因此递归有两条重要条件&lt;/p&gt;
 &lt;ol&gt;
@@ -3464,7 +3503,9 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//数组为2行3列，总共可容纳6个元素
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;二维数组的初始化&#34;&gt;二维数组的初始化
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;二维数组的行号可以省略不写，但是列必须写！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;二维数组的初始化&#34;&gt;二维数组的初始化
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3476,7 +3517,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;二维数组的使用与更改&#34;&gt;二维数组的使用与更改
-&lt;/h4&gt;&lt;p&gt;二维数组同一位数组一样，都是使用 [] 下标引用操作符来操作数组中的元素，二维数组中的元素行和列都是从 0 开始排列的&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;二维数组同一位数组一样，都是使用 &lt;code&gt;[]&lt;/code&gt; 下标引用操作符来操作数组中的元素，二维数组中的元素行和列都是从 0 开始排列的&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3489,7 +3530,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//4
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;二维数组的每行都可以看作一维数组数组名即为数组名[行号]&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;二维数组的每行都可以看作一维数组数组名即为数组名&lt;code&gt;[行号]&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;二维数组在内存中的存储&#34;&gt;二维数组在内存中的存储
 &lt;/h4&gt;&lt;p&gt;每个元素的位置是连续的，在一行内部连续，换行也是连续的。二维数组的首元素是第一行&lt;/p&gt;
 &lt;h4 id=&#34;二维数组与一维数组&#34;&gt;二维数组与一维数组
@@ -3529,20 +3570,23 @@
 &lt;p&gt;&lt;strong&gt;arr_name[]&lt;/strong&gt; 数组形参，接收数组首元素地址&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;arr_name&lt;/strong&gt; 数组名，接收数组首元素地址（即数组名）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;arr_name&lt;/strong&gt; 数组名，接收数组首元素地址 (即数组名)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;但是有两个例外&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;sizeof (数组名)&lt;/strong&gt; 数组名表示整个数组，计算整个数组的大小，单位是字节&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sizeof (数组名)&lt;/strong&gt; 这里的数组名代表的是整个数组，计算整个数组的大小，单位是字节&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&amp;amp;数组名&lt;/strong&gt; 数组名表示整个数组，取出的是整个数组的地址，而数组首元素的地址相当于数组的起始地址&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;假设都要 + 1，&amp;amp;arr 会跳过这个数组，而 arr 只会跳过这个数组中的第一个元素&lt;/p&gt;
 &lt;p&gt;传参传过去的数组在函数体内部是无法计算其元素个数的&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;指针&#34;&gt;指针
-&lt;/h2&gt;&lt;p&gt;每一个变量都有其内存位置，每个内存位置都定义了一个可以使用 &amp;amp; 运算符访问的地址。它表示了其变量在内存中的地址（为第一个字节的地址）&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;每一个变量都有其内存位置，每个内存位置都定义了一个可以使用 &amp;amp; 运算符访问的地址。它表示了其变量在内存中的地址 (为第一个字节的地址)&lt;/p&gt;
 &lt;p&gt;指针其实也就是内存地址，指针变量就是用来存放内存地址的变量&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;32位计算机表示32根地址线，即32个bit位&lt;/p&gt;
+&lt;p&gt;64位计算机表示64根地址线，即64个bit位&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;指针变量&#34;&gt;指针变量
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3562,7 +3606,7 @@
 &lt;p&gt;&lt;strong&gt;int&lt;/strong&gt; 说明指向的变量类型是 int&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;在这里，&lt;code&gt;pa&lt;/code&gt; 是指针变量。&lt;code&gt;*pa&lt;/code&gt; 等于对指针变量 &lt;code&gt;pa&lt;/code&gt; 进行解引用，这样就可以获取到值（也就是那个 10）&lt;/p&gt;
+&lt;p&gt;在这里，&lt;code&gt;pa&lt;/code&gt; 是指针变量。&lt;code&gt;*pa&lt;/code&gt; 等于对指针变量 &lt;code&gt;pa&lt;/code&gt; 进行解引用，这样就可以获取到值 (也就是那个 10)&lt;/p&gt;
 &lt;h3 id=&#34;解引用操作&#34;&gt;解引用操作
 &lt;/h3&gt;&lt;p&gt;通过指针变量的地址改变原本存在的变量&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3590,9 +3634,11 @@
 &lt;p&gt;指针变量类型的两个意义:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;指针解引用的权限有多大&lt;/li&gt;
-&lt;li&gt;指针的步长（如 int 为 4，char 为 1，double 为 8）&lt;/li&gt;
+&lt;li&gt;指针的步长 (如 int 为 4，char 为 1，double 为 8)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;void * 是一种无具体类型的指针，所以任何类型的地址都可以丢进去&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void*&lt;/code&gt; 是一种无具体类型的指针，所以任何类型的地址都可以丢进去&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里的权限与步长指的是该指针变量可以操作内存的bit位数&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;野指针&#34;&gt;野指针
 &lt;/h3&gt;&lt;p&gt;野指针就是指针指向的位置是不可知的指针&lt;/p&gt;
 &lt;h4 id=&#34;指针未初始化&#34;&gt;指针未初始化
@@ -3673,20 +3719,20 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在上面的这个例子中，函数执行结束后该函数所占用的内存会被释放（归还给操作系统）。因此 &lt;code&gt;*p&lt;/code&gt; 实际上指向的内存地址其实是越界访问。然后解引用将 20 赋值给指针变量 &lt;code&gt;p&lt;/code&gt;，自然会出问题&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;在上面的这个例子中，函数执行结束后该函数所占用的内存会被释放 (归还给操作系统)。因此 &lt;code&gt;*p&lt;/code&gt; 实际上指向的内存地址其实是越界访问。然后解引用将 20 赋值给指针变量 &lt;code&gt;p&lt;/code&gt;，自然会出问题&lt;/p&gt;
 &lt;h4 id=&#34;如何避免野指针&#34;&gt;如何避免野指针？
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;指针初始化：当不知道指针应该初始化为什么的时候，就初始化为 NULL 吧！准没错&lt;/p&gt;
+&lt;p&gt;指针初始化:当不知道指针应该初始化为什么的时候，就初始化为 NULL 吧！准没错&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;小心指针访问越界&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;指针指向空间释放后及时置空（指向 NULL）&lt;/p&gt;
+&lt;p&gt;指针指向空间释放后及时置空 (指向 NULL)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;指针使用之前检查其有效性（不要访问空指针，空指针无法访问）&lt;/p&gt;
+&lt;p&gt;指针使用之前检查其有效性 (不要访问空指针，空指针无法访问)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
@@ -3695,11 +3741,33 @@
 当指针空间被释放的时候，也可以置为空指针&lt;br&gt;
 每次使用指针变量的时候，可以先 if 判断一下指针变量是否为空&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;指针运算&#34;&gt;指针运算
-&lt;/h3&gt;&lt;p&gt;我也不懂（这个不常用&lt;/p&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;指针++&lt;/code&gt; 和 &lt;code&gt;指针--&lt;/code&gt; (移动指针)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;strong&gt;指针 - 指针&lt;/strong&gt; 得到两个指针之间的元素个数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;指针的关系运算 (如比较指针所在的位置)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;指针和指针相减的前提是两个指针指向同一块空间&lt;/p&gt;
-&lt;p&gt;标准规定：允许指向数组元素与指向数组最后一个元素后面的那个内存位置的&lt;/p&gt;
-&lt;p&gt;指针比较，但是不允许与指向第一个元素之前的那个内存位置的指针进行比较&lt;/p&gt;
+&lt;p&gt;标准规定:允许指向数组元素与指向数组最后一个元素后面的那个内存位置的指针比较，但是不允许与指向第一个元素之前的那个内存位置的指针进行比较&lt;/p&gt;
+&lt;p&gt;指针+指针是没有意义的。类比如日期加日期&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;指针与数组&#34;&gt;指针与数组
 &lt;/h3&gt;&lt;p&gt;数组名是数组首元素的地址&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3713,10 +3781,12 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//则有：arr[2] == *(arr+2) == *(p+2) == *(2+p) == *(2+arr) == 2[arr] == *(2+arr)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//则有:arr[2] == *(arr+2) == *(p+2) == *(2+p) == *(2+arr) == 2[arr] == *(2+arr)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;二级指针&#34;&gt;二级指针
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;上文中注释的原理:因为代码为 &lt;code&gt;arr[2]&lt;/code&gt; 时，编译器会处理为 &lt;code&gt;*(arr+2)&lt;/code&gt; 也就等价于 &lt;code&gt;*(2+arr)&lt;/code&gt; 等价于 &lt;code&gt;2[arr]&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;二级指针&#34;&gt;二级指针
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3742,9 +3812,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;*ppa == pa;&lt;br&gt;
-*pa == a;&lt;br&gt;
-**ppa == a;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;*ppa == pa;&lt;/code&gt;
+&lt;code&gt;*pa == a;&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;**ppa == a;&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;二级指针在实际开发中不常用，当然也可以有三级指针，四级指针&lt;/p&gt;
 &lt;h3 id=&#34;指针数组&#34;&gt;指针数组
 &lt;/h3&gt;&lt;blockquote&gt;
@@ -3849,7 +3919,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在这里 &lt;code&gt;(*pf)==pf==Add==&amp;amp;add&lt;/code&gt; 因为函数名就是函数的地址&lt;/p&gt;
-&lt;p&gt;来两道练习题吧（&lt;/p&gt;
+&lt;p&gt;来两道练习题吧 (&lt;/p&gt;
 &lt;p&gt;请解释下面代码是什么意思&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4133,16 +4203,16 @@
 &lt;p&gt;第一个成员在与结构体变量偏移量为 0 的地址处&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;其他成员变量要对齐到某个数字（对齐数）的整数倍的地址处&lt;/p&gt;
+&lt;p&gt;其他成员变量要对齐到某个数字 (对齐数)的整数倍的地址处&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;结构体总大小为最大对齐数（每个成员变量都有一个对齐数）的整数倍&lt;/p&gt;
+&lt;p&gt;结构体总大小为最大对齐数 (每个成员变量都有一个对齐数)的整数倍&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;如果嵌套了结构体，嵌套的结构体对齐到自己的最大对齐数的整数倍处，结构体的整体大小就是所有最大对齐数（含嵌套结构体的对齐数）的整数倍&lt;/p&gt;
+&lt;p&gt;如果嵌套了结构体，嵌套的结构体对齐到自己的最大对齐数的整数倍处，结构体的整体大小就是所有最大对齐数 (含嵌套结构体的对齐数)的整数倍&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;对齐数 编译器默认的一个对齐数与该成员大小的较小值（VS 中的默认对齐数为 8）&lt;/p&gt;
+&lt;p&gt;对齐数 编译器默认的一个对齐数与该成员大小的较小值 (VS 中的默认对齐数为 8)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;-柔性数组&#34;&gt;* 柔性数组
@@ -4219,7 +4289,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;柔性数组的优点&#34;&gt;柔性数组的优点
 &lt;/h4&gt;&lt;p&gt;方便内存释放 如果我们的代码是在一个给别人用的函数中，你在里面做了二次内存分配，并把整个结构体返回给用户。用户调用 free 可以释放结构体，但是用户并不知道这个结构体内的成员也需要 free，所以你不能指望用户来发现这个事。所以，如果我们把结构体的内存以及其成员要的内存一次性分配好了，并返回给用户一个结构体指针，用户做一次 free 就可以把所有的内存也给释放掉。
-这样有利于访问速度 连续的内存有益于提高访问速度，也有益于减少内存碎片。&lt;del&gt;（其实，我个人觉得也没多高，反正你跑不了要用做偏移量的加法来寻址&lt;/del&gt;&lt;/p&gt;
+这样有利于访问速度 连续的内存有益于提高访问速度，也有益于减少内存碎片。~~ (其实，我个人觉得也没多高，反正你跑不了要用做偏移量的加法来寻址~~&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;位段&#34;&gt;位段
 &lt;/h2&gt;&lt;h3 id=&#34;位段的声明&#34;&gt;位段的声明
@@ -4248,10 +4318,10 @@
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;_a&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//_a成员占用2个bit位
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;_b&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//_b成员占用5个bit位
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;_c&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//_c成员占用10个bit位
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;_d&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//_d成员占用30个bit位
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;_a&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//_a成员占用2个bit位
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;_b&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//_b成员占用5个bit位
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;_c&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//_c成员占用10个bit位
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nl&#34;&gt;_d&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//_d成员占用30个bit位
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -4269,7 +4339,7 @@
 &lt;p&gt;int 位段被当成有符号数还是无符号数是不确定的&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;位段中的最大位的数目不能确定（16 位机器最大 16，32 位机器最大 32。例如写成 27，在 16 位机器上就会出现问题）&lt;/p&gt;
+&lt;p&gt;位段中的最大位的数目不能确定 (16 位机器最大 16，32 位机器最大 32。例如写成 27，在 16 位机器上就会出现问题)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;位段中的成员在内存中从左向右分配，还是从右向左分配标准尚未定义&lt;/p&gt;
@@ -4278,7 +4348,7 @@
 &lt;p&gt;当一个结构包含两个位段，第二个位段成员比较大，无法容纳第一个位段剩余的位时，是舍弃剩余的位还是利用，这也是不确定的&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;总结：跟结构体相比，位段可以达到同样的效果，并且可以更好的节省空间。不过会有跨平台的问题存在&lt;/p&gt;
+&lt;p&gt;总结:跟结构体相比，位段可以达到同样的效果，并且可以更好的节省空间。不过会有跨平台的问题存在&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;枚举&#34;&gt;枚举
 &lt;/h2&gt;&lt;p&gt;枚举的意思就是一一列举，把可能的类型一一列举&lt;/p&gt;
@@ -4314,7 +4384,7 @@
 &lt;/ul&gt;
 &lt;p&gt;枚举类型的值默认从 0 开始，每往后自增 1&lt;/p&gt;
 &lt;h3 id=&#34;为什么使用枚举&#34;&gt;为什么使用枚举？
-&lt;/h3&gt;&lt;p&gt;虽然我们可以使用 &lt;code&gt;#define&lt;/code&gt; 定义常量，为什么非要使用枚举？枚举的优点：&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;虽然我们可以使用 &lt;code&gt;#define&lt;/code&gt; 定义常量，为什么非要使用枚举？枚举的优点:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;增加代码的可读性和可维护性&lt;/p&gt;
@@ -4323,7 +4393,7 @@
 &lt;p&gt;和 #define 定义的标识符比较，枚举有类型检查，更加严谨&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;防止了命名污染（封装）&lt;/p&gt;
+&lt;p&gt;防止了命名污染 (封装)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;便于调试&lt;/p&gt;
@@ -4391,13 +4461,13 @@
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;原码 根据数字的值直接写出的值就是原码（比如 1 的原码 00000000 00000000 00000000 00000001）&lt;/p&gt;
+&lt;p&gt;原码 根据数字的值直接写出的值就是原码 (比如 1 的原码 00000000 00000000 00000000 00000001)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;反码 原码的符号位不变，其他位按位取反 （比如 1 的反码 01111111 11111111 11111111 11111110）&lt;/p&gt;
+&lt;p&gt;反码 原码的符号位不变，其他位按位取反  (比如 1 的反码 01111111 11111111 11111111 11111110)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;补码 在反码的基础上 + 1 即为补码 （比如 1 的补码 01111111 11111111 11111111 11111111）&lt;/p&gt;
+&lt;p&gt;补码 在反码的基础上 + 1 即为补码  (比如 1 的补码 01111111 11111111 11111111 11111111)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;整数在内存中存储的都是补码&lt;/p&gt;
@@ -4472,7 +4542,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;size_t&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;strlen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;字符串使用’\0’作为结束标志，而 strlen 函数返回的就是在字符串中遇到’\0’之前所出现的字符的个数（不包括 \0）&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;字符串使用’\0’作为结束标志，而 strlen 函数返回的就是在字符串中遇到’\0’之前所出现的字符的个数(不包括 \0)&lt;/p&gt;
 &lt;p&gt;也因此，传入 strlen () 的函数参数必须以’\0’结束&lt;/p&gt;
 &lt;p&gt;同时，strlen () 的返回值为 size_t，是无符号的&lt;/p&gt;
 &lt;p&gt;模拟实现 strlen ()&lt;/p&gt;
@@ -4548,7 +4618,7 @@
 &lt;p&gt;返回值 &amp;gt; 0 str1 比 str2 大&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;strncpy--字符串拷贝函数长度受限&#34;&gt;strncpy () 字符串拷贝函数（长度受限）
+&lt;h3 id=&#34;strncpy--字符串拷贝函数-长度受限&#34;&gt;strncpy () 字符串拷贝函数 (长度受限)
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4568,7 +4638,7 @@
 &lt;p&gt;num 拷贝 sourse 字符串的多少个字符&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;strncat--字符串追加函数长度受限&#34;&gt;strncat () 字符串追加函数（长度受限）
+&lt;h3 id=&#34;strncat--字符串追加函数-长度受限&#34;&gt;strncat () 字符串追加函数 (长度受限)
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4588,7 +4658,7 @@
 &lt;p&gt;num 追加 sourse 字符串的多少个字符&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;strncmp--字符串比较函数长度受限&#34;&gt;strncmp () 字符串比较函数（长度受限）
+&lt;h3 id=&#34;strncmp--字符串比较函数-长度受限&#34;&gt;strncmp () 字符串比较函数 (长度受限)
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4635,8 +4705,8 @@
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;第一个参数指定一个字符串，它包含了 0 个或者多个由 sep 字符串中一个或者多个分隔符分割的标记&lt;/li&gt;
-&lt;li&gt;strtok 函数找到 str 中的下一个标记，并将其用’\0’结尾，返回一个指向这个标记的指针（注：strtok 函数会改&lt;/li&gt;
-&lt;li&gt;变被操作的字符串，所以在使用 strtok 函数切分的字符串一般都是临时拷贝的内容并且可修改）&lt;/li&gt;
+&lt;li&gt;strtok 函数找到 str 中的下一个标记，并将其用’\0’结尾，返回一个指向这个标记的指针 (注:strtok 函数会改&lt;/li&gt;
+&lt;li&gt;变被操作的字符串，所以在使用 strtok 函数切分的字符串一般都是临时拷贝的内容并且可修改)&lt;/li&gt;
 &lt;li&gt;strtok 函数的第一个参数不为 NULL，函数将找到 str 中第一个标记，strtok 函数将保存它在字符串中的位置&lt;/li&gt;
 &lt;li&gt;strtok 函数的第一个参数为 NULL，函数将在同一个字符串中被保存的位置开始，查找下一个标记；如果字符串中不存在更多的标记，则返回 NULL 指针。&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
@@ -4704,7 +4774,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;isspace&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;空白字符：空格’ ’ 换页’\f’ 换行’\n’ 回车’\r’ 制表符’\t’ 垂直制表符’\v’&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;空白字符:空格’ ’ 换页’\f’ 换行’\n’ 回车’\r’ 制表符’\t’ 垂直制表符’\v’&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;isdigit&lt;/td&gt;
@@ -4732,7 +4802,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;ispunct&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;标点符号，任何不属于数字或者字母的图形字符（可打印）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;标点符号，任何不属于数字或者字母的图形字符 (可打印)&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;isgraph&lt;/td&gt;
@@ -4755,7 +4825,7 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;内存相关库函数&#34;&gt;内存相关库函数
 &lt;/h2&gt;&lt;h3 id=&#34;memcpy-内存拷贝函数&#34;&gt;memcpy() 内存拷贝函数
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;该函数应当拷贝不重叠的函数，如果内存重叠就需要使用 memmove （在 VS 编译器中虽然可以拷贝过去，但是并非标准所规定，建议优先使用 memmove）&lt;/strong&gt;&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;该函数应当拷贝不重叠的函数，如果内存重叠就需要使用 memmove  (在 VS 编译器中虽然可以拷贝过去，但是并非标准所规定，建议优先使用 memmove)&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4772,7 +4842,7 @@
 &lt;p&gt;source 被拷贝的内存&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;num 拷贝多少 单位：字节&lt;/p&gt;
+&lt;p&gt;num 拷贝多少 单位:字节&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;memmove-内存拷贝函数&#34;&gt;memmove() 内存拷贝函数
@@ -4792,7 +4862,7 @@
 &lt;p&gt;source 被拷贝的内存&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;num 拷贝多少 单位：字节&lt;/p&gt;
+&lt;p&gt;num 拷贝多少 单位:字节&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;memcmp-内存比较函数&#34;&gt;memcmp() 内存比较函数
@@ -4850,7 +4920,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;将 ptr 所指向的空间返回给操作系统&lt;/p&gt;
-&lt;p&gt;请注意：该函数只能释放在堆区上的内存空间&lt;/p&gt;
+&lt;p&gt;请注意:该函数只能释放在堆区上的内存空间&lt;/p&gt;
 &lt;p&gt;如果 ptr 为 NULL，该函数将不会执行&lt;/p&gt;
 &lt;p&gt;在使用该函数后要将 ptr 置为 NULL&lt;/p&gt;
 &lt;h3 id=&#34;calloc-内存开辟并初始化函数&#34;&gt;calloc() 内存开辟并初始化函数
@@ -4895,7 +4965,7 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;文件操作&#34;&gt;文件操作
 &lt;/h2&gt;&lt;p&gt;在 C 中，操作系统中的文件有一个文件缓冲系统。在其中最重要的即为文件类型指针，简称文件指针&lt;/p&gt;
-&lt;p&gt;每个被使用的文件都在内存中开辟了一个相应的文件信息区，用来存放文件的相关信息（如文件的名字，文件状态及文件当前的位置等） 这些信息是保存在一个结构体变量中的。该结构体类型是有系统声明的，取名为 FILE&lt;/p&gt;
+&lt;p&gt;每个被使用的文件都在内存中开辟了一个相应的文件信息区，用来存放文件的相关信息 (如文件的名字，文件状态及文件当前的位置等) 这些信息是保存在一个结构体变量中的。该结构体类型是有系统声明的，取名为 FILE&lt;/p&gt;
 &lt;p&gt;每当打开一个文件的时候，系统会根据文件的情况自动创建一个 FILE 结构的变量，并填充其中的信息
 通常，都是通过一个 FILE 的指针来维护这个 FILE 结构的变量，这样使用起来更加方便&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4906,7 +4976,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;FILE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//文件指针变量
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;定义 pf 是一个指向 FILE 类型数据的指针变量。可以使 pf 指向某个文件的文件信息区（是一个结构体变量） 通过该文件信息区中的信息就能够访问该文件。也就是说，通过文件指针变量能够找到与它关联的文件&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;定义 pf 是一个指向 FILE 类型数据的指针变量。可以使 pf 指向某个文件的文件信息区 (是一个结构体变量) 通过该文件信息区中的信息就能够访问该文件。也就是说，通过文件指针变量能够找到与它关联的文件&lt;/p&gt;
 &lt;h3 id=&#34;fopen-文件打开函数&#34;&gt;fopen() 文件打开函数
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5073,7 +5143,7 @@
 &lt;p&gt;string 字符指针&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;n 读取的字符（写 100 其实只会读取 99，因为最后一个要填充’\0’）&lt;/p&gt;
+&lt;p&gt;n 读取的字符 (写 100 其实只会读取 99，因为最后一个要填充’\0’)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;stream 文件指针&lt;/p&gt;
@@ -5098,7 +5168,7 @@
 &lt;p&gt;format 格式化转义字符&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;argument（可选） 值&lt;/p&gt;
+&lt;p&gt;argument (可选) 值&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;fscanf-格式化输入函数&#34;&gt;fscanf() 格式化输入函数
@@ -5118,7 +5188,7 @@
 &lt;p&gt;format 格式化转义字符&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;argument（可选） 值&lt;/p&gt;
+&lt;p&gt;argument (可选) 值&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;fwrite-二进制输出函数&#34;&gt;fwrite() 二进制输出函数
@@ -5135,7 +5205,7 @@
 &lt;p&gt;buffer 指针指向要被写的数据&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;size 元素的大小（可以写多个 取决于需求）&lt;/p&gt;
+&lt;p&gt;size 元素的大小 (可以写多个 取决于需求)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;count 最多写多少个元素&lt;/p&gt;
@@ -5158,7 +5228,7 @@
 &lt;p&gt;buffer 指针指向要被读的数据&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;size 元素的大小（可以写多个 取决于需求）&lt;/p&gt;
+&lt;p&gt;size 元素的大小 (可以写多个 取决于需求)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;count 最多读多少个元素&lt;/p&gt;
@@ -5186,7 +5256,7 @@
 &lt;p&gt;format 格式化转义字符&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;argument（可选） 值&lt;/p&gt;
+&lt;p&gt;argument (可选) 值&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;从一个字符串中读取一个格式化的数据&lt;/p&gt;
@@ -5207,7 +5277,7 @@
 &lt;p&gt;format 格式化转义字符&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;argument（可选） 值&lt;/p&gt;
+&lt;p&gt;argument (可选) 值&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;fseek-文件指针定位函数&#34;&gt;fseek() 文件指针定位函数
@@ -5224,10 +5294,10 @@
 &lt;p&gt;stream 文件指针&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;offset 偏移量（负数是往前倒着走）&lt;/p&gt;
+&lt;p&gt;offset 偏移量 (负数是往前倒着走)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;origin 位置（SEEK_CUR 当前文件指针的位置；SEEK_END 文件结尾；SEEK_SET 文件起始位置）&lt;/p&gt;
+&lt;p&gt;origin 位置 (SEEK_CUR 当前文件指针的位置；SEEK_END 文件结尾；SEEK_SET 文件起始位置)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;ftell-文件指针位置返回函数&#34;&gt;ftell() 文件指针位置返回函数
@@ -5257,7 +5327,7 @@
 &lt;/ul&gt;
 &lt;p&gt;让文件指针回到起始位置&lt;/p&gt;
 &lt;h3 id=&#34;文件缓冲区&#34;&gt;文件缓冲区
-&lt;/h3&gt;&lt;p&gt;ANSIC 标准采用 “缓冲文件系统 &amp;ldquo;处理的数据文件的，所谓缓冲文件系统是指系统自动地在内中为程序中每一个正在使用的文件开辟一块&amp;rdquo; 文件缓冲区”。从内存向磁盘输出数据会先送到内存中的缓冲区，装满缓冲区后才一起送到磁盘上。如果从磁盘向计算机读入数据，则从磁盘文件中读取数据输入到内存缓冲区（充满缓冲区），然后再从缓冲区逐个地将数据送到程序数据区（程序变量等）。缓冲区的大小根据 C 编译系统决定的&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;ANSIC 标准采用 “缓冲文件系统 &amp;ldquo;处理的数据文件的，所谓缓冲文件系统是指系统自动地在内中为程序中每一个正在使用的文件开辟一块&amp;rdquo; 文件缓冲区”。从内存向磁盘输出数据会先送到内存中的缓冲区，装满缓冲区后才一起送到磁盘上。如果从磁盘向计算机读入数据，则从磁盘文件中读取数据输入到内存缓冲区 (充满缓冲区)，然后再从缓冲区逐个地将数据送到程序数据区 (程序变量等)。缓冲区的大小根据 C 编译系统决定的&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;程序环境和预处理&#34;&gt;程序环境和预处理
 &lt;/h2&gt;&lt;p&gt;一个 C 程序会通过编译器经过预编译、编译、汇编、链接后才会在运行环境中运行&lt;/p&gt;
@@ -5291,7 +5361,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;汇编&#34;&gt;汇编
-&lt;/h3&gt;&lt;p&gt;见汇编代码转换为机器指令（即二进制命令）&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;见汇编代码转换为机器指令 (即二进制命令)&lt;/p&gt;
 &lt;p&gt;会生成符号表&lt;/p&gt;
 &lt;h3 id=&#34;链接&#34;&gt;链接
 &lt;/h3&gt;&lt;p&gt;把多个目标文件和链接库进行链接&lt;/p&gt;
@@ -5304,16 +5374,16 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;运行环境&#34;&gt;运行环境
-&lt;/h3&gt;&lt;p&gt;程序执行的过程：&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;程序执行的过程:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;程序必须载入内存中。在有操作系统的环境中：一般这个由操作系统完成。在独立的环境中，程序的载入必须由手工安排，也可能是通过可执行代码置入只读内存来完成&lt;/p&gt;
+&lt;p&gt;程序必须载入内存中。在有操作系统的环境中:一般这个由操作系统完成。在独立的环境中，程序的载入必须由手工安排，也可能是通过可执行代码置入只读内存来完成&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;程序的执行便开始。接着便调用 main 函数&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;开始执行程序代码。这个时候程序将使用一个运行时堆栈（stack），存储函数的局部变量和返回地址。程序同时也可以使用静态（static）内存，存储于静态内存中的变量在程序的整个执行过程一直保留他们的值&lt;/p&gt;
+&lt;p&gt;开始执行程序代码。这个时候程序将使用一个运行时堆栈 (stack)，存储函数的局部变量和返回地址。程序同时也可以使用静态 (static)内存，存储于静态内存中的变量在程序的整个执行过程一直保留他们的值&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;终止程序。正常终止 main 函数；也有可能是意外终止&lt;/p&gt;
@@ -5327,11 +5397,11 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define MAX(a, b) ((a)&amp;gt;(b) ? (a) : (b))
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define MAX(a, b) ((a)&amp;gt;(b) ? (a) :(b))
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;那为什么不用函数来完成这个任务？&lt;/p&gt;
-&lt;p&gt;原因有二：&lt;/p&gt;
+&lt;p&gt;原因有二:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;用于调用函数和从函数返回的代码可能比实际执行这个小型计算工作所需要的时间更多。所以宏比函数在程序的规模和速度方面更胜一筹。&lt;/p&gt;
@@ -5340,7 +5410,7 @@
 &lt;p&gt;更为重要的是函数的参数必须声明为特定的类型。所以函数只能在类型合适的表达式上使用。反之这个宏怎可以适用于整形、长整型、浮点型等可以用于 &amp;gt; 来比较的类型。宏是类型无关的。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;当然和宏相比函数也有劣势的地方：&lt;/p&gt;
+&lt;p&gt;当然和宏相比函数也有劣势的地方:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;每次使用宏的时候，一份宏定义的代码将插入到程序中。除非宏比较短，否则可能大幅度增加程序的长度。&lt;/p&gt;
@@ -5352,10 +5422,10 @@
 &lt;p&gt;宏由于类型无关，也就不够严谨。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;宏可能会带来运算符优先级的问题，导致程容易出现错。宏有时候可以做函数做不到的事情。比如：宏的参数可以出现类型但是函数做不到&lt;/p&gt;
+&lt;p&gt;宏可能会带来运算符优先级的问题，导致程容易出现错。宏有时候可以做函数做不到的事情。比如:宏的参数可以出现类型但是函数做不到&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;宏有时候可以做函数做不到的事情。比如：宏的参数可以出现类型，但是函数做不到&lt;/p&gt;
+&lt;p&gt;宏有时候可以做函数做不到的事情。比如:宏的参数可以出现类型，但是函数做不到&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;宏和函数的一个对比&#34;&gt;宏和函数的一个对比
@@ -5391,7 +5461,7 @@
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;参数类型&lt;/td&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;宏的参数于类型无关，只要对参数的操作是合法的，它就可以适用于任何参数类型&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;函数的参数是与类型有关的，如果参数的类型不通，就需要不同的函数，即使他们执行的任务是不同的 &lt;del&gt;C++: 函数模板了解一下不？&lt;/del&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;函数的参数是与类型有关的，如果参数的类型不通，就需要不同的函数，即使他们执行的任务是不同的 &lt;del&gt;C++:函数模板了解一下不？&lt;/del&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;调试&lt;/td&gt;
@@ -5440,7 +5510,7 @@
 &lt;p&gt;&lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; 只会在库文件中查找&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;del&gt;所以你也可以使用 &amp;quot;&amp;quot; 来包含 C 语言库中的头文件（不推荐&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;所以你也可以使用 &amp;quot;&amp;quot; 来包含 C 语言库中的头文件 (不推荐&lt;/del&gt;&lt;/p&gt;
 &lt;h4 id=&#34;嵌套文件包含&#34;&gt;嵌套文件包含
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5451,9 +5521,48 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在第一行添加如上代码，可以避免一个头文件被多次包含&lt;/p&gt;
+&lt;h3 id=&#34;类型转换&#34;&gt;类型转换
+&lt;/h3&gt;&lt;h4 id=&#34;隐式类型转换&#34;&gt;隐式类型转换
+&lt;/h4&gt;&lt;p&gt;C的整型算术运算总是至少以缺省整型类型的精度来进行的。&lt;/p&gt;
+&lt;p&gt;为了获得这个精度，表达式中的字符和短整型操作数在使用之前被转换为普通整型，这种转换称为整型提升。&lt;/p&gt;
+&lt;h4 id=&#34;算术操作符转换&#34;&gt;算术操作符转换
+&lt;/h4&gt;&lt;p&gt;如果某个操作符的各个操作数属于不同的类型，那么除非其中一个操作数的转换为另一个操作数的类型，否则操作就无法进行。下面的层次体系称为寻常算术转换。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优先级 从上到下&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;long double&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;double&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;float&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unsigned long int &lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;long int&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unsigned int&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;整型提升&#34;&gt;整型提升
+&lt;/h3&gt;&lt;p&gt;表达式的整型运算要在CPU的相应运算器件内执行，CPU内整型运算器(ALU)的操作数的字节长度一般就是int的字节长度，同时也是CPU的通用寄存器的长度。&lt;/p&gt;
+&lt;p&gt;因此，即使两个char类型的相加，在CPU执行时实际上也要先转换为CPU内整型操作数的标准长度。&lt;/p&gt;
+&lt;p&gt;通用CPU（general-purpose CPU）是难以直接实现两个8比特字节直接相加运算（虽然机器指令中可能有这种字节相加指令）。所以，表达式中各种长度可能小于int长度的整型值，都必须先转换为int或unsigned int，然后才能送入CPU去执行运算。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;常用-c-算法&#34;&gt;常用 C 算法
-&lt;/h2&gt;&lt;h3 id=&#34;二分查找&#34;&gt;二分查找
+&lt;/h2&gt;&lt;h3 id=&#34;生成随机数&#34;&gt;生成随机数
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;srand&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//传入时间戳 注意，该行语句只需要调用一次！
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rand_sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;rand&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//生成随机数
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rand_sum&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rand_sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//生成1-100范围的随机数
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;二分查找&#34;&gt;二分查找
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -5496,39 +5605,39 @@
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;57&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;89&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;98&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;107&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;428&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;890&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;请输入要查找的数字 &amp;gt;&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nf&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;57&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;89&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;98&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;107&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;428&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;890&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;请输入要查找的数字 &amp;gt;&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;n&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d数字在数组中的下标是%d&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d在数据中不存在&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d数字在数组中的下标是%d&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;middle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d在数据中不存在&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -5603,7 +5712,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;打印闰年&#34;&gt;打印闰年
-&lt;/h3&gt;&lt;p&gt;闰年的判断规则如下：&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;闰年的判断规则如下:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;年份可以被 4 整除但不能被 100 整除&lt;/p&gt;
@@ -5612,7 +5721,7 @@
 &lt;p&gt;年份可以被 400 整除&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;通常来说判断一个数是否为闰年使用如下判断表达式：&lt;/p&gt;
+&lt;p&gt;通常来说判断一个数是否为闰年使用如下判断表达式:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5817,7 +5926,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;生成随机数&#34;&gt;生成随机数
+&lt;/div&gt;&lt;h3 id=&#34;生成随机数-1&#34;&gt;生成随机数
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5917,7 +6026,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;请输入三个整数：n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;请输入三个整数:n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d %d %d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -6050,7 +6159,7 @@
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Reverse&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tmp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//取出第一个字符
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tmp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//取出第一个字符
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;len&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;strlen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;str&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;str&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;len&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//和最后一个字符交换
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;str&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;len&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;sc&#34;&gt;&amp;#39;\0&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//刚刚替换的最后一个字符变为\0
