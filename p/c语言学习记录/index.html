@@ -635,7 +635,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                20502 字
+                20613 字
             </time>
         </div>
         
@@ -653,7 +653,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 41 分钟
+                    阅读时长: 42 分钟
                 </time>
             </div>
         
@@ -2831,7 +2831,21 @@
 </div>
 </div><p>* 要和 parr 结合，表示是数组指针。类型是 int</p>
 <p>[] 内的元素个数一定要写，并且只能写原数组的元素个数</p>
-<h3 id="函数指针">函数指针
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span> <span class="c1">//整型数组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span><span class="o">*</span> <span class="n">parr1</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span> <span class="c1">//整型指针的数组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">parr2</span><span class="p">)[</span><span class="mi">10</span><span class="p">];</span> <span class="c1">//数组指针，指向一个数组，数组10个元素每个元素类型是int
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span><span class="p">(</span><span class="o">*</span><span class="n">parr3</span><span class="p">[</span><span class="mi">10</span><span class="p">])[</span><span class="mi">5</span><span class="p">];</span> <span class="c1">//存放数组指针的数组，存放10个数组指针，每个数组指针指向一个数组，数组5个元素。类型是int
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="函数指针">函数指针
 </h3><p>指向函数的指针，存放函数地址的指针</p>
 <p><strong>&amp;函数名</strong> 可以得到函数的地址</p>
 <p>函数名也就是函数的地址</p>
@@ -2859,7 +2873,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="o">*</span><span class="n">pf</span><span class="p">)(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">//使用函数指针传参
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>在这里 <code>(*pf)==pf==Add==&amp;add</code> 因为函数名就是函数的地址</p>
+</div><p>在这里 <code>(*pf) == pf == Add == &amp;Add</code> 因为函数名就是函数的地址</p>
 <p>来两道练习题吧 (</p>
 <p>请解释下面代码是什么意思</p>
 <div class="highlight"><div class="chroma">
@@ -5545,7 +5559,7 @@
         
         
         发表了7篇文章 ·
-        总计48.20k字
+        总计48.31k字
     </section>
 
 
