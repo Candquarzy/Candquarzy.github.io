@@ -7,7 +7,39 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>By Candy</copyright>
-        <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.candquarzy.top/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.candquarzy.top/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C语言</title>
+        <link>https://blog.candquarzy.top/tags/c%E8%AF%AD%E8%A8%80/</link>
+        <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.candquarzy.top/tags/c%E8%AF%AD%E8%A8%80/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Linux</title>
+        <link>https://blog.candquarzy.top/tags/linux/</link>
+        <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.candquarzy.top/tags/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Windows</title>
+        <link>https://blog.candquarzy.top/tags/windows/</link>
+        <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.candquarzy.top/tags/windows/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>计算机</title>
+        <link>https://blog.candquarzy.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+        <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.candquarzy.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Android</title>
         <link>https://blog.candquarzy.top/tags/android/</link>
         <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
@@ -56,22 +88,6 @@
         <description></description>
         </item>
         <item>
-        <title>Windows</title>
-        <link>https://blog.candquarzy.top/tags/windows/</link>
-        <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.candquarzy.top/tags/windows/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>计算机</title>
-        <link>https://blog.candquarzy.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-        <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.candquarzy.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>网页</title>
         <link>https://blog.candquarzy.top/tags/%E7%BD%91%E9%A1%B5/</link>
         <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
@@ -85,22 +101,6 @@
         <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.candquarzy.top/tags/docker/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Linux</title>
-        <link>https://blog.candquarzy.top/tags/linux/</link>
-        <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.candquarzy.top/tags/linux/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>C语言</title>
-        <link>https://blog.candquarzy.top/tags/c%E8%AF%AD%E8%A8%80/</link>
-        <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.candquarzy.top/tags/c%E8%AF%AD%E8%A8%80/</guid>
         <description></description>
         </item>
         <item>

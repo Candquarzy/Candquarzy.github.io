@@ -13,7 +13,7 @@
         <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.candquarzy.top/p/jetpack-compose%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</guid>
-        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/129202495_p0.jpg" alt="Featured image of post Jetpack Compose学习总结" /&gt;&lt;h2 id=&#34;准备知识&#34;&gt;准备知识
+        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/129202495_p0.webp" alt="Featured image of post Jetpack Compose学习总结" /&gt;&lt;h2 id=&#34;准备知识&#34;&gt;准备知识
 &lt;/h2&gt;&lt;h3 id=&#34;jetpackcompose-相比传统-xmljava-的优势&#34;&gt;JetpackCompose 相比传统 XML+Java 的优势
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -1727,7 +1727,7 @@
         <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.candquarzy.top/p/css%E6%A0%B7%E5%BC%8F%E6%A0%87%E7%AD%BE%E6%80%BB%E7%BB%93/</guid>
-        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/124928964_p0.png" alt="Featured image of post CSS样式标签总结" /&gt;&lt;h2 id=&#34;书写位置与顺序&#34;&gt;书写位置与顺序
+        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/124928964_p0.webp" alt="Featured image of post CSS样式标签总结" /&gt;&lt;h2 id=&#34;书写位置与顺序&#34;&gt;书写位置与顺序
 &lt;/h2&gt;&lt;h3 id=&#34;内部样式表&#34;&gt;内部样式表
 &lt;/h3&gt;&lt;p&gt;在 &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; 标签下方添加 &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; 双标签，在 &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; 标签内书写 CSS 代码&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3311,7 +3311,7 @@
         <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.candquarzy.top/p/html%E6%A0%87%E7%AD%BE%E5%A4%A7%E6%B1%87%E5%90%88/</guid>
-        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/img/126612103_p0.png" alt="Featured image of post HTML标签大汇合！" /&gt;&lt;h2 id=&#34;html-骨架&#34;&gt;HTML 骨架
+        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/126612103_p0.webp" alt="Featured image of post HTML标签大汇合！" /&gt;&lt;h2 id=&#34;html-骨架&#34;&gt;HTML 骨架
 &lt;/h2&gt;&lt;p&gt;HTML 的基本骨架是网页模板&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
