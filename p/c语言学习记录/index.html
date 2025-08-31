@@ -448,7 +448,7 @@
         <li><a href="#为什么使用枚举">为什么使用枚举？</a></li>
       </ol>
     </li>
-    <li><a href="#联合-共用-体">联合 (共用) 体</a>
+    <li><a href="#联合共用体">联合(共用)体</a>
       <ol>
         <li><a href="#联合体的声明">联合体的声明</a></li>
         <li><a href="#联合体的初始化">联合体的初始化</a></li>
@@ -615,7 +615,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                19019 字
+                19216 字
             </time>
         </div>
         
@@ -633,7 +633,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 38 分钟
+                    阅读时长: 39 分钟
                 </time>
             </div>
         
@@ -861,6 +861,9 @@
 </li>
 <li>
 <p><strong>%d</strong> 读入十进制数</p>
+</li>
+<li>
+<p><strong>%lld</strong> 输入一个长整数</p>
 </li>
 <li>
 <p><strong>%o</strong> 读入八进制整数</p>
@@ -2557,7 +2560,7 @@
 <li>指针解引用的权限有多大</li>
 <li>指针的步长 (如 int 为 4，char 为 1，double 为 8)</li>
 </ol>
-<p><code>void*</code> 是一种无具体类型的指针，所以任何类型的地址都可以丢进去</p>
+<p><code>void*</code> 是一种无具体类型的指针，所以任何类型的地址都可以丢进去 <strong>注: <code>void*</code>类型的指针无法解引用!</strong></p>
 <blockquote>
 <p>这里的权限与步长指的是该指针变量可以操作内存的bit位数</p></blockquote>
 <h3 id="野指针">野指针
@@ -3129,7 +3132,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nf">function_name</span><span class="p">(</span><span class="k">struct</span> <span class="n">tag</span><span class="o">*</span> <span class="n">pa</span><span class="p">);</span> <span class="c1">//传地址
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>传址调用更好，效率高。能够改变变量的数值。同时，函数传参时，参数是需要压栈的，结构体如果过大会导致系统开销比较大，这将会导致性能的下降 我直接就是传一个引用类型</p>
+</div><blockquote>
+<p>传址调用更好，效率高。能够改变变量的数值。同时，函数传参时，参数是需要压栈的，结构体如果过大会导致系统开销比较大，这将会导致性能的下降</p></blockquote>
 <h3 id="结构体内存对齐">结构体内存对齐
 </h3><p>首先，掌握结构体的对齐规则</p>
 <ol>
@@ -3149,6 +3153,15 @@
 <p>对齐数 编译器默认的一个对齐数与该成员大小的较小值 (VS 中的默认对齐数为 8)</p>
 </li>
 </ol>
+<blockquote>
+<p><strong>为什么会存在内存对齐？</strong></p>
+<ol>
+<li><strong>平台原因</strong> 不是所有的硬件平台都能访问任意地址上的任意数据的 某些硬件平台只能 在某些地址处取某些特定类型的数据，否则抛出硬件异常</li>
+<li><strong>性能原因</strong> 数据结构(尤其是栈)应该尽可能地在自然边界上对齐 为了访问未对齐的内存，处理器需要作两次内存访问；而对齐的内存访问仅需要一次访问</li>
+</ol>
+<p>总体来说，结构体内存对齐是拿空间换时间的做法</p></blockquote>
+<blockquote>
+<p>可以使用 <code>#pragma pack(8)</code> 来修改默认对齐数 比如这里设定为8</p></blockquote>
 <h3 id="-柔性数组">* 柔性数组
 </h3><p>在 C99 中，结构体的最后一个元素允许是未知大小的数组，这就是柔性数组成员</p>
 <h4 id="柔性数组的声明">柔性数组的声明
@@ -3337,7 +3350,7 @@
 </li>
 </ol>
 <hr>
-<h2 id="联合-共用-体">联合 (共用) 体
+<h2 id="联合共用体">联合(共用)体
 </h2><p>联合体也叫共用体，其中的成员共用一块内存空间。这个联合体的大小，至少是最大成员的大小</p>
 <h3 id="联合体的声明">联合体的声明
 </h3><div class="highlight"><div class="chroma">
@@ -3377,7 +3390,7 @@
 <p>联合体的大小至少是最大成员的成员的大小</p>
 </li>
 <li>
-<p>当最大成员大小不上最大对齐数的整数倍的时候，就要对齐到最大对齐数的整数倍</p>
+<p>当最大成员大小不是最大对齐数的整数倍的时候，就要对齐到最大对齐数的整数倍</p>
 </li>
 </ul>
 <hr>
@@ -4762,7 +4775,7 @@
         
         
         发表了8篇文章 ·
-        总计49.28k字
+        总计49.71k字
     </section>
 
 
