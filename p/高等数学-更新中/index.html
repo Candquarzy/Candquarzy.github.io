@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="高等数学自学总结">
+<title>高等数学 (更新中)</title>
+
+<link rel='canonical' href='https://blog.candquarzy.top/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/'>
+
+<script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.7/dist/autoload.js"></script>
+
+<link rel="stylesheet" href="/scss/style.min.614ec52da7a774511f0a4aa640e7189e67ad503782b9382d4ff6eb64ac586a4a.css"><meta property='og:title' content="高等数学 (更新中)">
+<meta property='og:description' content="高等数学自学总结">
+<meta property='og:url' content='https://blog.candquarzy.top/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/'>
+<meta property='og:site_name' content='糖果罐🍥 - Candy的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='微积分' /><meta property='article:tag' content='线性代数' /><meta property='article:tag' content='概率学' /><meta property='article:tag' content='高等数学' /><meta property='article:tag' content='函数' /><meta property='article:published_time' content='2025-09-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-05T00:00:00&#43;00:00'/><meta property='og:image' content='https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/124956717_p0.webp' />
+<meta name="twitter:title" content="高等数学 (更新中)">
+<meta name="twitter:description" content="高等数学自学总结"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/124956717_p0.webp' />
+    <link rel="shortcut icon" href="https://www.emojiall.com/en/header-svg/%F0%9F%8D%A5.svg" />
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB3JRV78P9"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YB3JRV78P9');
+        }
+      </script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_c6aef3d413c27a14.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">糖果罐🍥 - Candy的博客</a></h1>
+            <h2 class="site-description">这是什么? Candy? 可以吃吗?</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Candquarzy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:CandyQuartz_qwq@outlook.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/Candquarzy_QwQ'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#函数">函数</a>
+      <ol>
+        <li><a href="#基本初等函数图像一">基本初等函数图像(一)</a>
+          <ol>
+            <li><a href="#一次函数--y--kxb--k-ne-0-绿">一次函数 $ y = kx+b \ (k \ne 0)$ [绿]</a></li>
+            <li><a href="#二次函数-y--ax2--bx--c--a-ne-0-紫">二次函数 $y = ax^{2} + bx + c \ (a \ne 0)$ [紫]</a></li>
+            <li><a href="#三次函数-y--ax3--bx2--cx--d--a-ne-0-红">三次函数 $y = ax^{3} + bx^{2} + cx + d \ (a \ne 0)$ [红]</a></li>
+            <li><a href="#反比例函数-y--frackx--x-ne-0--蓝">反比例函数 $y = \frac{k}{x} \ (x \ne 0) $ [蓝]</a></li>
+          </ol>
+        </li>
+        <li><a href="#基本初等函数图像二">基本初等函数图像(二)</a>
+          <ol>
+            <li><a href="#幂函数-y--xmu--mu-in-r">幂函数 $y = x^{\mu} \ (\mu \in R)$</a></li>
+          </ol>
+        </li>
+        <li><a href="#基本初等函数三">基本初等函数(三)</a>
+          <ol>
+            <li><a href="#指数函数-y--a--x--a--0-a-ne-1">指数函数 $y = a ^ {x} \ (a &gt; 0, a \ne 1)$</a></li>
+            <li><a href="#指数相关公式">指数相关公式</a></li>
+            <li><a href="#对数函数-y--log_ax-a--0-a-ne-1">对数函数 $y = \log_{a}{x} (a &gt; 0, a \ne 1)$</a></li>
+            <li><a href="#对数相关公式">对数相关公式</a></li>
+          </ol>
+        </li>
+        <li><a href="#基本初等函数四">基本初等函数(四)</a>
+          <ol>
+            <li><a href="#正弦函数-y--sin-x-红">正弦函数 $y = \sin x$ [红]</a></li>
+            <li><a href="#余弦函数-y--cos-x-蓝">余弦函数 $y = \cos x$ [蓝]</a></li>
+            <li><a href="#正切函数-y--tan-x-绿">正切函数 $y = \tan x$ [绿]</a></li>
+            <li><a href="#其他三角函数">其他三角函数</a></li>
+            <li><a href="#基本关系">基本关系</a></li>
+            <li><a href="#三角恒等变换">三角恒等变换</a></li>
+            <li><a href="#常用三角函数值">常用三角函数值</a></li>
+          </ol>
+        </li>
+        <li><a href="#基本初等函数五">基本初等函数(五)</a>
+          <ol>
+            <li><a href="#常用反三角函数值">常用反三角函数值</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#极限">极限</a>
+      <ol>
+        <li><a href="#两个重要极限">两个重要极限</a></li>
+        <li><a href="#常用等价无穷小">常用等价无穷小</a></li>
+        <li><a href="#无穷小量阶比较">无穷小量阶比较</a></li>
+        <li><a href="#求极限基础10法">求极限基础10法</a></li>
+      </ol>
+    </li>
+    <li><a href="#导数与微分">导数与微分</a>
+      <ol>
+        <li><a href="#基本导数公式">基本导数公式</a></li>
+        <li><a href="#导数的四则运算">导数的四则运算</a></li>
+        <li><a href="#高阶导数公式">高阶导数公式</a></li>
+        <li><a href="#直线方程">直线方程</a></li>
+      </ol>
+    </li>
+    <li><a href="#不定积分">不定积分</a>
+      <ol>
+        <li><a href="#基本积分公式">基本积分公式</a></li>
+        <li><a href="#不定积分的性质">不定积分的性质</a></li>
+        <li><a href="#换元法求积分">换元法求积分</a></li>
+        <li><a href="#三角代换">三角代换</a></li>
+        <li><a href="#分部积分公式">分部积分公式</a></li>
+      </ol>
+    </li>
+    <li><a href="#定积分">定积分</a>
+      <ol>
+        <li><a href="#牛顿莱布尼兹公式微积分基本定理">牛顿莱布尼兹公式(微积分基本定理)</a></li>
+        <li><a href="#定积分的性质部分">定积分的性质(部分)</a></li>
+      </ol>
+    </li>
+    <li><a href="#多元函数微分">多元函数微分</a>
+      <ol>
+        <li><a href="#二元函数的极限">二元函数的极限</a></li>
+        <li><a href="#二元函数求偏导">二元函数求偏导</a></li>
+        <li><a href="#二元函数的二阶偏导数">二元函数的二阶偏导数</a></li>
+        <li><a href="#全微分">全微分</a>
+          <ol>
+            <li><a href="#三元函数的全微分">三元函数的全微分</a></li>
+          </ol>
+        </li>
+        <li><a href="#隐函数求导公式">隐函数求导公式</a>
+          <ol>
+            <li><a href="#一元">一元</a></li>
+            <li><a href="#二元">二元</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#二重积分">二重积分</a>
+      <ol>
+        <li><a href="#二重积分的性质部分">二重积分的性质(部分)</a></li>
+        <li><a href="#二重积分的计算">二重积分的计算</a>
+          <ol>
+            <li><a href="#x型积分区域">X型积分区域</a></li>
+            <li><a href="#y型积分区域">Y型积分区域</a></li>
+          </ol>
+        </li>
+        <li><a href="#极坐标下的二重积分">极坐标下的二重积分</a>
+          <ol>
+            <li><a href="#基础公式">基础公式</a></li>
+            <li><a href="#极坐标下化二重积分为两次一重积分">极坐标下化二重积分为两次一重积分</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#微分方程">微分方程</a>
+      <ol>
+        <li><a href="#微分方程的基本概念">微分方程的基本概念</a></li>
+        <li><a href="#一阶可分离变量的微分方程">一阶可分离变量的微分方程</a></li>
+        <li><a href="#齐次微分方程">齐次微分方程</a></li>
+        <li><a href="#一阶次线性微分方程">一阶次线性微分方程</a></li>
+        <li><a href="#二阶常系数齐次线性微分方程">二阶常系数齐次线性微分方程</a>
+          <ol>
+            <li><a href="#定义">定义</a></li>
+            <li><a href="#解二阶常系数齐次线性微分方程">解二阶常系数齐次线性微分方程</a></li>
+          </ol>
+        </li>
+        <li><a href="#二阶常系数非齐次线性微分方程">二阶常系数非齐次线性微分方程</a>
+          <ol>
+            <li><a href="#fxelambda-xp_mx-型求特解的方法">$f(x)=e^{\lambda x}P_m(x)$ 型求特解的方法</a></li>
+            <li><a href="#fxelambda-xpcos-omega-xqsinomega-x--pqin-r-型求特解的方法">$f(x)=e^{\lambda x}(P\cos \omega x+Q\sin\omega x) \ (P,Q\in R)$ 型求特解的方法</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#无穷级数">无穷级数</a>
+      <ol>
+        <li><a href="#常数项级数">常数项级数</a>
+          <ol>
+            <li><a href="#常数项级数的审敛法">常数项级数的审敛法</a></li>
+            <li><a href="#交错级数的审敛法">交错级数的审敛法</a></li>
+            <li><a href="#绝对收敛与条件收敛">绝对收敛与条件收敛</a></li>
+          </ol>
+        </li>
+        <li><a href="#幂级数">幂级数</a>
+          <ol>
+            <li><a href="#阿贝尔定理">阿贝尔定理</a></li>
+            <li><a href="#幂级数的运算性质">幂级数的运算性质</a></li>
+          </ol>
+        </li>
+        <li><a href="#函数展开成幂级数">函数展开成幂级数</a>
+          <ol>
+            <li><a href="#泰勒公式与麦克劳林公式">泰勒公式与麦克劳林公式</a></li>
+            <li><a href="#泰勒级数与麦克劳林级数">泰勒级数与麦克劳林级数</a></li>
+            <li><a href="#直接展开">直接展开</a></li>
+            <li><a href="#间接展开">间接展开</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#行列式">行列式</a></li>
+    <li><a href="#矩阵">矩阵</a></li>
+    <li><a href="#向量代数">向量代数</a></li>
+    <li><a href="#空间解析几何">空间解析几何</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/124956717_p0.webp" loading="lazy" alt="Featured image of post 高等数学 (更新中)" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%95%B0%E5%AD%A6/" style="background-color: #2a9d8f; color: #fff;">
+                数学
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/">高等数学 (更新中)</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            高等数学自学总结
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-09-05</time>
+            </div>
+        
+
+    
+
+        
+        <div>
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
+            <time class="article-time--reading">
+                2316 字
+            </time>
+        </div>
+        
+
+    
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 5 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="微积分">微积分
+</h1><h2 id="函数">函数
+</h2><h3 id="基本初等函数图像一">基本初等函数图像(一)
+</h3><p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/%E5%9F%BA%E6%9C%AC%E5%87%BD%E6%95%B0.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="基本初等函数"
+	
+	
+></p>
+<h4 id="一次函数--y--kxb--k-ne-0-绿">一次函数 $ y = kx+b \ (k \ne 0)$ [绿]
+</h4><ul>
+<li>$k$ 斜率</li>
+<li>$b$ 截距</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">k</th>
+          <th style="text-align: center">b</th>
+          <th style="text-align: center">象限</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">&gt; 0</td>
+          <td style="text-align: center">&gt;0</td>
+          <td style="text-align: center">一、二、三</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">&gt; 0</td>
+          <td style="text-align: center">= 0</td>
+          <td style="text-align: center">一、三</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">&gt; 0</td>
+          <td style="text-align: center">&lt; 0</td>
+          <td style="text-align: center">一、三、四</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">&lt; 0</td>
+          <td style="text-align: center">&gt; 0</td>
+          <td style="text-align: center">一、二、四</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">&lt; 0</td>
+          <td style="text-align: center">= 0</td>
+          <td style="text-align: center">二、四</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">&lt; 0</td>
+          <td style="text-align: center">&lt; 0</td>
+          <td style="text-align: center">二、三、四</td>
+      </tr>
+  </tbody>
+</table></div>
+<h4 id="二次函数-y--ax2--bx--c--a-ne-0-紫">二次函数 $y = ax^{2} + bx + c \ (a \ne 0)$ [紫]
+</h4><ul>
+<li>$a$ 二次项系数 控制了二次函数从顶点的增长(或下降)速度，即二次函数开口方向和大小。$\displaystyle |a|$ 越大，开口越小，函数就增长得越快。以及抛物线的对称轴(顶点x的坐标)</li>
+<li>$b$ 一次项系数 控制了抛物线的对称轴(顶点x的坐标)。以及控制了抛物线穿过 $\displaystyle y$ 轴时的倾斜度</li>
+<li>$c$ 常数项 控制了抛物线最低点或最高点的高度，它是抛物线与 $\displaystyle y$ 轴的交点</li>
+</ul>
+<p>其中，方程 $ax^{2} + bx + c \ (a \ne 0) = 0$ 的解即为函数的与 $x$ 轴的交点
+</p>
+$$
+\begin{array}{l} 
+  a\mathop{{x}}\nolimits^{{2}}+bx+c=0 \\ 
+  \Delta =\mathop{{b}}\nolimits^{{2}}-4ac \\ 
+  \left\{\begin{matrix} 
+  \Delta \gt 0\text{方程有两个不相等的实根} \\ 
+  \Delta = 0\text{方程有两个相等的实根} \\ 
+  \Delta \lt 0\text{方程无实根} 
+\end{matrix}\right.    
+\end{array}
+$$<br>
+<h4 id="三次函数-y--ax3--bx2--cx--d--a-ne-0-红">三次函数 $y = ax^{3} + bx^{2} + cx + d \ (a \ne 0)$ [红]
+</h4><h4 id="反比例函数-y--frackx--x-ne-0--蓝">反比例函数 $y = \frac{k}{x} \ (x \ne 0) $ [蓝]
+</h4><ul>
+<li>$k &gt; 0$ 反比例函数的图像在第一、三象限</li>
+<li>$k &lt; 0$ 反比例函数的图像在第二、四象限</li>
+</ul>
+<h3 id="基本初等函数图像二">基本初等函数图像(二)
+</h3><p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/%E5%B9%82%E5%87%BD%E6%95%B0.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="幂函数"
+	
+	
+></p>
+<h4 id="幂函数-y--xmu--mu-in-r">幂函数 $y = x^{\mu} \ (\mu \in R)$
+</h4><ul>
+<li>$\mu &gt; 0$ 函数图像在第一象限，单调递增 [红] [紫]</li>
+<li>$\mu &lt; 0$ 函数图像在第一象限，单调递减 [蓝] [绿]</li>
+<li>$\mu \ne 0$ 无界函数</li>
+</ul>
+<h3 id="基本初等函数三">基本初等函数(三)
+</h3><p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="指数函数"
+	
+	
+></p>
+<h4 id="指数函数-y--a--x--a--0-a-ne-1">指数函数 $y = a ^ {x} \ (a &gt; 0, a \ne 1)$
+</h4><blockquote>
+<p>定义域 $(-\infty ,+\infty )$ 值域 $(0, +\infty )$ 且函数图像都经过点$(0, 1)$</p>
+<p>奇偶性: 非奇非偶</p></blockquote>
+<ul>
+<li>$a &gt; 1$ 函数单调递增 [红]</li>
+<li>$0 &lt; a &lt; 1$ 函数单调递减 [绿]</li>
+</ul>
+<h4 id="指数相关公式">指数相关公式
+</h4>$$
+a^0 = 1 \ (a \ne 0)
+$$$$
+a^{-n} = \frac1{a^n}\ (a\ne0,n\in N^+)
+$$$$
+\sqrt[n]{a^m}=a^{\frac mn} \ (a>0,mn\in N^+,n>1)
+$$$$
+a^{-\frac mn}= \frac{1}{a^\frac mn}=\frac1{\sqrt[n]{a^m}} \ (a>0,mn\in N^+,n>1)
+$$<blockquote>
+<p>0的正分数指数幂是0. 0的负分数指数幂无意义</p></blockquote>
+<p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="对数函数"
+	
+	
+></p>
+<h4 id="对数函数-y--log_ax-a--0-a-ne-1">对数函数 $y = \log_{a}{x} (a &gt; 0, a \ne 1)$
+</h4><blockquote>
+<p>定义域 $(0, +\infty )$ 值域 $(-\infty ,+\infty )$ 且函数图像都经过点$(1, 0)$</p>
+<p>奇偶性: 非奇非偶</p></blockquote>
+<ul>
+<li>$a &gt; 1$ 函数单调递增 [红]</li>
+<li>$0 &lt; a &lt; 1$ 函数单调递减 [绿]</li>
+</ul>
+<h4 id="对数相关公式">对数相关公式
+</h4><blockquote>
+<p>$e = 2.71828&hellip;$</p>
+<p>$\log_{10}N \Longleftrightarrow \lg N$</p>
+<p>$\log_{e}N \Longleftrightarrow \ln N$</p></blockquote>
+$$
+\log_a{MN} = \log_aM + log_aN
+$$$$
+\log_a{\frac MN}=\log_aM-\log_aN
+$$$$
+\log_aM^n=n\log_aM
+$$$$
+\log_{a^m}{M^n}=\frac nm\log_aM
+$$$$
+a^{\lg_ab}=b
+$$$$
+a^x=e^{x\ln a}
+$$$$
+a^x=N\Leftrightarrow x=\log_aN
+$$$$
+对数换底公式: \log_ab=\frac{\log_cb}{\log_ca} \ (a>0,a\ne1,b>0;c>0,c\ne1)
+$$<p>在上式中，当$c=b$时，有$\log_ab=\frac1{log_ba}$</p>
+<h3 id="基本初等函数四">基本初等函数(四)
+</h3><p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/sin.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="正弦函数"
+	
+	
+></p>
+<h4 id="正弦函数-y--sin-x-红">正弦函数 $y = \sin x$ [红]
+</h4><p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/cos.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="余弦函数"
+	
+	
+></p>
+<h4 id="余弦函数-y--cos-x-蓝">余弦函数 $y = \cos x$ [蓝]
+</h4><p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/tan.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="正切函数"
+	
+	
+></p>
+<h4 id="正切函数-y--tan-x-绿">正切函数 $y = \tan x$ [绿]
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">函数</th>
+          <th style="text-align: center">定义域</th>
+          <th style="text-align: center">值域</th>
+          <th style="text-align: center">周期性</th>
+          <th style="text-align: center">奇偶性</th>
+          <th style="text-align: center">对称轴</th>
+          <th style="text-align: center">对称中心</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">$\sin x$</td>
+          <td style="text-align: center">$R$</td>
+          <td style="text-align: center">$[-1,1]$</td>
+          <td style="text-align: center">$2k\pi \ (k \in Z 且 k \ne 0)$</td>
+          <td style="text-align: center">奇函数</td>
+          <td style="text-align: center">$x = \frac{\pi}{2}+k\pi (k \in Z)$</td>
+          <td style="text-align: center">$(k\pi, 0) \ k\in Z$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\cos x$</td>
+          <td style="text-align: center">$R$</td>
+          <td style="text-align: center">$[-1,1]$</td>
+          <td style="text-align: center">$2k\pi \ (k \in Z 且 k \ne 0)$</td>
+          <td style="text-align: center">偶函数</td>
+          <td style="text-align: center">$x = 2k\pi (k \in Z)$</td>
+          <td style="text-align: center">$(\frac{\pi}{0}, 0) \ k\in Z$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\tan x$</td>
+          <td style="text-align: center">${{ x \ \mid  \ x \ne \frac{\pi}{2} + k\pi , k\in Z}}$</td>
+          <td style="text-align: center">$R$</td>
+          <td style="text-align: center">$\pi$</td>
+          <td style="text-align: center">奇函数</td>
+          <td style="text-align: center">$\phi $</td>
+          <td style="text-align: center">$(\frac{k\pi}{2},0)\ k\in Z$</td>
+      </tr>
+  </tbody>
+</table></div>
+<h4 id="其他三角函数">其他三角函数
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">函数</th>
+          <th style="text-align: center">定义域</th>
+          <th style="text-align: center">变换</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">$\sec x$</td>
+          <td style="text-align: center">${ x \ \mid \ x \ne \frac{\pi}{2} + k\pi , k\in Z  } $</td>
+          <td style="text-align: center">$\frac{1}{\cos x}$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\csc x$</td>
+          <td style="text-align: center">${ x \ \mid \ x \in R \ 且 \ x \ne k\pi , \ k \in Z } $</td>
+          <td style="text-align: center">$\frac{1}{\sin x}$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\cot x$</td>
+          <td style="text-align: center">${ x \ \mid \ x \in R \  且 \ x \ne k\pi , \ k \in Z  } $</td>
+          <td style="text-align: center">$\frac{\cos x}{\sin x}$</td>
+      </tr>
+  </tbody>
+</table></div>
+<h4 id="基本关系">基本关系
+</h4>$$
+\sin^ 2 x + \cos ^ 2 x = 1
+$$$$
+1+\tan ^ 2 x = \sec ^ 2 x
+$$$$
+1+\cot^2x = \csc^2x
+$$$$
+\cos(x_{1} \pm x_{2}) = \cos x_{1} \cos x_{2} \pm \sin x_{1} \sin x_{2}
+$$$$
+\sin(x_{1} \pm x_{2}) = \sin x_{1} \cos x_{2} \pm \cos x_{1} \sin x_{2}
+$$<h4 id="三角恒等变换">三角恒等变换
+</h4>$$
+\cos2x = \cos^2x - \sin^2x = 2\cos^2x - 1 = 1 - 2\sin^2x
+$$$$
+\sin2x = 2 \sin x \cos x
+$$<blockquote>
+<p>此处非全部公式 仅仅列举部分公式</p></blockquote>
+<h4 id="常用三角函数值">常用三角函数值
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">角度制</th>
+          <th style="text-align: center">$0°$</th>
+          <th style="text-align: center">$\phi$</th>
+          <th style="text-align: center">$\phi$</th>
+          <th style="text-align: center">$30°$</th>
+          <th style="text-align: center">$45°$</th>
+          <th style="text-align: center">$60°$</th>
+          <th style="text-align: center">$90°$</th>
+          <th style="text-align: center">$180°$</th>
+          <th style="text-align: center">$270°$</th>
+          <th style="text-align: center">$360°$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">弧度制</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$1$</td>
+          <td style="text-align: center">$-1$</td>
+          <td style="text-align: center">$\frac{\pi}{6}$</td>
+          <td style="text-align: center">$\frac{\pi}{4}$</td>
+          <td style="text-align: center">$\frac{\pi}{3}$</td>
+          <td style="text-align: center">$\frac{\pi}{2}$</td>
+          <td style="text-align: center">$\pi$</td>
+          <td style="text-align: center">$\frac{3\pi}{2}$</td>
+          <td style="text-align: center">$2\pi$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$y = \sin x$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$0.8415$</td>
+          <td style="text-align: center">$\frac{\pi}2$</td>
+          <td style="text-align: center">$\frac{1}{2}$</td>
+          <td style="text-align: center">$\frac{\sqrt{2}}{2}$</td>
+          <td style="text-align: center">$\frac{\sqrt3}{2}$</td>
+          <td style="text-align: center">$1$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$-1$</td>
+          <td style="text-align: center">$0$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$y = \cos x$</td>
+          <td style="text-align: center">$1$</td>
+          <td style="text-align: center">$0.5403$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$\frac{\sqrt{3}}{2}$</td>
+          <td style="text-align: center">$\frac{\sqrt{2}}{2}$</td>
+          <td style="text-align: center">$\frac{1}{2}$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$-1$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$1$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$y = \tan x$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$1.5574$</td>
+          <td style="text-align: center">$\frac{\pi}{4}$</td>
+          <td style="text-align: center">$\frac{\sqrt{3}}{3}$</td>
+          <td style="text-align: center">$1$</td>
+          <td style="text-align: center">$\sqrt3$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$0$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$y = \sec x$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\frac2{\sqrt3}$</td>
+          <td style="text-align: center">$\frac{\sqrt2}2$</td>
+          <td style="text-align: center">$2$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$-1$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$1$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$y = \csc x$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$2$</td>
+          <td style="text-align: center">$\sqrt2$</td>
+          <td style="text-align: center">$\frac2{\sqrt3}$</td>
+          <td style="text-align: center">$1$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$-1$</td>
+          <td style="text-align: center">$\phi$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$y = \cot x$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\sqrt3$</td>
+          <td style="text-align: center">$1$</td>
+          <td style="text-align: center">$\frac1{\sqrt3}$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$\phi$</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="基本初等函数五">基本初等函数(五)
+</h3><p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B01.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="反三角函数1"
+	
+	
+></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">名称</th>
+          <th style="text-align: center">表达式</th>
+          <th style="text-align: center">定义</th>
+          <th style="text-align: center">定义域</th>
+          <th style="text-align: center">值域</th>
+          <th style="text-align: center">单调性</th>
+          <th style="text-align: center">奇偶性</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">反正弦函数[橙]</td>
+          <td style="text-align: center">$y=\arcsin x$</td>
+          <td style="text-align: center">$x = \sin y$</td>
+          <td style="text-align: center">$[-1,\ 1]$</td>
+          <td style="text-align: center">$[-\frac{\pi}2,\ \frac{\pi}2]$</td>
+          <td style="text-align: center">单调递增(有界函数)</td>
+          <td style="text-align: center">奇函数</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">反余弦函数[蓝]</td>
+          <td style="text-align: center">$y=\arccos x$</td>
+          <td style="text-align: center">$x=\cos y$</td>
+          <td style="text-align: center">$[-1,\ 1]$</td>
+          <td style="text-align: center">$[0,\ \pi]$</td>
+          <td style="text-align: center">单调递减(有界函数)</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">反正切函数[绿]</td>
+          <td style="text-align: center">$y=\arctan x$</td>
+          <td style="text-align: center">$x = \tan y$</td>
+          <td style="text-align: center">$R$</td>
+          <td style="text-align: center">$(-\frac{\pi}2,\ \frac{\pi}2)$</td>
+          <td style="text-align: center">单调递减(有界函数)</td>
+          <td style="text-align: center">奇函数</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><img src="/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/math/%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B02.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="反三角函数2"
+	
+	
+></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">名称</th>
+          <th style="text-align: center">表达式</th>
+          <th style="text-align: center">定义</th>
+          <th style="text-align: center">定义域</th>
+          <th style="text-align: center">值域</th>
+          <th style="text-align: center">单调性</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">反余切函数[紫]</td>
+          <td style="text-align: center">$y=\arccot x$</td>
+          <td style="text-align: center">$x = \cot y$</td>
+          <td style="text-align: center">$R$</td>
+          <td style="text-align: center">$(0, \ \pi)$</td>
+          <td style="text-align: center">单调递减(有界函数)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">反正割函数[黑]</td>
+          <td style="text-align: center">$y=\arcsec x$</td>
+          <td style="text-align: center">$x = \sec y$</td>
+          <td style="text-align: center">$(-\infty , \ -1]\cup[1, \ +\infty )$</td>
+          <td style="text-align: center">$[0,\ \frac\pi2)\cup(\frac\pi2, \ \pi]$</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">反余割函数[红]</td>
+          <td style="text-align: center">$y=\arccsc x$</td>
+          <td style="text-align: center">$x = \csc y$</td>
+          <td style="text-align: center">$(-\infty , \ -1]\cup[1, \ +\infty )$</td>
+          <td style="text-align: center">$[-\frac\pi2,\ 0)\cup(0, \ \frac\pi2]$</td>
+          <td style="text-align: center"></td>
+      </tr>
+  </tbody>
+</table></div>
+<h4 id="常用反三角函数值">常用反三角函数值
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">$x$</th>
+          <th style="text-align: center">$-1$</th>
+          <th style="text-align: center">$0$</th>
+          <th style="text-align: center">$\frac12$</th>
+          <th style="text-align: center">$\frac{\sqrt3}3$</th>
+          <th style="text-align: center">$\frac{\sqrt2}2$</th>
+          <th style="text-align: center">$\frac{\sqrt3}2$</th>
+          <th style="text-align: center">$\sqrt3$</th>
+          <th style="text-align: center">$1$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">$\arcsin x$</td>
+          <td style="text-align: center">$-\frac{\pi}2$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$\frac\pi6$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\frac\pi4$</td>
+          <td style="text-align: center">$\frac\pi3$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\frac\pi2$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\arccos x$</td>
+          <td style="text-align: center">$\pi$</td>
+          <td style="text-align: center">$\frac{\pi}2$</td>
+          <td style="text-align: center">$\frac\pi3$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\frac\pi4$</td>
+          <td style="text-align: center">$\frac\pi6$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$0$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\arctan x$</td>
+          <td style="text-align: center">$-\frac{\pi}4$</td>
+          <td style="text-align: center">$0$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\frac\pi6$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\phi$</td>
+          <td style="text-align: center">$\frac\pi3$</td>
+          <td style="text-align: center">$\frac\pi4$</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="极限">极限
+</h2>$$
+\lim_{x \to x0} f(x)=A
+$$<h3 id="两个重要极限">两个重要极限
+</h3>$$
+①\ \lim_{x\to{0}}\frac{\sin x}x = \lim_{x\to0}\frac x{\sin x}=1
+$$$$
+②\ \lim_{x\to\infty}(1+\frac1x)^x \Leftrightarrow \lim_{x\to0}(1+\frac1x)^\frac1x =e \Rightarrow  \lim_{f(x)\to0 \ g(x)\to\infty}[1+f(x)]^{g(x)}=e^{lim[f(x)\cdot g(x)]}
+$$<h3 id="常用等价无穷小">常用等价无穷小
+</h3><blockquote>
+<p>前提条件: 当$x\to0$时</p></blockquote>
+<ol>
+<li>
+$$
+     \sin x\sim x
+     $$</li>
+<li>
+$$
+     \tan x \sim x
+     $$</li>
+<li>
+$$
+     \arcsin x \sim x
+     $$</li>
+<li>
+$$
+     \arctan x \sim x
+     $$</li>
+<li>
+$$
+     e^x-1\sim x
+     $$</li>
+<li>
+$$
+     a^x-1\sim x\ln a\ (a>0,a\ne1)
+     $$</li>
+<li>
+$$
+     \ln{(1+x)}\sim x
+     $$</li>
+<li>
+$$
+     \log_a{(1+x)}\sim \frac x{\ln a}\ (a>0,a\ne1)
+     $$</li>
+<li>
+$$
+     (1+x)^a-1\sim ax
+     $$</li>
+<li>
+$$
+      \sqrt[n]{1+x}-1\sim \frac xn 
+      $$</li>
+<li>
+$$
+      1-\cos x \sim \frac {x^2}2
+      $$</li>
+</ol>
+<h3 id="无穷小量阶比较">无穷小量阶比较
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">高阶无穷小</th>
+          <th style="text-align: center">低阶无穷小</th>
+          <th style="text-align: center">同阶无穷小</th>
+          <th style="text-align: center">等价无穷小</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">$\lim\frac {a(x)}{b(x)} = 0$</td>
+          <td style="text-align: center">$\lim\frac {a(x)}{b(x)} = \infty$</td>
+          <td style="text-align: center">$\lim\frac {a(x)}{b(x)} = C \ (C\ne0)$</td>
+          <td style="text-align: center">$\lim\frac {a(x)}{b(x)} = 1$</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="求极限基础10法">求极限基础10法
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">类型</th>
+          <th style="text-align: center">举例</th>
+          <th style="text-align: center">使用方法</th>
+          <th style="text-align: center">思路</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">n项和形式的数列</td>
+          <td style="text-align: center">$\sum_{n=1}^{\infty } \lim_{n\to \infty}(\frac1{n^2+1}+\frac1 {n^2+2}+&hellip;+\frac 1 {n^2+n})$</td>
+          <td style="text-align: center">夹逼法则</td>
+          <td style="text-align: center">分子不变取坟墓最大的哪一项得到$y_n$ 取最小的哪一项得到$z_n$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">函数在$x_0$处连续</td>
+          <td style="text-align: center">$\lim_{x\to1} \ x^2=1$</td>
+          <td style="text-align: center">直接带入</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\frac00\ x\to x_0$分子分母均为多项式</td>
+          <td style="text-align: center">$\lim_{x\to3} \ \frac{x-3}{x^2-9}$</td>
+          <td style="text-align: center">因式分解</td>
+          <td style="text-align: center">通过因式分解将分母中的0因子消除掉后再直接带入</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\frac00\ x\to x_0$分子分母里有根式</td>
+          <td style="text-align: center">$\lim_{x\to \infty}\ \frac{\sqrt{1+x}-2}{x-3}$</td>
+          <td style="text-align: center">根式有理化</td>
+          <td style="text-align: center">上下同乘某式，构成含根式的平方差公式，然后清0</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\frac00\ x\to \infty$分子分母均为多项式</td>
+          <td style="text-align: center">$\lim_{x\to \infty} \ \frac{2x^3+x}{x^2+3}$</td>
+          <td style="text-align: center">抓大头</td>
+          <td style="text-align: center">上大无穷下大零，次数相同系数比</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\frac00\ x\to 0$分式且含有$\sin x$</td>
+          <td style="text-align: center">$\lim_{x\to{0}}\frac{\sin x}x =1$</td>
+          <td style="text-align: center">第一重要极限</td>
+          <td style="text-align: center">将原始拆解成第一重要极限和另一个能直接带入的式子，求极限的乘积</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$p^0$</td>
+          <td style="text-align: center">$\lim_{f(x)\to0 \ g(x)\to\infty}[1+f(x)]^{g(x)}$</td>
+          <td style="text-align: center">第二重要极限</td>
+          <td style="text-align: center">原式 $= e^{lim[f(x)\cdot g(x)]}$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$0\times $有界</td>
+          <td style="text-align: center">$\lim_{x\to \infty} \frac{\sin x}x$</td>
+          <td style="text-align: center">$0\times $有界$=0$</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\frac00、\frac\infty \infty$</td>
+          <td style="text-align: center">$\lim_{x\to 0}\frac{\sin x^2}{\sin 2x} = \lim_{x\to 0}\frac{x^2}{2x}$</td>
+          <td style="text-align: center">等价无穷小替换</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\frac00、\frac\infty \infty$</td>
+          <td style="text-align: center">$\lim_{x\to 0} \frac{\ln x}{x^2}=\lim_{x\to 0}\frac{\frac1x}{2x}$</td>
+          <td style="text-align: center">洛必达</td>
+          <td style="text-align: center">上下同时求导</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="导数与微分">导数与微分
+</h2>$$
+f'(x_0)=\lim_{\triangle x\to0}\frac{\triangle y}{\triangle x}=\lim_{\triangle x\to0}\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}
+$$<blockquote>
+<p><strong>也可以记作</strong>
+</p>
+$$
+  y'|x=x0 \Leftrightarrow \frac {dy} {dx}|x = x_0 \Leftrightarrow \frac{df(x)}{dx}|x = x_0
+  $$</blockquote>
+$$
+f'(x_0)=\lim_{\triangle  x\to0}\frac{f(x_0+\triangle  x)-f(x_0)}{\triangle  x}\Rightarrow \lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}\Rightarrow \lim_{n\to 0}\frac{f(x_0+h)-f(x_0)}{h}
+$$<p>要注意导数定义的严格形式，3个 $x_0$ 要对应，3个 $h$ 也要对应
+</p>
+$$
+\lim_{h\to0}\frac{f(h)-f(-h)}{h}=2f'(0)
+$$$$
+\lim_{n\to0}\frac{f(x_0+Ah)-f(x_0)}{Bh}=\frac ABf'(x_0)
+$$<h3 id="基本导数公式">基本导数公式
+</h3><ol>
+<li>
+<p>常数
+</p>
+$$
+     C' = 0 \ (C \in R)
+     $$</li>
+<li>
+<p>幂函数
+</p>
+$$
+     (x^n)'=nx^{n-1}\ (n\in R)
+     $$</li>
+<li>
+<p>对数函数
+</p>
+$$
+     {\log_ax}'=\frac1{x\ln a} \ (a>0,a\ne1)
+     $$$$
+     (\ln x)'=\frac1 x
+     $$</li>
+<li>
+<p>指数函数
+</p>
+$$
+     (a^x)'=a^x\ln a \ (a>0,a\ne1)
+     $$$$
+     (e^x)'=e^x
+     $$</li>
+<li>
+<p>三角函数
+</p>
+$$
+     (\sin x)'=\cos x
+     $$$$
+     (\cos x)'=-\sin x
+     $$$$
+     (\tan x)'=\frac1{\cos^2x}=\sec^2x
+     $$$$
+     (\sec x)'=(\frac1{\cos x})' = \sec x\tan x
+     $$$$
+     (\cot x)'=\frac1{\tan x}=-\frac1{\sin^2x}=-\csc^2x
+     $$$$
+     (\csc x)'=(\frac1{\sin x})'=-\csc x\cot x
+     $$</li>
+<li>
+<p>反三角函数
+</p>
+$$
+     (\arcsin x)'=\frac1{\sqrt{1-x^2}}
+     $$$$
+     (\arccos x)'=-\frac1{\sqrt{1-x^2}}
+     $$$$
+     (\arctan x)'=\frac1{1+x^2}
+     $$$$
+     (\arccot x)'=-\frac1{1+x^2}
+     $$</li>
+</ol>
+<h3 id="导数的四则运算">导数的四则运算
+</h3><ol>
+<li>
+$$
+     [u_{(x)}\pm v_{(x)}]'=u'_{(x)}\pm v'_{(x)}
+     $$</li>
+<li>
+$$
+     [Cu_{(x)}]'=Cu'_{(x)}\ (C \in R)
+     $$</li>
+<li>
+$$
+     [u_{(x)}v_{(x)}]'=u'_{(x)}v_{(x)}+u_{(x)}v'_{(x)}
+     $$</li>
+<li>
+$$
+     [\frac{u_{(x)}}{v_{(x)}}]'=\frac{u'_{(x)}v_{(x)}-u_{(x)}v'_{(x)}}{v^2_{(x)}} \ (v_{(x)}\ne 0)
+     $$</li>
+</ol>
+<h3 id="高阶导数公式">高阶导数公式
+</h3><ol>
+<li>
+<p>幂函数
+</p>
+$$
+     (x^m)^{(n)}=\frac{m!}{(m-n)!}x^{m-n} \ (m>n,\ mn\in N^*)
+     $$$$
+     (x^m)^{(n)}=0\ (m<n,\ m\in N^*)
+     $$$$
+     (x^n)^{(n)}=n!
+     $$$$
+     (e^x)^{(n)}=e^x
+     $$</li>
+<li>
+<p>指数函数
+</p>
+$$
+     (a^x)^{(n)}=a^x\cdot \ln^na \ (a>0,\ a\ne1)
+     $$</li>
+<li>
+<p>对数函数
+</p>
+$$
+     [\ln(x+a)]^{(n)}=(-1)^{n-1}\frac{(n-1)!}{(x+a)^n}
+     $$</li>
+<li>
+<p>三角函数
+</p>
+$$
+     (\sin x)^{(n)}=\sin(x+\frac{n\pi}2)
+     $$$$
+     (\cos x)^{(n)}=\cos(x+\frac{n\pi}2)
+     $$</li>
+</ol>
+<h3 id="直线方程">直线方程
+</h3><ul>
+<li>
+<p>法线方程
+</p>
+$$
+    y-y_0=-\frac1{f'(x_0)}(x-x_0)
+    $$</li>
+<li>
+<p>切线方程
+</p>
+$$
+    y-y_0=f'(x_0)(x-x_0)
+    $$</li>
+</ul>
+<h2 id="不定积分">不定积分
+</h2><h3 id="基本积分公式">基本积分公式
+</h3>$$
+\int k \ dx=kx+C\ (k\in R)
+$$$$
+\int x^n\ dx = \frac{x^n+1}{n+1}+C\ (n\ne -1)
+$$$$
+\int \frac1x\ dx = \ln\left | x \right | +C
+$$$$
+\int e^x\ dx = e^x+C
+$$$$
+\int a^x\ dx = \frac{a^x}{\ln a}+C\ (a>0,\ a\ne1)
+$$$$
+\int \cos x \ dx = \sin x+C
+$$$$
+\int \sin x \ dx=-\cos x+C
+$$$$
+\int \frac1{\sqrt{1-x^2}}\ dx=\arcsin x+C
+$$$$
+\int - \frac1{\sqrt{1-x^2}}\ dx = \arccos x+C
+$$$$
+\int \frac1{1+x^2}\ dx = \arctan x+C
+$$$$
+\int - \frac1{1+x^2}\ dx=\arccot x+C
+$$$$
+\int \frac1{cos^2x}\ dx=\int \sec^2 x\ dx=\tan x +C
+$$$$
+\int \frac1{\sin^2x}\ dx=\int \csc^2x\ dx = -\cot x+C
+$$$$
+\int \sec x\tan x \ dx=\sec x+C
+$$$$
+\int\csc x \cot x\ dx = -\csc x+C
+$$$$
+\int \tan x \ dx= -\ln|\cos x|+C
+$$<h3 id="不定积分的性质">不定积分的性质
+</h3>$$
+\int [f_{(x)}\pm g_{(x)}]\ dx=\int f_{(x)}\ dx \pm \int g_{(x)}\ dx
+$$$$
+\int k f_{(x)}\ dx=k\int f_{(x)}\ dx
+$$$$
+[\int f_{(x)}\ dx]'=f_{(x)}\ d\ [f_{(x)}\ dx]=f_{(x)}\ dx
+$$$$
+\int f'_{(x)}\ dx=f_{(x)}+C\ \ \ \ \ \int d{f_{(x)}}=f_{(x)}+C
+$$<h3 id="换元法求积分">换元法求积分
+</h3>$$
+\int u^2\ du=\frac13u^3+C
+$$$$
+\int \frac1{ax+b}\ dx=\frac1a\ln|ax+b|+C\ (a\ne0)
+$$$$
+\int \frac1{a^2+x^2}\ dx = \frac1a\arctan{\frac xa}+C \ (a\ne0)
+$$$$
+\int \frac1{x^2-a^2}\ dx = \frac1{2a}\ln|\frac{x-a}{x+a}|+C \ (a\ne0)
+$$$$
+\int \frac1{\sqrt{a^2-x^2}}\ dx = \arcsin \frac xa+C\ (a\ne0)
+$$$$
+\int \sec x\ dx = \ln|\sec x + \tan x|+C
+$$<h3 id="三角代换">三角代换
+</h3><ol>
+<li>
+<p>弦代换
+</p>
+$$
+     \sqrt{a^2-x^2}\Rightarrow x=a\sin t\Rightarrow a\cos t
+     $$</li>
+<li>
+<p>切代换
+</p>
+$$
+     \sqrt{a^2+x^2}\Rightarrow x=a\tan t\Rightarrow a\sec t
+     $$</li>
+<li>
+<p>割代换
+</p>
+$$
+     \sqrt{x^2-a^2}\Rightarrow x=a\sec t\Rightarrow a\tan t
+     $$</li>
+</ol>
+<h3 id="分部积分公式">分部积分公式
+</h3>$$
+\int uv'\ dx=uv-\in u' v\ dx
+$$$$
+\int u \ dv = uv - \int v \ du
+$$<h2 id="定积分">定积分
+</h2>$$
+A = \lim_{\triangle  x\to0}\sum_{i=i}^{n} f_{(x_i)}\cdot \triangle  x
+$$<h3 id="牛顿莱布尼兹公式微积分基本定理">牛顿莱布尼兹公式(微积分基本定理)
+</h3>$$
+\int_{a}^{b} f_{(x)}\ dx=F_{(x)}|_{a}^{b}=F_{(b)}-F_{(a)}
+$$<blockquote>
+<p>前提条件: 函数$f_{(x)}$在 $[a,b]$ 上连续</p></blockquote>
+<h3 id="定积分的性质部分">定积分的性质(部分)
+</h3><ol>
+<li>
+$$
+     \int_{a}^{b} 1\ dx=b-a
+     $$</li>
+<li>
+<p>在区间$[a,b]$上:
+</p>
+$$
+     f_{(x)}\ dx \ge 0\ (a< b)
+     $$</li>
+<li>
+<p>定积分中值定理 设函数$f(x)$在$[a,b]$上连续
+</p>
+$$
+     \int_{a}^{b}f_{(x)}\ dx = f_{(\varepsilon )}\cdot(b-a)\ (a\le\varepsilon\le b)
+     $$</li>
+<li>
+<p>当连续函数$f_{(x)}$为偶函数时:
+</p>
+$$
+     \int_{-a}^{a}f_{(x)}\ dx=2\int_0^af_{(x)}\ dx
+     $$</li>
+<li>
+<p>当连续函数$f_{(x)}$为奇函数时:
+</p>
+$$
+     \int_{-a}^{a}f_{(x)}\ dx=0
+     $$</li>
+</ol>
+<h2 id="多元函数微分">多元函数微分
+</h2><h3 id="二元函数的极限">二元函数的极限
+</h3>$$
+\lim_{x\to x_0 \ y\to y_0}f_{(x,y)}=A
+$$$$
+\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y}=0
+$$<h3 id="二元函数求偏导">二元函数求偏导
+</h3>$$
+\frac{\partial z}{\partial x} =f_x(x,y)=\lim_{\triangle \to x_0}\frac{f(x_0+\triangle x,y_0)-f(x_0,y_0)}{\triangle x}
+$$$$
+\frac{\partial z}{\partial y} =f_y(x,y)=\lim_{\triangle \to y_0}\frac{f(x_0,y_0+\triangle y)-f(x_0,y_0)}{\triangle y}
+$$<h3 id="二元函数的二阶偏导数">二元函数的二阶偏导数
+</h3>$$
+f_{xx}(x,y)=\frac{\partial^2z}{\partial x^2}
+$$$$
+f_{xy}(x,y)=\frac{\partial^2z}{\partial x \partial y}
+$$$$
+f_{yx}(x,y)=\frac{\partial^2z}{\partial y \partial x}
+$$$$
+f_{yy}(,y)=\frac{\partial^2z}{\partial y^2}
+$$<h3 id="全微分">全微分
+</h3>$$
+dz=\frac{\partial z}{\partial x}\ dx+\frac{\partial z}{\partial y}\ dy
+$$<h4 id="三元函数的全微分">三元函数的全微分
+</h4>$$
+du=\frac{\partial u}{\partial x}\ dx+\frac{\partial u}{\partial y}\ dy+\frac{\partial u}{\partial z}\ dz
+$$<h3 id="隐函数求导公式">隐函数求导公式
+</h3><h4 id="一元">一元
+</h4>$$
+\frac{dy}{dx}=-\frac{F_x}{F_y}
+$$<h4 id="二元">二元
+</h4>$$
+\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}
+$$$$
+\frac{\partial z}{\partial y}=-\frac{F_y}{F_z}
+$$<h2 id="二重积分">二重积分
+</h2>$$
+\iint\limits_{D}f(x,y)\ d\sigma
+$$<h3 id="二重积分的性质部分">二重积分的性质(部分)
+</h3><ol>
+<li>
+<p>如果在闭区域 $D$ 内，$f(x,y)=1$，那么有
+</p>
+$$
+     \iint\limits_{D}1\ dxdy=\iint\limits_{D}\ dxdy = S_D
+     $$</li>
+<li>
+<p>二重积分中值定理 设函数在$f(x,y)$在闭区间 $D$ 上连续
+</p>
+$$
+     \iint\limits_{D}f(x,y)\ d\sigma = f(\varepsilon,\eta)\sigma
+     $$</li>
+</ol>
+<h3 id="二重积分的计算">二重积分的计算
+</h3>$$
+\iint\limits_{D}f(x,y)\ dxdy =\int_{a}^{b}[\int_{\varphi _1(x)}^{\varphi _2{(x)}}f(x,y)\ dy\ ]\ dx
+$$<h4 id="x型积分区域">X型积分区域
+</h4>$$
+\int_{a}^{b}\ dx \int_{\varphi _1(x)}^{\varphi _2{(x)}}f(x,y)\ dy
+$$<h4 id="y型积分区域">Y型积分区域
+</h4>$$
+\int_{a}^{b}\ dy \int_{\psi  _1(x)}^{\psi  _2{(x)}}f(x,y)\ dx
+$$<h3 id="极坐标下的二重积分">极坐标下的二重积分
+</h3><h4 id="基础公式">基础公式
+</h4><ol>
+<li>
+$$
+     x^2+y^2=r^2
+     $$</li>
+<li>
+$$
+     x=r\cos \theta 
+     $$</li>
+<li>
+$$
+     y=r\sin\theta 
+     $$</li>
+<li>
+$$
+     dxdy=r\ dr\ d\theta
+     $$</li>
+</ol>
+<h4 id="极坐标下化二重积分为两次一重积分">极坐标下化二重积分为两次一重积分
+</h4><ol>
+<li>
+<p>极点在区域 $D$ 之外
+</p>
+$$
+     \int_a^bd\theta \int_{\varphi _1({\theta})}^{\varphi _2(\theta)}f(r\cos\theta,r\sin\theta)r\ dr
+     $$</li>
+<li>
+<p>极点在区域 $D$ 边界上
+</p>
+$$
+     \int_a^bd\theta \int_{0}^{\varphi _(\theta)}f(r\cos\theta,r\sin\theta)r\ dr
+     $$</li>
+<li>
+<p>极点在区域 $D$ 之内
+</p>
+$$
+     \int_a^{2\pi}d\theta \int_{0}^{\varphi _(\theta)}f(r\cos\theta,r\sin\theta)r\ dr
+     $$</li>
+</ol>
+<h2 id="微分方程">微分方程
+</h2><h3 id="微分方程的基本概念">微分方程的基本概念
+</h3><ul>
+<li><strong>微分方程的解:</strong> 带入微分方程后能使方程成为恒等式的函数$y=f(x)$</li>
+<li><strong>微分方程的通解:</strong> 微分方程的解中含有任意常数$C$, 且任意常数 $C$ 的个数与微分方程的阶数相同</li>
+<li><strong>微分方程的特解:</strong> 确定了通解中任意常数 $C$ 之后的解</li>
+<li><strong>微分方程的阶:</strong> 微分方程中所出现的未知函数的最高阶导数的阶数, 叫做微分方程的解</li>
+</ul>
+<h3 id="一阶可分离变量的微分方程">一阶可分离变量的微分方程
+</h3><ol>
+<li>
+<p>分离变量, 把微分方程写成:
+</p>
+$$
+     g(y)\ dy = f(x)\ dx
+     $$</li>
+<li>
+<p>等式两边同时积分
+</p>
+$$
+     \int g(y)\ dy = \int f(x)\ dx
+     $$</li>
+<li>
+<p>求原函数写通解
+</p>
+$$
+     G(y)=F(x)+C
+     $$</li>
+</ol>
+<h3 id="齐次微分方程">齐次微分方程
+</h3><ol>
+<li>
+<p>化成齐次微分方程的标准形式:
+</p>
+$$
+     \frac{dy}{dx}=f(\frac yx)
+     $$</li>
+<li>
+<p>换元, 令 $u=\frac yx$ 则 $y=xu$ 两边同时求导得:
+</p>
+$$
+     \frac{dy}{dx}=u+x\frac{du}{dx}
+     $$</li>
+<li>
+<p>带入上式得
+</p>
+$$
+     u+x\frac{du}{dx}=f{u}
+     $$</li>
+<li>
+<p>分离变量</p>
+</li>
+</ol>
+<h3 id="一阶次线性微分方程">一阶次线性微分方程
+</h3>$$
+y=e^{-\int{p(x)\ dx}}[\int Q(x)\ e^{\int p(x)\ dx}]\ dx+C
+$$<blockquote>
+<p>特别的, 若为一阶齐次线性微分方程, 则令上式中的 $Q(x)=0$ 即可, 得:
+</p>
+$$
+  y=Ce^{-\int p(x)\ dx}
+   $$</blockquote>
+<h3 id="二阶常系数齐次线性微分方程">二阶常系数齐次线性微分方程
+</h3><h4 id="定义">定义
+</h4>$$
+y''+py'+qy=f(x)
+$$<ul>
+<li><strong>f(x)</strong> 为自由项</li>
+</ul>
+<p>当 $f(x)\ne0$ 时, 方程为二阶<strong>常系数非齐次</strong>线性微分方程</p>
+<p>当 $f(x)=0$时, 方程为二阶<strong>常系数齐次</strong>微分方程</p>
+<h4 id="解二阶常系数齐次线性微分方程">解二阶常系数齐次线性微分方程
+</h4><ol>
+<li>方程 $y&rsquo;&rsquo;+py&rsquo;+qy=0 \ \Rightarrow r^2+pr+q=0$</li>
+<li>求特征根</li>
+<li>查下表</li>
+</ol>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">特征方程 $r^2+pr+q=0$ 的两根</th>
+          <th style="text-align: center">微分方程 $y&rsquo;&rsquo;+py&rsquo;+qy=0$ 的通解</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">$\Delta&gt;0$ 两个不相等的实根 $r_1, r_2$</td>
+          <td style="text-align: center">$y=C_1e^{r_1x}+C_2e^{{r_2}x}$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\Delta=0$ 两个相等的实根 $r_1=r_2$</td>
+          <td style="text-align: center">$y=(C_1+C_2x)e^{rx}$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$\Delta&lt;0$ 一堆共轭复根</td>
+          <td style="text-align: center">$y=e^{\alpha x}(C_1\cos \beta x+C_2 \sin\beta x)$</td>
+      </tr>
+  </tbody>
+</table></div>
+<blockquote>
+<p><strong>特解</strong> 通解求导后带入原微分方程即可</p></blockquote>
+<h3 id="二阶常系数非齐次线性微分方程">二阶常系数非齐次线性微分方程
+</h3><h4 id="fxelambda-xp_mx-型求特解的方法">$f(x)=e^{\lambda x}P_m(x)$ 型求特解的方法
+</h4><p>特解形式为:
+</p>
+$$
+y^*=e^{ax}Q_m(x)x^k
+$$<ol>
+<li>求特征根 解特征方程 $r^2+pr+q=0$ 得到特征根</li>
+<li>设特解为上式</li>
+<li>$Q_m(x)$ 按照 $P_m$ 来确定
+<ol>
+<li>若$P_m$为常数, 则$Q_m=A$</li>
+<li>若$P_m$为最高一次, 则$Q_m=Ax+B$</li>
+<li>若$P_m$为最高二次, 则$Q_m=Ax^2+Bx+C$</li>
+<li>若$P_m$为最高三次, 则$Q_m=Ax^3+Bx^2+Cx+D$</li>
+<li>..</li>
+</ol>
+</li>
+<li>定 $k$ 值 按照 $\lambda$ 的情况确定
+<ol>
+<li>若$\lambda$不是特征根, 即 $\lambda\ne r_1\ne r_2$, 则 $k=0$</li>
+<li>若$\lambda$是特征单根,即 $\lambda=r$, 则 $k=1$</li>
+<li>若$\lambda$是特征重根, 即 $\lambda=r_1=r_2$, 则 $k=2$</li>
+</ol>
+</li>
+<li>解待定系数 $A\ B\ C\ &hellip;$</li>
+<li>带入原方程, 解得特解 $y^*$</li>
+</ol>
+<blockquote>
+<p>若求通解, 则需求出该微分方程的齐次线性微分方程形式的通解, 并相加</p></blockquote>
+<h4 id="fxelambda-xpcos-omega-xqsinomega-x--pqin-r-型求特解的方法">$f(x)=e^{\lambda x}(P\cos \omega x+Q\sin\omega x) \ (P,Q\in R)$ 型求特解的方法
+</h4><p>特解形式为:
+</p>
+$$
+y^*=e^{\lambda x}(A\cos \omega x+B\sin \omega x)x^k
+$$<ol>
+<li>求特征根 解特征方程 $r^2+pr+q=0$ 得到特征根</li>
+<li>设特解为上式</li>
+<li>定 $k$ 值 按照 $\lambda\pm \omega i$ 的情况确定
+<ol>
+<li>若 $\lambda\pm \omega i$ 不是特征根, 则 $k=0$</li>
+<li>若 $\lambda\pm \omega i$ 是特征根, 则 $k=1$</li>
+</ol>
+</li>
+<li>解待定系数 $A\ B\ &hellip;$</li>
+<li>带入原方程, 解得特解 $y^*$</li>
+</ol>
+<blockquote>
+<p>若求通解, 则需求出该微分方程的齐次线性微分方程形式的通解, 并相加</p></blockquote>
+<h2 id="无穷级数">无穷级数
+</h2><h3 id="常数项级数">常数项级数
+</h3>$$
+\sum_{n=1}^{\infty} u_n = u_1+u_2+...+u_n+...
+$$<h4 id="常数项级数的审敛法">常数项级数的审敛法
+</h4><h5 id="比较审敛法">比较审敛法
+</h5><blockquote>
+<p>设 $\sum_{n=1}^{\infty}u_n$ 和 $\sum_{n=1}^{\infty}v_n$ 均为正项级数, 且 $u_n\le v_n(n=1,2,3,..)$</p></blockquote>
+<ol>
+<li>如果级数 $\sum_{n=1}^{\infty}v_n$ 收敛,则级数 $\sum_{n=1}^{\infty}u_n$ 收敛</li>
+<li>如果级数 $\sum_{n=1}^{\infty}u_n$ 发散,则级数 $\sum_{n=1}^{\infty}v_n$ 发散</li>
+</ol>
+<h5 id="比值审敛法">比值审敛法
+</h5><h5 id="根值审敛法">根值审敛法
+</h5><h4 id="交错级数的审敛法">交错级数的审敛法
+</h4><h4 id="绝对收敛与条件收敛">绝对收敛与条件收敛
+</h4><h3 id="幂级数">幂级数
+</h3><h4 id="阿贝尔定理">阿贝尔定理
+</h4><h4 id="幂级数的运算性质">幂级数的运算性质
+</h4><h3 id="函数展开成幂级数">函数展开成幂级数
+</h3><h4 id="泰勒公式与麦克劳林公式">泰勒公式与麦克劳林公式
+</h4><h4 id="泰勒级数与麦克劳林级数">泰勒级数与麦克劳林级数
+</h4><h4 id="直接展开">直接展开
+</h4><h4 id="间接展开">间接展开
+</h4><h1 id="线性代数">线性代数
+</h1><h2 id="行列式">行列式
+</h2><h2 id="矩阵">矩阵
+</h2><h2 id="向量代数">向量代数
+</h2><h2 id="空间解析几何">空间解析几何
+</h2><h1 id="概率学">概率学
+</h1>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+        
+            <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+        
+            <a href="/tags/%E6%A6%82%E7%8E%87%E5%AD%A6/">概率学</a>
+        
+            <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
+        
+            <a href="/tags/%E5%87%BD%E6%95%B0/">函数</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/comment.candquarzy.top\/.netlify\/functions\/twikoo',
+        el: '#tcomment',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy;
+        
+        2024 -
+        
+        2025 By Candy
+    </section>
+
+    <section class="powerby">
+        
+        不向焦虑与抑郁投降 这个世界终会有我们存在的地方 <br />
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
+                data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+    
+    <section class="running-time">
+        本博客已稳定运行
+        <span id="runningdays" class="running-days"></span>
+    </section>
+
+    
+    <section class="totalcount">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        发表了9篇文章 ·
+        总计52.05k字
+    </section>
+
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script>
+    let s1 = '2025-1-2'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
+<style>
+  @font-face {
+    font-family: '字体名';
+    src: url(https://blog.candquarzy.top/font/FiraCode-SemiBold.ttf) format('truetype');
+  }
+
+  :root {
+    --code-font-family: 'Fira Code';
+  }
+</style>
+
+    </body>
+</html>

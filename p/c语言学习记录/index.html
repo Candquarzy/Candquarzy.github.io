@@ -496,7 +496,7 @@
         <li><a href="#fclose-文件关闭函数">fclose() 文件关闭函数</a></li>
         <li><a href="#fputc-字符输出函数">fputc() 字符输出函数</a></li>
         <li><a href="#fgetc-字符输入函数">fgetc() 字符输入函数</a></li>
-        <li><a href="#fputs-文本和输出函数">fputs() 文本和输出函数</a></li>
+        <li><a href="#fputs-文本行输出函数">fputs() 文本行输出函数</a></li>
         <li><a href="#fgets-文本行输入函数">fgets() 文本行输入函数</a></li>
         <li><a href="#fprintf-格式化输出函数">fprintf() 格式化输出函数</a></li>
         <li><a href="#fscanf-格式化输入函数">fscanf() 格式化输入函数</a></li>
@@ -615,7 +615,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                19216 字
+                19231 字
             </time>
         </div>
         
@@ -4024,7 +4024,7 @@
       </tr>
   </tbody>
 </table></div>
-<p><strong>在使用 w 模式打开一个文件时，会将源文件中已有的数据清空！！！</strong></p>
+<p><strong>在使用 w 模式打开一个文件时，会将源文件中已有的数据清空!!!</strong></p>
 <h3 id="fclose-文件关闭函数">fclose() 文件关闭函数
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -4039,7 +4039,7 @@
 <p>stream 文件指针</p>
 </li>
 <li>
-<p>在写完文件后需要使用 fclose() 关闭文件</p>
+<p>在写完文件后需要使用 <code>fclose()</code> 关闭文件</p>
 </li>
 </ul>
 <h3 id="fputc-字符输出函数">fputc() 字符输出函数
@@ -4071,7 +4071,7 @@
 </div><p>从标准输入流中读取信息</p>
 <p>如果该函数读取正常，会返回这个字符的 ACSII 码值，如果读取错误或者文件结束会返回 EOF</p>
 <p>该函数每读一次都会将指针 + 1</p>
-<h3 id="fputs-文本和输出函数">fputs() 文本和输出函数
+<h3 id="fputs-文本行输出函数">fputs() 文本行输出函数
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -4239,13 +4239,14 @@
 <p>argument (可选) 值</p>
 </li>
 </ul>
+<p>把一个格式化的数据转换为字符串</p>
 <h3 id="fseek-文件指针定位函数">fseek() 文件指针定位函数
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">fseek</span><span class="p">(</span><span class="n">FILE</span><span class="o">*</span> <span class="n">stream</span><span class="p">,</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">offfset</span><span class="p">,</span> <span class="kt">int</span> <span class="n">origin</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">fseek</span><span class="p">(</span><span class="n">FILE</span><span class="o">*</span> <span class="n">stream</span><span class="p">,</span> <span class="kt">long</span> <span class="n">offfset</span><span class="p">,</span> <span class="kt">int</span> <span class="n">origin</span><span class="p">);</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -4265,7 +4266,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">ftell</span><span class="p">(</span><span class="n">FILE</span><span class="o">*</span> <span class="n">stream</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">long</span> <span class="kt">int</span> <span class="nf">ftell</span><span class="p">(</span><span class="n">FILE</span><span class="o">*</span> <span class="n">stream</span><span class="p">);</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -4774,8 +4775,10 @@
         
         
         
-        发表了8篇文章 ·
-        总计49.71k字
+        
+        
+        发表了9篇文章 ·
+        总计52.05k字
     </section>
 
 

@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>微积分 - 线性代数 - 概率学 - 高等数学 - 函数 on 糖果罐🍥 - Candy的博客</title>
+        <link>http://localhost:1313/tags/%E5%BE%AE%E7%A7%AF%E5%88%86---%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0---%E6%A6%82%E7%8E%87%E5%AD%A6---%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6---%E5%87%BD%E6%95%B0/</link>
+        <description>Recent content in 微积分 - 线性代数 - 概率学 - 高等数学 - 函数 on 糖果罐🍥 - Candy的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>By Candy</copyright>
+        <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%BE%AE%E7%A7%AF%E5%88%86---%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0---%E6%A6%82%E7%8E%87%E5%AD%A6---%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6---%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>高等数学</title>
+        <link>http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</link>
+        <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</guid>
+        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/124956717_p0.webp" alt="Featured image of post 高等数学" /&gt;&lt;h2 id=&#34;函数&#34;&gt;函数
+&lt;/h2&gt;&lt;h3 id=&#34;基本初等函数图像一&#34;&gt;基本初等函数图像(一)
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/%E5%9F%BA%E6%9C%AC%E5%87%BD%E6%95%B0.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;基本初等函数&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;一次函数--y--kxb--k-ne-0-绿&#34;&gt;一次函数 $ y = kx+b \ (k \ne 0)$ [绿]
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;$k$ 斜率&lt;/li&gt;
+&lt;li&gt;$b$ 截距&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;k&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;b&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;象限&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;gt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;一、二、三&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;gt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;= 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;一、三&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;gt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;lt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;一、三、四&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;lt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;gt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;一、二、四&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;lt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;= 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;二、四&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;lt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;lt; 0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;二、三、四&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;二次函数-y--ax2--bx--c--a-ne-0-紫&#34;&gt;二次函数 $y = ax^{2} + bx + c \ (a \ne 0)$ [紫]
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;$a$ 二次项系数 控制了二次函数从顶点的增长(或下降)速度，即二次函数开口方向和大小。$\displaystyle |a|$ 越大，开口越小，函数就增长得越快。以及抛物线的对称轴(顶点x的坐标)&lt;/li&gt;
+&lt;li&gt;$b$ 一次项系数 控制了抛物线的对称轴(顶点x的坐标)。以及控制了抛物线穿过 $\displaystyle y$ 轴时的倾斜度&lt;/li&gt;
+&lt;li&gt;$c$ 常数项 控制了抛物线最低点或最高点的高度，它是抛物线与 $\displaystyle y$ 轴的交点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中，方程 $ax^{2} + bx + c \ (a \ne 0) = 0$ 的解即为函数的与 $x$ 轴的交点
+&lt;/p&gt;
+$$
+\begin{array}{l} 
+  a\mathop{{x}}\nolimits^{{2}}+bx+c=0 \\ 
+  \Delta =\mathop{{b}}\nolimits^{{2}}-4ac \\ 
+  \left\{\begin{matrix} 
+  \Delta \gt 0\text{方程有两个不相等的实根} \\ 
+  \Delta = 0\text{方程有两个相等的实根} \\ 
+  \Delta \lt 0\text{方程无实根} 
+\end{matrix}\right.    
+\end{array}
+$$&lt;br&gt;
+&lt;h4 id=&#34;三次函数-y--ax3--bx2--cx--d--a-ne-0-红&#34;&gt;三次函数 $y = ax^{3} + bx^{2} + cx + d \ (a \ne 0)$ [红]
+&lt;/h4&gt;&lt;h4 id=&#34;反比例函数-y--frackx--x-ne-0--蓝&#34;&gt;反比例函数 $y = \frac{k}{x} \ (x \ne 0) $ [蓝]
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;$k &amp;gt; 0$ 反比例函数的图像在第一、三象限&lt;/li&gt;
+&lt;li&gt;$k &amp;lt; 0$ 反比例函数的图像在第二、四象限&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;基本初等函数图像二&#34;&gt;基本初等函数图像(二)
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/%E5%B9%82%E5%87%BD%E6%95%B0.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;幂函数&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;幂函数-y--xmu--mu-in-r&#34;&gt;幂函数 $y = x^{\mu} \ (\mu \in R)$
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;$\mu &amp;gt; 0$ 函数图像在第一象限，单调递增 [红] [紫]&lt;/li&gt;
+&lt;li&gt;$\mu &amp;lt; 0$ 函数图像在第一象限，单调递减 [蓝] [绿]&lt;/li&gt;
+&lt;li&gt;$\mu \ne 0$ 无界函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;基本初等函数三&#34;&gt;基本初等函数(三)
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;指数函数&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;指数函数-y--a--x--a--0-a-ne-1&#34;&gt;指数函数 $y = a ^ {x} \ (a &amp;gt; 0, a \ne 1)$
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;定义域 $(-\infty ,+\infty )$ 值域 $(0, +\infty )$ 且函数图像都经过点$(0, 1)$&lt;/p&gt;
+&lt;p&gt;奇偶性: 非奇非偶&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;$a &amp;gt; 1$ 函数单调递增 [红]&lt;/li&gt;
+&lt;li&gt;$0 &amp;lt; a &amp;lt; 1$ 函数单调递减 [绿]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;指数相关公式&#34;&gt;指数相关公式
+&lt;/h4&gt;$$
+a^0 = 1 \ (a \ne 0)
+$$$$
+a^{-n} = \frac1{a^n}\ (a\ne0,n\in N^+)
+$$$$
+\sqrt[n]{a^m}=a^{\frac mn} \ (a&gt;0,mn\in N^+,n&gt;1)
+$$$$
+a^{-\frac mn}= \frac{1}{a^\frac mn}=\frac1{\sqrt[n]{a^m}} \ (a&gt;0,mn\in N^+,n&gt;1)
+$$&lt;blockquote&gt;
+&lt;p&gt;0的正分数指数幂是0. 0的负分数指数幂无意义&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;对数函数&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;对数函数-y--log_ax-a--0-a-ne-1&#34;&gt;对数函数 $y = \log_{a}{x} (a &amp;gt; 0, a \ne 1)$
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;定义域 $(0, +\infty )$ 值域 $(-\infty ,+\infty )$ 且函数图像都经过点$(1, 0)$&lt;/p&gt;
+&lt;p&gt;奇偶性: 非奇非偶&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;$a &amp;gt; 1$ 函数单调递增 [红]&lt;/li&gt;
+&lt;li&gt;$0 &amp;lt; a &amp;lt; 1$ 函数单调递减 [绿]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;对数相关公式&#34;&gt;对数相关公式
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;$e = 2.71828&amp;hellip;$&lt;/p&gt;
+&lt;p&gt;$\log_{10}N \Longleftrightarrow \lg N$&lt;/p&gt;
+&lt;p&gt;$\log_{e}N \Longleftrightarrow \ln N$&lt;/p&gt;&lt;/blockquote&gt;
+$$
+\log_a{MN} = \log_aM + log_aN
+$$$$
+\log_a{\frac MN}=\log_aM-\log_aN
+$$$$
+\log_aM^n=n\log_aM
+$$$$
+\log_{a^m}{M^n}=\frac nm\log_aM
+$$$$
+a^{\lg_ab}=b
+$$$$
+a^x=e^{x\ln a}
+$$$$
+a^x=N\Leftrightarrow x=\log_aN
+$$$$
+对数换底公式: \log_ab=\frac{\log_cb}{\log_ca} \ (a&gt;0,a\ne1,b&gt;0;c&gt;0,c\ne1)
+$$&lt;p&gt;在上式中，当$c=b$时，有$\log_ab=\frac1{log_ba}$&lt;/p&gt;
+&lt;h3 id=&#34;基本初等函数四&#34;&gt;基本初等函数(四)
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/sin.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;正弦函数&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;正弦函数-y--sin-x-红&#34;&gt;正弦函数 $y = \sin x$ [红]
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/cos.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;余弦函数&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;余弦函数-y--cos-x-蓝&#34;&gt;余弦函数 $y = \cos x$ [蓝]
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/tan.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;正切函数&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;正切函数-y--tan-x-绿&#34;&gt;正切函数 $y = \tan x$ [绿]
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;函数&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;定义域&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;值域&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;周期性&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;奇偶性&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;对称轴&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;对称中心&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\sin x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$R$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$[-1,1]$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$2k\pi \ (k \in Z 且 k \ne 0)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;奇函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$x = \frac{\pi}{2}+k\pi (k \in Z)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$(k\pi, 0) \ k\in Z$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\cos x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$R$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$[-1,1]$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$2k\pi \ (k \in Z 且 k \ne 0)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;偶函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$x = 2k\pi (k \in Z)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$(\frac{\pi}{0}, 0) \ k\in Z$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\tan x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;${{ x \ \mid  \ x \ne \frac{\pi}{2} + k\pi , k\in Z}}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$R$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\pi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;奇函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi $&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$(\frac{k\pi}{2},0)\ k\in Z$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;其他三角函数&#34;&gt;其他三角函数
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;函数&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;定义域&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;变换&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\sec x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;${ x \ \mid \ x \ne \frac{\pi}{2} + k\pi , k\in Z  } $&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{1}{\cos x}$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\csc x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;${ x \ \mid \ x \in R \ 且 \ x \ne k\pi , \ k \in Z } $&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{1}{\sin x}$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\cot x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;${ x \ \mid \ x \in R \  且 \ x \ne k\pi , \ k \in Z  } $&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\cos x}{\sin x}$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;基本关系&#34;&gt;基本关系
+&lt;/h4&gt;$$
+\sin^ 2 x + \cos ^ 2 x = 1
+$$$$
+1+\tan ^ 2 x = \sec ^ 2 x
+$$$$
+1+\cot^2x = \csc^2x
+$$$$
+\cos(x_{1} \pm x_{2}) = \cos x_{1} \cos x_{2} \pm \sin x_{1} \sin x_{2}
+$$$$
+\sin(x_{1} \pm x_{2}) = \sin x_{1} \cos x_{2} \pm \cos x_{1} \sin x_{2}
+$$&lt;h4 id=&#34;三角恒等变换&#34;&gt;三角恒等变换
+&lt;/h4&gt;$$
+\cos2x = \cos^2x - \sin^2x = 2\cos^2x - 1 = 1 - 2\sin^2x
+$$$$
+\sin2x = 2 \sin x \cos x
+$$&lt;blockquote&gt;
+&lt;p&gt;此处非全部公式 仅仅列举部分公式&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;常用三角函数值&#34;&gt;常用三角函数值
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;角度制&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$0°$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$\phi$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$\phi$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$30°$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$45°$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$60°$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$90°$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$180°$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$270°$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$360°$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;弧度制&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$-1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\pi}{6}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\pi}{4}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\pi}{3}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\pi}{2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\pi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{3\pi}{2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$2\pi$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y = \sin x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0.8415$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\pi}2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{1}{2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\sqrt{2}}{2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\sqrt3}{2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$-1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y = \cos x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0.5403$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\sqrt{3}}{2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\sqrt{2}}{2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{1}{2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$-1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y = \tan x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1.5574$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\pi}{4}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\sqrt{3}}{3}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\sqrt3$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y = \sec x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac2{\sqrt3}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\sqrt2}2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$-1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y = \csc x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\sqrt2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac2{\sqrt3}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$-1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y = \cot x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\sqrt3$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac1{\sqrt3}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;基本初等函数五&#34;&gt;基本初等函数(五)
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B01.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;反三角函数1&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;表达式&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;定义&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;定义域&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;值域&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;单调性&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;奇偶性&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;反正弦函数[橙]&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=\arcsin x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$x = \sin y$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$[-1,\ 1]$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$[-\frac{\pi}2,\ \frac{\pi}2]$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;单调递增(有界函数)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;奇函数&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;反余弦函数[蓝]&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=\arccos x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$x=\cos y$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$[-1,\ 1]$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$[0,\ \pi]$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;单调递减(有界函数)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;反正切函数[绿]&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=\arctan x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$x = \tan y$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$R$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$(-\frac{\pi}2,\ \frac{\pi}2)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;单调递减(有界函数)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;奇函数&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/math/%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B02.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;反三角函数2&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;表达式&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;定义&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;定义域&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;值域&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;单调性&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;反余切函数[紫]&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=\arccot x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$x = \cot y$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$R$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$(0, \ \pi)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;单调递减(有界函数)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;反正割函数[黑]&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=\arcsec x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$x = \sec y$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$(-\infty , \ -1]\cup[1, \ +\infty )$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$[0,\ \frac\pi2)\cup(\frac\pi2, \ \pi]$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;反余割函数[红]&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=\arccsc x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$x = \csc y$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$(-\infty , \ -1]\cup[1, \ +\infty )$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$[-\frac\pi2,\ 0)\cup(0, \ \frac\pi2]$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;常用反三角函数值&#34;&gt;常用反三角函数值
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$x$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$-1$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$0$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$\frac12$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$\frac{\sqrt3}3$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$\frac{\sqrt2}2$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$\frac{\sqrt3}2$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$\sqrt3$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$1$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\arcsin x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$-\frac{\pi}2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi6$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi4$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi3$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi2$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\arccos x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\pi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\pi}2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi3$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi4$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi6$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\arctan x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$-\frac{\pi}4$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi6$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi3$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac\pi4$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;极限&#34;&gt;极限
+&lt;/h2&gt;$$
+\lim_{x \to x0} f(x)=A
+$$&lt;h3 id=&#34;两个重要极限&#34;&gt;两个重要极限
+&lt;/h3&gt;$$
+①\ \lim_{x\to{0}}\frac{\sin x}x = \lim_{x\to0}\frac x{\sin x}=1
+$$$$
+②\ \lim_{x\to\infty}(1+\frac1x)^x \Leftrightarrow \lim_{x\to0}(1+\frac1x)^\frac1x =e \Rightarrow  \lim_{f(x)\to0 \ g(x)\to\infty}[1+f(x)]^{g(x)}=e^{lim[f(x)\cdot g(x)]}
+$$&lt;h3 id=&#34;常用等价无穷小&#34;&gt;常用等价无穷小
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;前提条件: 当$x\to0$时&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+$$
+     \sin x\sim x
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     \tan x \sim x
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     \arcsin x \sim x
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     \arctan x \sim x
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     e^x-1\sim x
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     a^x-1\sim x\ln a\ (a&gt;0,a\ne1)
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     \ln{(1+x)}\sim x
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     \log_a{(1+x)}\sim \frac x{\ln a}\ (a&gt;0,a\ne1)
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     (1+x)^a-1\sim ax
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+      \sqrt[n]{1+x}-1\sim \frac xn 
+      $$&lt;/li&gt;
+&lt;li&gt;
+$$
+      1-\cos x \sim \frac {x^2}2
+      $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;无穷小量阶比较&#34;&gt;无穷小量阶比较
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;高阶无穷小&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;低阶无穷小&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;同阶无穷小&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;等价无穷小&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim\frac {a(x)}{b(x)} = 0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim\frac {a(x)}{b(x)} = \infty$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim\frac {a(x)}{b(x)} = C \ (C\ne0)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim\frac {a(x)}{b(x)} = 1$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;求极限基础10法&#34;&gt;求极限基础10法
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;类型&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;举例&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;使用方法&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;思路&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;n项和形式的数列&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\sum_{n=1}^{\infty } \lim_{n\to \infty}(\frac1{n^2+1}+\frac1 {n^2+2}+&amp;hellip;+\frac 1 {n^2+n})$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;夹逼法则&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;分子不变取坟墓最大的哪一项得到$y_n$ 取最小的哪一项得到$z_n$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;函数在$x_0$处连续&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{x\to1} \ x^2=1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;直接带入&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac00\ x\to x_0$分子分母均为多项式&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{x\to3} \ \frac{x-3}{x^2-9}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;因式分解&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;通过因式分解将分母中的0因子消除掉后再直接带入&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac00\ x\to x_0$分子分母里有根式&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{x\to \infty}\ \frac{\sqrt{1+x}-2}{x-3}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;根式有理化&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;上下同乘某式，构成含根式的平方差公式，然后清0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac00\ x\to \infty$分子分母均为多项式&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{x\to \infty} \ \frac{2x^3+x}{x^2+3}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;抓大头&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;上大无穷下大零，次数相同系数比&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac00\ x\to 0$分式且含有$\sin x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{x\to{0}}\frac{\sin x}x =1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;第一重要极限&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;将原始拆解成第一重要极限和另一个能直接带入的式子，求极限的乘积&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$p^0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{f(x)\to0 \ g(x)\to\infty}[1+f(x)]^{g(x)}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;第二重要极限&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;原式 $= e^{lim[f(x)\cdot g(x)]}$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0\times $有界&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{x\to \infty} \frac{\sin x}x$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$0\times $有界$=0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac00、\frac\infty \infty$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{x\to 0}\frac{\sin x^2}{\sin 2x} = \lim_{x\to 0}\frac{x^2}{2x}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;等价无穷小替换&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac00、\frac\infty \infty$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lim_{x\to 0} \frac{\ln x}{x^2}=\lim_{x\to 0}\frac{\frac1x}{2x}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;洛必达&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;上下同时求导&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;导数与微分&#34;&gt;导数与微分
+&lt;/h2&gt;$$
+f&#39;(x_0)=\lim_{\triangle x\to0}\frac{\triangle y}{\triangle x}=\lim_{\triangle x\to0}\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}
+$$&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;也可以记作&lt;/strong&gt;
+&lt;/p&gt;
+$$
+  y&#39;|x=x0 \Leftrightarrow \frac {dy} {dx}|x = x_0 \Leftrightarrow \frac{df(x)}{dx}|x = x_0
+  $$&lt;/blockquote&gt;
+$$
+f&#39;(x_0)=\lim_{\triangle  x\to0}\frac{f(x_0+\triangle  x)-f(x_0)}{\triangle  x}\Rightarrow \lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}\Rightarrow \lim_{n\to 0}\frac{f(x_0+h)-f(x_0)}{h}
+$$&lt;p&gt;要注意导数定义的严格形式，3个 $x_0$ 要对应，3个 $h$ 也要对应
+&lt;/p&gt;
+$$
+\lim_{h\to0}\frac{f(h)-f(-h)}{h}=2f&#39;(0)
+$$$$
+\lim_{n\to0}\frac{f(x_0+Ah)-f(x_0)}{Bh}=\frac ABf&#39;(x_0)
+$$&lt;h3 id=&#34;基本导数公式&#34;&gt;基本导数公式
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;常数
+&lt;/p&gt;
+$$
+     C&#39; = 0 \ (C \in R)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;幂函数
+&lt;/p&gt;
+$$
+     (x^n)&#39;=nx^{n-1}\ (n\in R)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对数函数
+&lt;/p&gt;
+$$
+     {\log_ax}&#39;=\frac1{x\ln a} \ (a&gt;0,a\ne1)
+     $$$$
+     (\ln x)&#39;=\frac1 x
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;指数函数
+&lt;/p&gt;
+$$
+     (a^x)&#39;=a^x\ln a \ (a&gt;0,a\ne1)
+     $$$$
+     (e^x)&#39;=e^x
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;三角函数
+&lt;/p&gt;
+$$
+     (\sin x)&#39;=\cos x
+     $$$$
+     (\cos x)&#39;=-\sin x
+     $$$$
+     (\tan x)&#39;=\frac1{\cos^2x}=\sec^2x
+     $$$$
+     (\sec x)&#39;=(\frac1{\cos x})&#39; = \sec x\tan x
+     $$$$
+     (\cot x)&#39;=\frac1{\tan x}=-\frac1{\sin^2x}=-\csc^2x
+     $$$$
+     (\csc x)&#39;=(\frac1{\sin x})&#39;=-\csc x\cot x
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;反三角函数
+&lt;/p&gt;
+$$
+     (\arcsin x)&#39;=\frac1{\sqrt{1-x^2}}
+     $$$$
+     (\arccos x)&#39;=-\frac1{\sqrt{1-x^2}}
+     $$$$
+     (\arctan x)&#39;=\frac1{1+x^2}
+     $$$$
+     (\arccot x)&#39;=-\frac1{1+x^2}
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;导数的四则运算&#34;&gt;导数的四则运算
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+$$
+     [u_{(x)}\pm v_{(x)}]&#39;=u&#39;_{(x)}\pm v&#39;_{(x)}
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     [Cu_{(x)}]&#39;=Cu&#39;_{(x)}\ (C \in R)
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     [u_{(x)}v_{(x)}]&#39;=u&#39;_{(x)}v_{(x)}+u_{(x)}v&#39;_{(x)}
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     [\frac{u_{(x)}}{v_{(x)}}]&#39;=\frac{u&#39;_{(x)}v_{(x)}-u_{(x)}v&#39;_{(x)}}{v^2_{(x)}} \ (v_{(x)}\ne 0)
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;高阶导数公式&#34;&gt;高阶导数公式
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;幂函数
+&lt;/p&gt;
+$$
+     (x^m)^{(n)}=\frac{m!}{(m-n)!}x^{m-n} \ (m&gt;n,\ mn\in N^*)
+     $$$$
+     (x^m)^{(n)}=0\ (m&lt;n,\ m\in N^*)
+     $$$$
+     (x^n)^{(n)}=n!
+     $$$$
+     (e^x)^{(n)}=e^x
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;指数函数
+&lt;/p&gt;
+$$
+     (a^x)^{(n)}=a^x\cdot \ln^na \ (a&gt;0,\ a\ne1)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对数函数
+&lt;/p&gt;
+$$
+     [\ln(x+a)]^{(n)}=(-1)^{n-1}\frac{(n-1)!}{(x+a)^n}
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;三角函数
+&lt;/p&gt;
+$$
+     (\sin x)^{(n)}=\sin(x+\frac{n\pi}2)
+     $$$$
+     (\cos x)^{(n)}=\cos(x+\frac{n\pi}2)
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;直线方程&#34;&gt;直线方程
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;法线方程
+&lt;/p&gt;
+$$
+    y-y_0=-\frac1{f&#39;(x_0)}(x-x_0)
+    $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切线方程
+&lt;/p&gt;
+$$
+    y-y_0=f&#39;(x_0)(x-x_0)
+    $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;不定积分&#34;&gt;不定积分
+&lt;/h2&gt;&lt;h3 id=&#34;基本积分公式&#34;&gt;基本积分公式
+&lt;/h3&gt;$$
+\int k \ dx=kx+C\ (k\in R)
+$$$$
+\int x^n\ dx = \frac{x^n+1}{n+1}+C\ (n\ne -1)
+$$$$
+\int \frac1x\ dx = \ln\left | x \right | +C
+$$$$
+\int e^x\ dx = e^x+C
+$$$$
+\int a^x\ dx = \frac{a^x}{\ln a}+C\ (a&gt;0,\ a\ne1)
+$$$$
+\int \cos x \ dx = \sin x+C
+$$$$
+\int \sin x \ dx=-\cos x+C
+$$$$
+\int \frac1{\sqrt{1-x^2}}\ dx=\arcsin x+C
+$$$$
+\int - \frac1{\sqrt{1-x^2}}\ dx = \arccos x+C
+$$$$
+\int \frac1{1+x^2}\ dx = \arctan x+C
+$$$$
+\int - \frac1{1+x^2}\ dx=\arccot x+C
+$$$$
+\int \frac1{cos^2x}\ dx=\int \sec^2 x\ dx=\tan x +C
+$$$$
+\int \frac1{\sin^2x}\ dx=\int \csc^2x\ dx = -\cot x+C
+$$$$
+\int \sec x\tan x \ dx=\sec x+C
+$$$$
+\int\csc x \cot x\ dx = -\csc x+C
+$$$$
+\int \tan x \ dx= -\ln|\cos x|+C
+$$&lt;h3 id=&#34;不定积分的性质&#34;&gt;不定积分的性质
+&lt;/h3&gt;$$
+\int [f_{(x)}\pm g_{(x)}]\ dx=\int f_{(x)}\ dx \pm \int g_{(x)}\ dx
+$$$$
+\int k f_{(x)}\ dx=k\int f_{(x)}\ dx
+$$$$
+[\int f_{(x)}\ dx]&#39;=f_{(x)}\ d\ [f_{(x)}\ dx]=f_{(x)}\ dx
+$$$$
+\int f&#39;_{(x)}\ dx=f_{(x)}+C\ \ \ \ \ \int d{f_{(x)}}=f_{(x)}+C
+$$&lt;h3 id=&#34;换元法求积分&#34;&gt;换元法求积分
+&lt;/h3&gt;$$
+\int u^2\ du=\frac13u^3+C
+$$$$
+\int \frac1{ax+b}\ dx=\frac1a\ln|ax+b|+C\ (a\ne0)
+$$$$
+\int \frac1{a^2+x^2}\ dx = \frac1a\arctan{\frac xa}+C \ (a\ne0)
+$$$$
+\int \frac1{x^2-a^2}\ dx = \frac1{2a}\ln|\frac{x-a}{x+a}|+C \ (a\ne0)
+$$$$
+\int \frac1{\sqrt{a^2-x^2}}\ dx = \arcsin \frac xa+C\ (a\ne0)
+$$$$
+\int \sec x\ dx = \ln|\sec x + \tan x|+C
+$$&lt;h3 id=&#34;三角代换&#34;&gt;三角代换
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;弦代换
+&lt;/p&gt;
+$$
+     \sqrt{a^2-x^2}\Rightarrow x=a\sin t\Rightarrow a\cos t
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切代换
+&lt;/p&gt;
+$$
+     \sqrt{a^2+x^2}\Rightarrow x=a\tan t\Rightarrow a\sec t
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;割代换
+&lt;/p&gt;
+$$
+     \sqrt{x^2-a^2}\Rightarrow x=a\sec t\Rightarrow a\tan t
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;分部积分公式&#34;&gt;分部积分公式
+&lt;/h3&gt;$$
+\int uv&#39;\ dx=uv-\in u&#39; v\ dx
+$$$$
+\int u \ dv = uv - \int v \ du
+$$&lt;h2 id=&#34;定积分&#34;&gt;定积分
+&lt;/h2&gt;$$
+A = \lim_{\triangle  x\to0}\sum_{i=i}^{n} f_{(x_i)}\cdot \triangle  x
+$$&lt;h3 id=&#34;牛顿莱布尼兹公式微积分基本定理&#34;&gt;牛顿莱布尼兹公式(微积分基本定理)
+&lt;/h3&gt;$$
+\int_{a}^{b} f_{(x)}\ dx=F_{(x)}|_{a}^{b}=F_{(b)}-F_{(a)}
+$$&lt;blockquote&gt;
+&lt;p&gt;前提条件: 函数$f_{(x)}$在 $[a,b]$ 上连续&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;定积分的性质部分&#34;&gt;定积分的性质(部分)
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+$$
+     \int_{a}^{b} 1\ dx=b-a
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在区间$[a,b]$上:
+&lt;/p&gt;
+$$
+     f_{(x)}\ dx \ge 0\ (a&lt; b)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;定积分中值定理 设函数$f(x)$在$[a,b]$上连续
+&lt;/p&gt;
+$$
+     \int_{a}^{b}f_{(x)}\ dx = f_{(\varepsilon )}\cdot(b-a)\ (a\le\varepsilon\le b)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当连续函数$f_{(x)}$为偶函数时:
+&lt;/p&gt;
+$$
+     \int_{-a}^{a}f_{(x)}\ dx=2\int_0^af_{(x)}\ dx
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当连续函数$f_{(x)}$为奇函数时:
+&lt;/p&gt;
+$$
+     \int_{-a}^{a}f_{(x)}\ dx=0
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;多元函数微分&#34;&gt;多元函数微分
+&lt;/h2&gt;&lt;h3 id=&#34;二元函数的极限&#34;&gt;二元函数的极限
+&lt;/h3&gt;$$
+\lim_{x\to x_0 \ y\to y_0}f_{(x,y)}=A
+$$$$
+\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y}=0
+$$&lt;h3 id=&#34;二元函数求偏导&#34;&gt;二元函数求偏导
+&lt;/h3&gt;$$
+\frac{\partial z}{\partial x} =f_x(x,y)=\lim_{\triangle \to x_0}\frac{f(x_0+\triangle x,y_0)-f(x_0,y_0)}{\triangle x}
+$$$$
+\frac{\partial z}{\partial y} =f_y(x,y)=\lim_{\triangle \to y_0}\frac{f(x_0,y_0+\triangle y)-f(x_0,y_0)}{\triangle y}
+$$&lt;h3 id=&#34;二元函数的二阶偏导数&#34;&gt;二元函数的二阶偏导数
+&lt;/h3&gt;$$
+f_{xx}(x,y)=\frac{\partial^2z}{\partial x^2}
+$$$$
+f_{xy}(x,y)=\frac{\partial^2z}{\partial x \partial y}
+$$$$
+f_{yx}(x,y)=\frac{\partial^2z}{\partial y \partial x}
+$$$$
+f_{yy}(,y)=\frac{\partial^2z}{\partial y^2}
+$$&lt;h3 id=&#34;全微分&#34;&gt;全微分
+&lt;/h3&gt;$$
+dz=\frac{\partial z}{\partial x}\ dx+\frac{\partial z}{\partial y}\ dy
+$$&lt;h4 id=&#34;三元函数的全微分&#34;&gt;三元函数的全微分
+&lt;/h4&gt;$$
+du=\frac{\partial u}{\partial x}\ dx+\frac{\partial u}{\partial y}\ dy+\frac{\partial u}{\partial z}\ dz
+$$&lt;h3 id=&#34;隐函数求导公式&#34;&gt;隐函数求导公式
+&lt;/h3&gt;&lt;h4 id=&#34;一元&#34;&gt;一元
+&lt;/h4&gt;$$
+\frac{dy}{dx}=-\frac{F_x}{F_y}
+$$&lt;h4 id=&#34;二元&#34;&gt;二元
+&lt;/h4&gt;$$
+\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}
+$$$$
+\frac{\partial z}{\partial y}=-\frac{F_y}{F_z}
+$$&lt;h2 id=&#34;二重积分&#34;&gt;二重积分
+&lt;/h2&gt;$$
+\iint\limits_{D}f(x,y)\ d\sigma
+$$&lt;h3 id=&#34;二重积分的性质部分&#34;&gt;二重积分的性质(部分)
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;如果在闭区域 $D$ 内，$f(x,y)=1$，那么有
+&lt;/p&gt;
+$$
+     \iint\limits_{D}1\ dxdy=\iint\limits_{D}\ dxdy = S_D
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;二重积分中值定理 设函数在$f(x,y)$在闭区间 $D$ 上连续
+&lt;/p&gt;
+$$
+     \iint\limits_{D}f(x,y)\ d\sigma = f(\varepsilon,\eta)\sigma
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;二重积分的计算&#34;&gt;二重积分的计算
+&lt;/h3&gt;$$
+\iint\limits_{D}f(x,y)\ dxdy =\int_{a}^{b}[\int_{\varphi _1(x)}^{\varphi _2{(x)}}f(x,y)\ dy\ ]\ dx
+$$&lt;h4 id=&#34;x型积分区域&#34;&gt;X型积分区域
+&lt;/h4&gt;$$
+\int_{a}^{b}\ dx \int_{\varphi _1(x)}^{\varphi _2{(x)}}f(x,y)\ dy
+$$&lt;h4 id=&#34;y型积分区域&#34;&gt;Y型积分区域
+&lt;/h4&gt;$$
+\int_{a}^{b}\ dy \int_{\psi  _1(x)}^{\psi  _2{(x)}}f(x,y)\ dx
+$$&lt;h3 id=&#34;极坐标下的二重积分&#34;&gt;极坐标下的二重积分
+&lt;/h3&gt;&lt;h4 id=&#34;基础公式&#34;&gt;基础公式
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+$$
+     x^2+y^2=r^2
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     x=r\cos \theta 
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     y=r\sin\theta 
+     $$&lt;/li&gt;
+&lt;li&gt;
+$$
+     dxdy=r\ dr\ d\theta
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;极坐标下化二重积分为两次一重积分&#34;&gt;极坐标下化二重积分为两次一重积分
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;极点在区域 $D$ 之外
+&lt;/p&gt;
+$$
+     \int_a^bd\theta \int_{\varphi _1({\theta})}^{\varphi _2(\theta)}f(r\cos\theta,r\sin\theta)r\ dr
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;极点在区域 $D$ 边界上
+&lt;/p&gt;
+$$
+     \int_a^bd\theta \int_{0}^{\varphi _(\theta)}f(r\cos\theta,r\sin\theta)r\ dr
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;极点在区域 $D$ 之内
+&lt;/p&gt;
+$$
+     \int_a^{2\pi}d\theta \int_{0}^{\varphi _(\theta)}f(r\cos\theta,r\sin\theta)r\ dr
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;微分方程&#34;&gt;微分方程
+&lt;/h2&gt;&lt;h3 id=&#34;微分方程的基本概念&#34;&gt;微分方程的基本概念
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;微分方程的解:&lt;/strong&gt; 带入微分方程后能使方程成为恒等式的函数$y=f(x)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;微分方程的通解:&lt;/strong&gt; 微分方程的解中含有任意常数$C$, 且任意常数 $C$ 的个数与微分方程的阶数相同&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;微分方程的特解:&lt;/strong&gt; 确定了通解中任意常数 $C$ 之后的解&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;微分方程的阶:&lt;/strong&gt; 微分方程中所出现的未知函数的最高阶导数的阶数, 叫做微分方程的解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;一阶可分离变量的微分方程&#34;&gt;一阶可分离变量的微分方程
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;分离变量, 把微分方程写成:
+&lt;/p&gt;
+$$
+     g(y)\ dy = f(x)\ dx
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;等式两边同时积分
+&lt;/p&gt;
+$$
+     \int g(y)\ dy = \int f(x)\ dx
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;求原函数写通解
+&lt;/p&gt;
+$$
+     G(y)=F(x)+C
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;齐次微分方程&#34;&gt;齐次微分方程
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;化成齐次微分方程的标准形式:
+&lt;/p&gt;
+$$
+     \frac{dy}{dx}=f(\frac yx)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;换元, 令 $u=\frac yx$ 则 $y=xu$ 两边同时求导得:
+&lt;/p&gt;
+$$
+     \frac{dy}{dx}=u+x\frac{du}{dx}
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;带入上式得
+&lt;/p&gt;
+$$
+     u+x\frac{du}{dx}=f{u}
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;分离变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;一阶次线性微分方程&#34;&gt;一阶次线性微分方程
+&lt;/h3&gt;$$
+y=e^{-\int{p(x)\ dx}}[\int Q(x)\ e^{\int p(x)\ dx}]\ dx+C
+$$&lt;blockquote&gt;
+&lt;p&gt;特别的, 若为一阶齐次线性微分方程, 则令上式中的 $Q(x)=0$ 即可, 得:
+&lt;/p&gt;
+$$
+  y=Ce^{-\int p(x)\ dx}
+   $$&lt;/blockquote&gt;
+&lt;h3 id=&#34;二阶常系数齐次线性微分方程&#34;&gt;二阶常系数齐次线性微分方程
+&lt;/h3&gt;&lt;h4 id=&#34;定义&#34;&gt;定义
+&lt;/h4&gt;$$
+y&#39;&#39;+py&#39;+qy=f(x)
+$$&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;f(x)&lt;/strong&gt; 为自由项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当 $f(x)\ne0$ 时, 方程为二阶&lt;strong&gt;常系数非齐次&lt;/strong&gt;线性微分方程&lt;/p&gt;
+&lt;p&gt;当 $f(x)=0$时, 方程为二阶&lt;strong&gt;常系数齐次&lt;/strong&gt;微分方程&lt;/p&gt;
+&lt;h4 id=&#34;解二阶常系数齐次线性微分方程&#34;&gt;解二阶常系数齐次线性微分方程
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;方程 $y&amp;rsquo;&amp;rsquo;+py&amp;rsquo;+qy=0 \ \Rightarrow r^2+pr+q=0$&lt;/li&gt;
+&lt;li&gt;求特征根&lt;/li&gt;
+&lt;li&gt;查下表&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;特征方程 $r^2+pr+q=0$ 的两根&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;微分方程 $y&amp;rsquo;&amp;rsquo;+py&amp;rsquo;+qy=0$ 的通解&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Delta&amp;gt;0$ 两个不相等的实根 $r_1, r_2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=C_1e^{r_1x}+C_2e^{{r_2}x}$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Delta=0$ 两个相等的实根 $r_1=r_2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=(C_1+C_2x)e^{rx}$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Delta&amp;lt;0$ 一堆共轭复根&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$y=e^{\alpha x}(C_1\cos \beta x+C_2 \sin\beta x)$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;特解&lt;/strong&gt; 通解求导后带入原微分方程即可&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;二阶常系数非齐次线性微分方程&#34;&gt;二阶常系数非齐次线性微分方程
+&lt;/h3&gt;&lt;h4 id=&#34;fxelambda-xp_mx-型求特解的方法&#34;&gt;$f(x)=e^{\lambda x}P_m(x)$ 型求特解的方法
+&lt;/h4&gt;&lt;p&gt;特解形式为:
+&lt;/p&gt;
+$$
+y^*=e^{ax}Q_m(x)x^k
+$$&lt;ol&gt;
+&lt;li&gt;求特征根 解特征方程 $r^2+pr+q=0$ 得到特征根&lt;/li&gt;
+&lt;li&gt;设特解为上式&lt;/li&gt;
+&lt;li&gt;$Q_m(x)$ 按照 $P_m$ 来确定
+&lt;ol&gt;
+&lt;li&gt;若$P_m$为常数, 则$Q_m=A$&lt;/li&gt;
+&lt;li&gt;若$P_m$为最高一次, 则$Q_m=Ax+B$&lt;/li&gt;
+&lt;li&gt;若$P_m$为最高二次, 则$Q_m=Ax^2+Bx+C$&lt;/li&gt;
+&lt;li&gt;若$P_m$为最高三次, 则$Q_m=Ax^3+Bx^2+Cx+D$&lt;/li&gt;
+&lt;li&gt;..&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;定 $k$ 值 按照 $\lambda$ 的情况确定
+&lt;ol&gt;
+&lt;li&gt;若$\lambda$不是特征根, 即 $\lambda\ne r_1\ne r_2$, 则 $k=0$&lt;/li&gt;
+&lt;li&gt;若$\lambda$是特征单根,即 $\lambda=r$, 则 $k=1$&lt;/li&gt;
+&lt;li&gt;若$\lambda$是特征重根, 即 $\lambda=r_1=r_2$, 则 $k=2$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;解待定系数 $A\ B\ C\ &amp;hellip;$&lt;/li&gt;
+&lt;li&gt;带入原方程, 解得特解 $y^*$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若求通解, 则需求出该微分方程的齐次线性微分方程形式的通解, 并相加&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;fxelambda-xpcos-omega-xqsinomega-x--pqin-r-型求特解的方法&#34;&gt;$f(x)=e^{\lambda x}(P\cos \omega x+Q\sin\omega x) \ (P,Q\in R)$ 型求特解的方法
+&lt;/h4&gt;&lt;p&gt;特解形式为:
+&lt;/p&gt;
+$$
+y^*=e^{\lambda x}(A\cos \omega x+B\sin \omega x)x^k
+$$&lt;ol&gt;
+&lt;li&gt;求特征根 解特征方程 $r^2+pr+q=0$ 得到特征根&lt;/li&gt;
+&lt;li&gt;设特解为上式&lt;/li&gt;
+&lt;li&gt;定 $k$ 值 按照 $\lambda\pm \omega i$ 的情况确定
+&lt;ol&gt;
+&lt;li&gt;若 $\lambda\pm \omega i$ 不是特征根, 则 $k=0$&lt;/li&gt;
+&lt;li&gt;若 $\lambda\pm \omega i$ 是特征根, 则 $k=1$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;解待定系数 $A\ B\ &amp;hellip;$&lt;/li&gt;
+&lt;li&gt;带入原方程, 解得特解 $y^*$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若求通解, 则需求出该微分方程的齐次线性微分方程形式的通解, 并相加&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;无穷级数&#34;&gt;无穷级数
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
