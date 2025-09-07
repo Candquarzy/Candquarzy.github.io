@@ -8,7 +8,7 @@
 
 <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.7/dist/autoload.js"></script>
 
-<link rel="stylesheet" href="/scss/style.min.614ec52da7a774511f0a4aa640e7189e67ad503782b9382d4ff6eb64ac586a4a.css"><meta property='og:title' content="高等数学 (更新中)">
+<link rel="stylesheet" href="/scss/style.min.d189c50acff7a397a4117a4e786c695bfda5d371c93229e0cc8e059ec7769ebd.css"><meta property='og:title' content="高等数学 (更新中)">
 <meta property='og:description' content="高等数学自学总结">
 <meta property='og:url' content='https://blog.candquarzy.top/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/'>
 <meta property='og:site_name' content='糖果罐🍥 - Candy的博客'>
@@ -406,7 +406,7 @@
         <li><a href="#微分方程的基本概念">微分方程的基本概念</a></li>
         <li><a href="#一阶可分离变量的微分方程">一阶可分离变量的微分方程</a></li>
         <li><a href="#齐次微分方程">齐次微分方程</a></li>
-        <li><a href="#一阶次线性微分方程">一阶次线性微分方程</a></li>
+        <li><a href="#一阶齐次线性微分方程">一阶齐次线性微分方程</a></li>
         <li><a href="#二阶常系数齐次线性微分方程">二阶常系数齐次线性微分方程</a>
           <ol>
             <li><a href="#定义">定义</a></li>
@@ -1408,39 +1408,61 @@ $$
 </ul>
 <h2 id="不定积分">不定积分
 </h2><h3 id="基本积分公式">基本积分公式
-</h3>$$
-\int k \ dx=kx+C\ (k\in R)
-$$$$
-\int x^n\ dx = \frac{x^n+1}{n+1}+C\ (n\ne -1)
-$$$$
-\int \frac1x\ dx = \ln\left | x \right | +C
-$$$$
-\int e^x\ dx = e^x+C
-$$$$
-\int a^x\ dx = \frac{a^x}{\ln a}+C\ (a>0,\ a\ne1)
-$$$$
-\int \cos x \ dx = \sin x+C
-$$$$
-\int \sin x \ dx=-\cos x+C
-$$$$
-\int \frac1{\sqrt{1-x^2}}\ dx=\arcsin x+C
-$$$$
-\int - \frac1{\sqrt{1-x^2}}\ dx = \arccos x+C
-$$$$
-\int \frac1{1+x^2}\ dx = \arctan x+C
-$$$$
-\int - \frac1{1+x^2}\ dx=\arccot x+C
-$$$$
-\int \frac1{cos^2x}\ dx=\int \sec^2 x\ dx=\tan x +C
-$$$$
-\int \frac1{\sin^2x}\ dx=\int \csc^2x\ dx = -\cot x+C
-$$$$
-\int \sec x\tan x \ dx=\sec x+C
-$$$$
-\int\csc x \cot x\ dx = -\csc x+C
-$$$$
-\int \tan x \ dx= -\ln|\cos x|+C
-$$<h3 id="不定积分的性质">不定积分的性质
+</h3><ol>
+<li>
+<p>常数
+</p>
+$$
+     \int k \ dx=kx+C\ (k\in R)
+     $$</li>
+<li>
+<p>幂函数
+</p>
+$$
+     \int x^n\ dx = \frac{x^n+1}{n+1}+C\ (n\ne -1)
+     $$</li>
+<li>
+<p>反比例函数
+</p>
+$$
+     \int \frac1x\ dx = \ln\left | x \right | +C
+     $$</li>
+<li>
+<p>指数函数
+</p>
+$$
+     \int e^x\ dx = e^x+C
+     $$$$
+     \int a^x\ dx = \frac{a^x}{\ln a}+C\ (a>0,\ a\ne1)
+     $$</li>
+<li>
+<p>三角函数
+</p>
+$$
+     \int \cos x \ dx = \sin x+C
+     $$$$
+     \int \sin x \ dx=-\cos x+C
+     $$$$
+     \int \frac1{\sqrt{1-x^2}}\ dx=\arcsin x+C
+     $$$$
+     \int - \frac1{\sqrt{1-x^2}}\ dx = \arccos x+C
+     $$$$
+     \int \frac1{1+x^2}\ dx = \arctan x+C
+     $$$$
+     \int - \frac1{1+x^2}\ dx=\arccot x+C
+     $$$$
+     \int \frac1{cos^2x}\ dx=\int \sec^2 x\ dx=\tan x +C
+     $$$$
+     \int \frac1{\sin^2x}\ dx=\int \csc^2x\ dx = -\cot x+C
+     $$$$
+     \int \sec x\tan x \ dx=\sec x+C
+     $$$$
+     \int\csc x \cot x\ dx = -\csc x+C
+     $$$$
+     \int \tan x \ dx= -\ln|\cos x|+C
+     $$</li>
+</ol>
+<h3 id="不定积分的性质">不定积分的性质
 </h3>$$
 \int [f_{(x)}\pm g_{(x)}]\ dx=\int f_{(x)}\ dx \pm \int g_{(x)}\ dx
 $$$$
@@ -1448,7 +1470,7 @@ $$$$
 $$$$
 [\int f_{(x)}\ dx]'=f_{(x)}\ d\ [f_{(x)}\ dx]=f_{(x)}\ dx
 $$$$
-\int f'_{(x)}\ dx=f_{(x)}+C\ \ \ \ \ \int d{f_{(x)}}=f_{(x)}+C
+\int f'_{(x)}\ dx=f_{(x)}+C\ \ \ \ \ \ \ \ \ \ \ \int d{f_{(x)}}=f_{(x)}+C
 $$<h3 id="换元法求积分">换元法求积分
 </h3>$$
 \int u^2\ du=\frac13u^3+C
@@ -1574,10 +1596,22 @@ $$
      \iint\limits_{D}1\ dxdy=\iint\limits_{D}\ dxdy = S_D
      $$</li>
 <li>
+<p>二重积分比较 如果在闭区域 $D$ 内，有 $f(x,y)\le g(x,y)$ 那么
+</p>
+$$
+      \iint\limits_{D}f(x,y)\ dxdy \le \iint\limits_{g}f(x,y)\ dxdy
+      $$</li>
+<li>
 <p>二重积分中值定理 设函数在$f(x,y)$在闭区间 $D$ 上连续
 </p>
 $$
      \iint\limits_{D}f(x,y)\ d\sigma = f(\varepsilon,\eta)\sigma
+     $$</li>
+<li>
+<p>设 $M$ 和$m$ 分别是 $f(x,y)$ 在闭区间 $D$ 上的最大值和最小值, $\sigma$ 是 $D$ 的面积, 那么
+</p>
+$$
+     m\sigma \le \iint\limits_{D}f(x,y)\ d\sigma \le M\sigma
      $$</li>
 </ol>
 <h3 id="二重积分的计算">二重积分的计算
@@ -1683,7 +1717,7 @@ $$
 <p>分离变量</p>
 </li>
 </ol>
-<h3 id="一阶次线性微分方程">一阶次线性微分方程
+<h3 id="一阶齐次线性微分方程">一阶齐次线性微分方程
 </h3>$$
 y=e^{-\int{p(x)\ dx}}[\int Q(x)\ e^{\int p(x)\ dx}]\ dx+C
 $$<blockquote>

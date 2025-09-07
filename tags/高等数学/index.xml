@@ -864,39 +864,61 @@ $$
 &lt;/ul&gt;
 &lt;h2 id=&#34;不定积分&#34;&gt;不定积分
 &lt;/h2&gt;&lt;h3 id=&#34;基本积分公式&#34;&gt;基本积分公式
-&lt;/h3&gt;$$
-\int k \ dx=kx+C\ (k\in R)
-$$$$
-\int x^n\ dx = \frac{x^n+1}{n+1}+C\ (n\ne -1)
-$$$$
-\int \frac1x\ dx = \ln\left | x \right | +C
-$$$$
-\int e^x\ dx = e^x+C
-$$$$
-\int a^x\ dx = \frac{a^x}{\ln a}+C\ (a&gt;0,\ a\ne1)
-$$$$
-\int \cos x \ dx = \sin x+C
-$$$$
-\int \sin x \ dx=-\cos x+C
-$$$$
-\int \frac1{\sqrt{1-x^2}}\ dx=\arcsin x+C
-$$$$
-\int - \frac1{\sqrt{1-x^2}}\ dx = \arccos x+C
-$$$$
-\int \frac1{1+x^2}\ dx = \arctan x+C
-$$$$
-\int - \frac1{1+x^2}\ dx=\arccot x+C
-$$$$
-\int \frac1{cos^2x}\ dx=\int \sec^2 x\ dx=\tan x +C
-$$$$
-\int \frac1{\sin^2x}\ dx=\int \csc^2x\ dx = -\cot x+C
-$$$$
-\int \sec x\tan x \ dx=\sec x+C
-$$$$
-\int\csc x \cot x\ dx = -\csc x+C
-$$$$
-\int \tan x \ dx= -\ln|\cos x|+C
-$$&lt;h3 id=&#34;不定积分的性质&#34;&gt;不定积分的性质
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;常数
+&lt;/p&gt;
+$$
+     \int k \ dx=kx+C\ (k\in R)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;幂函数
+&lt;/p&gt;
+$$
+     \int x^n\ dx = \frac{x^n+1}{n+1}+C\ (n\ne -1)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;反比例函数
+&lt;/p&gt;
+$$
+     \int \frac1x\ dx = \ln\left | x \right | +C
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;指数函数
+&lt;/p&gt;
+$$
+     \int e^x\ dx = e^x+C
+     $$$$
+     \int a^x\ dx = \frac{a^x}{\ln a}+C\ (a&gt;0,\ a\ne1)
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;三角函数
+&lt;/p&gt;
+$$
+     \int \cos x \ dx = \sin x+C
+     $$$$
+     \int \sin x \ dx=-\cos x+C
+     $$$$
+     \int \frac1{\sqrt{1-x^2}}\ dx=\arcsin x+C
+     $$$$
+     \int - \frac1{\sqrt{1-x^2}}\ dx = \arccos x+C
+     $$$$
+     \int \frac1{1+x^2}\ dx = \arctan x+C
+     $$$$
+     \int - \frac1{1+x^2}\ dx=\arccot x+C
+     $$$$
+     \int \frac1{cos^2x}\ dx=\int \sec^2 x\ dx=\tan x +C
+     $$$$
+     \int \frac1{\sin^2x}\ dx=\int \csc^2x\ dx = -\cot x+C
+     $$$$
+     \int \sec x\tan x \ dx=\sec x+C
+     $$$$
+     \int\csc x \cot x\ dx = -\csc x+C
+     $$$$
+     \int \tan x \ dx= -\ln|\cos x|+C
+     $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;不定积分的性质&#34;&gt;不定积分的性质
 &lt;/h3&gt;$$
 \int [f_{(x)}\pm g_{(x)}]\ dx=\int f_{(x)}\ dx \pm \int g_{(x)}\ dx
 $$$$
@@ -904,7 +926,7 @@ $$$$
 $$$$
 [\int f_{(x)}\ dx]&#39;=f_{(x)}\ d\ [f_{(x)}\ dx]=f_{(x)}\ dx
 $$$$
-\int f&#39;_{(x)}\ dx=f_{(x)}+C\ \ \ \ \ \int d{f_{(x)}}=f_{(x)}+C
+\int f&#39;_{(x)}\ dx=f_{(x)}+C\ \ \ \ \ \ \ \ \ \ \ \int d{f_{(x)}}=f_{(x)}+C
 $$&lt;h3 id=&#34;换元法求积分&#34;&gt;换元法求积分
 &lt;/h3&gt;$$
 \int u^2\ du=\frac13u^3+C
@@ -1030,10 +1052,22 @@ $$
      \iint\limits_{D}1\ dxdy=\iint\limits_{D}\ dxdy = S_D
      $$&lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;二重积分比较 如果在闭区域 $D$ 内，有 $f(x,y)\le g(x,y)$ 那么
+&lt;/p&gt;
+$$
+      \iint\limits_{D}f(x,y)\ dxdy \le \iint\limits_{g}f(x,y)\ dxdy
+      $$&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;二重积分中值定理 设函数在$f(x,y)$在闭区间 $D$ 上连续
 &lt;/p&gt;
 $$
      \iint\limits_{D}f(x,y)\ d\sigma = f(\varepsilon,\eta)\sigma
+     $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设 $M$ 和$m$ 分别是 $f(x,y)$ 在闭区间 $D$ 上的最大值和最小值, $\sigma$ 是 $D$ 的面积, 那么
+&lt;/p&gt;
+$$
+     m\sigma \le \iint\limits_{D}f(x,y)\ d\sigma \le M\sigma
      $$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;二重积分的计算&#34;&gt;二重积分的计算
@@ -1139,7 +1173,7 @@ $$
 &lt;p&gt;分离变量&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;一阶次线性微分方程&#34;&gt;一阶次线性微分方程
+&lt;h3 id=&#34;一阶齐次线性微分方程&#34;&gt;一阶齐次线性微分方程
 &lt;/h3&gt;$$
 y=e^{-\int{p(x)\ dx}}[\int Q(x)\ e^{\int p(x)\ dx}]\ dx+C
 $$&lt;blockquote&gt;
