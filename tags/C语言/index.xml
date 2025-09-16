@@ -2127,7 +2127,7 @@ $$&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;上面这段代码在MSVC编辑器运行的结果为12，而在Linux系统gcc编译器运行的结果为10&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;上面这段代码在MSVC编译器运行的结果为12，而在Linux系统gcc编译器运行的结果为10&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&amp;laquo;=&lt;/strong&gt; 左移并赋值运算符&lt;/p&gt;
@@ -2148,7 +2148,7 @@ $$&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;h3 id=&#34;位运算符&#34;&gt;位运算符
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;amp;&lt;/strong&gt; 按位与运算符:按二进制位，如果相同为 1，不同为 0&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;amp;&lt;/strong&gt; 按位与运算符:按二进制位，当两个数的对应二进制都为 1 则为 1，反之都是 0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;|&lt;/strong&gt; 按位或运算符:按二进制位，如果有 1 则为 1，如果没有 1 则为 0&lt;/p&gt;
@@ -4768,9 +4768,9 @@ $$&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;/h3&gt;&lt;p&gt;ANSIC 标准采用 “缓冲文件系统 &amp;ldquo;处理的数据文件的，所谓缓冲文件系统是指系统自动地在内中为程序中每一个正在使用的文件开辟一块&amp;rdquo; 文件缓冲区”。从内存向磁盘输出数据会先送到内存中的缓冲区，装满缓冲区后才一起送到磁盘上。如果从磁盘向计算机读入数据，则从磁盘文件中读取数据输入到内存缓冲区 (充满缓冲区)，然后再从缓冲区逐个地将数据送到程序数据区 (程序变量等)。缓冲区的大小根据 C 编译系统决定的&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;程序环境和预处理&#34;&gt;程序环境和预处理
-&lt;/h2&gt;&lt;p&gt;一个 C 程序会通过编译器经过预编译、编译、汇编、链接后才会在运行环境中运行&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;一个 C 程序会通过编译器经过预编译(预处理)、编译、汇编、链接后才会在运行环境中运行&lt;/p&gt;
 &lt;h3 id=&#34;预处理&#34;&gt;预处理
-&lt;/h3&gt;&lt;p&gt;在预处理阶段，编译器会进行如下步骤&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;在预处理阶段，编译器会进行如下步骤(都是些文本操作)&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;完成头文件的包含 &lt;code&gt;#include&lt;/code&gt;&lt;/p&gt;
@@ -4899,7 +4899,7 @@ $$&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;参数类型&lt;/td&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;宏的参数于类型无关，只要对参数的操作是合法的，它就可以适用于任何参数类型&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;函数的参数是与类型有关的，如果参数的类型不通，就需要不同的函数，即使他们执行的任务是不同的 &lt;del&gt;C++:函数模板了解一下不？&lt;/del&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;函数的参数是与类型有关的，如果参数的类型不通，就需要不同的函数，即使他们执行的任务是不同的&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;调试&lt;/td&gt;
@@ -4914,7 +4914,8 @@ $$&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;#define&lt;/code&gt; 所定义的宏会在预编译的时候被替换掉&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;#define&lt;/code&gt; 所定义的宏会在预编译的时候被替换掉&lt;/p&gt;
+&lt;p&gt;在运算比较少的情况下可以使用宏，若需要大量逻辑运算首选函数&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;命名约定&#34;&gt;命名约定
 &lt;/h4&gt;&lt;p&gt;把宏的名称全部大写，函数名的首字母大写&lt;/p&gt;
 &lt;h4 id=&#34;undef-取消定义&#34;&gt;#undef 取消定义

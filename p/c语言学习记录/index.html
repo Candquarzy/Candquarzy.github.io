@@ -615,7 +615,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                19231 字
+                19271 字
             </time>
         </div>
         
@@ -1649,7 +1649,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>上面这段代码在MSVC编辑器运行的结果为12，而在Linux系统gcc编译器运行的结果为10</p></blockquote>
+<p>上面这段代码在MSVC编译器运行的结果为12，而在Linux系统gcc编译器运行的结果为10</p></blockquote>
 <ul>
 <li>
 <p><strong>&laquo;=</strong> 左移并赋值运算符</p>
@@ -1670,7 +1670,7 @@
 <h3 id="位运算符">位运算符
 </h3><ul>
 <li>
-<p><strong>&amp;</strong> 按位与运算符:按二进制位，如果相同为 1，不同为 0</p>
+<p><strong>&amp;</strong> 按位与运算符:按二进制位，当两个数的对应二进制都为 1 则为 1，反之都是 0</p>
 </li>
 <li>
 <p><strong>|</strong> 按位或运算符:按二进制位，如果有 1 则为 1，如果没有 1 则为 0</p>
@@ -4290,9 +4290,9 @@
 </h3><p>ANSIC 标准采用 “缓冲文件系统 &ldquo;处理的数据文件的，所谓缓冲文件系统是指系统自动地在内中为程序中每一个正在使用的文件开辟一块&rdquo; 文件缓冲区”。从内存向磁盘输出数据会先送到内存中的缓冲区，装满缓冲区后才一起送到磁盘上。如果从磁盘向计算机读入数据，则从磁盘文件中读取数据输入到内存缓冲区 (充满缓冲区)，然后再从缓冲区逐个地将数据送到程序数据区 (程序变量等)。缓冲区的大小根据 C 编译系统决定的</p>
 <hr>
 <h2 id="程序环境和预处理">程序环境和预处理
-</h2><p>一个 C 程序会通过编译器经过预编译、编译、汇编、链接后才会在运行环境中运行</p>
+</h2><p>一个 C 程序会通过编译器经过预编译(预处理)、编译、汇编、链接后才会在运行环境中运行</p>
 <h3 id="预处理">预处理
-</h3><p>在预处理阶段，编译器会进行如下步骤</p>
+</h3><p>在预处理阶段，编译器会进行如下步骤(都是些文本操作)</p>
 <ol>
 <li>
 <p>完成头文件的包含 <code>#include</code></p>
@@ -4421,7 +4421,7 @@
       <tr>
           <td style="text-align: center">参数类型</td>
           <td style="text-align: center">宏的参数于类型无关，只要对参数的操作是合法的，它就可以适用于任何参数类型</td>
-          <td style="text-align: center">函数的参数是与类型有关的，如果参数的类型不通，就需要不同的函数，即使他们执行的任务是不同的 <del>C++:函数模板了解一下不？</del></td>
+          <td style="text-align: center">函数的参数是与类型有关的，如果参数的类型不通，就需要不同的函数，即使他们执行的任务是不同的</td>
       </tr>
       <tr>
           <td style="text-align: center">调试</td>
@@ -4436,7 +4436,8 @@
   </tbody>
 </table></div>
 <blockquote>
-<p><code>#define</code> 所定义的宏会在预编译的时候被替换掉</p></blockquote>
+<p><code>#define</code> 所定义的宏会在预编译的时候被替换掉</p>
+<p>在运算比较少的情况下可以使用宏，若需要大量逻辑运算首选函数</p></blockquote>
 <h4 id="命名约定">命名约定
 </h4><p>把宏的名称全部大写，函数名的首字母大写</p>
 <h4 id="undef-取消定义">#undef 取消定义
@@ -4778,7 +4779,7 @@
         
         
         发表了9篇文章 ·
-        总计52.05k字
+        总计52.09k字
     </section>
 
 
