@@ -7,7 +7,333 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>By Candy</copyright>
-        <lastBuildDate>Fri, 05 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.candquarzy.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.candquarzy.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Minecraft BE Addons 开发文档(更新中)</title>
+        <link>https://blog.candquarzy.top/p/minecraft-be-addons-%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3%E6%9B%B4%E6%96%B0%E4%B8%AD/</link>
+        <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.candquarzy.top/p/minecraft-be-addons-%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3%E6%9B%B4%E6%96%B0%E4%B8%AD/</guid>
+        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/minecraft.webp" alt="Featured image of post Minecraft BE Addons 开发文档(更新中)" /&gt;&lt;h2 id=&#34;配置-vsc-开发环境&#34;&gt;配置 VSC 开发环境
+&lt;/h2&gt;&lt;h3 id=&#34;游戏加载包路径&#34;&gt;游戏加载包路径
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;以 windows 系统为例，游戏加载的包在 &lt;code&gt;%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang&lt;/code&gt; 路径下。&lt;/p&gt;
+&lt;p&gt;其中在这个路径下的 &lt;code&gt;development_resource_packs&lt;/code&gt; 和  &lt;code&gt;development_behavior_packs&lt;/code&gt;  中的文件夹在每次重启存档的时候都会重新加载&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;使用-visual-studio-code-和-npm&#34;&gt;使用 Visual Studio Code 和 npm
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Visual Studio Code&lt;/strong&gt; 简称VSC，是一个代码编辑器，并且推荐安装 &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Blockception&amp;rsquo;s Minecraft Bedrock Development&lt;/a&gt; 扩展&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;npm&lt;/strong&gt; 为 node.js 工具，NPM为软件包管理器，可以在 &lt;a class=&#34;link&#34; href=&#34;https://nodejs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://nodejs.org/&lt;/a&gt; 处下载安装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;使用-vsc-和-npm-开发&#34;&gt;使用 VSC 和 npm 开发
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;前往这个网站下载模板包 &lt;a class=&#34;link&#34; href=&#34;https://mctools.dev/#actions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Minecraft Creator Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;解压缩此安装包到当前路径下&lt;/li&gt;
+&lt;li&gt;在当前路径运行 powershell 等命令行终端工具&lt;/li&gt;
+&lt;li&gt;运行 &lt;code&gt;npm i&lt;/code&gt; 来安装所需要的节点工具和库&lt;/li&gt;
+&lt;li&gt;然后可以使用 &lt;code&gt;code .&lt;/code&gt; 来快捷打开VSC&lt;/li&gt;
+&lt;li&gt;可以使用 &lt;code&gt;npm run local-deploy&lt;/code&gt; 快速将写好的文件转移到游戏开发目录下&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;npm-其他命令&#34;&gt;npm 其他命令
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;扫描代码错误可以使用 &lt;code&gt;npx just-scripts lint&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;自动修复错误 &lt;code&gt;npx just-scripts lint --fix&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;生成 .mcaddon 文件 &lt;code&gt;npx just-scripts mcaddon&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更多开发说明 &lt;code&gt;[Minecraft 开发者工具 |Microsoft 学习](https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/developer-tools?view=minecraft-bedrock-stable)&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;方块&#34;&gt;方块
+&lt;/h2&gt;&lt;h3 id=&#34;description&#34;&gt;&lt;code&gt;description&lt;/code&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;identifier&#34;&gt;&lt;code&gt;&amp;quot;identifier&amp;quot;&lt;/code&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;用于定义方块的标识符， &lt;code&gt;:&lt;/code&gt; 前面为命名空间，不能为 minecraft ; 后半为方块名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;menu_category&#34;&gt;&lt;code&gt;&amp;quot;menu_category&amp;quot;&lt;/code&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;components&#34;&gt;&lt;code&gt;components&lt;/code&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;minecraftbreathability-透气性&#34;&gt;&lt;code&gt;&amp;quot;minecraft:breathability&amp;quot;&lt;/code&gt; 透气性
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 String
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;solid&lt;/code&gt; 不可呼吸&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;air&lt;/code&gt; 可呼吸&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;设定方块是否可以呼吸，如果省略默认为不可呼吸&lt;/p&gt;
+&lt;h3 id=&#34;minecraftcrafting_table-将方块变为合成台&#34;&gt;&lt;code&gt;&amp;quot;minecraft:crafting_table&amp;quot;&lt;/code&gt; 将方块变为合成台
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;crafting_tags&lt;/code&gt; ？&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;table_name&lt;/code&gt; 映射？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;此组件仅支持 recipe_shaped 和 recipe_shapeless 类型的配方，而不支持 recipe_furnace 或 recipe_brewing_mix 等其他配方&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;minecraftgeometry-方块模型&#34;&gt;&lt;code&gt;&amp;quot;minecraft:geometry&amp;quot;&lt;/code&gt; 方块模型
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 String&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;minecraft:geometry.full_block&amp;quot;&lt;/code&gt; 默认的完全方块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;minecraft:geometry.cross&amp;quot;&lt;/code&gt; 交叉方块？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Object&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bone_visibilty&lt;/code&gt; object，包含列表。用于指定模型文件中的骨骼/块是否可见&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;culling&lt;/code&gt; String，渲染方块时候要使用的 &lt;code&gt;block_culling.json&lt;/code&gt; 文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;culliing_layer&lt;/code&gt; String，？&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;identifier&lt;/code&gt; String，模型标识符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uv_lock&lt;/code&gt; Boolean / String Array，？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;minecraftitem_visual-&#34;&gt;&lt;code&gt;&amp;quot;minecraft:item_visual&amp;quot;&lt;/code&gt; ？
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Objcet
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;geometry&lt;/code&gt; ？&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;material_instances&lt;/code&gt; ？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;minecraftflammable-可燃性&#34;&gt;&lt;code&gt;&amp;quot;minecraft:flammable&amp;quot;&lt;/code&gt; 可燃性
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Boolean&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;true&lt;/code&gt; 使用默认值，可燃&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;false&lt;/code&gt; 方块不可燃&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Object&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;catch_chance_modifier&lt;/code&gt; Integer，默认值为5 影响该方块在岩浆等附近着火的概率。越大月容易着火&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;destroy_chance_modifier&lt;/code&gt; Integer，默认为20 影响该方块在着火时被火焰摧毁的概率。越大越容易被火烧毁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若省略此组件，则火焰无法从附近方块传导，但是可以直接被点燃&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;minecraftfriction-摩擦力&#34;&gt;&lt;code&gt;&amp;quot;minecraft:friction&amp;quot;&lt;/code&gt; 摩擦力
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 十进制 默认值为0.4，可设定范围(0.0, 0.9)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;影响实体在方块上的移动速度，值越大，摩擦力越大&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;minecraftdisplay_name-显示名&#34;&gt;&lt;code&gt;&amp;quot;minecraft:display_name&amp;quot;&lt;/code&gt; 显示名
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 String&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;方块的显示名称，即方块的默认名&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;minecraftdestructible_by_explosion-抗暴性&#34;&gt;&lt;code&gt;&amp;quot;minecraft:destructible_by_explosion&amp;quot;&lt;/code&gt; 抗暴性
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Boolean / Object
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;explosin_resistance&lt;/code&gt; 十进制数字，默认值为0 (该值越大抗暴能力越强)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;minecraftcollision_box-碰撞箱&#34;&gt;&lt;code&gt;&amp;quot;minecraft:collision_box&amp;quot;&lt;/code&gt; 碰撞箱
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Boolean&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;true&lt;/code&gt; 可碰撞&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;false&lt;/code&gt; 不可碰撞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Object&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;origin&lt;/code&gt; 类型为 Vector[a, b, c] 默认值为 [-8.0, 0,0, -8.0]&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;size&lt;/code&gt; 类型为 Vector[a, b, c] 默认值为 [16.0, 16,0, 16.0]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;关于 &lt;code&gt;origin&lt;/code&gt; 和 &lt;code&gt;size&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Minimal position of the bounds of the collision box. “origin” is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.&lt;/li&gt;
+&lt;li&gt;Size of each side of the collision box. Size is specified as [x, y, z]. “origin” + “size” must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;minecraftselection_box-选中箱&#34;&gt;&lt;code&gt;&amp;quot;minecraft:selection_box&amp;quot;&lt;/code&gt; 选中箱
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Boolean&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;true&lt;/code&gt; 可碰撞&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;false&lt;/code&gt; 不可碰撞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;值类型Object&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;minecraftmap_color-地图渲染色&#34;&gt;&lt;code&gt;&amp;quot;minecraft:map_color&amp;quot;&lt;/code&gt; 地图渲染色
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;color&lt;/code&gt; 以 &lt;code&gt;#RRGGBB&lt;/code&gt; 格式的十六进制值或者是 (0, 255) 的 [R, G, B] 数组&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tint_method&lt;/code&gt; 可选值，色调乘以颜色&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;若省略该组件，则该方块将不会显示在地图上&lt;/li&gt;
+&lt;li&gt;关于 &lt;code&gt;tint_method&lt;/code&gt; often refers to the &amp;ldquo;rain&amp;rdquo; and &amp;ldquo;temperature&amp;rdquo; of the biome the block is placed in to compute the tint. Supported tint methods are &amp;ldquo;none&amp;rdquo;, &amp;ldquo;default_foliage&amp;rdquo;, &amp;ldquo;birch_foliage&amp;rdquo;, &amp;ldquo;evergreen_foliage&amp;rdquo;, &amp;ldquo;dry_foliage&amp;rdquo;, &amp;ldquo;grass&amp;rdquo; and &amp;ldquo;water&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;minecraftlight_dampening-透光性&#34;&gt;&lt;code&gt;&amp;quot;minecraft:light_dampening&amp;quot;&lt;/code&gt; 透光性
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Integer 默认值 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用于表示光线穿过方块时候的阻尼。值越大透光性越弱&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;minecraftlight_emission-亮度&#34;&gt;&lt;code&gt;&amp;quot;minecraft:light_emission&amp;quot;&lt;/code&gt; 亮度
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Integer 默认值 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;方块所发出的亮度，范围 (0, 15)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;minecraftmaterial_instances-材质渲染&#34;&gt;&lt;code&gt;&amp;quot;minecraft:material_instances&amp;quot;&lt;/code&gt; 材质渲染
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以通过材质实例对象分配给以下任何面:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;quot;up&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;down&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;north&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;south&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;east&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;west&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;*&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;*&amp;rdquo; 为方块所有面&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;材质实例&#34;&gt;材质实例
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;ambient_occlusion&amp;quot;&lt;/code&gt; 是否启用环境光遮挡。若为&lt;code&gt;true&lt;/code&gt;则在方块周围和旁边创建阴影。也可以使用浮点数来控制&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;face_dimming&lt;/code&gt; Should this material be dimmed by the direction it&amp;rsquo;s facing? 布尔值&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;isotropic&lt;/code&gt; 是否需要随机化UV？&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;render_method&lt;/code&gt; 值类型 String
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;opaque&amp;quot;&lt;/code&gt; 默认值，不允许透明度以及半透明&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;double_sided&amp;quot;&lt;/code&gt; 完全禁用背面删除？&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;blend&amp;quot;&lt;/code&gt; 用于彩色玻璃方块等，允许透明度和半透明&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;alpha_test&amp;quot;&lt;/code&gt;用于向原版玻璃这样的方块。不允许半透明，仅允许完全不透明或者完全透明的纹理。还会禁用背面删除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;texture&lt;/code&gt; 材质名称，在资源包 &lt;code&gt;texture/terrain_texture.json&lt;/code&gt; 中定义&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tint_method&lt;/code&gt; 方块色调&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;方块色调有&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;none&amp;rdquo;, &amp;ldquo;default_foliage&amp;rdquo;, &amp;ldquo;birch_foliage&amp;rdquo;, &amp;ldquo;evergreen_foliage&amp;rdquo;, &amp;ldquo;dry_foliage&amp;rdquo;, &amp;ldquo;grass&amp;rdquo; and &amp;ldquo;water&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;默认值 none&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;minecraftliquid_detection-检测液体&#34;&gt;&lt;code&gt;&amp;quot;minecraft:liquid_detection&amp;quot;&lt;/code&gt; 检测液体
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;can_contain_liquid&lt;/code&gt; 检测方块是否可以含有液体。默认值 &lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;liquid_type&lt;/code&gt; 可以含液体的类型，默认为 &lt;code&gt;water&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;on_liquid_touches&lt;/code&gt; 方块对流水的反应
+&lt;ul&gt;
+&lt;li&gt;​	&lt;code&gt;blocking&lt;/code&gt; 默认值，会阻止液体流动
+&lt;ul&gt;
+&lt;li&gt;​	&lt;code&gt;broken&lt;/code&gt; 方块会被液体摧毁
+&lt;ul&gt;
+&lt;li&gt;​	&lt;code&gt;popped&lt;/code&gt; 方块被摧毁并生成其物品状态
+&lt;ul&gt;
+&lt;li&gt;​	&lt;code&gt;no_reaction&lt;/code&gt; 方块不受影响(液体穿过方块)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stops_liquid_folowing_from_direction&lt;/code&gt; 当方块含有液体时控制液体不能从哪个方向流出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;if &lt;code&gt;no_reaction&lt;/code&gt; is set for the &lt;code&gt;on_liquid_touches&lt;/code&gt; field. Can be a list of the following directions: &lt;code&gt;&amp;quot;up&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;down&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;north&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;south&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;east&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;west&amp;quot;&lt;/code&gt;. The default is an empty list; this means that liquid can flow out of all directions by default.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;minecraftloot-战利品掉落&#34;&gt;&lt;code&gt;&amp;quot;minecraft:loot&amp;quot;&lt;/code&gt; 战利品/掉落
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Path_String&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;战利品定义文件相对于行为包的路径&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;minecraftdestructible_by_mining-挖掘速度&#34;&gt;&lt;code&gt;&amp;quot;minecraft:destructible_by_mining&amp;quot;&lt;/code&gt; 挖掘速度
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Boolean&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;true&lt;/code&gt; 花费默认时间可以摧毁&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;false&lt;/code&gt; 不可摧毁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Object&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;item_specific_speeds&lt;/code&gt; 用于描述特定工具等针对该方块摧毁速度的项目组 类型为 Array
+&lt;ul&gt;
+&lt;li&gt;​	&lt;code&gt;destroy_speed&lt;/code&gt; 必填，使用对应工具等对方块的破坏速度&lt;/li&gt;
+&lt;li&gt;​	&lt;code&gt;item&lt;/code&gt; 必填，针对项目的筛选&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seconds_to_destory&lt;/code&gt; 十进制数字，默认为0 数值越高挖掘时间越长&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;minecraftdestruction_particles-破坏粒子&#34;&gt;&lt;code&gt;&amp;quot;minecraft:destruction_particles&amp;quot;&lt;/code&gt; 破坏粒子
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;minecraftcustom_components-脚本事件列表&#34;&gt;&lt;code&gt;&amp;quot;minecraft:custom_components&amp;quot;&lt;/code&gt; 脚本事件列表
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Array&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;物品&#34;&gt;物品
+&lt;/h2&gt;&lt;h2 id=&#34;配方&#34;&gt;配方
+&lt;/h2&gt;&lt;h2 id=&#34;战利品&#34;&gt;战利品
+&lt;/h2&gt;&lt;h2 id=&#34;生态系&#34;&gt;生态系
+&lt;/h2&gt;&lt;h3 id=&#34;description-1&#34;&gt;&lt;code&gt;description&lt;/code&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;identifier-1&#34;&gt;&lt;code&gt;&amp;quot;identifier&amp;quot;&lt;/code&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;用于定义方块的标识符， &lt;code&gt;:&lt;/code&gt; 前面为命名空间，不能为 minecraft ; 后半为生态名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;components-1&#34;&gt;&lt;code&gt;components&lt;/code&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;minecraftreplace_biomes-替换生态系&#34;&gt;&lt;code&gt;&amp;quot;minecraft:replace_biomes&amp;quot;&lt;/code&gt; 替换生态系
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;minecraftclimate-气候&#34;&gt;&lt;code&gt;&amp;quot;minecraft:climate&amp;quot;&lt;/code&gt; 气候
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;minecraftoverworld_generation_rules-实例化&#34;&gt;&lt;code&gt;&amp;quot;minecraft:overworld_generation_rules&amp;quot;&lt;/code&gt; 实例化
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;minecraftoverworld_height-地形高度噪点参数&#34;&gt;&lt;code&gt;&amp;quot;minecraft:overworld_height&amp;quot;&lt;/code&gt; 地形高度噪点参数
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;minecraftsurface_builder-地形材质&#34;&gt;&lt;code&gt;&amp;quot;minecraft:surface_builder&amp;quot;&lt;/code&gt; 地形材质
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;minecrafttags-标签&#34;&gt;&lt;code&gt;&amp;quot;minecraft:tags&amp;quot;&lt;/code&gt; 标签
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;地物&#34;&gt;地物
+&lt;/h2&gt;&lt;h2 id=&#34;特征&#34;&gt;特征
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>高等数学 (更新中)</title>
         <link>https://blog.candquarzy.top/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/</link>
         <pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate>

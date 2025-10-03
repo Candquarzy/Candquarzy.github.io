@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="C语言学习笔记总结喵！不保证内容100%无误哦！">
+<title>Minecraft BE Addons开发记录</title>
+
+<link rel='canonical' href='http://localhost:1313/p/minecraft-be-addons%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/'>
+
+<script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.7/dist/autoload.js"></script>
+
+<link rel="stylesheet" href="/scss/style.min.d189c50acff7a397a4117a4e786c695bfda5d371c93229e0cc8e059ec7769ebd.css"><meta property='og:title' content="Minecraft BE Addons开发记录">
+<meta property='og:description' content="C语言学习笔记总结喵！不保证内容100%无误哦！">
+<meta property='og:url' content='http://localhost:1313/p/minecraft-be-addons%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/'>
+<meta property='og:site_name' content='糖果罐🍥 - Candy的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='windows' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='计算机' /><meta property='article:tag' content='C语言' /><meta property='article:published_time' content='2025-09-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-30T00:00:00&#43;00:00'/><meta property='og:image' content='https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/minecraft.webp' />
+<meta name="twitter:title" content="Minecraft BE Addons开发记录">
+<meta name="twitter:description" content="C语言学习笔记总结喵！不保证内容100%无误哦！"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/minecraft.webp' />
+    <link rel="shortcut icon" href="https://www.emojiall.com/en/header-svg/%F0%9F%8D%A5.svg" />
+
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_c6aef3d413c27a14.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">糖果罐🍥 - Candy的博客</a></h1>
+            <h2 class="site-description">这是什么? Candy? 可以吃吗?</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Candquarzy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:CandyQuartz_qwq@outlook.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/Candquarzy_QwQ'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#配置-vsc-开发环境">配置 VSC 开发环境</a>
+      <ol>
+        <li><a href="#游戏加载包路径">游戏加载包路径</a></li>
+        <li><a href="#使用-visual-studio-code-和-npm">使用 Visual Studio Code 和 npm</a></li>
+        <li><a href="#使用-vsc-和-npm-开发">使用 VSC 和 npm 开发</a></li>
+        <li><a href="#npm-其他命令">npm 其他命令</a></li>
+      </ol>
+    </li>
+    <li><a href="#方块">方块</a>
+      <ol>
+        <li><a href="#description"><code>description</code></a>
+          <ol>
+            <li><a href="#identifier"><code>&#34;identifier&#34;</code></a></li>
+            <li><a href="#menu_category"><code>&#34;menu_category&#34;</code></a></li>
+          </ol>
+        </li>
+        <li><a href="#components"><code>components</code></a>
+          <ol>
+            <li><a href="#minecraftbreathability-透气性"><code>&#34;minecraft:breathability&#34;</code> 透气性</a></li>
+          </ol>
+        </li>
+        <li><a href="#minecraftcrafting_table-将方块变为合成台"><code>&#34;minecraft:crafting_table&#34;</code> 将方块变为合成台</a>
+          <ol>
+            <li><a href="#minecraftgeometry-方块模型"><code>&#34;minecraft:geometry&#34;</code> 方块模型</a></li>
+          </ol>
+        </li>
+        <li><a href="#minecraftitem_visual-"><code>&#34;minecraft:item_visual&#34;</code> ？</a>
+          <ol>
+            <li><a href="#minecraftflammable-可燃性"><code>&#34;minecraft:flammable&#34;</code> 可燃性</a></li>
+          </ol>
+        </li>
+        <li><a href="#minecraftfriction-摩擦力"><code>&#34;minecraft:friction&#34;</code> 摩擦力</a></li>
+        <li><a href="#minecraftdisplay_name-显示名"><code>&#34;minecraft:display_name&#34;</code> 显示名</a>
+          <ol>
+            <li><a href="#minecraftdestructible_by_explosion-抗暴性"><code>&#34;minecraft:destructible_by_explosion&#34;</code> 抗暴性</a></li>
+            <li><a href="#minecraftcollision_box-碰撞箱"><code>&#34;minecraft:collision_box&#34;</code> 碰撞箱</a></li>
+            <li><a href="#minecraftselection_box-选中箱"><code>&#34;minecraft:selection_box&#34;</code> 选中箱</a></li>
+            <li><a href="#minecraftmap_color-地图渲染色"><code>&#34;minecraft:map_color&#34;</code> 地图渲染色</a></li>
+            <li><a href="#minecraftlight_dampening-透光性"><code>&#34;minecraft:light_dampening&#34;</code> 透光性</a></li>
+          </ol>
+        </li>
+        <li><a href="#minecraftlight_emission-亮度"><code>&#34;minecraft:light_emission&#34;</code> 亮度</a>
+          <ol>
+            <li><a href="#minecraftmaterial_instances-材质渲染"><code>&#34;minecraft:material_instances&#34;</code> 材质渲染</a></li>
+            <li><a href="#材质实例">材质实例</a></li>
+          </ol>
+        </li>
+        <li><a href="#minecraftliquid_detection-检测液体"><code>&#34;minecraft:liquid_detection&#34;</code> 检测液体</a></li>
+        <li><a href="#minecraftloot-战利品掉落"><code>&#34;minecraft:loot&#34;</code> 战利品/掉落</a>
+          <ol>
+            <li><a href="#minecraftdestructible_by_mining-挖掘速度"><code>&#34;minecraft:destructible_by_mining&#34;</code> 挖掘速度</a></li>
+          </ol>
+        </li>
+        <li><a href="#minecraftdestruction_particles-破坏粒子"><code>&#34;minecraft:destruction_particles&#34;</code> 破坏粒子</a></li>
+        <li><a href="#minecraftcustom_components-脚本事件列表"><code>&#34;minecraft:custom_components&#34;</code> 脚本事件列表</a></li>
+      </ol>
+    </li>
+    <li><a href="#物品">物品</a></li>
+    <li><a href="#配方">配方</a></li>
+    <li><a href="#战利品">战利品</a></li>
+    <li><a href="#生态系">生态系</a>
+      <ol>
+        <li><a href="#description-1"><code>description</code></a>
+          <ol>
+            <li><a href="#identifier-1"><code>&#34;identifier&#34;</code></a></li>
+          </ol>
+        </li>
+        <li><a href="#components-1"><code>components</code></a>
+          <ol>
+            <li><a href="#minecraftreplace_biomes-替换生态系"><code>&#34;minecraft:replace_biomes&#34;</code> 替换生态系</a></li>
+            <li><a href="#minecraftclimate-气候"><code>&#34;minecraft:climate&#34;</code> 气候</a></li>
+            <li><a href="#minecraftoverworld_generation_rules-实例化"><code>&#34;minecraft:overworld_generation_rules&#34;</code> 实例化</a></li>
+            <li><a href="#minecraftoverworld_height-地形高度噪点参数"><code>&#34;minecraft:overworld_height&#34;</code> 地形高度噪点参数</a></li>
+            <li><a href="#minecraftsurface_builder-地形材质"><code>&#34;minecraft:surface_builder&#34;</code> 地形材质</a></li>
+            <li><a href="#minecrafttags-标签"><code>&#34;minecraft:tags&#34;</code> 标签</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#地物">地物</a></li>
+    <li><a href="#特征">特征</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/minecraft-be-addons%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/minecraft.webp" loading="lazy" alt="Featured image of post Minecraft BE Addons开发记录" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%95%99%E7%A8%8B/" style="background-color: #2a9d8f; color: #fff;">
+                教程
+            </a>
+        
+            <a href="/categories/%E7%BC%96%E7%A8%8B/" style="background-color: #2a9d8f; color: #fff;">
+                编程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/minecraft-be-addons%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/">Minecraft BE Addons开发记录</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            C语言学习笔记总结喵！不保证内容100%无误哦！
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-09-30</time>
+            </div>
+        
+
+    
+
+        
+        <div>
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
+            <time class="article-time--reading">
+                1905 字
+            </time>
+        </div>
+        
+
+    
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="配置-vsc-开发环境">配置 VSC 开发环境
+</h2><h3 id="游戏加载包路径">游戏加载包路径
+</h3><blockquote>
+<p>以 windows 系统为例，游戏加载的包在 <code>%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang</code> 路径下。</p>
+<p>其中在这个路径下的 <code>development_resource_packs</code> 和  <code>development_behavior_packs</code>  中的文件夹在每次重启存档的时候都会重新加载</p></blockquote>
+<h3 id="使用-visual-studio-code-和-npm">使用 Visual Studio Code 和 npm
+</h3><ul>
+<li><strong>Visual Studio Code</strong> 简称VSC，是一个代码编辑器，并且推荐安装 <a class="link" href="https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension"  target="_blank" rel="noopener"
+    >Blockception&rsquo;s Minecraft Bedrock Development</a> 扩展</li>
+<li><strong>npm</strong> 为 node.js 工具，NPM为软件包管理器，可以在 <a class="link" href="https://nodejs.org/"  target="_blank" rel="noopener"
+    >https://nodejs.org/</a> 处下载安装</li>
+</ul>
+<h3 id="使用-vsc-和-npm-开发">使用 VSC 和 npm 开发
+</h3><ol>
+<li>前往这个网站下载模板包 <a class="link" href="https://mctools.dev/#actions"  target="_blank" rel="noopener"
+    >Minecraft Creator Tools</a></li>
+<li>解压缩此安装包到当前路径下</li>
+<li>在当前路径运行 powershell 等命令行终端工具</li>
+<li>运行 <code>npm i</code> 来安装所需要的节点工具和库</li>
+<li>然后可以使用 <code>code .</code> 来快捷打开VSC</li>
+<li>可以使用 <code>npm run local-deploy</code> 快速将写好的文件转移到游戏开发目录下</li>
+</ol>
+<h3 id="npm-其他命令">npm 其他命令
+</h3><ul>
+<li>扫描代码错误可以使用 <code>npx just-scripts lint</code></li>
+<li>自动修复错误 <code>npx just-scripts lint --fix</code></li>
+<li>生成 .mcaddon 文件 <code>npx just-scripts mcaddon</code></li>
+</ul>
+<blockquote>
+<p>更多开发说明 <code>[Minecraft 开发者工具 |Microsoft 学习](https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/developer-tools?view=minecraft-bedrock-stable)</code></p></blockquote>
+<h2 id="方块">方块
+</h2><h3 id="description"><code>description</code>
+</h3><h4 id="identifier"><code>&quot;identifier&quot;</code>
+</h4><ul>
+<li>用于定义方块的标识符， <code>:</code> 前面为命名空间，不能为 minecraft ; 后半为方块名</li>
+</ul>
+<h4 id="menu_category"><code>&quot;menu_category&quot;</code>
+</h4><h3 id="components"><code>components</code>
+</h3><h4 id="minecraftbreathability-透气性"><code>&quot;minecraft:breathability&quot;</code> 透气性
+</h4><ul>
+<li>值类型 String
+<ul>
+<li><code>solid</code> 不可呼吸</li>
+<li><code>air</code> 可呼吸</li>
+</ul>
+</li>
+</ul>
+<p>设定方块是否可以呼吸，如果省略默认为不可呼吸</p>
+<h3 id="minecraftcrafting_table-将方块变为合成台"><code>&quot;minecraft:crafting_table&quot;</code> 将方块变为合成台
+</h3><ul>
+<li>值类型 Object
+<ul>
+<li><code>crafting_tags</code> ？</li>
+<li><code>table_name</code> 映射？</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>此组件仅支持 recipe_shaped 和 recipe_shapeless 类型的配方，而不支持 recipe_furnace 或 recipe_brewing_mix 等其他配方</p></blockquote>
+<h4 id="minecraftgeometry-方块模型"><code>&quot;minecraft:geometry&quot;</code> 方块模型
+</h4><ul>
+<li>
+<p>值类型 String</p>
+<ul>
+<li><code>&quot;minecraft:geometry.full_block&quot;</code> 默认的完全方块</li>
+<li><code>&quot;minecraft:geometry.cross&quot;</code> 交叉方块？</li>
+</ul>
+</li>
+<li>
+<p>值类型 Object</p>
+<ul>
+<li><code>bone_visibilty</code> object，包含列表。用于指定模型文件中的骨骼/块是否可见</li>
+<li><code>culling</code> String，渲染方块时候要使用的 <code>block_culling.json</code> 文件</li>
+<li><code>culliing_layer</code> String，？</li>
+<li><code>identifier</code> String，模型标识符</li>
+<li><code>uv_lock</code> Boolean / String Array，？</li>
+</ul>
+</li>
+</ul>
+<h3 id="minecraftitem_visual-"><code>&quot;minecraft:item_visual&quot;</code> ？
+</h3><ul>
+<li>值类型 Objcet
+<ul>
+<li><code>geometry</code> ？</li>
+<li><code>material_instances</code> ？</li>
+</ul>
+</li>
+</ul>
+<h4 id="minecraftflammable-可燃性"><code>&quot;minecraft:flammable&quot;</code> 可燃性
+</h4><ul>
+<li>
+<p>值类型 Boolean</p>
+<ul>
+<li><code>true</code> 使用默认值，可燃</li>
+<li><code>false</code> 方块不可燃</li>
+</ul>
+</li>
+<li>
+<p>值类型 Object</p>
+<ul>
+<li><code>catch_chance_modifier</code> Integer，默认值为5 影响该方块在岩浆等附近着火的概率。越大月容易着火</li>
+<li><code>destroy_chance_modifier</code> Integer，默认为20 影响该方块在着火时被火焰摧毁的概率。越大越容易被火烧毁</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>若省略此组件，则火焰无法从附近方块传导，但是可以直接被点燃</p></blockquote>
+<h3 id="minecraftfriction-摩擦力"><code>&quot;minecraft:friction&quot;</code> 摩擦力
+</h3><ul>
+<li>值类型 十进制 默认值为0.4，可设定范围(0.0, 0.9)</li>
+</ul>
+<blockquote>
+<p>影响实体在方块上的移动速度，值越大，摩擦力越大</p></blockquote>
+<h3 id="minecraftdisplay_name-显示名"><code>&quot;minecraft:display_name&quot;</code> 显示名
+</h3><ul>
+<li>值类型 String</li>
+</ul>
+<blockquote>
+<p>方块的显示名称，即方块的默认名</p></blockquote>
+<h4 id="minecraftdestructible_by_explosion-抗暴性"><code>&quot;minecraft:destructible_by_explosion&quot;</code> 抗暴性
+</h4><ul>
+<li>值类型 Boolean / Object
+<ul>
+<li><code>explosin_resistance</code> 十进制数字，默认值为0 (该值越大抗暴能力越强)</li>
+</ul>
+</li>
+</ul>
+<h4 id="minecraftcollision_box-碰撞箱"><code>&quot;minecraft:collision_box&quot;</code> 碰撞箱
+</h4><ul>
+<li>
+<p>值类型 Boolean</p>
+<ul>
+<li><code>true</code> 可碰撞</li>
+<li><code>false</code> 不可碰撞</li>
+</ul>
+</li>
+<li>
+<p>值类型 Object</p>
+<ul>
+<li><code>origin</code> 类型为 Vector[a, b, c] 默认值为 [-8.0, 0,0, -8.0]</li>
+<li><code>size</code> 类型为 Vector[a, b, c] 默认值为 [16.0, 16,0, 16.0]</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>关于 <code>origin</code> 和 <code>size</code></strong></p>
+<ol>
+<li>Minimal position of the bounds of the collision box. “origin” is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.</li>
+<li>Size of each side of the collision box. Size is specified as [x, y, z]. “origin” + “size” must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.</li>
+</ol></blockquote>
+<h4 id="minecraftselection_box-选中箱"><code>&quot;minecraft:selection_box&quot;</code> 选中箱
+</h4><ul>
+<li>
+<p>值类型 Boolean</p>
+<ul>
+<li><code>true</code> 可碰撞</li>
+<li><code>false</code> 不可碰撞</li>
+</ul>
+</li>
+<li>
+<p>值类型Object</p>
+</li>
+</ul>
+<h4 id="minecraftmap_color-地图渲染色"><code>&quot;minecraft:map_color&quot;</code> 地图渲染色
+</h4><ul>
+<li>值类型 Object
+<ul>
+<li><code>color</code> 以 <code>#RRGGBB</code> 格式的十六进制值或者是 (0, 255) 的 [R, G, B] 数组</li>
+<li><code>tint_method</code> 可选值，色调乘以颜色</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>若省略该组件，则该方块将不会显示在地图上</li>
+<li>关于 <code>tint_method</code> often refers to the &ldquo;rain&rdquo; and &ldquo;temperature&rdquo; of the biome the block is placed in to compute the tint. Supported tint methods are &ldquo;none&rdquo;, &ldquo;default_foliage&rdquo;, &ldquo;birch_foliage&rdquo;, &ldquo;evergreen_foliage&rdquo;, &ldquo;dry_foliage&rdquo;, &ldquo;grass&rdquo; and &ldquo;water&rdquo;</li>
+</ul></blockquote>
+<h4 id="minecraftlight_dampening-透光性"><code>&quot;minecraft:light_dampening&quot;</code> 透光性
+</h4><ul>
+<li>值类型 Integer 默认值 15</li>
+</ul>
+<blockquote>
+<p>用于表示光线穿过方块时候的阻尼。值越大透光性越弱</p></blockquote>
+<h3 id="minecraftlight_emission-亮度"><code>&quot;minecraft:light_emission&quot;</code> 亮度
+</h3><ul>
+<li>值类型 Integer 默认值 0</li>
+</ul>
+<blockquote>
+<p>方块所发出的亮度，范围 (0, 15)</p></blockquote>
+<h4 id="minecraftmaterial_instances-材质渲染"><code>&quot;minecraft:material_instances&quot;</code> 材质渲染
+</h4><ul>
+<li>值类型 Object</li>
+</ul>
+<blockquote>
+<p>可以通过材质实例对象分配给以下任何面:</p>
+<p><code>&quot;up&quot;</code>, <code>&quot;down&quot;</code>, <code>&quot;north&quot;</code>, <code>&quot;south&quot;</code>, <code>&quot;east&quot;</code>, <code>&quot;west&quot;</code>, <code>&quot;*&quot;</code></p>
+<p>&ldquo;*&rdquo; 为方块所有面</p></blockquote>
+<h4 id="材质实例">材质实例
+</h4><ul>
+<li><code>&quot;ambient_occlusion&quot;</code> 是否启用环境光遮挡。若为<code>true</code>则在方块周围和旁边创建阴影。也可以使用浮点数来控制</li>
+<li><code>face_dimming</code> Should this material be dimmed by the direction it&rsquo;s facing? 布尔值</li>
+<li><code>isotropic</code> 是否需要随机化UV？</li>
+<li><code>render_method</code> 值类型 String
+<ul>
+<li><code>&quot;opaque&quot;</code> 默认值，不允许透明度以及半透明</li>
+<li><code>&quot;double_sided&quot;</code> 完全禁用背面删除？</li>
+<li><code>&quot;blend&quot;</code> 用于彩色玻璃方块等，允许透明度和半透明</li>
+<li><code>&quot;alpha_test&quot;</code>用于向原版玻璃这样的方块。不允许半透明，仅允许完全不透明或者完全透明的纹理。还会禁用背面删除</li>
+</ul>
+</li>
+<li><code>texture</code> 材质名称，在资源包 <code>texture/terrain_texture.json</code> 中定义</li>
+<li><code>tint_method</code> 方块色调</li>
+</ul>
+<blockquote>
+<p>方块色调有</p>
+<p>&ldquo;none&rdquo;, &ldquo;default_foliage&rdquo;, &ldquo;birch_foliage&rdquo;, &ldquo;evergreen_foliage&rdquo;, &ldquo;dry_foliage&rdquo;, &ldquo;grass&rdquo; and &ldquo;water&rdquo;</p>
+<p>默认值 none</p></blockquote>
+<h3 id="minecraftliquid_detection-检测液体"><code>&quot;minecraft:liquid_detection&quot;</code> 检测液体
+</h3><ul>
+<li>值类型 Object
+<ul>
+<li><code>can_contain_liquid</code> 检测方块是否可以含有液体。默认值 <code>false</code></li>
+<li><code>liquid_type</code> 可以含液体的类型，默认为 <code>water</code></li>
+<li><code>on_liquid_touches</code> 方块对流水的反应
+<ul>
+<li>​	<code>blocking</code> 默认值，会阻止液体流动
+<ul>
+<li>​	<code>broken</code> 方块会被液体摧毁
+<ul>
+<li>​	<code>popped</code> 方块被摧毁并生成其物品状态
+<ul>
+<li>​	<code>no_reaction</code> 方块不受影响(液体穿过方块)</li>
+<li><code>stops_liquid_folowing_from_direction</code> 当方块含有液体时控制液体不能从哪个方向流出</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>if <code>no_reaction</code> is set for the <code>on_liquid_touches</code> field. Can be a list of the following directions: <code>&quot;up&quot;</code>, <code>&quot;down&quot;</code>, <code>&quot;north&quot;</code>, <code>&quot;south&quot;</code>, <code>&quot;east&quot;</code>, <code>&quot;west&quot;</code>. The default is an empty list; this means that liquid can flow out of all directions by default.</p></blockquote>
+<h3 id="minecraftloot-战利品掉落"><code>&quot;minecraft:loot&quot;</code> 战利品/掉落
+</h3><ul>
+<li>值类型 Path_String</li>
+</ul>
+<blockquote>
+<p>战利品定义文件相对于行为包的路径</p></blockquote>
+<h4 id="minecraftdestructible_by_mining-挖掘速度"><code>&quot;minecraft:destructible_by_mining&quot;</code> 挖掘速度
+</h4><ul>
+<li>
+<p>值类型 Boolean</p>
+<ul>
+<li><code>true</code> 花费默认时间可以摧毁</li>
+<li><code>false</code> 不可摧毁</li>
+</ul>
+</li>
+<li>
+<p>值类型 Object</p>
+<ul>
+<li><code>item_specific_speeds</code> 用于描述特定工具等针对该方块摧毁速度的项目组 类型为 Array
+<ul>
+<li>​	<code>destroy_speed</code> 必填，使用对应工具等对方块的破坏速度</li>
+<li>​	<code>item</code> 必填，针对项目的筛选</li>
+<li><code>seconds_to_destory</code> 十进制数字，默认为0 数值越高挖掘时间越长</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="minecraftdestruction_particles-破坏粒子"><code>&quot;minecraft:destruction_particles&quot;</code> 破坏粒子
+</h3><ul>
+<li>值类型 Object</li>
+</ul>
+<h3 id="minecraftcustom_components-脚本事件列表"><code>&quot;minecraft:custom_components&quot;</code> 脚本事件列表
+</h3><ul>
+<li>值类型 Array</li>
+</ul>
+<h2 id="物品">物品
+</h2><h2 id="配方">配方
+</h2><h2 id="战利品">战利品
+</h2><h2 id="生态系">生态系
+</h2><h3 id="description-1"><code>description</code>
+</h3><h4 id="identifier-1"><code>&quot;identifier&quot;</code>
+</h4><ul>
+<li>用于定义方块的标识符， <code>:</code> 前面为命名空间，不能为 minecraft ; 后半为生态名</li>
+</ul>
+<h3 id="components-1"><code>components</code>
+</h3><h4 id="minecraftreplace_biomes-替换生态系"><code>&quot;minecraft:replace_biomes&quot;</code> 替换生态系
+</h4><ul>
+<li>值类型 Object</li>
+</ul>
+<h4 id="minecraftclimate-气候"><code>&quot;minecraft:climate&quot;</code> 气候
+</h4><ul>
+<li>值类型 Object</li>
+</ul>
+<h4 id="minecraftoverworld_generation_rules-实例化"><code>&quot;minecraft:overworld_generation_rules&quot;</code> 实例化
+</h4><ul>
+<li>值类型 Object</li>
+</ul>
+<h4 id="minecraftoverworld_height-地形高度噪点参数"><code>&quot;minecraft:overworld_height&quot;</code> 地形高度噪点参数
+</h4><ul>
+<li>值类型 Object</li>
+</ul>
+<h4 id="minecraftsurface_builder-地形材质"><code>&quot;minecraft:surface_builder&quot;</code> 地形材质
+</h4><ul>
+<li>值类型 Object</li>
+</ul>
+<h4 id="minecrafttags-标签"><code>&quot;minecraft:tags&quot;</code> 标签
+</h4><ul>
+<li>值类型 Object</li>
+</ul>
+<h2 id="地物">地物
+</h2><h2 id="特征">特征
+</h2>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/windows/">Windows</a>
+        
+            <a href="/tags/linux/">Linux</a>
+        
+            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+        
+            <a href="/tags/c%E8%AF%AD%E8%A8%80/">C语言</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/c%E8%AF%AD%E8%A8%80%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/111793467_p0.webp" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/111793467_p0.webp"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C语言相关算法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/123274153_p0.webp" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/123274153_p0.webp"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C语言学习记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/jetpack-compose%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/129202495_p0.webp" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/129202495_p0.webp"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Jetpack Compose学习总结</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/css%E6%A0%B7%E5%BC%8F%E6%A0%87%E7%AD%BE%E6%80%BB%E7%BB%93/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/124928964_p0.webp" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/124928964_p0.webp"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CSS样式标签总结</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/html%E6%A0%87%E7%AD%BE%E5%A4%A7%E6%B1%87%E5%90%88/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/126612103_p0.webp" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/126612103_p0.webp"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">HTML标签大汇合！</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/comment.candquarzy.top\/.netlify\/functions\/twikoo',
+        el: '#tcomment',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy;
+        
+        2024 -
+        
+        2025 By Candy
+    </section>
+
+    <section class="powerby">
+        
+        不向焦虑与抑郁投降 这个世界终会有我们存在的地方 <br />
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
+                data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+    
+    <section class="running-time">
+        本博客已稳定运行
+        <span id="runningdays" class="running-days"></span>
+    </section>
+
+    
+    <section class="totalcount">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        发表了10篇文章 ·
+        总计53.96k字
+    </section>
+
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.9ee8db4f92c02be0c17c8800cdd16e8bacc7fb5aa14497af478c00ccae22d210.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script>
+    let s1 = '2025-1-2'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
+<style>
+  @font-face {
+    font-family: '字体名';
+    src: url(http://localhost:1313/font/FiraCode-SemiBold.ttf) format('truetype');
+  }
+
+  :root {
+    --code-font-family: 'Fira Code';
+  }
+</style>
+
+    </body>
+</html>

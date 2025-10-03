@@ -6,7 +6,9 @@
 
 <link rel='canonical' href='http://localhost:1313/p/'>
 
-<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="">
+<script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.7/dist/autoload.js"></script>
+
+<link rel="stylesheet" href="/scss/style.min.d189c50acff7a397a4117a4e786c695bfda5d371c93229e0cc8e059ec7769ebd.css"><meta property='og:title' content="">
 <meta property='og:description' content="">
 <meta property='og:url' content='http://localhost:1313/p/'>
 <meta property='og:site_name' content='糖果罐🍥 - Candy的博客'>
@@ -14,6 +16,8 @@
 <meta name="twitter:title" content="">
 <meta name="twitter:description" content="">
     <link rel="shortcut icon" href="https://www.emojiall.com/en/header-svg/%F0%9F%8D%A5.svg" />
+
+
 
     </head>
     <body class="
@@ -72,7 +76,7 @@
         
         <div class="site-meta">
             <h1 class="site-name"><a href="/">糖果罐🍥 - Candy的博客</a></h1>
-            <h2 class="site-description">这是什么? Candy? 可以吃吗？</h2>
+            <h2 class="site-description">这是什么? Candy? 可以吃吗?</h2>
         </div>
     </header><ol class="menu-social">
             
@@ -277,6 +281,19 @@
     <footer class="article-time">
         
 
+    
+
+        
+        <div>
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
+            <time class="article-time--reading">
+                0 字
+            </time>
+        </div>
+        
+
+    
+
         
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -361,67 +378,113 @@
      
     
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
 <style>
-    .disqus-container {
+    .twikoo {
         background-color: var(--card-background);
         border-radius: var(--card-border-radius);
         box-shadow: var(--shadow-l1);
         padding: var(--card-padding);
     }
-</style>
-
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (typeof DISQUS == 'object') {
-            DISQUS.reset({
-                reload: true
-            });
-        }
-    })
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/comment.candquarzy.top\/.netlify\/functions\/twikoo',
+        el: '#tcomment',})
 </script>
 
     
 
     <footer class="site-footer">
     <section class="copyright">
-        &copy; 
+        &copy;
         
-            2024 - 
+        2024 -
         
         2025 By Candy
     </section>
-    
+
     <section class="powerby">
         
-            不向焦虑与抑郁投降 这个世界终会有我们存在的地方 <br/>
+        不向焦虑与抑郁投降 这个世界终会有我们存在的地方 <br />
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
+                data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
-</footer>
+    
+    <section class="running-time">
+        本博客已稳定运行
+        <span id="runningdays" class="running-days"></span>
+    </section>
 
+    
+    <section class="totalcount">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        发表了10篇文章 ·
+        总计52.06k字
+    </section>
+
+
+</footer>
 
     
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -519,6 +582,31 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<script>
+    let s1 = '2025-1-2'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
+<style>
+  @font-face {
+    font-family: '字体名';
+    src: url(http://localhost:1313/font/FiraCode-SemiBold.ttf) format('truetype');
+  }
+
+  :root {
+    --code-font-family: 'Fira Code';
+  }
+</style>
 
     </body>
 </html>
