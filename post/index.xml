@@ -42,12 +42,13 @@
 &lt;li&gt;生成 .mcaddon 文件 &lt;code&gt;npx just-scripts mcaddon&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;更多开发说明 &lt;code&gt;[Minecraft 开发者工具 |Microsoft 学习](https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/developer-tools?view=minecraft-bedrock-stable)&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;更多开发说明 &lt;a class=&#34;link&#34; href=&#34;https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/developer-tools?view=minecraft-bedrock-stable&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Minecraft 开发者工具 |Microsoft 学习&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;方块&#34;&gt;方块
 &lt;/h2&gt;&lt;h3 id=&#34;description&#34;&gt;&lt;code&gt;description&lt;/code&gt;
 &lt;/h3&gt;&lt;h4 id=&#34;identifier&#34;&gt;&lt;code&gt;&amp;quot;identifier&amp;quot;&lt;/code&gt;
 &lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;用于定义方块的标识符， &lt;code&gt;:&lt;/code&gt; 前面为命名空间，不能为 minecraft ; 后半为方块名&lt;/li&gt;
+&lt;li&gt;用于定义方块的标识符， &lt;code&gt;:&lt;/code&gt; 前面为命名空间，不能为 minecraft; 后半为方块名&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;menu_category&#34;&gt;&lt;code&gt;&amp;quot;menu_category&amp;quot;&lt;/code&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;components&#34;&gt;&lt;code&gt;components&lt;/code&gt;
@@ -92,15 +93,17 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;minecraftitem_visual-&#34;&gt;&lt;code&gt;&amp;quot;minecraft:item_visual&amp;quot;&lt;/code&gt; ？
+&lt;h3 id=&#34;minecraftitem_visual-手持样式&#34;&gt;&lt;code&gt;&amp;quot;minecraft:item_visual&amp;quot;&lt;/code&gt; 手持样式
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;值类型 Objcet
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;geometry&lt;/code&gt; ？&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;material_instances&lt;/code&gt; ？&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;geometry&lt;/code&gt; 同 &lt;code&gt;&amp;quot;minecraft:geometry&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;material_instances&lt;/code&gt; 同 &lt;code&gt;&amp;quot;minecraft:material_instances&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该组件用于设定手持该方块时的贴图以及模型&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;minecraftflammable-可燃性&#34;&gt;&lt;code&gt;&amp;quot;minecraft:flammable&amp;quot;&lt;/code&gt; 可燃性
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;

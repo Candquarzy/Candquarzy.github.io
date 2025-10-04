@@ -320,7 +320,7 @@
             <li><a href="#minecraftgeometry-方块模型"><code>&#34;minecraft:geometry&#34;</code> 方块模型</a></li>
           </ol>
         </li>
-        <li><a href="#minecraftitem_visual-"><code>&#34;minecraft:item_visual&#34;</code> ？</a>
+        <li><a href="#minecraftitem_visual-手持样式"><code>&#34;minecraft:item_visual&#34;</code> 手持样式</a>
           <ol>
             <li><a href="#minecraftflammable-可燃性"><code>&#34;minecraft:flammable&#34;</code> 可燃性</a></li>
           </ol>
@@ -409,7 +409,7 @@
                 编程
             </a>
         
-            <a href="/categories/mc/" >
+            <a href="/categories/mc/" style="background-color: #2a9d8f; color: #fff;">
                 MC
             </a>
         
@@ -454,7 +454,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                1905 字
+                1809 字
             </time>
         </div>
         
@@ -516,12 +516,13 @@
 <li>生成 .mcaddon 文件 <code>npx just-scripts mcaddon</code></li>
 </ul>
 <blockquote>
-<p>更多开发说明 <code>[Minecraft 开发者工具 |Microsoft 学习](https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/developer-tools?view=minecraft-bedrock-stable)</code></p></blockquote>
+<p>更多开发说明 <a class="link" href="https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/developer-tools?view=minecraft-bedrock-stable"  target="_blank" rel="noopener"
+    >Minecraft 开发者工具 |Microsoft 学习</a></p></blockquote>
 <h2 id="方块">方块
 </h2><h3 id="description"><code>description</code>
 </h3><h4 id="identifier"><code>&quot;identifier&quot;</code>
 </h4><ul>
-<li>用于定义方块的标识符， <code>:</code> 前面为命名空间，不能为 minecraft ; 后半为方块名</li>
+<li>用于定义方块的标识符， <code>:</code> 前面为命名空间，不能为 minecraft; 后半为方块名</li>
 </ul>
 <h4 id="menu_category"><code>&quot;menu_category&quot;</code>
 </h4><h3 id="components"><code>components</code>
@@ -566,15 +567,17 @@
 </ul>
 </li>
 </ul>
-<h3 id="minecraftitem_visual-"><code>&quot;minecraft:item_visual&quot;</code> ？
+<h3 id="minecraftitem_visual-手持样式"><code>&quot;minecraft:item_visual&quot;</code> 手持样式
 </h3><ul>
 <li>值类型 Objcet
 <ul>
-<li><code>geometry</code> ？</li>
-<li><code>material_instances</code> ？</li>
+<li><code>geometry</code> 同 <code>&quot;minecraft:geometry&quot;</code></li>
+<li><code>material_instances</code> 同 <code>&quot;minecraft:material_instances&quot;</code></li>
 </ul>
 </li>
 </ul>
+<blockquote>
+<p>该组件用于设定手持该方块时的贴图以及模型</p></blockquote>
 <h4 id="minecraftflammable-可燃性"><code>&quot;minecraft:flammable&quot;</code> 可燃性
 </h4><ul>
 <li>
@@ -1077,7 +1080,7 @@
         
         
         发表了10篇文章 ·
-        总计53.96k字
+        总计53.87k字
     </section>
 
 
