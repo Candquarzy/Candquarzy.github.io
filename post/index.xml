@@ -95,7 +95,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;minecraftitem_visual-手持样式&#34;&gt;&lt;code&gt;&amp;quot;minecraft:item_visual&amp;quot;&lt;/code&gt; 手持样式
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;值类型 Objcet
+&lt;li&gt;值类型 Object
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;geometry&lt;/code&gt; 同 &lt;code&gt;&amp;quot;minecraft:geometry&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;material_instances&lt;/code&gt; 同 &lt;code&gt;&amp;quot;minecraft:material_instances&amp;quot;&lt;/code&gt;&lt;/li&gt;
@@ -177,8 +177,22 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;值类型Object&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;origin&lt;/code&gt; 类型为 Vector[a, b, c] 默认值为 [-8.0, 0,0, -8.0]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;size&lt;/code&gt; 类型为 Vector[a, b, c] 默认值为 [16.0, 16,0, 16.0]&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;关于 &lt;code&gt;origin&lt;/code&gt; 和 &lt;code&gt;size&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Minimal position of the bounds of the collision box. “origin” is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.&lt;/li&gt;
+&lt;li&gt;Size of each side of the collision box. Size is specified as [x, y, z]. “origin” + “size” must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;minecraftmap_color-地图渲染色&#34;&gt;&lt;code&gt;&amp;quot;minecraft:map_color&amp;quot;&lt;/code&gt; 地图渲染色
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;值类型 Object
@@ -193,6 +207,59 @@
 &lt;li&gt;若省略该组件，则该方块将不会显示在地图上&lt;/li&gt;
 &lt;li&gt;关于 &lt;code&gt;tint_method&lt;/code&gt; often refers to the &amp;ldquo;rain&amp;rdquo; and &amp;ldquo;temperature&amp;rdquo; of the biome the block is placed in to compute the tint. Supported tint methods are &amp;ldquo;none&amp;rdquo;, &amp;ldquo;default_foliage&amp;rdquo;, &amp;ldquo;birch_foliage&amp;rdquo;, &amp;ldquo;evergreen_foliage&amp;rdquo;, &amp;ldquo;dry_foliage&amp;rdquo;, &amp;ldquo;grass&amp;rdquo; and &amp;ldquo;water&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;minecraftmovable-可移动&#34;&gt;&lt;code&gt;&amp;quot;minecraft:movable&amp;quot;&lt;/code&gt; 可移动
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;值类型 Object&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;movement_type&lt;/code&gt; 方块被活塞等另一个方块推动时的反应 (必填)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;​	&lt;code&gt;&amp;quot;push_pull&amp;quot;&lt;/code&gt; 默认值，该方块将会被活塞推拉&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;​	&lt;code&gt;&amp;quot;push&amp;quot;&lt;/code&gt; 只会被活塞拉动&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;​	&lt;code&gt;&amp;quot;popped&amp;quot;&lt;/code&gt; 被活塞移动时会被摧毁&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;​	&lt;code&gt;&amp;quot;immovable&amp;quot;&lt;/code&gt; 不受活塞影响&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sticky&lt;/code&gt; 当被活塞等另一个方块推动时，此方块周围的方块&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;​	&lt;code&gt;&amp;quot;same&amp;quot;&lt;/code&gt; 移动时将移动与此方块相邻快&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;​	&lt;code&gt;&amp;quot;none&amp;quot;&lt;/code&gt; 默认值，不会移动相邻的方块&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;minecraftplacement_filter-放置方块规则&#34;&gt;&lt;code&gt;&amp;quot;minecraft:placement_filter&amp;quot;&lt;/code&gt; 放置方块规则
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;allowed_faces&lt;/code&gt; 类型 Array，描述此方块可以放置在下面属性指定的方块的那些面&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;block_filter&lt;/code&gt; 类型 Array，描述可以在那些方块上放置此方块的列表
+&lt;ul&gt;
+&lt;li&gt;​	&lt;code&gt;&amp;quot;name&amp;quot;&lt;/code&gt; 方块名称&lt;/li&gt;
+&lt;li&gt;​	&lt;code&gt;&amp;quot;states&amp;quot;&lt;/code&gt; 方块状态&lt;/li&gt;
+&lt;li&gt;​	&lt;code&gt;&amp;quot;tags&amp;quot;&lt;/code&gt; 使用 Molang 查询的条件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以指定 &amp;ldquo;up&amp;rdquo;, &amp;ldquo;down&amp;rdquo;, &amp;ldquo;north&amp;rdquo;, &amp;ldquo;south&amp;rdquo;, &amp;ldquo;east&amp;rdquo;, &amp;ldquo;west&amp;rdquo;, &amp;ldquo;side&amp;rdquo;, &amp;ldquo;all&amp;rdquo;. Limited to 6 faces.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;minecraftlight_dampening-透光性&#34;&gt;&lt;code&gt;&amp;quot;minecraft:light_dampening&amp;quot;&lt;/code&gt; 透光性
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;值类型 Integer 默认值 15&lt;/li&gt;
@@ -212,10 +279,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;可以通过材质实例对象分配给以下任何面:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;quot;up&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;down&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;north&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;south&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;east&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;west&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;*&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;*&amp;rdquo; 为方块所有面&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;&amp;quot;*&amp;quot;&lt;/code&gt; 为方块所有面&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;材质实例&#34;&gt;材质实例
 &lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;quot;ambient_occlusion&amp;quot;&lt;/code&gt; 是否启用环境光遮挡。若为&lt;code&gt;true&lt;/code&gt;则在方块周围和旁边创建阴影。也可以使用浮点数来控制&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ambient_occlusion&lt;/code&gt; 是否启用环境光遮挡。若为 &lt;code&gt;true&lt;/code&gt; 则在方块周围和旁边创建阴影。也可以使用浮点数来控制&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;face_dimming&lt;/code&gt; Should this material be dimmed by the direction it&amp;rsquo;s facing? 布尔值&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;isotropic&lt;/code&gt; 是否需要随机化UV？&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;render_method&lt;/code&gt; 值类型 String
@@ -241,20 +308,11 @@
 &lt;li&gt;&lt;code&gt;liquid_type&lt;/code&gt; 可以含液体的类型，默认为 &lt;code&gt;water&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;on_liquid_touches&lt;/code&gt; 方块对流水的反应
 &lt;ul&gt;
-&lt;li&gt;​	&lt;code&gt;blocking&lt;/code&gt; 默认值，会阻止液体流动
-&lt;ul&gt;
-&lt;li&gt;​	&lt;code&gt;broken&lt;/code&gt; 方块会被液体摧毁
-&lt;ul&gt;
-&lt;li&gt;​	&lt;code&gt;popped&lt;/code&gt; 方块被摧毁并生成其物品状态
-&lt;ul&gt;
+&lt;li&gt;​	&lt;code&gt;blocking&lt;/code&gt; 默认值，会阻止液体流动&lt;/li&gt;
+&lt;li&gt;​	&lt;code&gt;broken&lt;/code&gt; 方块会被液体摧毁&lt;/li&gt;
+&lt;li&gt;​	&lt;code&gt;popped&lt;/code&gt; 方块被摧毁并生成其物品状态&lt;/li&gt;
 &lt;li&gt;​	&lt;code&gt;no_reaction&lt;/code&gt; 方块不受影响(液体穿过方块)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;stops_liquid_folowing_from_direction&lt;/code&gt; 当方块含有液体时控制液体不能从哪个方向流出&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -294,10 +352,25 @@
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;值类型 Object&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;minecrafttransformation-变形&#34;&gt;&lt;code&gt;&amp;quot;minecraft:transformation&amp;quot;&lt;/code&gt; 变形
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;minecraftredstone_conductivity-红石属性&#34;&gt;&lt;code&gt;&amp;quot;minecraft:redstone_conductivity&amp;quot;&lt;/code&gt; 红石属性
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;值类型 Object
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;allows_wire_to_step_down&lt;/code&gt; 指定红石线路是否可以在方块上下阶梯。默认为 &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;redstone_conductor&lt;/code&gt; 是否可以由红石提供动力，默认为 &lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;minecraftcustom_components-脚本事件列表&#34;&gt;&lt;code&gt;&amp;quot;minecraft:custom_components&amp;quot;&lt;/code&gt; 脚本事件列表
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;值类型 Array&lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;设定自定义脚本名称的列表。以绑定到方块上方便执行&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;物品&#34;&gt;物品
 &lt;/h2&gt;&lt;h2 id=&#34;配方&#34;&gt;配方
 &lt;/h2&gt;&lt;h2 id=&#34;战利品&#34;&gt;战利品
@@ -1628,8 +1701,11 @@ $$&lt;h4 id=&#34;常数项级数的审敛法&#34;&gt;常数项级数的审敛法
 &lt;/h2&gt;&lt;h2 id=&#34;矩阵&#34;&gt;矩阵
 &lt;/h2&gt;&lt;h2 id=&#34;向量代数&#34;&gt;向量代数
 &lt;/h2&gt;&lt;h2 id=&#34;空间解析几何&#34;&gt;空间解析几何
+&lt;/h2&gt;&lt;h2 id=&#34;向量与线性方程组&#34;&gt;向量与线性方程组
 &lt;/h2&gt;&lt;h1 id=&#34;概率学&#34;&gt;概率学
-&lt;/h1&gt;</description>
+&lt;/h1&gt;&lt;h2 id=&#34;古典概型&#34;&gt;古典概型
+&lt;/h2&gt;&lt;h2 id=&#34;条件概率&#34;&gt;条件概率
+&lt;/h2&gt;</description>
         </item>
         <item>
         <title>C语言相关算法</title>

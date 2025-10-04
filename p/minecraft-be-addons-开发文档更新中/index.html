@@ -332,6 +332,11 @@
             <li><a href="#minecraftcollision_box-碰撞箱"><code>&#34;minecraft:collision_box&#34;</code> 碰撞箱</a></li>
             <li><a href="#minecraftselection_box-选中箱"><code>&#34;minecraft:selection_box&#34;</code> 选中箱</a></li>
             <li><a href="#minecraftmap_color-地图渲染色"><code>&#34;minecraft:map_color&#34;</code> 地图渲染色</a></li>
+          </ol>
+        </li>
+        <li><a href="#minecraftmovable-可移动"><code>&#34;minecraft:movable&#34;</code> 可移动</a></li>
+        <li><a href="#minecraftplacement_filter-放置方块规则"><code>&#34;minecraft:placement_filter&#34;</code> 放置方块规则</a>
+          <ol>
             <li><a href="#minecraftlight_dampening-透光性"><code>&#34;minecraft:light_dampening&#34;</code> 透光性</a></li>
           </ol>
         </li>
@@ -348,6 +353,8 @@
           </ol>
         </li>
         <li><a href="#minecraftdestruction_particles-破坏粒子"><code>&#34;minecraft:destruction_particles&#34;</code> 破坏粒子</a></li>
+        <li><a href="#minecrafttransformation-变形"><code>&#34;minecraft:transformation&#34;</code> 变形</a></li>
+        <li><a href="#minecraftredstone_conductivity-红石属性"><code>&#34;minecraft:redstone_conductivity&#34;</code> 红石属性</a></li>
         <li><a href="#minecraftcustom_components-脚本事件列表"><code>&#34;minecraft:custom_components&#34;</code> 脚本事件列表</a></li>
       </ol>
     </li>
@@ -454,7 +461,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                1809 字
+                2235 字
             </time>
         </div>
         
@@ -472,7 +479,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 4 分钟
+                    阅读时长: 5 分钟
                 </time>
             </div>
         
@@ -569,7 +576,7 @@
 </ul>
 <h3 id="minecraftitem_visual-手持样式"><code>&quot;minecraft:item_visual&quot;</code> 手持样式
 </h3><ul>
-<li>值类型 Objcet
+<li>值类型 Object
 <ul>
 <li><code>geometry</code> 同 <code>&quot;minecraft:geometry&quot;</code></li>
 <li><code>material_instances</code> 同 <code>&quot;minecraft:material_instances&quot;</code></li>
@@ -651,8 +658,22 @@
 </li>
 <li>
 <p>值类型Object</p>
+<ul>
+<li>
+<p><code>origin</code> 类型为 Vector[a, b, c] 默认值为 [-8.0, 0,0, -8.0]</p>
+</li>
+<li>
+<p><code>size</code> 类型为 Vector[a, b, c] 默认值为 [16.0, 16,0, 16.0]</p>
 </li>
 </ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>关于 <code>origin</code> 和 <code>size</code></strong></p>
+<ol>
+<li>Minimal position of the bounds of the collision box. “origin” is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.</li>
+<li>Size of each side of the collision box. Size is specified as [x, y, z]. “origin” + “size” must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.</li>
+</ol></blockquote>
 <h4 id="minecraftmap_color-地图渲染色"><code>&quot;minecraft:map_color&quot;</code> 地图渲染色
 </h4><ul>
 <li>值类型 Object
@@ -667,6 +688,59 @@
 <li>若省略该组件，则该方块将不会显示在地图上</li>
 <li>关于 <code>tint_method</code> often refers to the &ldquo;rain&rdquo; and &ldquo;temperature&rdquo; of the biome the block is placed in to compute the tint. Supported tint methods are &ldquo;none&rdquo;, &ldquo;default_foliage&rdquo;, &ldquo;birch_foliage&rdquo;, &ldquo;evergreen_foliage&rdquo;, &ldquo;dry_foliage&rdquo;, &ldquo;grass&rdquo; and &ldquo;water&rdquo;</li>
 </ul></blockquote>
+<h3 id="minecraftmovable-可移动"><code>&quot;minecraft:movable&quot;</code> 可移动
+</h3><ul>
+<li>
+<p>值类型 Object</p>
+<ul>
+<li>
+<p><code>movement_type</code> 方块被活塞等另一个方块推动时的反应 (必填)</p>
+<ul>
+<li>
+<p>​	<code>&quot;push_pull&quot;</code> 默认值，该方块将会被活塞推拉</p>
+</li>
+<li>
+<p>​	<code>&quot;push&quot;</code> 只会被活塞拉动</p>
+</li>
+<li>
+<p>​	<code>&quot;popped&quot;</code> 被活塞移动时会被摧毁</p>
+</li>
+<li>
+<p>​	<code>&quot;immovable&quot;</code> 不受活塞影响</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>sticky</code> 当被活塞等另一个方块推动时，此方块周围的方块</p>
+<ul>
+<li>
+<p>​	<code>&quot;same&quot;</code> 移动时将移动与此方块相邻快</p>
+</li>
+<li>
+<p>​	<code>&quot;none&quot;</code> 默认值，不会移动相邻的方块</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="minecraftplacement_filter-放置方块规则"><code>&quot;minecraft:placement_filter&quot;</code> 放置方块规则
+</h3><ul>
+<li>值类型 Object
+<ul>
+<li><code>allowed_faces</code> 类型 Array，描述此方块可以放置在下面属性指定的方块的那些面</li>
+<li><code>block_filter</code> 类型 Array，描述可以在那些方块上放置此方块的列表
+<ul>
+<li>​	<code>&quot;name&quot;</code> 方块名称</li>
+<li>​	<code>&quot;states&quot;</code> 方块状态</li>
+<li>​	<code>&quot;tags&quot;</code> 使用 Molang 查询的条件</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>可以指定 &ldquo;up&rdquo;, &ldquo;down&rdquo;, &ldquo;north&rdquo;, &ldquo;south&rdquo;, &ldquo;east&rdquo;, &ldquo;west&rdquo;, &ldquo;side&rdquo;, &ldquo;all&rdquo;. Limited to 6 faces.</p></blockquote>
 <h4 id="minecraftlight_dampening-透光性"><code>&quot;minecraft:light_dampening&quot;</code> 透光性
 </h4><ul>
 <li>值类型 Integer 默认值 15</li>
@@ -686,10 +760,10 @@
 <blockquote>
 <p>可以通过材质实例对象分配给以下任何面:</p>
 <p><code>&quot;up&quot;</code>, <code>&quot;down&quot;</code>, <code>&quot;north&quot;</code>, <code>&quot;south&quot;</code>, <code>&quot;east&quot;</code>, <code>&quot;west&quot;</code>, <code>&quot;*&quot;</code></p>
-<p>&ldquo;*&rdquo; 为方块所有面</p></blockquote>
+<p><code>&quot;*&quot;</code> 为方块所有面</p></blockquote>
 <h4 id="材质实例">材质实例
 </h4><ul>
-<li><code>&quot;ambient_occlusion&quot;</code> 是否启用环境光遮挡。若为<code>true</code>则在方块周围和旁边创建阴影。也可以使用浮点数来控制</li>
+<li><code>ambient_occlusion</code> 是否启用环境光遮挡。若为 <code>true</code> 则在方块周围和旁边创建阴影。也可以使用浮点数来控制</li>
 <li><code>face_dimming</code> Should this material be dimmed by the direction it&rsquo;s facing? 布尔值</li>
 <li><code>isotropic</code> 是否需要随机化UV？</li>
 <li><code>render_method</code> 值类型 String
@@ -715,20 +789,11 @@
 <li><code>liquid_type</code> 可以含液体的类型，默认为 <code>water</code></li>
 <li><code>on_liquid_touches</code> 方块对流水的反应
 <ul>
-<li>​	<code>blocking</code> 默认值，会阻止液体流动
-<ul>
-<li>​	<code>broken</code> 方块会被液体摧毁
-<ul>
-<li>​	<code>popped</code> 方块被摧毁并生成其物品状态
-<ul>
+<li>​	<code>blocking</code> 默认值，会阻止液体流动</li>
+<li>​	<code>broken</code> 方块会被液体摧毁</li>
+<li>​	<code>popped</code> 方块被摧毁并生成其物品状态</li>
 <li>​	<code>no_reaction</code> 方块不受影响(液体穿过方块)</li>
 <li><code>stops_liquid_folowing_from_direction</code> 当方块含有液体时控制液体不能从哪个方向流出</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -768,10 +833,25 @@
 </h3><ul>
 <li>值类型 Object</li>
 </ul>
+<h3 id="minecrafttransformation-变形"><code>&quot;minecraft:transformation&quot;</code> 变形
+</h3><ul>
+<li>值类型 Object</li>
+</ul>
+<h3 id="minecraftredstone_conductivity-红石属性"><code>&quot;minecraft:redstone_conductivity&quot;</code> 红石属性
+</h3><ul>
+<li>值类型 Object
+<ul>
+<li><code>allows_wire_to_step_down</code> 指定红石线路是否可以在方块上下阶梯。默认为 <code>true</code></li>
+<li><code>redstone_conductor</code> 是否可以由红石提供动力，默认为 <code>false</code></li>
+</ul>
+</li>
+</ul>
 <h3 id="minecraftcustom_components-脚本事件列表"><code>&quot;minecraft:custom_components&quot;</code> 脚本事件列表
 </h3><ul>
 <li>值类型 Array</li>
 </ul>
+<blockquote>
+<p>设定自定义脚本名称的列表。以绑定到方块上方便执行</p></blockquote>
 <h2 id="物品">物品
 </h2><h2 id="配方">配方
 </h2><h2 id="战利品">战利品
@@ -1080,7 +1160,7 @@
         
         
         发表了10篇文章 ·
-        总计53.87k字
+        总计54.29k字
     </section>
 
 
