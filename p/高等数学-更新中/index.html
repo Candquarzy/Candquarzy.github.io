@@ -343,6 +343,20 @@
         <li><a href="#求极限基础10法">求极限基础10法</a></li>
       </ol>
     </li>
+    <li><a href="#连续">连续</a>
+      <ol>
+        <li><a href="#连续的充要条件">连续的充要条件</a></li>
+        <li><a href="#间断点的分类">间断点的分类</a></li>
+        <li><a href="#闭区间上连续函数的性质">闭区间上连续函数的性质</a>
+          <ol>
+            <li><a href="#最大最小值定理">最大最小值定理</a></li>
+            <li><a href="#有界性">有界性</a></li>
+            <li><a href="#介值定理">介值定理</a></li>
+            <li><a href="#零点定理">零点定理</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
     <li><a href="#导数与微分">导数与微分</a>
       <ol>
         <li><a href="#基本导数公式">基本导数公式</a></li>
@@ -530,7 +544,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                2316 字
+                2984 字
             </time>
         </div>
         
@@ -548,7 +562,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 5 分钟
+                    阅读时长: 6 分钟
                 </time>
             </div>
         
@@ -822,7 +836,7 @@ $$<p>在上式中，当$c=b$时，有$\log_ab=\frac1{log_ba}$</p>
   <tbody>
       <tr>
           <td style="text-align: center">$\sec x$</td>
-          <td style="text-align: center">${ x \ \mid \ x \ne \frac{\pi}{2} + k\pi , k\in Z  } $</td>
+          <td style="text-align: center">$ { x \ \mid \ x \ne \frac{\pi}{2} + k\pi , k\in Z  }  $</td>
           <td style="text-align: center">$\frac{1}{\cos x}$</td>
       </tr>
       <tr>
@@ -1267,6 +1281,47 @@ $$
       </tr>
   </tbody>
 </table></div>
+<h2 id="连续">连续
+</h2><h3 id="连续的充要条件">连续的充要条件
+</h3><ol>
+<li>函数 $f(x)$ 在 $x=x_0$ 处的某一邻域内有定义;</li>
+<li>极限 $\lim_{x \to x_0}\ f(x)$  存在;</li>
+<li>$\lim_{x \to x_0} \ f(x)$ 恰好等于 $f(x)$ 在点 $x_0$ 处的函数值，也就是 $\lim_{x \to x_0}\ f(x) = \ f(x_0)$</li>
+<li>函数 $f(x)$ 在点 $x_0$ 处左连且右连续</li>
+</ol>
+<blockquote>
+<ol>
+<li>函数在一点处连续，则在该点处必有极限。但是有极限不一定连续</li>
+<li>函数在一点处连续，则在该点处必有定义。但是有定义不一定连续</li>
+<li>若函数可导，则函数一定连续；但是连续不一定可导</li>
+<li>不连续一定不可导，不可导一定不连续</li>
+</ol></blockquote>
+<h3 id="间断点的分类">间断点的分类
+</h3><ol>
+<li>第一类间断点: 若 $x=x_0$ 是函数 $f(x)$ 的间断点，且左极限 $\lim_{x \to {x_0^-}} f(x)$ 和右极限 $\lim_{x \to {x_0^+}} f(x)$  都存在，那么 $x=x_0$ 成为函数的第一类间断点
+<ol>
+<li>若 $\lim_{x \to x_{0}^-} f(x) \ = \ \lim_{x \to x_{0}^+} f(x)$ ，即 $\lim_{x \to x_0} f(x)$ 存在，则称 $x=x_0$ 为 $f(x)$ 的<strong>可去间断点</strong></li>
+<li>若 $\lim_{x \to x_{0}^-} f(x) \ \ne \ \lim_{x \to x_{0}^+} f(x)$ ，则称 $x=x_0$ 为 $f(x)$ 的<strong>跳跃间断点</strong></li>
+</ol>
+</li>
+<li>第二类间断点: 不是第一类间断点的任何间断点，成为第二类间断点
+<ol>
+<li>若 $x=x_0$ 为函数 $f(x)$ 的间断点，且当 $x \to x_0$ 时，函数 $f(x) \to \infty$ ，则称 $x=x_0$ 为函数 $f(x)$ 的<strong>无穷间断点</strong></li>
+<li>若 $x=x_0$ 为函数 $f(x)$ 的间断点，且当 $x \to x_0$ 时，函数极限不存在，呈上下震荡状态，则称 $x=x_0$ 为函数 $f(x)$ 的<strong>振荡间断点</strong></li>
+</ol>
+</li>
+</ol>
+<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质
+</h3><h4 id="最大最小值定理">最大最小值定理
+</h4><p>如果函数 $f(x)$ 在闭区间 $[a, b]$ 上连续，则函数在闭区间 $[a,b]$ 上必定取得最大值和最小值</p>
+<h4 id="有界性">有界性
+</h4><p>若函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，则函数 $f(x)$ 在闭区间 $[a,b]$ 上必有界</p>
+<h4 id="介值定理">介值定理
+</h4><p>设函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，且在这个区间的端点处取不同的函数值 $f(a)=A$ 及 $f(b) = B$，则对于 $A$ 和 $B$ 之间的任意一个数 $C$ ，在开区间 $(a,b)$ 内至少有一点 $\xi \in (a,b)$  ，使得 $f(\xi) = \mu$</p>
+<blockquote>
+<p>设函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，$M$ 和 $m$ 分别是 $f(x)$ 在 $[a,b]$  上的最大值和最小值，则对于满足 $m&lt;\mu&lt;M$ 的任何实数 $\mu$ , 至少有一点 $\xi \in (a,b)$  ，使得 $f(\xi) = \mu$</p></blockquote>
+<h4 id="零点定理">零点定理
+</h4><p>若函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，且 $f(a)$ 与 $f(b)$ 异号，即 $f(a) \cdot f(b) &lt; 0$ ，则至少存在一点 $\xi \in (a,b)$ ，使得 $f(\xi)=0$</p>
 <h2 id="导数与微分">导数与微分
 </h2>$$
 f'(x_0)=\lim_{\triangle x\to0}\frac{\triangle y}{\triangle x}=\lim_{\triangle x\to0}\frac{f(x_0+\triangle x)-f(x_0)}{\triangle x}
@@ -2027,7 +2082,7 @@ $$<h4 id="常数项级数的审敛法">常数项级数的审敛法
         
         
         发表了10篇文章 ·
-        总计54.29k字
+        总计54.96k字
     </section>
 
 
