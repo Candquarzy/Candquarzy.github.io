@@ -833,8 +833,20 @@ $$
      $$$$
      (\arccot x)&#39;=-\frac1{1+x^2}
      $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;参数方程求导&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;导数的四则运算&#34;&gt;导数的四则运算
+$$
+\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}
+$$&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;幂指函数求导 (对数求导法)&lt;/li&gt;
+&lt;/ol&gt;
+$$
+\ln y = \ln u(x)^{v(x)} = v{x}\ln u(x);
+$$$$
+y&#39;=u(x)^{v(x)}\ [v&#39;(x)\ln u(x) \ + \ \frac{v(x)\ u&#39;(x)}{u(x)}]
+$$&lt;h3 id=&#34;导数的四则运算&#34;&gt;导数的四则运算
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;
 $$
@@ -1338,7 +1350,8 @@ $$&lt;h4 id=&#34;常数项级数的审敛法&#34;&gt;常数项级数的审敛法
 &lt;/h4&gt;&lt;h1 id=&#34;线性代数&#34;&gt;线性代数
 &lt;/h1&gt;&lt;h2 id=&#34;行列式&#34;&gt;行列式
 &lt;/h2&gt;&lt;h2 id=&#34;矩阵&#34;&gt;矩阵
-&lt;/h2&gt;&lt;h2 id=&#34;向量代数&#34;&gt;向量代数
+&lt;/h2&gt;&lt;h3 id=&#34;初等行变换&#34;&gt;初等行变换
+&lt;/h3&gt;&lt;h2 id=&#34;向量代数&#34;&gt;向量代数
 &lt;/h2&gt;&lt;h2 id=&#34;空间解析几何&#34;&gt;空间解析几何
 &lt;/h2&gt;&lt;h2 id=&#34;向量与线性方程组&#34;&gt;向量与线性方程组
 &lt;/h2&gt;&lt;h1 id=&#34;概率学&#34;&gt;概率学
