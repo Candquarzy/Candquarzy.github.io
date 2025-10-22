@@ -915,7 +915,56 @@ $$
     y-y_0=f&#39;(x_0)(x-x_0)
     $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;不定积分&#34;&gt;不定积分
+&lt;h2 id=&#34;导数的应用&#34;&gt;导数的应用
+&lt;/h2&gt;&lt;h3 id=&#34;罗尔中值-rolle-定理&#34;&gt;罗尔中值 (Rolle) 定理
+&lt;/h3&gt;&lt;p&gt;如果函数 $y = f(x)$ 满足以下条件:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在闭区间 $[a,b]$ 上连续&lt;/li&gt;
+&lt;li&gt;在开区间 $(a,b)$ 上可导&lt;/li&gt;
+&lt;li&gt;$f(a) = f(b)$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;则在开区间 $(a,b)$ 上至少存在一点 $\xi$  , 使得 $f&amp;rsquo;(\xi) = 0$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;判断是否满足条件: 使用排除法排除&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;证明方程是否有实根: 可以先用零点定义, 若失效再使用罗尔中值定理. 标准答题格式如下:&lt;/p&gt;
+&lt;p&gt;构造函数 $F(x) =\ &amp;hellip;$ 显然 $F(x)$  在 [闭区间] 上连续, 在 (开区间) 内可导. 且 $F(left) = F(right)\ F&amp;rsquo;(x) =\ &amp;hellip;$  . 所以 $F(x)$ 在[闭区间] 上满足罗尔中值定理条件. 故在 (开区间) 上至少存在一点 $\xi$ 使得 $F&amp;rsquo;(\xi)=0$. 即 &lt;code&gt;题目的要求&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;拉格朗日-lagrange-中值定理&#34;&gt;拉格朗日 (Lagrange) 中值定理
+&lt;/h3&gt;&lt;p&gt;如果函数 $y = f(x)$ 满足以下条件:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在闭区间 $[a,b]$ 上连续&lt;/li&gt;
+&lt;li&gt;在开区间 $(a,b)$ 上可导&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;则在开区间 $(a,b)$ 上至少存在一点 $\xi$  , 使 $f(b)-f(a)=f&amp;rsquo;(\xi)(b-a)$ 或是 $f&amp;rsquo;(\xi)=\frac{f(b)-f(a)}{b-a}$ . 即两端点的函数差减去两端点的差等于两端点连线的斜率.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;判断是否是否满足拉格朗日中值定理条件:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在闭区间 $[a,b]$ 上连续可以通过研究 $f(x)$ 的定义域, 找间断点来判断&lt;/li&gt;
+&lt;li&gt;在开区间 $(a,b)$ 内可导可以通过求导, 查看切线的斜率找间断点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;求 $\xi$ 的值:&lt;/p&gt;
+&lt;p&gt;利用 $f&amp;rsquo;(\xi)=\frac{f(b)-f(a)}{b-a}$ 来求解&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;证明双边不等式: 标准答题格式如下:&lt;/p&gt;
+&lt;p&gt;构造函数 $f(x)=\ &amp;hellip;$ (通常为不等式中间的函数). 显然该函数在 [闭区间] 上连续,在 (开区间) 内可导. 所以 $f(x)$ 在 [闭区间] 上满足拉格朗日中值定理. 故在 (开区间) 上至少存在一点 $\xi$ 使得 $f&amp;rsquo;(\xi) = \ &amp;hellip;$ (然后将两端点处的函数差转化为含有 $\xi$ 的式子) 因为 $left &amp;lt; \xi &amp;lt; right$ , 所以上式与左右两边重新构建的不等式成立&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;函数的单调性&#34;&gt;函数的单调性
+&lt;/h3&gt;&lt;h3 id=&#34;函数的极值&#34;&gt;函数的极值
+&lt;/h3&gt;&lt;h3 id=&#34;函数的最值&#34;&gt;函数的最值
+&lt;/h3&gt;&lt;h3 id=&#34;曲线的凹凸性及拐点&#34;&gt;曲线的凹凸性及拐点
+&lt;/h3&gt;&lt;h3 id=&#34;曲线的渐近线&#34;&gt;曲线的渐近线
+&lt;/h3&gt;&lt;h2 id=&#34;不定积分&#34;&gt;不定积分
 &lt;/h2&gt;&lt;h3 id=&#34;基本积分公式&#34;&gt;基本积分公式
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;
