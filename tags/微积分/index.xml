@@ -960,9 +960,46 @@ $$
 &lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;函数的单调性&#34;&gt;函数的单调性
-&lt;/h3&gt;&lt;h3 id=&#34;函数的极值&#34;&gt;函数的极值
-&lt;/h3&gt;&lt;h3 id=&#34;函数的最值&#34;&gt;函数的最值
-&lt;/h3&gt;&lt;h3 id=&#34;曲线的凹凸性及拐点&#34;&gt;曲线的凹凸性及拐点
+&lt;/h3&gt;&lt;p&gt;设函数 $f(x)$ 在 $[a,b]$ 上连续, 在 $(a,b)$ 上可导:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;若 $f&amp;rsquo;(x) \ge 0$ , 则函数在 $(a,b)$ 内单调递增&lt;/li&gt;
+&lt;li&gt;若 $f&amp;rsquo;(x) \le 0$ , 则函数在 $(a,b)$ 内单调递减&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其中 $f&amp;rsquo;(x)=0$ 的点为函数的驻点&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;函数的极值&#34;&gt;函数的极值
+&lt;/h3&gt;&lt;p&gt;设函数 $f(x)$ 在点 $x_0$ 处的某邻域内有定义:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;若 $f(x) &amp;lt; f(x_0) $ , 则称 $f(x_0)$ 为函数 $f(x)$ 的极大值, 其中 $x=x_0$ 为函数的极大值点&lt;/li&gt;
+&lt;li&gt;若 $f(x) &amp;gt; f(x_0) $ , 则称 $f(x_0)$ 为函数 $f(x)$ 的极小值, 其中 $x=x_0$ 为函数的极小值点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;方法1:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;求 $f(x)$ 的定义域 &lt;strong&gt;(重要!)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;求 $f&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;求 $f&amp;rsquo;(x)=0$ 和 $f&amp;rsquo;(x)$ 不存在的点&lt;/li&gt;
+&lt;li&gt;将上述的点分为若干区间, 并讨论 $f&amp;rsquo;(x)$ 的正负&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;方法2: (若 $f&amp;rsquo;(x) = 0$ 的情况)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;求 $f&amp;rsquo;&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;依然求 $f&amp;rsquo;&amp;rsquo;(x)=0$  和 $f&amp;rsquo;&amp;rsquo;(x)$ 不存在的点&lt;/li&gt;
+&lt;li&gt;若 $f&amp;rsquo;&amp;rsquo;(x_0)&amp;gt;0$ , 则为极小值. 若 $f&amp;rsquo;&amp;rsquo;(x_0)&amp;lt;0$ , 则为极大值&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;函数的最值&#34;&gt;函数的最值
+&lt;/h3&gt;&lt;p&gt;设函数 $f(x)$ 在 $(a,b)$ 内连续且只有一个极值点 $x_0$:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若 $x=x_0$ 为极大值点, 则为该区间内的最大值&lt;/p&gt;
+&lt;p&gt;若 $x=x_0$ 为极小值点, 则为该区间内的最小值&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;求 $f&amp;rsquo;(x)$ , 找出 $f&amp;rsquo;(x)=0$ 的点和 $f(x)$ 不存在的点&lt;/li&gt;
+&lt;li&gt;求这些点的函数值以及端点处的函数值&lt;/li&gt;
+&lt;li&gt;比较这些值, 最大的值就是最大值, 最小的就是最小值&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;曲线的凹凸性及拐点&#34;&gt;曲线的凹凸性及拐点
 &lt;/h3&gt;&lt;h3 id=&#34;曲线的渐近线&#34;&gt;曲线的渐近线
 &lt;/h3&gt;&lt;h2 id=&#34;不定积分&#34;&gt;不定积分
 &lt;/h2&gt;&lt;h3 id=&#34;基本积分公式&#34;&gt;基本积分公式
