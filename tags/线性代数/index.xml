@@ -1000,9 +1000,41 @@ $$
 &lt;li&gt;比较这些值, 最大的值就是最大值, 最小的就是最小值&lt;/li&gt;
 &lt;/ol&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;曲线的凹凸性及拐点&#34;&gt;曲线的凹凸性及拐点
-&lt;/h3&gt;&lt;h3 id=&#34;曲线的渐近线&#34;&gt;曲线的渐近线
-&lt;/h3&gt;&lt;h2 id=&#34;不定积分&#34;&gt;不定积分
-&lt;/h2&gt;&lt;h3 id=&#34;基本积分公式&#34;&gt;基本积分公式
+&lt;/h3&gt;&lt;p&gt;设函数 $y=f(x)$ 在 $(a,b)$ 内可导:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若曲线 $y=f(x)$ 在 $(a,b)$ 内任意点的切线总位于曲线下方,则称曲线 $y=f(x)$ 在 $(a,b)$ 内是凹的&lt;/p&gt;
+&lt;p&gt;若曲线 $y=f(x)$ 在 $(a,b)$ 内任意点的切线总位于曲线上方,则称曲线 $y=f(x)$ 在 $(a,b)$ 内是凸的&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;连续曲线凹与凸的分界点称为曲线的拐点&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;曲线拐点的表示方为 $(x_0,y_0)$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;求函数 $f(x)$ 的定义域&lt;/li&gt;
+&lt;li&gt;求二阶导数 $f&amp;rsquo;&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;求 $f&amp;rsquo;&amp;rsquo;(x)=0$ 和 $f&amp;rsquo;&amp;rsquo;(x)$ 不存在的点&lt;/li&gt;
+&lt;li&gt;以这些点分成若干区间, 讨论 $f&amp;rsquo;&amp;rsquo;(x)$ 在各区间内的符号, 从而确定&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;曲线的渐近线&#34;&gt;曲线的渐近线
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;水平渐近线 $lim_{x\to \infty}\ f(x)=A$ , 则 $y=A$ 为水平渐近线&lt;/li&gt;
+&lt;li&gt;垂直渐近线 $lim_{x\to x_0}\ f(x)=x_0$ , 则 $x=x_0$ 为垂直渐近线&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$x_0$ 为不满足定义域的点&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;不定积分&#34;&gt;不定积分
+&lt;/h2&gt;&lt;h3 id=&#34;原函数&#34;&gt;原函数
+&lt;/h3&gt;&lt;p&gt;设 $f(x)$ 是定义在区间 $I$ 上的函数, 如果存在而看到函数 $F(x)$ , 使得
+&lt;/p&gt;
+$$
+F&#39;(x)\ =\ f(x) \ / \ dF(x)\ = \ f(x)dx, \ x \in I
+$$&lt;p&gt;
+就称函数 $F(x)$ 为 $f(x)$ 在区间 $I$ 上的一个原函数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;判断在区间 $I$ 上的两个函数 $F(x)$ 和 $G(x)$ 是同一函数的原函数的方法有两种:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;作差: $F(x)-G(x)$ , 结果为常数&lt;/li&gt;
+&lt;li&gt;各自求导, 结果满足 $F&amp;rsquo;(x)=G&amp;rsquo;(x)$&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;基本积分公式&#34;&gt;基本积分公式
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;常数
@@ -1105,12 +1137,14 @@ $$
 \int uv&#39;\ dx=uv-\in u&#39; v\ dx
 $$$$
 \int u \ dv = uv - \int v \ du
-$$&lt;h2 id=&#34;定积分&#34;&gt;定积分
+$$&lt;blockquote&gt;
+&lt;p&gt;选 $u$ : 反函数 &amp;gt; 对数 &amp;gt; 幂函数 &amp;gt; 指数函数 &amp;gt;= 三角函数&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;定积分&#34;&gt;定积分
 &lt;/h2&gt;$$
-A = \lim_{\triangle  x\to0}\sum_{i=i}^{n} f_{(x_i)}\cdot \triangle  x
-$$&lt;h3 id=&#34;牛顿莱布尼兹公式微积分基本定理&#34;&gt;牛顿莱布尼兹公式(微积分基本定理)
+A = \lim_{\triangle  x\to0}\sum_{i=i}^{n} f(x_i)\cdot \triangle  x
+$$&lt;h3 id=&#34;牛顿-莱布尼兹公式微积分基本定理&#34;&gt;牛顿-莱布尼兹公式(微积分基本定理)
 &lt;/h3&gt;$$
-\int_{a}^{b} f_{(x)}\ dx=F_{(x)}|_{a}^{b}=F_{(b)}-F_{(a)}
+\int_{a}^{b} f(x)\ dx=F(x)|_{a}^{b}=F(b)-F(a)
 $$&lt;blockquote&gt;
 &lt;p&gt;前提条件: 函数$f_{(x)}$在 $[a,b]$ 上连续&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;定积分的性质部分&#34;&gt;定积分的性质(部分)
@@ -1123,27 +1157,70 @@ $$
 &lt;p&gt;在区间$[a,b]$上:
 &lt;/p&gt;
 $$
-     f_{(x)}\ dx \ge 0\ (a&lt; b)
+     f(x)\ dx \ge 0\ (a&lt; b)
      $$&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;定积分中值定理 设函数$f(x)$在$[a,b]$上连续
 &lt;/p&gt;
 $$
-     \int_{a}^{b}f_{(x)}\ dx = f_{(\varepsilon )}\cdot(b-a)\ (a\le\varepsilon\le b)
+     \int_{a}^{b}f(x)\ dx = f(\xi) \cdot(b-a)\ (a\le\xi\le b)
      $$&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;当连续函数$f_{(x)}$为偶函数时:
 &lt;/p&gt;
 $$
-     \int_{-a}^{a}f_{(x)}\ dx=2\int_0^af_{(x)}\ dx
+     \int_{-a}^{a}f(x)\ dx=2\int_0^af(x)\ dx
      $$&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;当连续函数$f_{(x)}$为奇函数时:
 &lt;/p&gt;
 $$
-     \int_{-a}^{a}f_{(x)}\ dx=0
+     \int_{-a}^{a}f(x)\ dx=0
      $$&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;定积分的几何意义&#34;&gt;定积分的几何意义
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{-a}^{a} \sqrt{a^2-x^2}\ dx \ (a&amp;gt;0)$ 表示的是以原点为圆心, 以 $a$ 为半径的圆在 $x$ 轴上方部分的面积, 故
+&lt;/p&gt;
+$$
+      \int_{-a}^{a} \ \sqrt{a^2-x^2}\ dx = \frac\pi 2 a^2
+      $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{0} \sqrt{a^2-x^2}\ dx \ (a&amp;gt;0)$ 表示的是以原点为圆心, 以 $a$ 为半径的圆在第一象限部分的面积, 故
+&lt;/p&gt;
+$$
+      \int_{a}^{0} \ \sqrt{a^2-x^2}\ dx = \frac\pi 4 a^2
+      $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;变上限积分函数&#34;&gt;变上限积分函数
+&lt;/h3&gt;&lt;p&gt;如果函数 $f(x)$ 在区间 $[a,b]$ 上连续, 则变上限积分函数
+&lt;/p&gt;
+$$
+\phi (x) = \int_{a}^{x} f(t) \ dt
+$$&lt;p&gt;
+在 $[a,b]$ 上可导, 并且它的导数
+&lt;/p&gt;
+$$
+\left [ \int_{\varphi_1 (x)}^{\varphi_2(x)} f(t)\ dt \right]&#39; = f \left [ \varphi_2 (x) \right ]\ \varphi_2 &#39;(x)  - \left [ \varphi_1 (x) \right ] \ \varphi&#39;_1 (x)
+$$&lt;blockquote&gt;
+&lt;p&gt;上限带入上限导 - 下限带入下限导&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;定积分的换元积分法&#34;&gt;定积分的换元积分法
+&lt;/h3&gt;$$
+\int_{a}^{b}\ f(x) \ dx = \int_{A}^{B} \ f \left[ (\varphi(t) \right] \ \ \varphi&#39;(t) \ dt
+$$&lt;blockquote&gt;
+&lt;p&gt;注意:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;换元必换上下限. 通过带入 $x$ 的值求出上下限&lt;/li&gt;
+&lt;li&gt;求出原函数后不需要变量回代&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;反常积分&#34;&gt;反常积分
+&lt;/h3&gt;$$
+\int_{a}^{+\infty} f(x) \ dx = lim_{t\to +\infty} \int_a^t f(x)\ dx
+$$&lt;p&gt;若右边极限存在, 则称广义积分 $\int_{a}^{+\infty} f(x) \ dx$ 收敛, 该极限的值即为广义积分的值.&lt;/p&gt;
+&lt;p&gt;若极限不存在, 则 $\int_{a}^{+\infty} f(x) \ dx$ 没有意义, 称作 $\int_{a}^{+\infty} f(x) \ dx$ 发散&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以使用微积分基本定理(牛顿-莱布尼兹公式)来判断反常积分的敛散性&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;多元函数微分&#34;&gt;多元函数微分
 &lt;/h2&gt;&lt;h3 id=&#34;二元函数的极限&#34;&gt;二元函数的极限
 &lt;/h3&gt;$$
