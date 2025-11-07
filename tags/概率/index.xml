@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>概率 on 糖果罐🍥 - Candy的博客</title>
+        <link>http://localhost:1313/tags/%E6%A6%82%E7%8E%87/</link>
+        <description>Recent content in 概率 on 糖果罐🍥 - Candy的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>By Candy</copyright>
+        <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%A6%82%E7%8E%87/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>概率论 (更新中)</title>
+        <link>http://localhost:1313/p/%E6%A6%82%E7%8E%87%E8%AE%BA-%E6%9B%B4%E6%96%B0%E4%B8%AD/</link>
+        <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E6%A6%82%E7%8E%87%E8%AE%BA-%E6%9B%B4%E6%96%B0%E4%B8%AD/</guid>
+        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/131403970_p0.webp" alt="Featured image of post 概率论 (更新中)" /&gt;&lt;h1 id=&#34;概率学&#34;&gt;概率学
+&lt;/h1&gt;&lt;p&gt;TEST&lt;/p&gt;
+&lt;h2 id=&#34;古典概型&#34;&gt;古典概型
+&lt;/h2&gt;&lt;h2 id=&#34;条件概率&#34;&gt;条件概率
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

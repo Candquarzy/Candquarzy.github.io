@@ -3,7 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.candquarzy.top/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/post/</loc>
+    <lastmod>2025-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/tags/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/categories/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/tags/%E7%9F%A9%E9%98%B5/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/p/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-%E6%9B%B4%E6%96%B0%E4%B8%AD/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/tags/%E5%90%91%E9%87%8F/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.candquarzy.top/tags/%E8%A1%8C%E5%88%97%E5%BC%8F/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.candquarzy.top/tags/mc/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
@@ -14,16 +41,7 @@
     <loc>https://blog.candquarzy.top/p/minecraft-be-addons-%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3%E6%9B%B4%E6%96%B0%E4%B8%AD/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.candquarzy.top/post/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.candquarzy.top/tags/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.candquarzy.top/categories/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.candquarzy.top/categories/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.candquarzy.top/categories/%E6%95%99%E7%A8%8B/</loc>
@@ -32,25 +50,25 @@
     <loc>https://blog.candquarzy.top/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.candquarzy.top/tags/%E6%A6%82%E7%8E%87%E5%AD%A6/</loc>
-    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
+    <loc>https://blog.candquarzy.top/tags/%E5%AF%BC%E6%95%B0/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.candquarzy.top/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.candquarzy.top/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E6%9B%B4%E6%96%B0%E4%B8%AD/</loc>
-    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
+    <loc>https://blog.candquarzy.top/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E4%B8%8B-%E6%9B%B4%E6%96%B0%E4%B8%AD/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.candquarzy.top/tags/%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.candquarzy.top/categories/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
+    <loc>https://blog.candquarzy.top/tags/%E7%A7%AF%E5%88%86/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.candquarzy.top/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/</loc>
-    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.candquarzy.top/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</loc>
+    <loc>https://blog.candquarzy.top/p/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-%E4%B8%8A/</loc>
     <lastmod>2025-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.candquarzy.top/tags/c%E8%AF%AD%E8%A8%80/</loc>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>行列式 on 糖果罐🍥 - Candy的博客</title>
+        <link>https://blog.candquarzy.top/tags/%E8%A1%8C%E5%88%97%E5%BC%8F/</link>
+        <description>Recent content in 行列式 on 糖果罐🍥 - Candy的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>By Candy</copyright>
+        <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.candquarzy.top/tags/%E8%A1%8C%E5%88%97%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>线性代数 (更新中)</title>
+        <link>https://blog.candquarzy.top/p/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-%E6%9B%B4%E6%96%B0%E4%B8%AD/</link>
+        <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.candquarzy.top/p/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-%E6%9B%B4%E6%96%B0%E4%B8%AD/</guid>
+        <description>&lt;img src="https://raw.githubusercontent.com/Candquarzy/PicGO_For_Candy/refs/heads/master/blog/129931657_p0.webp" alt="Featured image of post 线性代数 (更新中)" /&gt;&lt;h1 id=&#34;线性代数&#34;&gt;线性代数
+&lt;/h1&gt;&lt;h2 id=&#34;行列式&#34;&gt;行列式
+&lt;/h2&gt;&lt;h2 id=&#34;矩阵&#34;&gt;矩阵
+&lt;/h2&gt;&lt;h3 id=&#34;初等行变换&#34;&gt;初等行变换
+&lt;/h3&gt;&lt;h2 id=&#34;向量代数&#34;&gt;向量代数
+&lt;/h2&gt;&lt;h3 id=&#34;向量的概念&#34;&gt;向量的概念
+&lt;/h3&gt;&lt;p&gt;既有大小又有方向的量被成为向量, 也称矢量. 例如 $\overrightarrow{A}$ 或 $\overrightarrow{a}$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;向量的模:&lt;/strong&gt; 指向量的大小, 记作 $|\overrightarrow{AB}|$ 或 $\overrightarrow{a}$&lt;/p&gt;
+&lt;p&gt;**单位向量: ** 模等于 1 的向量叫做单位向量, **零向量: ** 模等于0的向量叫做零向量.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;零向量平行于任意向量&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;**向量相等: **两向量相等的条件是大小相等且方向相同&lt;/p&gt;
+&lt;h3 id=&#34;向量的模-方向角-投影&#34;&gt;向量的模 方向角 投影
+&lt;/h3&gt;&lt;h4 id=&#34;模&#34;&gt;模
+&lt;/h4&gt;$$
+|\overrightarrow{r}| = |\overrightarrow{OM}|=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_1-z_2)^2}
+$$&lt;h4 id=&#34;两点间距离公式&#34;&gt;两点间距离公式
+&lt;/h4&gt;&lt;h2 id=&#34;空间解析几何&#34;&gt;空间解析几何
+&lt;/h2&gt;&lt;h2 id=&#34;向量与线性方程组&#34;&gt;向量与线性方程组
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
