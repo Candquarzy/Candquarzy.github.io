@@ -21,16 +21,31 @@
 &lt;/h2&gt;&lt;h3 id=&#34;向量的概念&#34;&gt;向量的概念
 &lt;/h3&gt;&lt;p&gt;既有大小又有方向的量被成为向量, 也称矢量. 例如 $\overrightarrow{A}$ 或 $\overrightarrow{a}$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;向量的模:&lt;/strong&gt; 指向量的大小, 记作 $|\overrightarrow{AB}|$ 或 $\overrightarrow{a}$&lt;/p&gt;
-&lt;p&gt;**单位向量: ** 模等于 1 的向量叫做单位向量, **零向量: ** 模等于0的向量叫做零向量.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;单位向量:&lt;/strong&gt; 模等于 1 的向量叫做单位向量, **零向量: ** 模等于0的向量叫做零向量.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;零向量平行于任意向量&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;**向量相等: **两向量相等的条件是大小相等且方向相同&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;向量相等:&lt;/strong&gt; 两向量相等的条件是大小相等且方向相同&lt;/p&gt;
 &lt;h3 id=&#34;向量的模-方向角-投影&#34;&gt;向量的模 方向角 投影
 &lt;/h3&gt;&lt;h4 id=&#34;模&#34;&gt;模
 &lt;/h4&gt;$$
-|\overrightarrow{r}| = |\overrightarrow{OM}|=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_1-z_2)^2}
+|\overrightarrow{r}| = |\overrightarrow{OM}|=\sqrt{x^2+y^2+z^2}
 $$&lt;h4 id=&#34;两点间距离公式&#34;&gt;两点间距离公式
-&lt;/h4&gt;&lt;h2 id=&#34;空间解析几何&#34;&gt;空间解析几何
+&lt;/h4&gt;$$
+|\overrightarrow{AB}|=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_1-z_2)^2}
+$$&lt;h4 id=&#34;方向角与方向余弦&#34;&gt;方向角与方向余弦
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;方向角:&lt;/strong&gt; 非0向量 $\overrightarrow{r}$ 与三条坐标轴的夹角 $\alpha, \ \beta, \ \gamma $ 称为向量 $\overrightarrow{r}$ 的夹角
+&lt;/p&gt;
+$$
+cos \alpha = \frac{r_x}{|\overrightarrow{r}|} = \frac{r_x}{\sqrt{r_x^2+r_y^2+r_z^2}} = \frac{x_2-x_1}{|\overrightarrow{M_1M_2}|}
+$$$$
+cos \beta = \frac{r_y}{|\overrightarrow{r}|} = \frac{r_y}{\sqrt{r_x^2+r_y^2+r_z^2}} = \frac{y_2-y_1}{|\overrightarrow{M_1M_2}|}
+$$$$
+cos \gamma = \frac{r_z}{|\overrightarrow{r}|} = \frac{r_z}{\sqrt{r_x^2+r_y^2+r_z^2}} = \frac{z_2-z_1}{|\overrightarrow{M_1M_2}|}
+$$&lt;p&gt;同时有:
+&lt;/p&gt;
+$$
+\cos^2 \alpha\ + \cos^2 \beta \ + \cos^2 \gamma \ = \ 1
+$$&lt;h2 id=&#34;空间解析几何&#34;&gt;空间解析几何
 &lt;/h2&gt;&lt;h2 id=&#34;向量与线性方程组&#34;&gt;向量与线性方程组
 &lt;/h2&gt;</description>
         </item>
@@ -1953,7 +1968,7 @@ $$&lt;p&gt;若右边极限存在, 则称广义积分 $\int_{a}^{+\infty} f(x) \ 
 &lt;/h4&gt;$$
 A = \int_a^b \ f_1(x) - f_2(x) \ dx
 $$$$
-A = \int_c^d g_1(y) - g_2(2) \ dy
+A = \int_c^d g_1(y) - g_2(y) \ dy
 $$&lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;画草图&lt;/li&gt;
@@ -1963,8 +1978,8 @@ $$&lt;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;面积肯定是正的, 因此要用大的函数减去小的函数&lt;/p&gt;
 &lt;p&gt;积分变量 $x$ 和 $y$ 分别代表上减下和右减左&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;求旋转体体积&#34;&gt;求旋转体体积
-&lt;/h3&gt;$$
+&lt;h4 id=&#34;求旋转体体积&#34;&gt;求旋转体体积
+&lt;/h4&gt;$$
 V = \pi \ \int_a^b f^2(x) \ dx
 $$&lt;blockquote&gt;
 &lt;ol&gt;
@@ -1973,8 +1988,8 @@ $$&lt;blockquote&gt;
 &lt;li&gt;根据图像列定积分式&lt;/li&gt;
 &lt;/ol&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果绕 $x$ 轴旋转, 这积分变量为 $x$&lt;/p&gt;
-&lt;p&gt;如果绕 $y$ 轴旋转, 这积分变量为 $y$&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;如果绕 $x$ 轴旋转, 积分变量为 $x$&lt;/p&gt;
+&lt;p&gt;如果绕 $y$ 轴旋转, 积分变量为 $y$&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>

@@ -307,6 +307,7 @@
           <ol>
             <li><a href="#模">模</a></li>
             <li><a href="#两点间距离公式">两点间距离公式</a></li>
+            <li><a href="#方向角与方向余弦">方向角与方向余弦</a></li>
           </ol>
         </li>
       </ol>
@@ -384,7 +385,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-typography"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 18h2" /><path d="M12 18v-7" /><path d="M9 12v-1h6v1" /></svg>
             <time class="article-time--reading">
-                182 字
+                268 字
             </time>
         </div>
         
@@ -425,16 +426,31 @@
 </h2><h3 id="向量的概念">向量的概念
 </h3><p>既有大小又有方向的量被成为向量, 也称矢量. 例如 $\overrightarrow{A}$ 或 $\overrightarrow{a}$</p>
 <p><strong>向量的模:</strong> 指向量的大小, 记作 $|\overrightarrow{AB}|$ 或 $\overrightarrow{a}$</p>
-<p>**单位向量: ** 模等于 1 的向量叫做单位向量, **零向量: ** 模等于0的向量叫做零向量.</p>
+<p><strong>单位向量:</strong> 模等于 1 的向量叫做单位向量, **零向量: ** 模等于0的向量叫做零向量.</p>
 <blockquote>
 <p>零向量平行于任意向量</p></blockquote>
-<p>**向量相等: **两向量相等的条件是大小相等且方向相同</p>
+<p><strong>向量相等:</strong> 两向量相等的条件是大小相等且方向相同</p>
 <h3 id="向量的模-方向角-投影">向量的模 方向角 投影
 </h3><h4 id="模">模
 </h4>$$
-|\overrightarrow{r}| = |\overrightarrow{OM}|=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_1-z_2)^2}
+|\overrightarrow{r}| = |\overrightarrow{OM}|=\sqrt{x^2+y^2+z^2}
 $$<h4 id="两点间距离公式">两点间距离公式
-</h4><h2 id="空间解析几何">空间解析几何
+</h4>$$
+|\overrightarrow{AB}|=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_1-z_2)^2}
+$$<h4 id="方向角与方向余弦">方向角与方向余弦
+</h4><p><strong>方向角:</strong> 非0向量 $\overrightarrow{r}$ 与三条坐标轴的夹角 $\alpha, \ \beta, \ \gamma $ 称为向量 $\overrightarrow{r}$ 的夹角
+</p>
+$$
+cos \alpha = \frac{r_x}{|\overrightarrow{r}|} = \frac{r_x}{\sqrt{r_x^2+r_y^2+r_z^2}} = \frac{x_2-x_1}{|\overrightarrow{M_1M_2}|}
+$$$$
+cos \beta = \frac{r_y}{|\overrightarrow{r}|} = \frac{r_y}{\sqrt{r_x^2+r_y^2+r_z^2}} = \frac{y_2-y_1}{|\overrightarrow{M_1M_2}|}
+$$$$
+cos \gamma = \frac{r_z}{|\overrightarrow{r}|} = \frac{r_z}{\sqrt{r_x^2+r_y^2+r_z^2}} = \frac{z_2-z_1}{|\overrightarrow{M_1M_2}|}
+$$<p>同时有:
+</p>
+$$
+\cos^2 \alpha\ + \cos^2 \beta \ + \cos^2 \gamma \ = \ 1
+$$<h2 id="空间解析几何">空间解析几何
 </h2><h2 id="向量与线性方程组">向量与线性方程组
 </h2>
 </section>
@@ -659,7 +675,7 @@ $$<h4 id="两点间距离公式">两点间距离公式
         
         
         发表了12篇文章 ·
-        总计56.70k字
+        总计56.79k字
     </section>
 
 
