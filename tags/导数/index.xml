@@ -33,7 +33,7 @@ f_{xy}(x,y)=\frac{\partial^2z}{\partial x \partial y}
 $$$$
 f_{yx}(x,y)=\frac{\partial^2z}{\partial y \partial x}
 $$$$
-f_{yy}(,y)=\frac{\partial^2z}{\partial y^2}
+f_{yy}(x,y)=\frac{\partial^2z}{\partial y^2}
 $$&lt;h3 id=&#34;全微分&#34;&gt;全微分
 &lt;/h3&gt;$$
 dz=\frac{\partial z}{\partial x}\ dx+\frac{\partial z}{\partial y}\ dy
@@ -81,7 +81,7 @@ $$
 &lt;/ol&gt;
 &lt;h3 id=&#34;二重积分的计算&#34;&gt;二重积分的计算
 &lt;/h3&gt;$$
-\iint\limits_{D}f(x,y)\ dxdy =\int_{a}^{b}[\int_{\varphi _1(x)}^{\varphi _2{(x)}}f(x,y)\ dy\ ]\ dx
+\iint\limits_{D}f(x,y)\ dxdy =\int_{a}^{b} \left [ \int_{\varphi _1(x)}^{\varphi _2{(x)}}f(x,y)\ dy\ \right ]\ dx
 $$&lt;h4 id=&#34;x型积分区域&#34;&gt;X型积分区域
 &lt;/h4&gt;$$
 \int_{a}^{b}\ dx \int_{\varphi _1(x)}^{\varphi _2{(x)}}f(x,y)\ dy
