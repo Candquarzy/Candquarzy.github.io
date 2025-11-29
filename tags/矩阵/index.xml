@@ -210,7 +210,7 @@ $$
 &lt;/p&gt;
 $$
          Ax_0+By_0+Cz_0+D=0
-         $$&lt;/blockquote&gt;
+        $$&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;直线和平面平行:&lt;/strong&gt;
@@ -221,8 +221,8 @@ $$
 &lt;p&gt;点不走平面上:
 &lt;/p&gt;
 $$
-         Ax_0+By_0+Cz_0+D\ne 0
-         $$&lt;/blockquote&gt;
+        Ax_0+By_0+Cz_0+D\ne 0
+        $$&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;直线和平面垂直:&lt;/strong&gt; ($A, B, C$ 为直线的方向向量, $m, n, p$ 平面的方向向量)

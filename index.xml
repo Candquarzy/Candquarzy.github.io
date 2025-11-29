@@ -210,7 +210,7 @@ $$
 &lt;/p&gt;
 $$
          Ax_0+By_0+Cz_0+D=0
-         $$&lt;/blockquote&gt;
+        $$&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;直线和平面平行:&lt;/strong&gt;
@@ -221,8 +221,8 @@ $$
 &lt;p&gt;点不走平面上:
 &lt;/p&gt;
 $$
-         Ax_0+By_0+Cz_0+D\ne 0
-         $$&lt;/blockquote&gt;
+        Ax_0+By_0+Cz_0+D\ne 0
+        $$&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;直线和平面垂直:&lt;/strong&gt; ($A, B, C$ 为直线的方向向量, $m, n, p$ 平面的方向向量)
@@ -736,11 +736,11 @@ $$
      $$&lt;/li&gt;
 &lt;li&gt;
 $$
-     y=r\sin\theta 
+     y=r\sin\theta
      $$&lt;/li&gt;
 &lt;li&gt;
 $$
-     dxdy=r\ dr\ d\theta
+     dxdy=r\ drd\theta
      $$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&#34;极坐标下化二重积分为两次一重积分&#34;&gt;极坐标下化二重积分为两次一重积分
@@ -819,7 +819,7 @@ $$
 &lt;/ol&gt;
 &lt;h3 id=&#34;一阶齐次线性微分方程&#34;&gt;一阶齐次线性微分方程
 &lt;/h3&gt;$$
-y=e^{-\int{p(x)\ dx}}[\int Q(x)\ e^{\int p(x)\ dx}]\ dx+C
+y=e^{-\int{p(x)\ dx}}\left [ \int Q(x)\ e^{\int p(x)\ dx} \right ]  \ dx+C
 $$&lt;blockquote&gt;
 &lt;p&gt;特别的, 若为一阶齐次线性微分方程, 则令上式中的 $Q(x)=0$ 即可, 得:
 &lt;/p&gt;
@@ -13461,6 +13461,15 @@ $$&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;p&gt;我最后问了一句，那我什么时候可以停药，再来复查？大夫说先让我吃着没有给我肯定的答案…&lt;/p&gt;
 &lt;p&gt;好叭…… 这次看病算是白来了&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;spoiler&#34;&gt;不过和朋友贴贴的很开心！&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;可以结束吗-2025-年-11-月-29-日记&#34;&gt;可以结束吗? (2025 年 11 月 29 日记)
+&lt;/h2&gt;&lt;p&gt;这次正好陪诊我母亲复查, 同时我也打算去开一个诊断证明(关于跨性别的). 所以我前往了北京回龙观. 除了开诊断证明外还是希望自己可以停药. 因为我近半年来状态非常好&lt;/p&gt;
+&lt;p&gt;因为这次主要是和大夫沟通跨性别的事情. 所以关于抑郁的内容比较少. 总之就是做了不少检查, 花了600多(我没钱了呜呜呜). 最后有一项检查表示我大脑可能有抑郁?&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+    &lt;img src=&#34;检查.png&#34; alt=&#34;检查&#34;width:80%;&#34; /&gt;
+&lt;/div&gt;
+&lt;p&gt;我也不是大夫, 所以不是很懂. 至少量表的检查都没问题&lt;/p&gt;
+&lt;p&gt;之后拿去报告单给牛雅娟大夫看, 大夫说不是很感给我停药, 因为我是来首诊的, 数据虽然说不错, 但是不敢妄下定论. 所以推荐我可以尝试看看. 但是她不敢肯定给我说停药&lt;/p&gt;
+&lt;p&gt;嘛, 至少是一个好消息! 我的抗抑郁史就要结束了!&lt;/p&gt;
 </description>
         </item>
         <item>

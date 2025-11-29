@@ -101,11 +101,11 @@ $$
      $$&lt;/li&gt;
 &lt;li&gt;
 $$
-     y=r\sin\theta 
+     y=r\sin\theta
      $$&lt;/li&gt;
 &lt;li&gt;
 $$
-     dxdy=r\ dr\ d\theta
+     dxdy=r\ drd\theta
      $$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&#34;极坐标下化二重积分为两次一重积分&#34;&gt;极坐标下化二重积分为两次一重积分
@@ -184,7 +184,7 @@ $$
 &lt;/ol&gt;
 &lt;h3 id=&#34;一阶齐次线性微分方程&#34;&gt;一阶齐次线性微分方程
 &lt;/h3&gt;$$
-y=e^{-\int{p(x)\ dx}}[\int Q(x)\ e^{\int p(x)\ dx}]\ dx+C
+y=e^{-\int{p(x)\ dx}}\left [ \int Q(x)\ e^{\int p(x)\ dx} \right ]  \ dx+C
 $$&lt;blockquote&gt;
 &lt;p&gt;特别的, 若为一阶齐次线性微分方程, 则令上式中的 $Q(x)=0$ 即可, 得:
 &lt;/p&gt;
